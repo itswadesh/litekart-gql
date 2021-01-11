@@ -1,80 +1,67 @@
-query Product($id: ID!) {
-  product(id: $id) {
+query {
+  product(id: "5fdc4f5fd93e5e0018dcb6b0") {
     id
-    slug
     name
     description
-    features {
-      key
-      val
-    }
+    slug
+    img
+    img_featured
+    images
     variants {
       id
-      options {
-        name
-        val
-      }
-      stock
-      weight
-      barcode
-      sku
-      mrp
-      price
-      images
-      trackInventory
-      active
-      sort
+      name
+    }
+    enableZips
+    zips
+    category {
+      id
+      name
     }
     brand {
       id
       name
     }
-    category {
+    parentCategory {
       id
       name
     }
-    categories {
-      id
-      name
-    }
+
+    status
     type
-    price
-    mrp
+    city
     stock
-    img
-    img_featured
-    images
+    price
     time
+    daily
+    features
+    vendor {
+      id
+      firstName
+    }
     active
-    popularity
+    info
+    title
+    metaDescription
+    keywords
     position
-    sku
-    hsn
-    group
-    color
-    barcode
+    popularity
     trending
     featured
     hot
     new
     sale
     recommended
-    title
-    metaDescription
-    keywords
-    vendor {
-      id
-      firstName
-      lastName
-      phone
-      email
-      address {
-        address
-      }
-      info {
-        store
-        storePhotos
-      }
-    }
+    hsn
+    barcode
+    group
+    sku
+    color
+    sales
+    ratings
+    reviews
+    approved
+
+    createdAt
+    updatedAt
   }
 }

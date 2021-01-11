@@ -1,50 +1,42 @@
-mutation saveCategory(
-  $id: String
-  $name: String
-  $parent: ID
-  $slug: String
-  $img: String
-  $level: Int
-  $metaTitle: String
-  $metaDescription: String
-  $metaKeywords: String
-  $position: Int
-  $featured: Boolean
-  $megamenu: Boolean
-  $active: Boolean
-  $shopbycategory: Boolean
-) {
+mutation {
   saveCategory(
-    id: $id
-    name: $name
-    parent: $parent
-    slug: $slug
-    img: $img
-    level: $level
-    metaTitle: $metaTitle
-    metaDescription: $metaDescription
-    metaKeywords: $metaKeywords
-    position: $position
-    megamenu: $megamenu
-    featured: $featured
-    active: $active
-    shopbycategory: $shopbycategory
+    name: "Electronics"
+    parent: "5d3c40f41699ca065e5256f2"
+    slug: "electronics"
+    img: "https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+    level: 0
+    metaTitle: "electri"
+    position: 0
+    megamenu: false
+    featured: true
+    active: true
+    shopbycategory: true
+    id: "new"
   ) {
     id
+    index
     name
-    parent {
-      name
-    }
     slug
-    img
+    path
+    slugPath
+    namePath
     level
+    position
+    megamenu
+    meta
     metaTitle
     metaDescription
     metaKeywords
-    megamenu
+    img
     featured
-    active
     shopbycategory
+    children {
+      id
+      name
+    }
+    count
+    sizechart
+    active
     createdAt
     updatedAt
   }

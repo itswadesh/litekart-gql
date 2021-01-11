@@ -1,85 +1,69 @@
-query products(
-  $page: Int
-  $skip: Int
-  $limit: Int
-  $search: String
-  $sort: String
-  $vendor: String
-  $category: String
-  $active: Boolean
-  $featured: Boolean
-) {
-  products(
-    page: $page
-    skip: $skip
-    limit: $limit
-    search: $search
-    sort: $sort
-    vendor: $vendor
-    category: $category
-    active: $active
-    featured: $featured
-  ) {
+query {
+  products {
     data {
       id
-      slug
       name
-      type
-      price
-      stock
+      description
+      slug
       img
       img_featured
-      time
-      active
-      popularity
-      position
+      images
       variants {
         id
-        options {
-          name
-        }
-        stock
-        weight
-        barcode
-        sku
-        mrp
-        price
-        images
-        trackInventory
-        active
-        sort
+        name
       }
+      enableZips
+      zips
+      category {
+        id
+        name
+      }
+      brand {
+        id
+        name
+      }
+      parentCategory {
+        id
+        name
+      }
+
+      status
+      type
+      city
+      stock
+      price
+      time
+      daily
+      features
+      vendor {
+        id
+        firstName
+      }
+      active
+      info
+      title
+      metaDescription
+      keywords
+      position
+      popularity
       trending
       featured
       hot
       new
       sale
       recommended
-      title
-      metaDescription
-      keywords
+      hsn
+      barcode
+      group
+      sku
+      color
+      sales
       ratings
       reviews
-      category {
-        name
-      }
-      vendor {
-        id
-        firstName
-        lastName
-        phone
-        email
-        address {
-          address
-        }
-        info {
-          store
-          storePhotos
-        }
-      }
+      approved
+
+      createdAt
+      updatedAt
     }
-    count
-    pageSize
-    page
   }
 }

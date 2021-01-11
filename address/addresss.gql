@@ -1,0 +1,20 @@
+query {
+  addresses {
+    data {
+      id
+      type
+      firstName
+      lastName
+      type
+      address
+      town
+      district
+      city
+      country
+      state
+      zip
+      phone
+      user
+    }
+  }
+}

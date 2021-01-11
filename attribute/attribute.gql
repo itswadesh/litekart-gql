@@ -1,0 +1,6 @@
+query {
+  attribute(id: "5ffad39f24cb9a285092a094") {
+    _id
+    name
+  }
+}

@@ -1,0 +1,3 @@
+mutation {
+  deleteAttribute(id: "5ffab718854ea308485973ec")
+}
