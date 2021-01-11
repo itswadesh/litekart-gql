@@ -1,0 +1,41 @@
+mutation saveCountry(
+  $id: String
+  $name: String!
+  $slug: String
+  $value: String
+  $code: String
+  $img: String
+  $flag: String
+  $language: String
+  $sort: Int
+  $active: Boolean
+) {
+  saveCountry(
+    id: $id
+    name: $name
+    slug: $slug
+    value: $value
+    code: $code
+    img: $img
+    flag: $flag
+    language: $language
+    sort: $sort
+    active: $active
+  ) {
+    id
+    name
+    slug
+    value
+    code
+    img
+    flag
+    language
+    states {
+      name
+    }
+    sort
+    active
+    createdAt
+    updatedAt
+  }
+}

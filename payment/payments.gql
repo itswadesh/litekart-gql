@@ -1,0 +1,33 @@
+query payments($page: Int, $search: String, $limit: Int, $sort: String) {
+  payments(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      entity
+      amount
+      currency
+      status
+      order_id
+      invoice_id
+      international
+      method
+      amount_refunded
+      refund_status
+      captured
+      description
+      card_id
+      bank
+      wallet
+      vpa
+      email
+      contact
+      fee
+      tax
+      error_code
+      error_description
+      created_at
+    }
+  }
+}

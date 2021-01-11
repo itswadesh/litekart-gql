@@ -1,0 +1,49 @@
+mutation addToCart(
+  $qty: Int!
+  $pid: ID!
+  $vid: ID!
+  $options: String
+  $vendor: ID
+  $replace: Boolean
+) {
+  addToCart(
+    qty: $qty
+    pid: $pid
+    vid: $vid
+    options: $options
+    vendor: $vendor
+    replace: $replace
+  ) {
+    items {
+      pid
+      vid
+      vendor {
+        firstName
+        lastName
+      }
+      name
+      slug
+      qty
+      price
+      img
+      options
+    }
+    qty
+    subtotal
+    discount {
+      code
+      value
+      text
+      amount
+    }
+    shipping {
+      charge
+    }
+    total
+    tax {
+      cgst
+      sgst
+      igst
+    }
+  }
+}

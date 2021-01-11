@@ -1,0 +1,40 @@
+mutation saveBrand(
+  $id: String
+  $name: String!
+  $slug: String
+  $img: String
+  $position: Int
+  $featured: Boolean
+  $meta: String
+  $metaTitle: String
+  $metaDescription: String
+  $metaKeywords: String
+  $active: Boolean
+) {
+  saveBrand(
+    id: $id
+    name: $name
+    slug: $slug
+    img: $img
+    position: $position
+    meta: $meta
+    metaTitle: $metaTitle
+    metaDescription: $metaDescription
+    metaKeywords: $metaKeywords
+    featured: $featured
+    active: $active
+  ) {
+    id
+    name
+    slug
+    img
+    meta
+    metaTitle
+    metaDescription
+    metaKeywords
+    featured
+    active
+    createdAt
+    updatedAt
+  }
+}

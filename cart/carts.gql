@@ -1,0 +1,39 @@
+query carts {
+  carts {
+    pageSize
+    page
+    count
+    data {
+      id
+      items {
+        pid
+        name
+        slug
+        qty
+        price
+        img
+        tracking
+        options
+      }
+      qty
+      subtotal
+      discount {
+        code
+        value
+        text
+        amount
+      }
+      shipping {
+        charge
+      }
+      total
+      tax {
+        cgst
+        sgst
+        igst
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}

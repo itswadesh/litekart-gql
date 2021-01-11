@@ -1,0 +1,27 @@
+query me {
+  me {
+    id
+    firstName
+    lastName
+    email
+    phone
+    role
+    verified
+    active
+    provider
+    active
+    avatar
+    address {
+      address
+      town
+      city
+      state
+      zip
+    }
+    info {
+      public
+      store
+      storePhotos
+    }
+  }
+}

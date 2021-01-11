@@ -1,0 +1,23 @@
+query megamenu($id: ID, $search: String, $sort: String, $featured: Boolean) {
+  megamenu(id: $id, search: $search, sort: $sort, featured: $featured) {
+    id
+    name
+    parent {
+      name
+    }
+    img
+    featured
+    children {
+      name
+      slug
+      img
+      featured
+      children {
+        name
+        slug
+        img
+        featured
+      }
+    }
+  }
+}

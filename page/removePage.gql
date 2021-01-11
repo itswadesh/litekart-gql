@@ -1,0 +1,14 @@
+mutation removePage($id: ID!) {
+  removePage(id: $id) {
+    id
+    name
+    slug
+    title
+    description
+    content
+    menuTitle
+    active
+    createdAt
+    updatedAt
+  }
+}

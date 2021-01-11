@@ -1,0 +1,54 @@
+mutation saveOption(
+  $id: String!
+  $name: String
+  $key: String
+  $val: String
+  $categories: [String]
+  $values: [ValueIp]
+  $position: Int
+  $slug: String
+  $isFilter: Boolean
+  $preselect: Boolean
+  $required: Boolean
+  $type: String
+  $info: String
+  $active: Boolean
+) {
+  saveOption(
+    id: $id
+    name: $name
+    key: $key
+    val: $val
+    categories: $categories
+    values: $values
+    position: $position
+    slug: $slug
+    isFilter: $isFilter
+    info: $info
+    preselect: $preselect
+    required: $required
+    type: $type
+    active: $active
+  ) {
+    id
+    name
+    key
+    val
+    categories
+    values {
+      id
+      name
+      default
+      slug
+      position
+    }
+    position
+    slug
+    info
+    preselect
+    required
+    type
+    isFilter
+    active
+  }
+}

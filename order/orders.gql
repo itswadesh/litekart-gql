@@ -1,0 +1,57 @@
+query orders {
+  orders {
+    count
+    page
+    pageSize
+    data {
+      id
+      orderNo
+      createdAt
+      user {
+        firstName
+        lastName
+        phone
+      }
+      amount {
+        qty
+        subtotal
+        tax {
+          cgst
+          sgst
+          igst
+        }
+        discount
+        total
+        shipping
+      }
+      payment {
+        amount
+        amount_paid
+        amount_due
+        method
+      }
+      address {
+        firstName
+        lastName
+        address
+        coords {
+          lat
+          lng
+        }
+      }
+
+      items {
+        pid
+        name
+        img
+        slug
+        price
+        qty
+        status
+        vendor {
+          store
+        }
+      }
+    }
+  }
+}

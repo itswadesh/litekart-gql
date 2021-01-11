@@ -1,0 +1,133 @@
+mutation saveProduct(
+  $id: String
+  $name: String
+  $description: String
+  $type: String
+  $city: String
+  $price: Int
+  $mrp: Int
+  $stock: Int
+  $img: String
+  $images: [String]
+  $time: String
+  $active: Boolean
+  $hot: Boolean
+  $featured: Boolean
+  $features: [KeyValI]
+  $trending: Boolean
+  $sale: Boolean
+  $new: Boolean
+  $recommended: Boolean
+  $position: Int
+  $category: ID
+  $categories: [ID]
+  $brand: ID
+  $vendor: String
+  $variants: [ID!]
+  $popularity: Int
+  $sku: String
+  $hsn: String
+  $group: String
+  $color: String
+  $barcode: String
+  $title: String
+  $metaDescription: String
+  $keywords: String
+) {
+  saveProduct(
+    id: $id
+    name: $name
+    description: $description
+    type: $type
+    city: $city
+    price: $price
+    mrp: $mrp
+    stock: $stock
+    img: $img
+    images: $images
+    time: $time
+    active: $active
+    vendor: $vendor
+    category: $category
+    categories: $categories
+    brand: $brand
+    popularity: $popularity
+    sku: $sku
+    hsn: $hsn
+    barcode: $barcode
+    group: $group
+    color: $color
+    position: $position
+    variants: $variants
+    hot: $hot
+    featured: $featured
+    features: $features
+    trending: $trending
+    sale: $sale
+    new: $new
+    recommended: $recommended
+    title: $title
+    metaDescription: $metaDescription
+    keywords: $keywords
+  ) {
+    id
+    name
+    description
+    slug
+    type
+    city
+    price
+    mrp
+    stock
+    img
+    images
+    time
+    active
+    popularity
+    sku
+    hsn
+    group
+    color
+    barcode
+    position
+    variants {
+      options {
+        name
+      }
+      stock
+      weight
+      barcode
+      sku
+      mrp
+      price
+      img
+      sort
+    }
+    trending
+    featured
+    hot
+    new
+    sale
+    recommended
+    title
+    metaDescription
+    keywords
+    brand {
+      id
+      name
+    }
+    category {
+      id
+      name
+    }
+    vendor {
+      id
+      firstName
+      lastName
+      phone
+      info {
+        store
+      }
+    }
+  }
+}

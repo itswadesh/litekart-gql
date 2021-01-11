@@ -1,0 +1,163 @@
+mutation saveSettings(
+  $id: ID!
+  $websiteName: String
+  $closed: Boolean
+  $closedMessage: String
+  $minimumOrderValue: Int
+  $title: String
+  $alert: String
+  $keywords: String
+  $description: String
+  $currency_code: String
+  $currency_symbol: String
+  $currency_decimals: Int
+  $open_graph_image: String
+  $tax: TaxIp
+  $shipping: ShippingIp
+  $shopEmail: String
+  $shopPhone: String
+  $shopAddress: String
+  $logo: String
+  $logoMobile: String
+  $logoDark: String
+  $logoMobileDark: String
+  $favicon: String
+  $CDN_URL: String
+  $pageSize: Int
+  $paymentStatuses: [String]
+  $sms: SmsIp
+  $email: EmailIp
+  $review: ReviewSettingIp
+  $product: ProductSettingIp
+  $login: LoginSettingIp
+  $GOOGLE_MAPS_API: String
+  $facebook: String
+  $twitter: String
+  $google: String
+  $instagram: String
+  $enableTax: Boolean
+  $stripePublishableKey: String
+  $enableStripe: Boolean
+  $enableRazorpay: Boolean
+  $RAZORPAY_KEY_ID: String
+  $locationExpiry: Float
+) {
+  saveSettings(
+    id: $id
+    websiteName: $websiteName
+    closed: $closed
+    closedMessage: $closedMessage
+    minimumOrderValue: $minimumOrderValue
+    title: $title
+    alert: $alert
+    keywords: $keywords
+    description: $description
+    currency_code: $currency_code
+    currency_symbol: $currency_symbol
+    currency_decimals: $currency_decimals
+    open_graph_image: $open_graph_image
+    tax: $tax
+    shipping: $shipping
+    shopEmail: $shopEmail
+    shopPhone: $shopPhone
+    shopAddress: $shopAddress
+    logo: $logo
+    logoMobile: $logoMobile
+    logoDark: $logoDark
+    logoMobileDark: $logoMobileDark
+    favicon: $favicon
+    CDN_URL: $CDN_URL
+    pageSize: $pageSize
+    paymentStatuses: $paymentStatuses
+    sms: $sms
+    email: $email
+    review: $review
+    product: $product
+    login: $login
+    GOOGLE_MAPS_API: $GOOGLE_MAPS_API
+    facebook: $facebook
+    twitter: $twitter
+    google: $google
+    instagram: $instagram
+    enableTax: $enableTax
+    RAZORPAY_KEY_ID: $RAZORPAY_KEY_ID
+    stripePublishableKey: $stripePublishableKey
+    enableStripe: $enableStripe
+    enableRazorpay: $enableRazorpay
+    locationExpiry: $locationExpiry
+  ) {
+    websiteName
+    closed
+    closedMessage
+    title
+    alert
+    keywords
+    description
+    currency_code
+    currency_symbol
+    tax {
+      cgst
+      sgst
+      igst
+    }
+    shipping {
+      delivery_days
+      charge
+      free
+      method
+    }
+    shopEmail
+    shopPhone
+    shopAddress
+    logo
+    logoMobile
+    logoDark
+    logoMobileDark
+    favicon
+    CDN_URL
+    pageSize
+    orderStatuses {
+      status
+      title
+      body
+      icon
+    }
+    paymentStatuses
+    sms {
+      enabled
+    }
+    email {
+      enabled
+      from
+      to
+      cc
+      bcc
+      printers
+    }
+    review {
+      moderate
+      enabled
+    }
+    product {
+      moderate
+    }
+    login {
+      FACEBOOK_ID
+      FACEBOOK_SECRET
+      TWITTER_ID
+      TWITTER_SECRET
+      GOOGLE_ID
+      GOOGLE_SECRET
+      GITHUB_ID
+      GITHUB_SECRET
+    }
+    GOOGLE_MAPS_API
+    facebook
+    twitter
+    google
+    instagram
+    RAZORPAY_KEY_ID
+    stripePublishableKey
+    locationExpiry
+  }
+}

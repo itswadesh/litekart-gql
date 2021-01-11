@@ -1,0 +1,39 @@
+mutation saveFeature(
+  $id: String!
+  $name: String
+  $key: String
+  $val: String
+  $categories: [String]
+  $options: [String]
+  $position: Int
+  $slug: String
+  $isFilter: Boolean
+  $info: String
+  $active: Boolean
+) {
+  saveFeature(
+    id: $id
+    name: $name
+    key: $key
+    val: $val
+    categories: $categories
+    options: $options
+    position: $position
+    slug: $slug
+    isFilter: $isFilter
+    info: $info
+    active: $active
+  ) {
+    id
+    name
+    key
+    val
+    categories
+    options
+    position
+    slug
+    info
+    isFilter
+    active
+  }
+}

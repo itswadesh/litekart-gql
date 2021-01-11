@@ -1,0 +1,29 @@
+query options($page: Int, $search: String, $limit: Int, $sort: String) {
+  options(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      name
+      key
+      val
+      categories
+      values {
+        id
+        name
+        default
+        slug
+        position
+      }
+      position
+      slug
+      info
+      preselect
+      required
+      type
+      isFilter
+      active
+    }
+  }
+}

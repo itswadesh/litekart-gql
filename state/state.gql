@@ -1,0 +1,16 @@
+query state($id: String, $slug: String) {
+  state(id: $id, slug: $slug) {
+    id
+    name
+    slug
+    value
+    code
+    img
+    flag
+    lang
+    sort
+    active
+    createdAt
+    updatedAt
+  }
+}

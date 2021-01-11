@@ -1,0 +1,24 @@
+query option($id: String!) {
+  option(id: $id) {
+    id
+    name
+    key
+    val
+    categories
+    values {
+      id
+      name
+      default
+      slug
+      position
+    }
+    position
+    slug
+    info
+    preselect
+    required
+    type
+    isFilter
+    active
+  }
+}

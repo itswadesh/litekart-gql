@@ -1,0 +1,76 @@
+query settings {
+  settings {
+    id
+    websiteName
+    closed
+    closedMessage
+    minimumOrderValue
+    title
+    alert
+    keywords
+    description
+    tax {
+      cgst
+      sgst
+      igst
+    }
+    RAZORPAY_KEY_ID
+    stripePublishableKey
+    enableStripe
+    enableRazorpay
+    currency_code
+    currency_symbol
+    currency_decimals
+    open_graph_image
+    shipping {
+      delivery_days
+      charge
+      free
+      method
+    }
+    userRoles
+    shopEmail
+    shopPhone
+    shopAddress
+    logo
+    logoMobile
+    logoDark
+    logoMobileDark
+    favicon
+    CDN_URL
+    pageSize
+    orderStatuses {
+      status
+      title
+      body
+      icon
+      public
+      index
+    }
+    paymentStatuses
+    sms {
+      enabled
+    }
+    email {
+      enabled
+      from
+      cc
+      bcc
+      printers
+    }
+    review {
+      enabled
+      moderate
+    }
+    product {
+      moderate
+    }
+    GOOGLE_MAPS_API
+    facebook
+    twitter
+    google
+    instagram
+    enableTax
+    locationExpiry
+  }
+}

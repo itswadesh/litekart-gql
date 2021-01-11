@@ -1,0 +1,25 @@
+query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
+  wishlists(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      product {
+        id
+        name
+      }
+      variant {
+        id
+        name
+      }
+      user {
+        id
+        firstName
+        lastName
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}

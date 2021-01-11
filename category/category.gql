@@ -1,0 +1,27 @@
+query category($id: String, $slug: String) {
+  category(id: $id, slug: $slug) {
+    id
+    name
+    parent {
+      name
+    }
+    children {
+      id
+      name
+      img
+    }
+    slug
+    img
+    level
+    metaTitle
+    metaDescription
+    metaKeywords
+    position
+    megamenu
+    active
+    featured
+    shopbycategory
+    createdAt
+    updatedAt
+  }
+}

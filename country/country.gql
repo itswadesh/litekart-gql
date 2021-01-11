@@ -1,0 +1,19 @@
+query country($id: String, $slug: String) {
+  country(id: $id, slug: $slug) {
+    id
+    name
+    slug
+    value
+    code
+    img
+    flag
+    lang
+    states {
+      name
+    }
+    sort
+    active
+    createdAt
+    updatedAt
+  }
+}
