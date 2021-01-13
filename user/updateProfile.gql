@@ -1,40 +1,54 @@
-mutation {
+mutation updateProfile(
+  # $address: AddressInput
+  $firstName: String
+  $lastName: String
+  $email: String
+  $gender: String
+  $phone: String # $avatar: String # $exam: String # $dob: String # # $state: String # $city: String
+) # $phone: String
+# $qualification: String # $experience: String # $subject: String
+# $lang: String
+# $facebook_url: String
+# $twitter_url: String
+# $info: InputInfo
+{
   updateProfile(
-    firstName: "prakash"
-    lastName: "jayaswal"
-    email: "prakash@gmail.com"
-    role: "admin"
-    gender: "male"
-    phone: "9694039047"
-    dob: "191095"
-    avatar: "String"
-    provider: "String"
-    active: true
-    verified: true
-    meta: "metaString"
-    metaTitle: "Stringmetatitle"
-    metaDescription: "metaDescString"
-    metaKeywords: "metaKeyString"
-  ) {
+    firstName: $firstName
+    lastName: $lastName
+    email: $email
+    phone: $phone
+    gender: $gender # avatar: $avatar #  # dob: $dob # info: $info # address: $address # qualification: $qualification # experience: $experience
+  ) # subject: $subject
+  # exam: $exam
+  # lang: $lang
+  # facebook_url: $facebook_url
+  # twitter_url: $twitter_url
+  {
     firstName
     lastName
-    phone
     email
-    role
+    # avatar
+    # role
+    # verified
     gender
-    avatar
-    provider
-    active
-    verified
-    address
-    ratings
-    reviews
-    city
-    meta
-    metaTitle
-    metaDescription
-    metaKeywords
-    createdAt
-    updatedAt
+    # city
+    # qualification
+    # experience
+    # subject
+    # exam
+    # lang
+    # facebook_url
+    # twitter_url
+    address {
+      address
+      town
+      city
+      state
+      zip
+    }
+    info {
+      public
+      store
+    }
   }
 }

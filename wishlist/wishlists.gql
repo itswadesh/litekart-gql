@@ -8,6 +8,9 @@ query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
       product {
         id
         name
+        img
+        price
+        mrp
       }
       variant {
         id

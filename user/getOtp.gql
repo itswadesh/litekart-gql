@@ -1,3 +1,3 @@
-mutation {
-  getOtp(phone: "9694039047")
+mutation getOtp($phone: String!) {
+  getOtp(phone: $phone)
 }

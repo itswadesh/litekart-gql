@@ -1,27 +1,34 @@
-query {
-  users {
+query users($page: Int, $search: String, $limit: Int, $sort: String) {
+  users(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
     data {
       id
+      email
       firstName
       lastName
-      phone
-      email
-      role
-      gender
       avatar
-      provider
-      active
-      verified
-      ratings
-      reviews
       city
-      meta
-      metaTitle
-      metaDescription
-      metaKeywords
+      phone
+      role
+      qualification
+      experience
+      subject
+      exam
+      lang
+      verified
+      active
+      address {
+        address
+        city
+      }
+      info {
+        store
+        public
+      }
       createdAt
       updatedAt
-      address
     }
   }
 }

@@ -34,7 +34,10 @@ query {
       price
       time
       daily
-      features
+      features {
+        key
+        val
+      }
       vendor {
         id
         firstName

@@ -5,31 +5,20 @@ mutation saveProduct(
   $type: String
   $city: String
   $price: Int
-  $mrp: Int
   $stock: Int
   $img: String
   $images: [String]
   $time: String
   $active: Boolean
-  $hot: Boolean
-  $featured: Boolean
-  $features: [KeyValI]
-  $trending: Boolean
-  $sale: Boolean
-  $new: Boolean
-  $recommended: Boolean
   $position: Int
+  $badge: BadgeI
   $category: ID
   $categories: [ID]
   $brand: ID
   $vendor: String
   $variants: [ID!]
   $popularity: Int
-  $sku: String
-  $hsn: String
-  $group: String
-  $color: String
-  $barcode: String
+  $hsn: Int
   $title: String
   $metaDescription: String
   $keywords: String
@@ -41,7 +30,6 @@ mutation saveProduct(
     type: $type
     city: $city
     price: $price
-    mrp: $mrp
     stock: $stock
     img: $img
     images: $images
@@ -52,20 +40,10 @@ mutation saveProduct(
     categories: $categories
     brand: $brand
     popularity: $popularity
-    sku: $sku
     hsn: $hsn
-    barcode: $barcode
-    group: $group
-    color: $color
     position: $position
     variants: $variants
-    hot: $hot
-    featured: $featured
-    features: $features
-    trending: $trending
-    sale: $sale
-    new: $new
-    recommended: $recommended
+    badge: $badge
     title: $title
     metaDescription: $metaDescription
     keywords: $keywords
@@ -77,18 +55,13 @@ mutation saveProduct(
     type
     city
     price
-    mrp
     stock
     img
     images
     time
     active
     popularity
-    sku
     hsn
-    group
-    color
-    barcode
     position
     variants {
       options {
@@ -103,12 +76,14 @@ mutation saveProduct(
       img
       sort
     }
-    trending
-    featured
-    hot
-    new
-    sale
-    recommended
+    badge {
+      trending
+      featured
+      hot
+      new
+      sale
+      recommended
+    }
     title
     metaDescription
     keywords

@@ -1,75 +1,47 @@
-mutation {
+mutation createProduct(
+  $name: String!
+  $description: String
+  $type: String
+  $city: String
+  $price: Int
+  $stock: Int
+  $category: ID
+  $img: String
+  $time: String
+) {
   createProduct(
-    name: "in1"
-    description: "NA"
-    city: "mumbai"
-    price: 66
-    stock: 80
-    img: "https://rukminim1.flixcart.com/image/832/832/ke0a7ww0/mobile/4/r/e/mi-redmi-9-prime-m2004j191-original-imafushhfhy3tbp9.jpeg?q=70"
-    time: "sds"
-    category: "5ff4d4ef4f9a1b2d584356ad"
+    name: $name
+    description: $description
+    city: $city
+    type: $type
+    price: $price
+    stock: $stock
+    category: $category
+    img: $img
+    time: $time
   ) {
     id
     name
     description
     slug
-    img
-    img_featured
-    images
-    variants {
-      id
-      name
-    }
-    enableZips
-    zips
+    city
+    type
+    price
+    stock
     category {
       id
       name
     }
-    brand {
-      id
-      name
-    }
-    parentCategory {
-      id
-      name
-    }
-
-    status
-    type
-    city
-    stock
-    price
+    img
     time
-    daily
-    features
     vendor {
       id
       firstName
+      lastName
+      phone
+      info {
+        store
+      }
     }
-    active
-    info
-    title
-    metaDescription
-    keywords
-    position
-    popularity
-    trending
-    featured
-    hot
-    new
-    sale
-    recommended
-    hsn
-    barcode
-    group
-    sku
-    color
-    sales
-    ratings
-    reviews
-    approved
-    createdAt
-    updatedAt
   }
 }

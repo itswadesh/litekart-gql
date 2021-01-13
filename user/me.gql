@@ -1,25 +1,28 @@
-query {
+query me {
   me {
     id
     firstName
     lastName
-    phone
     email
-    role
+    phone
     gender
-    avatar
+    role
+    verified
+    active
     provider
     active
-    verified
-    address
-    ratings
-    reviews
-    city
-    meta
-    metaTitle
-    metaDescription
-    metaKeywords
-    createdAt
-    updatedAt
+    avatar
+    address {
+      address
+      town
+      city
+      state
+      zip
+    }
+    info {
+      public
+      store
+      storePhotos
+    }
   }
 }

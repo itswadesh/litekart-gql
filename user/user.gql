@@ -5,6 +5,11 @@ query user($id: String!) {
     firstName
     lastName
     avatar
+    qualification
+    experience
+    subject
+    exam
+    lang
     city
     phone
     role

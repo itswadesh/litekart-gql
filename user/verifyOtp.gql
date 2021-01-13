@@ -1,23 +1,13 @@
-mutation {
-  verifyOtp(phone: "9694039041", otp: "5416") {
+mutation verifyOtp($phone: String!, $otp: String!) {
+  verifyOtp(phone: $phone, otp: $otp) {
     id
-    phone
+    firstName
+    lastName
     email
+    phone
     role
-    gender
-    avatar
-    provider
-    active
     verified
-    address
-    ratings
-    reviews
-    city
-    meta
-    metaTitle
-    metaDescription
-    metaKeywords
-    createdAt
-    updatedAt
+    active
+    avatar
   }
 }
