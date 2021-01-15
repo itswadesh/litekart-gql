@@ -6,7 +6,6 @@ query cart {
       slug
       qty
       price
-
       img
       options
       tracking

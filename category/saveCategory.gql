@@ -1,6 +1,6 @@
 mutation saveCategory(
   $id: String
-  $name: String!
+  $name: String
   $parent: ID
   $slug: String
   $img: String
@@ -12,6 +12,7 @@ mutation saveCategory(
   $featured: Boolean
   $megamenu: Boolean
   $active: Boolean
+  $shopbycategory: Boolean
 ) {
   saveCategory(
     id: $id
@@ -27,10 +28,13 @@ mutation saveCategory(
     megamenu: $megamenu
     featured: $featured
     active: $active
+    shopbycategory: $shopbycategory
   ) {
     id
     name
-    parent
+    parent {
+      name
+    }
     slug
     img
     level
@@ -40,6 +44,7 @@ mutation saveCategory(
     megamenu
     featured
     active
+    shopbycategory
     createdAt
     updatedAt
   }

@@ -2,7 +2,9 @@ query category($id: String, $slug: String) {
   category(id: $id, slug: $slug) {
     id
     name
-    parent
+    parent {
+      name
+    }
     children {
       id
       name
@@ -18,6 +20,7 @@ query category($id: String, $slug: String) {
     megamenu
     active
     featured
+    shopbycategory
     createdAt
     updatedAt
   }

@@ -1,44 +1,35 @@
 mutation updateProfile(
-  # $address: AddressInput
+  $address: AddressInput
   $firstName: String
   $lastName: String
   $email: String
+  $avatar: String
+  $dob: String
   $gender: String
-  $phone: String # $avatar: String # $exam: String # $dob: String # # $state: String # $city: String
-) # $phone: String
-# $qualification: String # $experience: String # $subject: String
-# $lang: String
-# $facebook_url: String
-# $twitter_url: String
-# $info: InputInfo
-{
+  # $state: String
+  # $city: String
+  $phone: String
+  $info: InputInfo
+) {
   updateProfile(
     firstName: $firstName
     lastName: $lastName
     email: $email
+    avatar: $avatar
     phone: $phone
-    gender: $gender # avatar: $avatar #  # dob: $dob # info: $info # address: $address # qualification: $qualification # experience: $experience
-  ) # subject: $subject
-  # exam: $exam
-  # lang: $lang
-  # facebook_url: $facebook_url
-  # twitter_url: $twitter_url
-  {
+    dob: $dob
+    gender: $gender
+    info: $info
+    address: $address
+  ) {
     firstName
     lastName
     email
-    # avatar
-    # role
-    # verified
+    avatar
+    role
+    verified
     gender
-    # city
-    # qualification
-    # experience
-    # subject
-    # exam
-    # lang
-    # facebook_url
-    # twitter_url
+    city
     address {
       address
       town

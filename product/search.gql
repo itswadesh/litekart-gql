@@ -30,14 +30,12 @@ query search(
       time
       ratings
       reviews
-      badge {
-        trending
-        hot
-        sale
-        featured
-        recommended
-        new
-      }
+      trending
+      hot
+      sale
+      featured
+      recommended
+      new
       vendor {
         id
         firstName

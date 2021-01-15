@@ -12,11 +12,6 @@ query users($page: Int, $search: String, $limit: Int, $sort: String) {
       city
       phone
       role
-      qualification
-      experience
-      subject
-      exam
-      lang
       verified
       active
       address {

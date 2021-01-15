@@ -4,6 +4,10 @@ query Product($id: ID!) {
     slug
     name
     description
+    features {
+      key
+      val
+    }
     variants {
       id
       options {
@@ -44,15 +48,17 @@ query Product($id: ID!) {
     active
     popularity
     position
+    sku
     hsn
-
+    group
+    color
+    barcode
     trending
     featured
     hot
     new
     sale
     recommended
-
     title
     metaDescription
     keywords
