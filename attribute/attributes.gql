@@ -1,7 +1,0 @@
-query {
-  attributes(type: "laptop") {
-    _id
-    name
-    type
-  }
-}

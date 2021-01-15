@@ -1,7 +1,0 @@
-mutation {
-  addAttributeToProduct(
-    id: "5fdc4e03d93e5e0018dcb6ae"
-    attributeName: "color"
-    attributeValue: "yellow"
-  )
-}

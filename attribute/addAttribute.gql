@@ -1,5 +1,0 @@
-mutation {
-  addAttribute(name: "key-nam2as", type: "laptop") {
-    _id
-  }
-}
