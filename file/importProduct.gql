@@ -1,0 +1,8 @@
+mutation importProduct($file: Upload!) {
+  importProduct(file: $file) {
+    filename
+    mimetype
+    encoding
+    url
+  }
+}
