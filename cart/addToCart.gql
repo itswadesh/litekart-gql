@@ -1,7 +1,7 @@
 mutation addToCart(
   $qty: Int!
   $pid: ID!
-  $vid: ID!
+  $vid: ID
   $options: String
   $vendor: ID
   $replace: Boolean
