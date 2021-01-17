@@ -26,6 +26,7 @@ query products(
       name
       type
       price
+      mrp
       stock
       img
       img_featured
