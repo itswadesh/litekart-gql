@@ -1,5 +1,5 @@
-query deal($id: ID!) {
-  deal(id: $id) {
+query dealOne($id: ID!) {
+  dealOne(id: $id) {
     id
     name
     startTime
