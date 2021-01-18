@@ -1,0 +1,20 @@
+query categorySimple($id: String, $slug: String) {
+  categorySimple(id: $id, slug: $slug) {
+    id
+    name
+    parent
+    namePath
+    slug
+    img
+    level
+    metaTitle
+    metaDescription
+    metaKeywords
+    position
+    megamenu
+    active
+    featured
+    createdAt
+    updatedAt
+  }
+}
