@@ -22,7 +22,7 @@ mutation saveProduct(
   $category: ID
   $categories: [ID]
   $brand: ID
-  $vendor: String
+  $vendor: ID
   $variants: [ID!]
   $popularity: Int
   $sku: String
