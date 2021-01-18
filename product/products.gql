@@ -29,6 +29,7 @@ query products(
       mrp
       stock
       img
+      images
       img_featured
       time
       active
