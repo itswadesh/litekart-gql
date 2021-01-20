@@ -30,7 +30,6 @@ query products(
       stock
       img
       images
-      img_featured
       time
       active
       popularity

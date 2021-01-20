@@ -4,7 +4,6 @@ query productSlug($slug: String!) {
     name
     slug
     img
-    img_featured
     images
     price
     stock

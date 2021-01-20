@@ -24,7 +24,7 @@ query myProducts(
       price
       stock
       img
-      img_featured
+      images
       time
       vendor {
         id

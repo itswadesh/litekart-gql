@@ -8,7 +8,7 @@ query popular {
       price
       stock
       img
-      img_featured
+      images
       time
       ratings
       reviews

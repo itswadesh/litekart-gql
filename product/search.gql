@@ -26,7 +26,6 @@ query search(
       price
       stock
       img
-      img_featured
       time
       ratings
       reviews

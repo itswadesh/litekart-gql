@@ -42,7 +42,6 @@ query Product($id: ID!) {
     mrp
     stock
     img
-    img_featured
     images
     time
     active
