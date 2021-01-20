@@ -82,6 +82,7 @@ query products(
     }
     count
     pageSize
+    noOfPage
     page
   }
 }
