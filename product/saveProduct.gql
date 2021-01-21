@@ -28,7 +28,7 @@ mutation saveProduct(
   $sku: String
   $hsn: String
   $group: String
-  $color: String
+  $color: ID
   $barcode: String
   $title: String
   $metaDescription: String
