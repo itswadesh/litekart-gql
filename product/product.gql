@@ -29,6 +29,10 @@ query Product($id: ID!) {
       id
       name
     }
+    color {
+      id
+      name
+    }
     category {
       id
       name
@@ -50,7 +54,6 @@ query Product($id: ID!) {
     sku
     hsn
     group
-    color
     barcode
     trending
     featured
