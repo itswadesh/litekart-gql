@@ -1,13 +1,27 @@
 mutation saveColor(
-  $id: String
-  $name: String!
+  $id: String!
+  $name: String
+  $value: String
+  $info: String
+  $featured: Boolean
   $slug: String
   $active: Boolean
 ) {
-  saveColor(id: $id, name: $name, slug: $slug, active: $active) {
+  saveColor(
+    id: $id
+    name: $name
+    value: $value
+    info: $info
+    slug: $slug
+    featured: $featured
+    active: $active
+  ) {
     id
     name
+    value
+    info
     slug
+    featured
     active
     createdAt
     updatedAt

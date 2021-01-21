@@ -6,7 +6,10 @@ query colors($page: Int, $search: String, $limit: Int, $sort: String) {
     data {
       id
       name
+      value
+      info
       slug
+      featured
       active
       createdAt
       updatedAt

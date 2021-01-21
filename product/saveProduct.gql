@@ -87,9 +87,7 @@ mutation saveProduct(
     sku
     hsn
     group
-    color {
-      id
-    }
+    color
     barcode
     position
     variants {
@@ -114,22 +112,7 @@ mutation saveProduct(
     title
     metaDescription
     keywords
-    brand {
-      id
-      name
-    }
-    category {
-      id
-      name
-    }
-    vendor {
-      id
-      firstName
-      lastName
-      phone
-      info {
-        store
-      }
-    }
+    brand
+    category
   }
 }

@@ -1,8 +1,11 @@
-query color($id: String) {
+query color($id: ID!) {
   color(id: $id) {
     id
     name
+    value
+    info
     slug
+    featured
     active
     createdAt
     updatedAt

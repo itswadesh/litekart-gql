@@ -1,4 +1,4 @@
-query unit($id: String) {
+query unit($id: ID!) {
   unit(id: $id) {
     id
     name

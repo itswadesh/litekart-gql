@@ -1,4 +1,4 @@
-query size($id: String) {
+query size($id: ID) {
   size(id: $id) {
     id
     name

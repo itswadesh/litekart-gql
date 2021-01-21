@@ -1,6 +1,6 @@
 mutation saveSize(
-  $id: String
-  $name: String!
+  $id: String!
+  $name: String
   $slug: String
   $info: String
   $img: String
