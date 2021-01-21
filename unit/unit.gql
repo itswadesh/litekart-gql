@@ -1,14 +1,12 @@
-query color($id: String) {
-  color(id: $id) {
+query unit($id: String) {
+  unit(id: $id) {
     id
     name
     slug
-    val
-    value
     info
+    img
     featured
     active
-    featured
     createdAt
     updatedAt
   }

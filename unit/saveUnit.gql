@@ -1,32 +1,28 @@
-mutation saveColor(
+mutation saveUnit(
   $id: String
   $name: String!
   $slug: String
+  $info: String
   $img: String
-  $position: Int
   $featured: Boolean
-  $meta: String
-  $metaTitle: String
-  $metaDescription: String
-  $metaKeywords: String
   $active: Boolean
 ) {
-  saveColor(
+  saveUnit(
     id: $id
     name: $name
     slug: $slug
+    info: $info
+    img: $img
     featured: $featured
     active: $active
   ) {
     id
     name
     slug
-    val
-    value
     info
+    img
     featured
     active
-    featured
     createdAt
     updatedAt
   }

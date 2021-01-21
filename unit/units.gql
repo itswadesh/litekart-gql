@@ -1,5 +1,5 @@
-query colors($page: Int, $search: String, $limit: Int, $sort: String) {
-  colors(page: $page, search: $search, limit: $limit, sort: $sort) {
+query units($page: Int, $search: String, $limit: Int, $sort: String) {
+  units(page: $page, search: $search, limit: $limit, sort: $sort) {
     count
     page
     pageSize
@@ -7,12 +7,10 @@ query colors($page: Int, $search: String, $limit: Int, $sort: String) {
       id
       name
       slug
-      val
-      value
       info
+      img
       featured
       active
-      featured
       createdAt
       updatedAt
     }
