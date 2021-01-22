@@ -8,6 +8,9 @@ query products(
   $category: String
   $active: Boolean
   $featured: Boolean
+  $new: Boolean
+  $hot: Boolean
+  $sale: Boolean
 ) {
   products(
     page: $page
@@ -19,6 +22,9 @@ query products(
     category: $category
     active: $active
     featured: $featured
+    new: $new
+    hot: $hot
+    sale: $sale
   ) {
     data {
       id
