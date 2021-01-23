@@ -4,5 +4,6 @@ mutation importProduct($file: Upload!) {
     mimetype
     encoding
     url
+    productCount
   }
 }
