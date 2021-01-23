@@ -5,60 +5,90 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     slug
     img
     featured
+    parent {
+      id
+    }
     children {
       id
       name
       slug
       img
       featured
+      parent {
+        id
+      }
       children {
         id
         name
         slug
         img
         featured
+        parent {
+          id
+        }
         children {
           id
           name
           slug
           img
           featured
+          parent {
+            id
+          }
           children {
             id
             name
             slug
             img
             featured
+            parent {
+              id
+            }
             children {
               id
               name
               slug
               img
               featured
+              parent {
+                id
+              }
               children {
                 id
                 name
                 slug
                 img
                 featured
+                parent {
+                  id
+                }
                 children {
                   id
                   name
                   slug
                   img
                   featured
+                  parent {
+                    id
+                  }
                   children {
                     id
                     name
                     slug
                     img
                     featured
+                    parent {
+                      id
+                    }
                     children {
                       id
                       name
                       slug
                       img
                       featured
+                      parent {
+                        id
+                      }
                     }
                   }
                 }
