@@ -1,4 +1,4 @@
-query noPrice(
+query noStock(
   $page: Int
   $skip: Int
   $limit: Int
@@ -7,7 +7,7 @@ query noPrice(
   $category: String
   $active: String
 ) {
-  noPrice(
+  noStock(
     page: $page
     skip: $skip
     limit: $limit
