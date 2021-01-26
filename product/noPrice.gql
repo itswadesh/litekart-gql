@@ -5,7 +5,6 @@ query noPrice(
   $search: String
   $sort: String
   $category: String
-  $active: String
 ) {
   noPrice(
     page: $page
@@ -14,7 +13,6 @@ query noPrice(
     search: $search
     sort: $sort
     category: $category
-    active: $active
   ) {
     data {
       id
@@ -22,16 +20,53 @@ query noPrice(
       name
       type
       price
+      mrp
       stock
       img
       images
       time
+      active
+      popularity
+      position
+      variants {
+        id
+        options {
+          name
+        }
+        stock
+        weight
+        barcode
+        sku
+        mrp
+        price
+        images
+        trackInventory
+        active
+        sort
+      }
+      trending
+      featured
+      hot
+      new
+      sale
+      recommended
+      title
+      metaDescription
+      keywords
+      ratings
+      reviews
+      category {
+        name
+      }
       vendor {
         id
         firstName
         lastName
         phone
         email
+        address {
+          address
+        }
         info {
           store
           storePhotos
@@ -40,6 +75,7 @@ query noPrice(
     }
     count
     pageSize
+    noOfPage
     page
   }
 }
