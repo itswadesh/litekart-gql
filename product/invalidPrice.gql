@@ -40,7 +40,5 @@ query invalidPrice(
       }
     }
     count
-    pageSize
-    page
   }
 }
