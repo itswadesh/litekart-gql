@@ -16,6 +16,7 @@ query deals($page: Int, $search: String, $limit: Int, $sort: String) {
         name
         slug
         img
+        price
       }
       dealStatus
       active
