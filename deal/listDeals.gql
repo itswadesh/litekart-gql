@@ -14,6 +14,7 @@ query listDeals($page: Int, $search: String, $limit: Int, $sort: String) {
       products {
         id
         name
+        price
         slug
         img
       }
