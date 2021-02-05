@@ -1,0 +1,19 @@
+query blogs($page: Int, $search: String, $limit: Int, $sort: String) {
+  blogs(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      title
+      active
+      excerpt
+      content
+      published_at
+      image
+      active
+      createdAt
+      updatedAt
+    }
+  }
+}

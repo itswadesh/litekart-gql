@@ -1,0 +1,28 @@
+mutation saveBlog(
+  $id: String!
+  $title: String
+  $excerpt: String
+  $content: String
+  $published_at: String
+  $image: String
+  $active: Boolean
+) {
+  saveBlog(
+    id: $id
+    title: $title
+    excerpt: $excerpt
+    content: $content
+    published_at: $published_at
+    image: $image
+    active: $active
+  ) {
+    id
+    title
+    active
+    excerpt
+    content
+    published_at
+    image
+    active
+  }
+}
