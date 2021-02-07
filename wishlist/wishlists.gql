@@ -21,6 +21,7 @@ query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
         firstName
         lastName
       }
+      active
       createdAt
       updatedAt
     }
