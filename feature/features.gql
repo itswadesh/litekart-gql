@@ -6,14 +6,9 @@ query features($page: Int, $search: String, $limit: Int, $sort: String) {
     data {
       id
       name
-      key
-      val
-      categories
-      options
-      position
+      value
+      product
       slug
-      info
-      isFilter
       active
     }
   }

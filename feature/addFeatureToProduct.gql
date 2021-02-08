@@ -1,7 +1,0 @@
-mutation {
-  addFeatureToProduct(
-    id: "5fdc4e03d93e5e0018dcb6ae"
-    featureName: "color"
-    featureValue: "yellow"
-  )
-}

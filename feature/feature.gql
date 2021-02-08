@@ -2,14 +2,9 @@ query feature($id: String!) {
   feature(id: $id) {
     id
     name
-    key
-    val
-    categories
-    options
-    position
+    value
+    product
     slug
-    info
-    isFilter
     active
   }
 }
