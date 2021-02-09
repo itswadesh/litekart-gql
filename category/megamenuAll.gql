@@ -8,6 +8,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     parent {
       id
     }
+    attributes {
+      id
+      name
+      show
+      category
+      active
+    }
     children {
       id
       name
@@ -16,6 +23,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
       featured
       parent {
         id
+      }
+      attributes {
+        id
+        name
+        show
+        category
+        active
       }
       children {
         id
@@ -26,6 +40,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
         parent {
           id
         }
+        attributes {
+          id
+          name
+          show
+          category
+          active
+        }
         children {
           id
           name
@@ -34,6 +55,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
           featured
           parent {
             id
+          }
+          attributes {
+            id
+            name
+            show
+            category
+            active
           }
           children {
             id
@@ -44,6 +72,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
             parent {
               id
             }
+            attributes {
+              id
+              name
+              show
+              category
+              active
+            }
             children {
               id
               name
@@ -52,6 +87,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
               featured
               parent {
                 id
+              }
+              attributes {
+                id
+                name
+                show
+                category
+                active
               }
               children {
                 id
@@ -62,6 +104,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                 parent {
                   id
                 }
+                attributes {
+                  id
+                  name
+                  show
+                  category
+                  active
+                }
                 children {
                   id
                   name
@@ -70,6 +119,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                   featured
                   parent {
                     id
+                  }
+                  attributes {
+                    id
+                    name
+                    show
+                    category
+                    active
                   }
                   children {
                     id
@@ -80,6 +136,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                     parent {
                       id
                     }
+                    attributes {
+                      id
+                      name
+                      show
+                      category
+                      active
+                    }
                     children {
                       id
                       name
@@ -88,6 +151,13 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                       featured
                       parent {
                         id
+                      }
+                      attributes {
+                        id
+                        name
+                        show
+                        category
+                        active
                       }
                     }
                   }

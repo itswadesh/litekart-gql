@@ -10,6 +10,13 @@ query category($id: String, $slug: String) {
       name
       img
     }
+    attributes {
+      id
+      name
+      show
+      category
+      active
+    }
     slug
     img
     level
