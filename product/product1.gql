@@ -4,10 +4,6 @@ query product1($id: ID!) {
     slug
     name
     description
-    features {
-      key
-      val
-    }
     variants {
       id
       options {
