@@ -23,6 +23,11 @@ query product1($id: ID!) {
     }
     brand
     color
+    features {
+      id
+      name
+      value
+    }
     category
     categories {
       id

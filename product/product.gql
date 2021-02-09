@@ -37,6 +37,11 @@ query Product($id: ID!) {
       id
       name
     }
+    features {
+      id
+      name
+      value
+    }
     type
     price
     mrp
