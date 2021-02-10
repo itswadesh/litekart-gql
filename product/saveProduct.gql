@@ -4,7 +4,7 @@ mutation saveProduct(
   $description: String
   $type: String
   $city: String
-  $price: Int
+  $price: Float
   $mrp: Int
   $stock: Int
   $img: String
@@ -13,7 +13,6 @@ mutation saveProduct(
   $active: Boolean
   $hot: Boolean
   $featured: Boolean
-  $features: [KeyValI]
   $trending: Boolean
   $sale: Boolean
   $new: Boolean
@@ -61,7 +60,6 @@ mutation saveProduct(
     variants: $variants
     hot: $hot
     featured: $featured
-    features: $features
     trending: $trending
     sale: $sale
     new: $new

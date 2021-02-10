@@ -3,7 +3,7 @@ mutation createProduct(
   $description: String
   $type: String
   $city: String
-  $price: Int
+  $price: Float
   $stock: Int
   $category: ID
   $img: String
