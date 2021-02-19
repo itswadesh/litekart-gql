@@ -1,0 +1,8 @@
+query liveStreams {
+  liveStreams {
+    id
+    product
+    scheduleDateTime
+    user
+  }
+}

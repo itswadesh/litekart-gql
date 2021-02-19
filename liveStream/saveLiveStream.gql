@@ -1,0 +1,16 @@
+mutation saveLiveStream(
+  $id: String
+  $product: ID
+  $scheduleDateTime: String
+) {
+  saveLiveStream(
+    id: $id
+    product: $product
+    scheduleDateTime: $scheduleDateTime
+  ) {
+    id
+    product
+		scheduleDateTime
+    user
+  }
+}

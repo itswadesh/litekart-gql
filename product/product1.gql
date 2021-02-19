@@ -28,6 +28,11 @@ query product1($id: ID!) {
       name
       value
     }
+    liveStreams {
+      id
+      scheduleDateTime
+      user
+    }
     category
     categories {
       id

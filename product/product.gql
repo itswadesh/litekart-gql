@@ -42,6 +42,11 @@ query Product($id: ID!) {
       name
       value
     }
+    liveStreams {
+      id
+      scheduleDateTime
+      user
+    }
     type
     price
     mrp
