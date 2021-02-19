@@ -3,6 +3,8 @@ query liveStream($id: ID!) {
     id
     product
     scheduleDateTime
+    title
+    imageUrl
     user
   }
 }

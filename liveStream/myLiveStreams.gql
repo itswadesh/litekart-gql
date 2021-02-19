@@ -3,6 +3,8 @@ query myLiveStreams {
     id
     product
     scheduleDateTime
+    title
+    imageUrl
     user
   }
 }

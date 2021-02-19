@@ -2,15 +2,21 @@ mutation saveLiveStream(
   $id: String
   $product: ID
   $scheduleDateTime: String
+  $title: String
+  $imageUrl: String
 ) {
   saveLiveStream(
     id: $id
     product: $product
     scheduleDateTime: $scheduleDateTime
+    imageUrl: $imageUrl
+    title: $title
   ) {
     id
     product
-		scheduleDateTime
+    scheduleDateTime
+    title
+    imageUrl
     user
   }
 }

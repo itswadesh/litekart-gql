@@ -30,6 +30,8 @@ query product1($id: ID!) {
     }
     liveStreams {
       id
+      title
+      imageUrl
       scheduleDateTime
       user
     }
