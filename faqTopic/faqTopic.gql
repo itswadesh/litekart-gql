@@ -1,0 +1,13 @@
+query faqTopic($id: String!) {
+  faqTopic(id: $id) {
+    id
+    name
+    slug
+    for
+    uid
+    active
+    q
+    createdAt
+    updatedAt
+  }
+}

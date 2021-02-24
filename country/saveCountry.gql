@@ -6,7 +6,7 @@ mutation saveCountry(
   $code: String
   $img: String
   $flag: String
-  $language: String
+  $lang: String
   $sort: Int
   $active: Boolean
 ) {
@@ -18,7 +18,7 @@ mutation saveCountry(
     code: $code
     img: $img
     flag: $flag
-    language: $language
+    lang: $lang
     sort: $sort
     active: $active
   ) {
@@ -29,7 +29,7 @@ mutation saveCountry(
     code
     img
     flag
-    language
+    lang
     states {
       name
     }

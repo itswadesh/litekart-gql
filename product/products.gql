@@ -26,6 +26,7 @@ query products(
     hot: $hot
     sale: $sale
   ) {
+    count
     data {
       id
       slug
@@ -42,6 +43,7 @@ query products(
       position
       variants {
         id
+        name
         options {
           name
         }

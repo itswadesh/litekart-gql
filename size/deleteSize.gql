@@ -1,3 +1,3 @@
-mutation deleteSize($id: ID!) {
-  deleteSize(id: $id)
+mutation removeSize($id: ID!) {
+  removeSize(id: $id)
 }
