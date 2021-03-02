@@ -63,6 +63,9 @@ query Product($id: ID!) {
     hsn
     group
     barcode
+    gender
+    gtin
+    condition
     trending
     featured
     hot
