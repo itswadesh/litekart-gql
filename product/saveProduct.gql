@@ -111,6 +111,10 @@ mutation saveProduct(
     metaDescription
     keywords
     brand
-    category
+    category {
+      id
+      name
+      slug
+    }
   }
 }
