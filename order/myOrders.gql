@@ -4,17 +4,15 @@ query myOrders(
   $limit: Int
   $search: String
   $sort: String
-  $q: String
-  $id: ID
+  $status: String # Pending, Tracking, Delivered
 ) {
   myOrders(
     page: $page
-    q: $q
     skip: $skip
     limit: $limit
     search: $search
     sort: $sort
-    id: $id
+    status: $status
   ) {
     count
     pageSize
