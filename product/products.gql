@@ -27,8 +27,12 @@ query products(
     sale: $sale
   ) {
     count
+    pageSize
+    noOfPage
+    page
     data {
       id
+      sku
       slug
       name
       type
@@ -41,6 +45,23 @@ query products(
       active
       popularity
       position
+      trending
+      featured
+      hot
+      new
+      sale
+      recommended
+      title
+      metaDescription
+      keywords
+      ratings
+      reviews
+      itemId
+      warranty
+      category {
+        name
+      }
+
       variants {
         id
         name
@@ -58,20 +79,7 @@ query products(
         active
         sort
       }
-      trending
-      featured
-      hot
-      new
-      sale
-      recommended
-      title
-      metaDescription
-      keywords
-      ratings
-      reviews
-      category {
-        name
-      }
+
       vendor {
         id
         firstName
@@ -87,9 +95,5 @@ query products(
         }
       }
     }
-    count
-    pageSize
-    noOfPage
-    page
   }
 }

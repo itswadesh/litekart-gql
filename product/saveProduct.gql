@@ -32,6 +32,8 @@ mutation saveProduct(
   $title: String
   $metaDescription: String
   $keywords: String
+  $itemId: String
+  $warranty: String
 ) {
   saveProduct(
     id: $id
@@ -67,6 +69,8 @@ mutation saveProduct(
     title: $title
     metaDescription: $metaDescription
     keywords: $keywords
+    itemId: $itemId
+    warranty: $warranty
   ) {
     id
     name
@@ -88,6 +92,23 @@ mutation saveProduct(
     color
     barcode
     position
+    trending
+    featured
+    hot
+    new
+    sale
+    recommended
+    title
+    metaDescription
+    keywords
+    brand
+    itemId
+    warranty
+    category {
+      id
+      name
+      slug
+    }
     variants {
       options {
         name
@@ -100,21 +121,6 @@ mutation saveProduct(
       price
       img
       sort
-    }
-    trending
-    featured
-    hot
-    new
-    sale
-    recommended
-    title
-    metaDescription
-    keywords
-    brand
-    category {
-      id
-      name
-      slug
     }
   }
 }

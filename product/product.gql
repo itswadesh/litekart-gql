@@ -4,23 +4,34 @@ query Product($id: ID!) {
     slug
     name
     description
-    variants {
-      id
-      options {
-        name
-        val
-      }
-      stock
-      weight
-      barcode
-      sku
-      mrp
-      price
-      images
-      trackInventory
-      active
-      sort
-    }
+    type
+    price
+    mrp
+    stock
+    img
+    images
+    time
+    active
+    popularity
+    position
+    sku
+    hsn
+    group
+    barcode
+    gender
+    gtin
+    condition
+    trending
+    featured
+    hot
+    new
+    sale
+    recommended
+    title
+    itemId
+    warranty
+    metaDescription
+    keywords
     brand {
       id
       name
@@ -49,32 +60,23 @@ query Product($id: ID!) {
       scheduleDateTime
       user
     }
-    type
-    price
-    mrp
-    stock
-    img
-    images
-    time
-    active
-    popularity
-    position
-    sku
-    hsn
-    group
-    barcode
-    gender
-    gtin
-    condition
-    trending
-    featured
-    hot
-    new
-    sale
-    recommended
-    title
-    metaDescription
-    keywords
+    variants {
+      id
+      options {
+        name
+        val
+      }
+      stock
+      weight
+      barcode
+      sku
+      mrp
+      price
+      images
+      trackInventory
+      active
+      sort
+    }
     vendor {
       id
       firstName
