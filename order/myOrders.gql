@@ -18,40 +18,28 @@ query myOrders(
     pageSize
     page
     data {
-      _id {
-        id
-        orderNo
-        reviewed
-        createdAt
-        updatedAt
-        user {
-          firstName
-          lastName
-          phone
-          email
-          gender
-          info {
-            public
-            store
-            storePhotos
-          }
-          avatar
+      id
+      orderNo
+      reviewed
+      createdAt
+      updatedAt
+      user {
+        firstName
+        lastName
+        phone
+        email
+        gender
+        info {
+          public
+          store
+          storePhotos
         }
-        address {
-          address
-          email
-          phone
-          firstName
-          lastName
-        }
-        amount {
-          qty
-          subtotal
-          total
-          shipping
-          discount
-        }
-        payment_order_id
+        avatar
+      }
+      address {
+        address
+        firstName
+        lastName
       }
       items {
         pid
