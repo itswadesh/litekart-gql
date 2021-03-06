@@ -21,8 +21,29 @@ query myOrders(
       id
       orderNo
       reviewed
+      otp
       createdAt
       updatedAt
+      cod_paid
+      payment {
+        method
+        status
+        amount
+        amount_paid
+        amount_due
+      }
+      amount {
+        qty
+        subtotal
+        tax {
+          cgst
+          sgst
+          igst
+        }
+        discount
+        total
+        shipping
+      }
       user {
         firstName
         lastName
