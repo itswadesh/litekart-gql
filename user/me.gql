@@ -13,11 +13,23 @@ query me {
     active
     avatar
     address {
+      id
+      email
+      firstName
+      lastName
       address
       town
       city
+      district
       state
+      country
       zip
+      phone
+      active
+      coords {
+        lat
+        lng
+      }
     }
     info {
       public
