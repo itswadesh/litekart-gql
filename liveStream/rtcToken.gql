@@ -1,0 +1,6 @@
+mutation rtcToken($isPublisher: Boolean, $channel: String) {
+  rtcToken(isPublisher: $isPublisher, channel: $channel) {
+    uid
+    token
+  }
+}
