@@ -6,7 +6,7 @@ query blog($id: String!) {
     excerpt
     content
     published_at
-    image
+    img
     active
     createdAt
     updatedAt

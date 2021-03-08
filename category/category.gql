@@ -2,6 +2,19 @@ query category($id: String, $slug: String) {
   category(id: $id, slug: $slug) {
     id
     name
+    slug
+    img
+    level
+    metaTitle
+    metaDescription
+    metaKeywords
+    position
+    megamenu
+    active
+    featured
+    shopbycategory
+    createdAt
+    updatedAt
     parent {
       name
     }
@@ -17,18 +30,5 @@ query category($id: String, $slug: String) {
       category
       active
     }
-    slug
-    img
-    level
-    metaTitle
-    metaDescription
-    metaKeywords
-    position
-    megamenu
-    active
-    featured
-    shopbycategory
-    createdAt
-    updatedAt
   }
 }

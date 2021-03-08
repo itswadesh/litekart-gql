@@ -10,7 +10,7 @@ query blogs($page: Int, $search: String, $limit: Int, $sort: String) {
       excerpt
       content
       published_at
-      image
+      img
       active
       createdAt
       updatedAt

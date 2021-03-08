@@ -4,18 +4,6 @@ query {
     index
     name
     slug
-    parent {
-      id
-    }
-    attributes {
-      id
-      name
-      show
-      category
-      active
-      createdAt
-      updatedAt
-    }
     path
     slugPath
     namePath
@@ -34,5 +22,17 @@ query {
     active
     createdAt
     updatedAt
+    parent {
+      id
+    }
+    attributes {
+      id
+      name
+      show
+      category
+      active
+      createdAt
+      updatedAt
+    }
   }
 }

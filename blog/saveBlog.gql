@@ -4,7 +4,7 @@ mutation saveBlog(
   $excerpt: String
   $content: String
   $published_at: String
-  $image: String
+  $img: String
   $active: Boolean
 ) {
   saveBlog(
@@ -13,7 +13,7 @@ mutation saveBlog(
     excerpt: $excerpt
     content: $content
     published_at: $published_at
-    image: $image
+    img: $img
     active: $active
   ) {
     id
@@ -22,7 +22,7 @@ mutation saveBlog(
     excerpt
     content
     published_at
-    image
+    img
     active
   }
 }
