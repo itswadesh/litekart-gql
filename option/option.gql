@@ -5,13 +5,6 @@ query option($id: String!) {
     key
     val
     categories
-    values {
-      id
-      name
-      default
-      slug
-      position
-    }
     position
     slug
     info
@@ -20,5 +13,12 @@ query option($id: String!) {
     type
     isFilter
     active
+    values {
+      id
+      name
+      default
+      slug
+      position
+    }
   }
 }

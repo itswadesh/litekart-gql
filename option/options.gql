@@ -1,21 +1,15 @@
-query options($page: Int, $search: String, $limit: Int, $sort: String) {
-  options(page: $page, search: $search, limit: $limit, sort: $sort) {
+query options($pid: ID!) {
+  options(pid: $pid) {
     count
     page
     pageSize
     data {
       id
+      pid
       name
       key
       val
       categories
-      values {
-        id
-        name
-        default
-        slug
-        position
-      }
       position
       slug
       info
@@ -24,6 +18,13 @@ query options($page: Int, $search: String, $limit: Int, $sort: String) {
       type
       isFilter
       active
+      values {
+        id
+        name
+        default
+        slug
+        position
+      }
     }
   }
 }

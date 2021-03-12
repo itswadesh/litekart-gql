@@ -1,5 +1,6 @@
 mutation saveOption(
   $id: String!
+  $pid: ID
   $name: String
   $key: String
   $val: String
@@ -16,6 +17,7 @@ mutation saveOption(
 ) {
   saveOption(
     id: $id
+    pid: $pid
     name: $name
     key: $key
     val: $val
@@ -31,17 +33,11 @@ mutation saveOption(
     active: $active
   ) {
     id
+    pid
     name
     key
     val
     categories
-    values {
-      id
-      name
-      default
-      slug
-      position
-    }
     position
     slug
     info
@@ -50,5 +46,29 @@ mutation saveOption(
     type
     isFilter
     active
+    values {
+      id
+      name
+      default
+      slug
+      position
+    }
   }
 }
+
+# {
+#   "id": "604a4c695cedfd0d4c96db6d",
+#   "pid": "60151b263101e96f152d5147",
+#   "name": "size",
+#   "type": "text field",
+#   "values": [{
+#     "name": "small",
+#     "default": true
+#   },{
+#     "name": "medium",
+#     "default": false
+#   },{
+#     "name": "large",
+#     "default": false
+#   }]
+# }

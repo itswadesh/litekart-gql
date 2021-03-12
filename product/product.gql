@@ -60,6 +60,16 @@ query Product($id: ID!) {
       scheduleDateTime
       user
     }
+    options {
+      id
+      name
+      type
+      values {
+        id
+        name
+        default
+      }
+    }
     variants {
       id
       options {
