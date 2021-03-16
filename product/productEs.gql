@@ -1,5 +1,5 @@
-query productEs {
-  productEs {
+query productEs( $query: String) {
+  productEs(query:$query) {
     took
     count
     data {
