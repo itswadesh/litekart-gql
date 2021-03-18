@@ -42,6 +42,7 @@ query allOrders {
         price
         qty
         status
+        orderStatus
         vendor {
           store
         }

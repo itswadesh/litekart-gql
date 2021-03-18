@@ -1,0 +1,38 @@
+mutation saveOrderStatus(
+  $id: String!
+  $order: ID
+  $item: ID
+  $event: String
+  $tracking_id: String
+  $courier_name: String
+  $active: Boolean
+) {
+  saveOrderStatus(
+    id: $id
+    order: $order
+    item: $item
+    event: $event
+    tracking_id: $tracking_id
+    courier_name: $courier_name
+    active: $active
+  ) {
+    id
+    order
+    item
+    event
+    tracking_id
+    courier_name
+    active
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "id": "new",
+#   "order": "6045f1fb0a60784dd0f23ad9",
+#   "item": "6003c018fdf19236bb78be3f",
+#   "event": "picked up",
+#   "courier_name": "DHL",
+#   "tracking_id": "12132cddffxcd"
+# }
