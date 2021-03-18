@@ -58,6 +58,7 @@ query products(
       reviews
       itemId
       warranty
+      discount_percent
       category {
         name
       }

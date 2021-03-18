@@ -36,6 +36,7 @@ query product1($id: ID!) {
     keywords
     itemId
     warranty
+    discount_percent
     features {
       id
       name

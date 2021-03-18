@@ -32,6 +32,7 @@ query Product($id: ID!) {
     warranty
     metaDescription
     keywords
+    discount_percent
     brand {
       id
       name
