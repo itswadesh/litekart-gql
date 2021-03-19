@@ -1,4 +1,4 @@
-query globalOption($id: String!) {
+query globalOption($id: ID!) {
   globalOption(id: $id) {
     id
     name

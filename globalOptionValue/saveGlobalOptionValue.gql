@@ -1,0 +1,34 @@
+mutation saveGlobalOptionValue(
+  $id: String!
+  $global_option_id: ID
+  $name: String
+  $default: Boolean
+  $position: Int
+  $slug: String
+  $active: Boolean
+) {
+  saveGlobalOptionValue(
+    id: $id
+    global_option_id: $global_option_id
+    name: $name
+    default: $default
+    position: $position
+    slug: $slug
+    active: $active
+  ) {
+    id
+    global_option_id
+    name
+    default
+    position
+    slug
+    active
+  }
+}
+
+# {
+#    "id": "new",
+#   "global_option_id": "605489551ac78523dce29b91",
+#    "name": "blue",
+#   "default": true
+#  }

@@ -4,7 +4,6 @@ mutation saveGlobalOption(
   $key: String
   $val: String
   $categories: [String]
-  $values: [GlobalValueIp]
   $position: Int
   $slug: String
   $isFilter: Boolean
@@ -20,7 +19,6 @@ mutation saveGlobalOption(
     key: $key
     val: $val
     categories: $categories
-    values: $values
     position: $position
     slug: $slug
     isFilter: $isFilter
@@ -53,19 +51,8 @@ mutation saveGlobalOption(
   }
 }
 
-####################SAMPLE
 # {
-#   "id": "6050da02945b6610987aae27",
-#   "name": "size",
-#   "type": "text field",
-#   "values": [{
-#     "name": "small",
-#     "default": true
-#   },{
-#     "name": "medium",
-#     "default": false
-#   },{
-#     "name": "large",
-#     "default": false
-#   }]
+#   "id": "new",
+#   "name": "color updated",
+#   "type": "button"
 # }
