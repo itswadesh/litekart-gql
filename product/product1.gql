@@ -1,3 +1,4 @@
+
 query product1($id: ID!) {
   product1(id: $id) {
     id
@@ -36,7 +37,6 @@ query product1($id: ID!) {
     keywords
     itemId
     warranty
-    discount_percent
     features {
       id
       name
@@ -78,9 +78,14 @@ query product1($id: ID!) {
       id
       name
       type
+      position
+      preselect
+      active
+      required
       values {
         id
         name
+        position
         default
       }
     }
