@@ -49,6 +49,7 @@ query settings {
     }
     paymentStatuses
     sms {
+      AUTO_VERIFICATION_ID
       enabled
     }
     email {
