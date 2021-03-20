@@ -1,0 +1,20 @@
+query address($id: ID!) {
+  address(id: $id) {
+    id
+    type
+    firstName
+    lastName
+    type
+    address
+    town
+    district
+    city
+    country
+    state
+    zip
+    phone
+    user
+    createdAt
+    updatedAt
+  }
+}

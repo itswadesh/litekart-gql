@@ -1,0 +1,60 @@
+mutation saveAddress(
+  $id: String!
+  $firstName: String
+  $lastName: String
+  $type: String
+  $address: String
+  $town: String
+  $district: String
+  $city: String
+  $country: String
+  $state: String
+  $zip: Int
+  $phone: String
+  $coords: Geo
+) {
+  saveAddress(
+    id: $id
+    firstName: $firstName
+    lastName: $lastName
+    type: $type
+    address: $address
+    town: $town
+    district: $district
+    city: $city
+    country: $country
+    state: $state
+    zip: $zip
+    phone: $phone
+    coords: $coords
+  ) {
+    id
+    firstName
+    lastName
+    address
+    town
+    district
+    city
+    type
+    country
+    state
+    zip
+    phone
+    coords {
+      lat
+      lng
+    }
+  }
+}
+
+# {
+#   "id":"new",
+#   "firstName":"llllppp",
+#   "lastName":"last",
+#   "zip":322200,
+#   "phone":"9898989898",
+#   "city": "ggc",
+#   "district": "swm",
+#   "state": "raj",
+#   "country": "india"
+# }
