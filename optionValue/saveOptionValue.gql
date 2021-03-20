@@ -1,0 +1,34 @@
+mutation saveOptionValue(
+  $id: String!
+  $option_id: ID
+  $name: String
+  $default: Boolean
+  $position: Int
+  $slug: String
+  $active: Boolean
+) {
+  saveOptionValue(
+    id: $id
+    option_id: $option_id
+    name: $name
+    default: $default
+    position: $position
+    slug: $slug
+    active: $active
+  ) {
+    id
+    option_id
+    name
+    default
+    position
+    slug
+    active
+  }
+}
+
+# {
+#    "id": "new",
+#   "option_id": "60557db71d76790db44dd096",
+#    "name": "green",
+#   "default": true
+#  }

@@ -1,4 +1,4 @@
-query option($id: String!) {
+query option($id: ID!) {
   option(id: $id) {
     id
     name

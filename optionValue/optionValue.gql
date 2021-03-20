@@ -1,0 +1,11 @@
+query optionValue($id: ID!) {
+  optionValue(id: $id) {
+    id
+    option_id
+    name
+    default
+    position
+    slug
+    active
+  }
+}

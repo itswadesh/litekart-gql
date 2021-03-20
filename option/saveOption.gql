@@ -5,7 +5,6 @@ mutation saveOption(
   $key: String
   $val: String
   $categories: [String]
-  $values: [ValueIp]
   $position: Int
   $slug: String
   $isFilter: Boolean
@@ -22,7 +21,6 @@ mutation saveOption(
     key: $key
     val: $val
     categories: $categories
-    values: $values
     position: $position
     slug: $slug
     isFilter: $isFilter
@@ -57,18 +55,8 @@ mutation saveOption(
 }
 
 # {
-#   "id": "604a4c695cedfd0d4c96db6d",
-#   "pid": "60151b263101e96f152d5147",
-#   "name": "size",
-#   "type": "text field",
-#   "values": [{
-#     "name": "small",
-#     "default": true
-#   },{
-#     "name": "medium",
-#     "default": false
-#   },{
-#     "name": "large",
-#     "default": false
-#   }]
+#   "id": "new",
+#   "pid": "60151b263101e96f152d5157",
+#   "name": "color2",
+#   "type": "text field"
 # }
