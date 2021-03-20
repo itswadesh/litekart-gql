@@ -124,6 +124,7 @@ mutation saveSettings(
     }
     paymentStatuses
     sms {
+      AUTO_VERIFICATION_ID
       enabled
     }
     email {
