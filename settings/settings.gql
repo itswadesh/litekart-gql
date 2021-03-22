@@ -48,6 +48,7 @@ query settings {
       index
     }
     paymentStatuses
+    otpLogin
     sms {
       AUTO_VERIFICATION_ID
       enabled
