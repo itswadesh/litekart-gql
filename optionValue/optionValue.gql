@@ -5,6 +5,8 @@ query optionValue($id: ID!) {
     name
     default
     position
+    type
+    amt
     slug
     active
   }

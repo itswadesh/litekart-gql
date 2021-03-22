@@ -22,6 +22,8 @@ query options($pid: ID!) {
         id
         name
         default
+        type
+        amt
         slug
         position
       }

@@ -24,10 +24,19 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       img
       vendor {
         store
+        firstName
+        lastName
+        phone
       }
       # options
     }
     address {
+      firstName
+      lastName
+      phone
+    }
+    user {
+      id
       firstName
       lastName
       phone

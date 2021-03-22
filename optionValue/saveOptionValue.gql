@@ -4,6 +4,8 @@ mutation saveOptionValue(
   $name: String
   $default: Boolean
   $position: Int
+  $amt: Int
+  $type: String
   $slug: String
   $active: Boolean
 ) {
@@ -13,6 +15,8 @@ mutation saveOptionValue(
     name: $name
     default: $default
     position: $position
+    amt: $amt
+    type: $type
     slug: $slug
     active: $active
   ) {
@@ -21,6 +25,8 @@ mutation saveOptionValue(
     name
     default
     position
+    type
+    amt
     slug
     active
   }

@@ -21,6 +21,8 @@ query optionValues(
       name
       default
       position
+      type
+      amt
       slug
       active
     }

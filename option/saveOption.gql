@@ -50,6 +50,8 @@ mutation saveOption(
       default
       slug
       position
+      type
+      amt
     }
   }
 }

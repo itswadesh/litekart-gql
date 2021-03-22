@@ -3,7 +3,7 @@ mutation addToCart(
   $pid: ID!
   $vid: ID
   $options: String
-  $vendor: ID
+  $vendor: ID!
   $replace: Boolean
 ) {
   addToCart(
@@ -18,8 +18,10 @@ mutation addToCart(
       pid
       vid
       vendor {
+        store
         firstName
         lastName
+        phone
       }
       name
       slug
@@ -47,3 +49,9 @@ mutation addToCart(
     }
   }
 }
+
+# {
+#   "pid": "60151b263101e96f152d515f",
+#   "qty": 1,
+#   "vendor": "5ed14b669e8b394b6f8967ce"
+# }
