@@ -50,6 +50,7 @@ query order($id: ID!) {
       price
       qty
       time
+      options
       orderStatus
       vendor {
         firstName
