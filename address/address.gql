@@ -16,5 +16,13 @@ query address($id: ID!) {
     user
     createdAt
     updatedAt
+    email
+    coords {
+      lat
+      lng
+    }
+    active
+    createdAt
+    updatedAt
   }
 }
