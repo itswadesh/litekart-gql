@@ -3,6 +3,8 @@ mutation saveSettings(
   $websiteName: String
   $closed: Boolean
   $closedMessage: String
+  $otpLogin: Boolean
+  $demo: Boolean
   $minimumOrderValue: Int
   $title: String
   $alert: String
@@ -47,6 +49,8 @@ mutation saveSettings(
     websiteName: $websiteName
     closed: $closed
     closedMessage: $closedMessage
+    otpLogin: $otpLogin
+    demo: $demo
     minimumOrderValue: $minimumOrderValue
     title: $title
     alert: $alert
@@ -89,6 +93,8 @@ mutation saveSettings(
     websiteName
     closed
     closedMessage
+    otpLogin
+    demo
     title
     alert
     keywords
