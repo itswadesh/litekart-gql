@@ -1,8 +1,10 @@
 query cart {
   cart {
+    id
     items {
       pid
       vendor {
+        id
         store
         firstName
         lastName
