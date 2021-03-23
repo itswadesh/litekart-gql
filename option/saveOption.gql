@@ -51,7 +51,7 @@ mutation saveOption(
       slug
       position
       type
-      amt
+      amount
     }
   }
 }

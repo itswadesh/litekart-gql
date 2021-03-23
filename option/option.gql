@@ -20,7 +20,7 @@ query option($id: ID!) {
       slug
       position
       type
-      amt
+      amount
     }
   }
 }

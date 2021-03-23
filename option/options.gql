@@ -23,7 +23,7 @@ query options($pid: ID!) {
         name
         default
         type
-        amt
+        amount
         slug
         position
       }
