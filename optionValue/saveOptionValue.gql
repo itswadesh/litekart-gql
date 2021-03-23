@@ -4,7 +4,7 @@ mutation saveOptionValue(
   $name: String
   $default: Boolean
   $position: Int
-  $amount: Int
+  $amount: Float
   $type: String
   $slug: String
   $active: Boolean
