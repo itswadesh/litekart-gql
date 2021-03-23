@@ -22,7 +22,8 @@ query optionValues(
       default
       position
       type
-      amt
+      direction
+      amount
       slug
       active
     }

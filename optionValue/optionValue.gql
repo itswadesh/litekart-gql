@@ -5,8 +5,9 @@ query optionValue($id: ID!) {
     name
     default
     position
+    direction
     type
-    amt
+    amount
     slug
     active
   }

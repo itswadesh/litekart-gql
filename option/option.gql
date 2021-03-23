@@ -19,8 +19,9 @@ query option($id: ID!) {
       default
       slug
       position
+      direction
       type
-      amt
+      amount
     }
   }
 }

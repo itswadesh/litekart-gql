@@ -22,8 +22,9 @@ query options($pid: ID!) {
         id
         name
         default
+        direction
         type
-        amt
+        amount
         slug
         position
       }
