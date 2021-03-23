@@ -15,10 +15,7 @@ query carts {
         tracking
         options
         vendor {
-          store
-          firstName
-          lastName
-          phone
+          _id
         }
       }
       qty

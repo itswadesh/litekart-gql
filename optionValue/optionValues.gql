@@ -22,7 +22,10 @@ query optionValues(
       default
       position
       type
+<<<<<<< HEAD
       direction
+=======
+>>>>>>> fa315931369fed8d5a00ee6875a441945888f4a0
       amount
       slug
       active

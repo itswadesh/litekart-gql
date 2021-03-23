@@ -22,13 +22,13 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       name
       slug
       img
+      tracking
       vendor {
-        store
+        id
         firstName
         lastName
         phone
       }
-      # options
     }
     address {
       firstName
@@ -45,3 +45,8 @@ mutation checkout($address: ID!, $paymentMethod: String) {
     updatedAt
   }
 }
+
+# {
+#   "address": "6056394384f1ac2c5cc255d1",
+#   "paymentMethod": "cod"
+# }
