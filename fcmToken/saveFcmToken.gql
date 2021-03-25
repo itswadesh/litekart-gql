@@ -6,7 +6,7 @@ mutation saveFcmToken(
   $user_type: String
   $active: Boolean
 ) {
-  saveOption(
+  saveFcmToken(
     id: $id
     token: $token
     platform: $platform
@@ -18,7 +18,7 @@ mutation saveFcmToken(
     token
     platform
     device_id
-    user_type
+    user_types
     user {
       firstName
       lastName
