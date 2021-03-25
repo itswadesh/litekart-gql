@@ -18,7 +18,7 @@ mutation saveFcmToken(
     token
     platform
     device_id
-    user_types
+    user_type
     user {
       firstName
       lastName
