@@ -12,6 +12,7 @@ mutation saveOption(
   $required: Boolean
   $type: String
   $info: String
+  $default_option: ID
   $active: Boolean
 ) {
   saveOption(
@@ -28,6 +29,7 @@ mutation saveOption(
     preselect: $preselect
     required: $required
     type: $type
+    default_option: $default_option
     active: $active
   ) {
     id
@@ -44,6 +46,7 @@ mutation saveOption(
     type
     isFilter
     active
+    default_option
     values {
       id
       name
