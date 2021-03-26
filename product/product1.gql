@@ -1,4 +1,3 @@
-
 query product1($id: ID!) {
   product1(id: $id) {
     id
@@ -82,6 +81,7 @@ query product1($id: ID!) {
       preselect
       active
       required
+      default_option
       values {
         id
         name

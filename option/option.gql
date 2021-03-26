@@ -13,6 +13,7 @@ query option($id: ID!) {
     type
     isFilter
     active
+    default_option
     values {
       id
       name

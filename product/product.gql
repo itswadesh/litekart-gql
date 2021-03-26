@@ -65,6 +65,7 @@ query Product($id: ID!) {
       id
       name
       type
+      default_option
       values {
         id
         name
