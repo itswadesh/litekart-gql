@@ -33,6 +33,9 @@ mutation saveProduct(
   $keywords: String
   $itemId: String
   $warranty: String
+  $age_min: Int
+  $age_max: Int
+  $age_unit: String
 ) {
   saveProduct(
     id: $id
@@ -69,6 +72,9 @@ mutation saveProduct(
     keywords: $keywords
     itemId: $itemId
     warranty: $warranty
+    age_min: $age_min
+    age_max: $age_max
+    age_unit: $age_unit
   ) {
     id
     name
@@ -102,6 +108,9 @@ mutation saveProduct(
     brand
     itemId
     warranty
+    age_min
+    age_max
+    age_unit
     category {
       id
       name

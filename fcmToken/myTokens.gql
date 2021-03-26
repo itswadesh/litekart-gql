@@ -9,7 +9,10 @@ query myTokens($page: Int, $search: String, $limit: Int, $sort: String) {
       platform
       device_id
       user_type
-      user_id
+      sId
+      user {
+        id
+      }
       active
       createdAt
       updatedAt

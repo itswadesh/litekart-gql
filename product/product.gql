@@ -33,6 +33,9 @@ query Product($id: ID!) {
     metaDescription
     keywords
     discount_percent
+    age_min
+    age_max
+    age_unit
     brand {
       id
       name

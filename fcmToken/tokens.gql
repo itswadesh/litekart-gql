@@ -1,5 +1,17 @@
-query tokens($page: Int, $search: String, $limit: Int, $sort: String) {
-  tokens(page: $page, search: $search, limit: $limit, sort: $sort) {
+query tokens(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $user_type: String
+) {
+  tokens(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    user_type: $user_type
+  ) {
     count
     page
     pageSize
@@ -9,10 +21,17 @@ query tokens($page: Int, $search: String, $limit: Int, $sort: String) {
       platform
       device_id
       user_type
-      user_id
+      sId
+      user {
+        id
+      }
       active
       createdAt
       updatedAt
     }
   }
 }
+
+# {
+#   "user_type": "authorized"
+# }

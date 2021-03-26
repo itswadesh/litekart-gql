@@ -36,6 +36,9 @@ query product1($id: ID!) {
     keywords
     itemId
     warranty
+    age_min
+    age_max
+    age_unit
     features {
       id
       name

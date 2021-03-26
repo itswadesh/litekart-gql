@@ -3,7 +3,6 @@ mutation saveFcmToken(
   $token: String
   $platform: String
   $device_id: String
-  $user_type: String
   $active: Boolean
 ) {
   saveFcmToken(
@@ -11,7 +10,6 @@ mutation saveFcmToken(
     token: $token
     platform: $platform
     device_id: $device_id
-    user_type: $user_type
     active: $active
   ) {
     id
@@ -19,9 +17,19 @@ mutation saveFcmToken(
     platform
     device_id
     user_type
-    user_id
+    sId
+    user {
+      id
+    }
     active
     createdAt
     updatedAt
   }
 }
+
+# {
+#   "id": "605e069c8538482088bb8368",
+#   "token": "ap",
+#   "platform": "aa",
+#   "device_id": "1a"
+# }
