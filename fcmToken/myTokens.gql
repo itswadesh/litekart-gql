@@ -1,0 +1,18 @@
+query myTokens($page: Int, $search: String, $limit: Int, $sort: String) {
+  myTokens(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      token
+      platform
+      device_id
+      user_type
+      user_id
+      active
+      createdAt
+      updatedAt
+    }
+  }
+}

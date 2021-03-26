@@ -1,6 +1,9 @@
-# All address of all users
+#current User all address
 query {
-  addresses {
+  myAddresses {
+    count
+    page
+    pageSize
     data {
       id
       type

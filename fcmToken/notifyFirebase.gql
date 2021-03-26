@@ -1,4 +1,4 @@
-mutation saveFcmToken(
+mutation notifyFirebase(
   $id: String!
   $token: String
   $platform: String
@@ -6,7 +6,7 @@ mutation saveFcmToken(
   $user_type: String
   $active: Boolean
 ) {
-  saveFcmToken(
+  notifyFirebase(
     id: $id
     token: $token
     platform: $platform
@@ -19,7 +19,6 @@ mutation saveFcmToken(
     platform
     device_id
     user_type
-    user_id
     active
     createdAt
     updatedAt
