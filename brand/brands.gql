@@ -1,5 +1,17 @@
-query brands($page: Int, $search: String, $limit: Int, $sort: String) {
-  brands(page: $page, search: $search, limit: $limit, sort: $sort) {
+query brands(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $featured: Boolean
+) {
+  brands(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    featured: $featured
+  ) {
     count
     page
     pageSize
