@@ -1,10 +1,12 @@
-mutation channelList {
+query channelList {
   channelList {
     channel_name
     user_count
     user {
       id
       firstName
+      lastName
+      avatar
     }
   }
 }
