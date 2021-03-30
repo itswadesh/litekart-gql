@@ -12,6 +12,7 @@ query me {
     provider
     active
     avatar
+    product_sold
     address {
       id
       email

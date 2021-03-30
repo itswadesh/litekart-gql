@@ -1,5 +1,11 @@
-query users($page: Int, $search: String, $limit: Int, $sort: String) {
-  users(page: $page, search: $search, limit: $limit, sort: $sort) {
+query users(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $role: String
+) {
+  users(page: $page, search: $search, limit: $limit, sort: $sort, role: $role) {
     count
     page
     pageSize
@@ -14,6 +20,7 @@ query users($page: Int, $search: String, $limit: Int, $sort: String) {
       role
       verified
       active
+      product_sold
       address {
         address
         city

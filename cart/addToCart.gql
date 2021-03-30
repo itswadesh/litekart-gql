@@ -53,6 +53,5 @@ mutation addToCart(
 # for multiple vendor in futute
 # {
 #   "pid": "60151b263101e96f152d5165",
-#   "qty": 1,
-#   "vendor": "5ed14b669e8b394b6f8967ce"
+#   "qty": 1
 # }

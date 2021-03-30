@@ -10,6 +10,7 @@ query user($id: String!) {
     role
     verified
     active
+    product_sold
     createdAt
     updatedAt
   }

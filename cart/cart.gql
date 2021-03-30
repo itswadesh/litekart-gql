@@ -37,39 +37,3 @@ query cart {
     }
   }
 }
-query cart {
-  cart {
-    qty
-    subtotal
-    total
-    items {
-      pid
-      vendor {
-        id
-        firstName
-      }
-      name
-      slug
-      qty
-      price
-      img
-      options
-      tracking
-    }
-
-    discount {
-      code
-      value
-      text
-      amount
-    }
-    shipping {
-      charge
-    }
-    tax {
-      cgst
-      sgst
-      igst
-    }
-  }
-}
