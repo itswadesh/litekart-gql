@@ -52,7 +52,13 @@ query Product($id: ID!) {
       id
       name
     }
+    key_features
     features {
+      id
+      name
+      value
+    }
+    product_details {
       id
       name
       value
