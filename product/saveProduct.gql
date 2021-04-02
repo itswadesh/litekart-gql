@@ -36,6 +36,17 @@ mutation saveProduct(
   $age_min: Int
   $age_max: Int
   $age_unit: String
+  $style_code: String
+  $ean_no: String
+  $article_code: String
+  $product_master_id: String
+  $currency: String
+  $manufacturer: String
+  $return_info: String
+  $gender: String
+  $condition: String
+  $gtin: String
+  $country_of_origin: String
 ) {
   saveProduct(
     id: $id
@@ -75,6 +86,17 @@ mutation saveProduct(
     age_min: $age_min
     age_max: $age_max
     age_unit: $age_unit
+    style_code: $style_code
+    ean_no: $ean_no
+    article_code: $article_code
+    product_master_id: $product_master_id
+    currency: $currency
+    manufacturer: $manufacturer
+    return_info: $return_info
+    gender: $gender
+    condition: $condition
+    gtin: $gtin
+    country_of_origin: $country_of_origin
   ) {
     id
     name
@@ -111,6 +133,17 @@ mutation saveProduct(
     age_min
     age_max
     age_unit
+    style_code
+    ean_no
+    article_code
+    product_master_id
+    currency
+    manufacturer
+    country_of_origin
+    return_info
+    gender
+    condition
+    gtin
     category {
       id
       name

@@ -39,7 +39,23 @@ query product1($id: ID!) {
     age_min
     age_max
     age_unit
+    style_code
+    ean_no
+    article_code
+    product_master_id
+    currency
+    manufacturer
+    country_of_origin
+    return_info
+    gender
+    condition
+    gtin
     features {
+      id
+      name
+      value
+    }
+    product_details {
       id
       name
       value
