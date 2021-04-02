@@ -129,5 +129,6 @@ query product1($id: ID!) {
         storePhotos
       }
     }
+    return_info
   }
 }
