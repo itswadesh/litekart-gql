@@ -50,6 +50,7 @@ query product1($id: ID!) {
     gender
     condition
     gtin
+    key_features
     features {
       id
       name
@@ -139,5 +140,6 @@ query product1($id: ID!) {
         storePhotos
       }
     }
+    return_info
   }
 }

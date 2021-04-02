@@ -63,6 +63,7 @@ query Product($id: ID!) {
       id
       name
     }
+    key_features
     features {
       id
       name
@@ -122,5 +123,6 @@ query Product($id: ID!) {
         storePhotos
       }
     }
+    return_info
   }
 }
