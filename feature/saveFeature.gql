@@ -2,6 +2,7 @@ mutation saveFeature(
   $id: String!
   $name: String
   $value: String
+  $type: String
   $product: ID
   $active: Boolean
 ) {
@@ -9,6 +10,7 @@ mutation saveFeature(
     id: $id
     name: $name
     value: $value
+    type: $type
     product: $product
     active: $active
   ) {
@@ -16,6 +18,7 @@ mutation saveFeature(
     name
     value
     slug
+    type
     product
     active
   }

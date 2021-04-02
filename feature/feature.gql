@@ -3,6 +3,7 @@ query feature($id: String!) {
     id
     name
     value
+    type
     product
     slug
     active
