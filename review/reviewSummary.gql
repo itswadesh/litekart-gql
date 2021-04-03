@@ -3,5 +3,6 @@ query reviewSummary($product: ID!) {
     avg
     count
     total
+    reviews
   }
 }
