@@ -62,6 +62,8 @@ query products(
       age_min
       age_max
       age_unit
+      size_group
+      color_group
       category {
         name
       }

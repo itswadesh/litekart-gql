@@ -1,0 +1,59 @@
+query master_id_product(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $product_master_id: String!
+  $active: Boolean
+) {
+  master_id_product(
+    page: $page
+    skip: $skip
+    limit: $limit
+    search: $search
+    sort: $sort
+    product_master_id: $product_master_id
+    active: $active
+  ) {
+    count
+    pageSize
+    noOfPage
+    page
+    data {
+      id
+      sku
+      slug
+      name
+      type
+      price
+      mrp
+      stock
+      img
+      images
+      time
+      active
+      popularity
+      position
+      trending
+      featured
+      hot
+      new
+      sale
+      recommended
+      title
+      metaDescription
+      keywords
+      ratings
+      reviews
+      itemId
+      warranty
+      discount_percent
+      age_min
+      age_max
+      age_unit
+      size_group
+      color_group
+    }
+  }
+}
