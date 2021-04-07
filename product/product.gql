@@ -47,6 +47,8 @@ query Product($id: ID!) {
     gender
     condition
     gtin
+    size_group
+    color_group
     brand {
       id
       name

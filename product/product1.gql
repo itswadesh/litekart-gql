@@ -52,6 +52,8 @@ query product1($id: ID!) {
     condition
     gtin
     key_features
+    size_group
+    color_group
     features {
       id
       name
