@@ -33,6 +33,7 @@ query products(
     data {
       id
       sku
+      product_master_id
       slug
       name
       type

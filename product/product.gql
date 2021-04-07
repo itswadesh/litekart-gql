@@ -55,6 +55,10 @@ query Product($id: ID!) {
       id
       name
     }
+    size {
+      id
+      name
+    }
     category {
       id
       name

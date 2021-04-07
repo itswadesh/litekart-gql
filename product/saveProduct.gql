@@ -27,6 +27,7 @@ mutation saveProduct(
   $hsn: String
   $group: String
   $color: ID
+  $size: ID
   $barcode: String
   $title: String
   $metaDescription: String
@@ -47,8 +48,6 @@ mutation saveProduct(
   $condition: String
   $gtin: String
   $country_of_origin: String
-  $size_group: [String]
-  $color_group: [String]
 ) {
   saveProduct(
     id: $id
@@ -72,6 +71,7 @@ mutation saveProduct(
     barcode: $barcode
     group: $group
     color: $color
+    size: $size
     position: $position
     variants: $variants
     hot: $hot
@@ -99,8 +99,6 @@ mutation saveProduct(
     condition: $condition
     gtin: $gtin
     country_of_origin: $country_of_origin
-    size_group: $size_group
-    color_group: $color_group
   ) {
     id
     name
@@ -120,6 +118,7 @@ mutation saveProduct(
     hsn
     group
     color
+    size
     barcode
     position
     trending
