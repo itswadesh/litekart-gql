@@ -1,4 +1,4 @@
-mutation razorpay($address: AddressInput!) {
+mutation razorpay($address: ID) {
   razorpay(address: $address) {
     id
   }
