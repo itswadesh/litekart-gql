@@ -52,18 +52,6 @@ query product1($id: ID!) {
     condition
     gtin
     key_features
-    size_group{
-      _id
-      size{
-        name
-      }
-    }
-    color_group{
-      _id
-      color{
-        name
-      }
-    }
     features {
       id
       name
