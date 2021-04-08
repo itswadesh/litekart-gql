@@ -49,14 +49,17 @@ query Product($id: ID!) {
     gtin
     size_group{
       _id
+      slug
       size{
         name
       }
     }
     color_group{
       _id
+      slug
       color{
         name
+        color_code
       }
     }
     brand {
