@@ -1,7 +1,7 @@
 mutation saveColor(
   $id: String!
   $name: String
-  $value: String
+  $color_code: String
   $info: String
   $featured: Boolean
   $slug: String
@@ -10,7 +10,7 @@ mutation saveColor(
   saveColor(
     id: $id
     name: $name
-    value: $value
+    color_code: $color_code
     info: $info
     slug: $slug
     featured: $featured
@@ -18,7 +18,7 @@ mutation saveColor(
   ) {
     id
     name
-    value
+    color_code
     info
     slug
     featured
