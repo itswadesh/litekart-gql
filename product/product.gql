@@ -47,8 +47,18 @@ query Product($id: ID!) {
     gender
     condition
     gtin
-    size_group
-    color_group
+    size_group{
+      _id
+      size{
+        name
+      }
+    }
+    color_group{
+      _id
+      color{
+        name
+      }
+    }
     brand {
       id
       name
