@@ -2,7 +2,7 @@ mutation saveBanner(
   $id: String!
   $link: String
   $heading: String
-  $img: String!
+  $img: String
   $type: String
   $active: Boolean
 ) {
