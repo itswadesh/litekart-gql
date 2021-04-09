@@ -25,6 +25,7 @@ mutation saveSettings(
   $logoMobileDark: String
   $favicon: String
   $CDN_URL: String
+  $searchbar_text: String
   $pageSize: Int
   $paymentStatuses: [String]
   $sms: SmsIp
@@ -71,6 +72,7 @@ mutation saveSettings(
     logoMobileDark: $logoMobileDark
     favicon: $favicon
     CDN_URL: $CDN_URL
+    searchbar_text: $searchbar_text
     pageSize: $pageSize
     paymentStatuses: $paymentStatuses
     sms: $sms
@@ -121,6 +123,7 @@ mutation saveSettings(
     logoMobileDark
     favicon
     CDN_URL
+    searchbar_text
     pageSize
     orderStatuses {
       status
@@ -132,6 +135,7 @@ mutation saveSettings(
     sms {
       AUTO_VERIFICATION_ID
       enabled
+      provider
     }
     email {
       enabled

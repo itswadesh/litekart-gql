@@ -63,6 +63,9 @@ query products(
       age_min
       age_max
       age_unit
+      cgst
+      sgst
+      igst
       category {
         name
       }

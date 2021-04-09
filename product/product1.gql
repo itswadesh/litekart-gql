@@ -51,6 +51,9 @@ query product1($id: ID!) {
     gender
     condition
     gtin
+    cgst
+    sgst
+    igst
     key_features
     features {
       id

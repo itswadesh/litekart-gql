@@ -38,6 +38,7 @@ subscription {
     logoMobileDark
     favicon
     CDN_URL
+    searchbar_text
     pageSize
     orderStatuses {
       status
@@ -48,6 +49,7 @@ subscription {
     paymentStatuses
     sms {
       enabled
+      provider
     }
     email {
       enabled

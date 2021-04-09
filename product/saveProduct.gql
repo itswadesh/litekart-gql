@@ -48,6 +48,9 @@ mutation saveProduct(
   $condition: String
   $gtin: String
   $country_of_origin: String
+  $cgst: String
+  $sgst: String
+  $igst: String
 ) {
   saveProduct(
     id: $id
@@ -99,6 +102,9 @@ mutation saveProduct(
     condition: $condition
     gtin: $gtin
     country_of_origin: $country_of_origin
+    cgst: $cgst
+    sgst: $sgst
+    igst: $igst
   ) {
     id
     name
@@ -147,6 +153,9 @@ mutation saveProduct(
     gender
     condition
     gtin
+    cgst
+    sgst
+    igst
     color_group
     size_group
     category {

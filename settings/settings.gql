@@ -38,6 +38,7 @@ query settings {
     logoMobileDark
     favicon
     CDN_URL
+    searchbar_text
     pageSize
     orderStatuses {
       status
@@ -52,6 +53,7 @@ query settings {
     sms {
       AUTO_VERIFICATION_ID
       enabled
+      provider
     }
     email {
       enabled
