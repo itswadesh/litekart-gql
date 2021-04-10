@@ -1,5 +1,5 @@
 mutation saveReview(
-  $id: String
+  $id: String!
   $product: ID
   $variant: ID
   $user: ID

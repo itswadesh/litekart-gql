@@ -1,5 +1,5 @@
 mutation saveProduct(
-  $id: String
+  $id: String!
   $name: String
   $description: String
   $type: String
