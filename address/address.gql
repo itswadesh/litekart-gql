@@ -1,28 +1,23 @@
-query address($id: ID!) {
-  address(id: $id) {
-    id
-    type
-    firstName
-    lastName
-    type
-    address
-    town
-    district
-    city
-    country
-    state
-    zip
-    phone
-    user
-    createdAt
-    updatedAt
-    email
-    coords {
-      lat
-      lng
+query addresses($page: Int, $search: String, $limit: Int, $sort: String) {
+  addresses(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      email
+      firstName
+      lastName
+      address
+      town
+      city
+      country
+      state
+      zip
+      phone
+      active
+      createdAt
+      updatedAt
     }
-    active
-    createdAt
-    updatedAt
   }
 }
