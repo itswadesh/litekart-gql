@@ -1,21 +1,23 @@
-# All address of all users
-query {
-  addresses {
+query addresses($page: Int, $search: String, $limit: Int, $sort: String) {
+  addresses(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
     data {
       id
-      type
+      email
       firstName
       lastName
-      type
       address
       town
-      district
       city
       country
       state
       zip
       phone
-      user
+      active
+      createdAt
+      updatedAt
     }
   }
 }

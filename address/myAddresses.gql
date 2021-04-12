@@ -1,24 +1,23 @@
-#current User all address
-query {
-  myAddresses {
+query myAddresses($page: Int, $search: String, $limit: Int, $sort: String) {
+  myAddresses(page: $page, search: $search, limit: $limit, sort: $sort) {
     count
     page
     pageSize
     data {
       id
-      type
+      email
       firstName
       lastName
-      type
       address
       town
-      district
       city
       country
       state
       zip
       phone
-      user
+      active
+      createdAt
+      updatedAt
     }
   }
 }
