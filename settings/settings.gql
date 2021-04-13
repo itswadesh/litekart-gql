@@ -39,6 +39,7 @@ query settings {
     favicon
     CDN_URL
     searchbar_text
+    adminPanelLink
     pageSize
     orderStatuses {
       status

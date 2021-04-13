@@ -51,7 +51,12 @@ query order($id: ID!) {
       qty
       time
       options
-      orderStatus
+      orderStatus {
+        id
+        event
+        tracking_id
+        courier_name
+      }
       vendor {
         firstName
         lastName
