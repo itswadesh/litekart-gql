@@ -11,6 +11,10 @@ query brand($id: String, $slug: String) {
     metaTitle
     metaDescription
     metaKeywords
+    parent {
+      id
+      name
+    }
     createdAt
     updatedAt
   }

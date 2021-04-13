@@ -27,6 +27,10 @@ query brands(
       metaKeywords
       active
       featured
+      parent {
+        id
+        name
+      }
       createdAt
       updatedAt
     }

@@ -2,6 +2,7 @@ mutation saveBrand(
   $id: String
   $name: String!
   $slug: String
+  $parent: ID
   $img: String
   $position: Int
   $featured: Boolean
@@ -15,6 +16,7 @@ mutation saveBrand(
     id: $id
     name: $name
     slug: $slug
+    parent: $parent
     img: $img
     position: $position
     meta: $meta
