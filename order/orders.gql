@@ -1,17 +1,5 @@
-query orders(
-  $page: Int
-  $search: String
-  $limit: Int
-  $sort: String
-  $role: String
-) {
-  orders(
-    page: $page
-    search: $search
-    limit: $limit
-    sort: $sort
-    role: $role
-  ) {
+query orders($page: Int, $search: String, $limit: Int, $sort: String) {
+  orders(page: $page, search: $search, limit: $limit, sort: $sort) {
     count
     page
     pageSize
