@@ -1,0 +1,7 @@
+query deleteAllProducts($password: String!) {
+  deleteAllProducts(password: $password)
+}
+
+# {
+#   "password": "prakash"
+# }
