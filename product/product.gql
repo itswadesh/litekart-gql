@@ -8,6 +8,7 @@ query Product($id: ID!) {
     price
     mrp
     stock
+    tax
     img
     images
     time

@@ -52,6 +52,7 @@ query products(
       price
       mrp
       stock
+      tax
       img
       images
       time
