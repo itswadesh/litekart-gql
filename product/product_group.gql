@@ -7,19 +7,10 @@ query product_group($id: ID!) {
         id
         name
       }
-      color {
-        id
-        name
-        color_code
-      }
     }
     color_group {
       id
       slug
-      size {
-        id
-        name
-      }
       color {
         id
         name
