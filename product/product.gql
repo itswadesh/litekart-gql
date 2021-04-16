@@ -81,6 +81,11 @@ query Product($id: ID!) {
     category {
       id
       name
+      slug
+      pathA {
+        name
+        slug
+      }
     }
     categories {
       id
