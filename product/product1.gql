@@ -111,6 +111,8 @@ query product1($id: ID!) {
         id
         name
         position
+        amount
+        direction
         default
       }
     }
