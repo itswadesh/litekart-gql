@@ -1,4 +1,4 @@
-mutation Product($id: ID!) {
+query Product($id: ID!) {
   product(id: $id) {
     id
     slug
