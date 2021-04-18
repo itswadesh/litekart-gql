@@ -1,4 +1,4 @@
-query deleteAllProducts($password: String!) {
+mutation deleteAllProducts($password: String!) {
   deleteAllProducts(password: $password)
 }
 
