@@ -1,6 +1,6 @@
 mutation saveCity(
   $id: String!
-  $name: String!
+  $name: String
   $active: Boolean
   $lat: Float
   $lng: Float

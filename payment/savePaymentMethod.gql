@@ -1,6 +1,6 @@
 mutation savePaymentMethod(
   $id: String!
-  $name: String!
+  $name: String
   $value: String
   $key: String
   $color: String

@@ -1,6 +1,6 @@
 mutation saveBrand(
   $id: String
-  $name: String!
+  $name: String
   $slug: String
   $parent: ID
   $img: String

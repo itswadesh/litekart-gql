@@ -1,5 +1,5 @@
 mutation createProduct(
-  $name: String!
+  $name: String
   $description: String
   $type: String
   $city: String

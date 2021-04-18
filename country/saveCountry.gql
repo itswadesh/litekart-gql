@@ -1,6 +1,6 @@
 mutation saveCountry(
   $id: String
-  $name: String!
+  $name: String
   $slug: String
   $value: String
   $code: String
