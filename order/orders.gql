@@ -10,7 +10,10 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
       user {
         firstName
         lastName
+        email
         phone
+        role
+        
       }
       amount {
         qty
