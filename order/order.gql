@@ -28,6 +28,7 @@ query order($id: ID!) {
       firstName
       lastName
       phone
+      email
     }
     address {
       firstName
