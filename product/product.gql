@@ -1,4 +1,4 @@
-query Product($id: ID!) {
+query product($id: ID!) {
   product(id: $id) {
     id
     slug
