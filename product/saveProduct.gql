@@ -5,9 +5,9 @@ mutation saveProduct(
   $type: String
   $city: String
   $price: Float
-  $mrp: Int
+  $mrp: Float
   $stock: Int
-  $tax: Int
+  $tax: Float
   $img: String
   $images: [String]
   $time: String
@@ -49,9 +49,9 @@ mutation saveProduct(
   $condition: String
   $gtin: String
   $country_of_origin: String
-  $cgst: String
-  $sgst: String
-  $igst: String
+  $cgst: Float
+  $sgst: Float
+  $igst: Float
 ) {
   saveProduct(
     id: $id
