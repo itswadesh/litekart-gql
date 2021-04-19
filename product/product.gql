@@ -154,6 +154,12 @@ query product($id: ID!) {
         storePhotos
       }
     }
+    relatedProducts {
+      id
+      name
+      slug
+      img
+    }
     return_info
   }
 }

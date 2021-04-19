@@ -148,5 +148,11 @@ query product1($id: ID!) {
       }
     }
     return_info
+    relatedProducts {
+      id
+      name
+      slug
+      img
+    }
   }
 }
