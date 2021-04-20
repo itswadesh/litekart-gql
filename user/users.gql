@@ -29,6 +29,7 @@ query users(
         store
         public
       }
+      plan
       createdAt
       updatedAt
     }
