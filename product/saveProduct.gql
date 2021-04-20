@@ -52,6 +52,7 @@ mutation saveProduct(
   $cgst: Float
   $sgst: Float
   $igst: Float
+  $relatedProducts: [ID!]
 ) {
   saveProduct(
     id: $id
@@ -107,6 +108,7 @@ mutation saveProduct(
     cgst: $cgst
     sgst: $sgst
     igst: $igst
+    relatedProducts: $relatedProducts
   ) {
     id
     name
