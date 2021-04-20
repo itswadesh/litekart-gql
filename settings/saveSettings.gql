@@ -31,6 +31,7 @@ mutation saveSettings(
   $paymentStatuses: [String]
   $sms: SmsIp
   $email: EmailIp
+  $storage: StorageIp
   $review: ReviewSettingIp
   $product: ProductSettingIp
   $login: LoginSettingIp
@@ -79,6 +80,7 @@ mutation saveSettings(
     paymentStatuses: $paymentStatuses
     sms: $sms
     email: $email
+    storage: $storage
     review: $review
     product: $product
     login: $login
@@ -147,6 +149,10 @@ mutation saveSettings(
       cc
       bcc
       printers
+    }
+    storage {
+      enabled
+      provider
     }
     review {
       moderate

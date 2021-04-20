@@ -64,6 +64,10 @@ query settings {
       bcc
       printers
     }
+    storage {
+      enabled
+      provider
+    }
     review {
       enabled
       moderate

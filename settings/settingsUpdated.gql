@@ -59,6 +59,10 @@ subscription {
       bcc
       printers
     }
+    storage {
+      enabled
+      provider
+    }
     review {
       enabled
       moderate

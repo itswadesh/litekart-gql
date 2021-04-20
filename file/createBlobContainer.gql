@@ -1,8 +1,0 @@
-mutation createBlobContainer($folder: String) {
-  createBlobContainer(folder: $folder) {
-    filename
-    mimetype
-    encoding
-    url
-  }
-}
