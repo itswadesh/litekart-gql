@@ -11,6 +11,7 @@ query user($id: String!) {
     verified
     active
     product_sold
+    plan
     createdAt
     updatedAt
   }
