@@ -5,10 +5,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     slug
     img
     featured
-    category_id
+    categoryId
     parent {
       id
-      category_id
+      categoryId
     }
     children {
       id
@@ -16,10 +16,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
       slug
       img
       featured
-      category_id
+      categoryId
       parent {
         id
-        category_id
+        categoryId
       }
       children {
         id
@@ -27,10 +27,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
         slug
         img
         featured
-        category_id
+        categoryId
         parent {
           id
-          category_id
+          categoryId
         }
         children {
           id
@@ -38,10 +38,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
           slug
           img
           featured
-          category_id
+          categoryId
           parent {
             id
-            category_id
+            categoryId
           }
           children {
             id
@@ -49,10 +49,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
             slug
             img
             featured
-            category_id
+            categoryId
             parent {
               id
-              category_id
+              categoryId
             }
             children {
               id
@@ -60,10 +60,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
               slug
               img
               featured
-              category_id
+              categoryId
               parent {
                 id
-                category_id
+                categoryId
               }
               children {
                 id
@@ -71,10 +71,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                 slug
                 img
                 featured
-                category_id
+                categoryId
                 parent {
                   id
-                  category_id
+                  categoryId
                 }
                 children {
                   id
@@ -82,10 +82,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                   slug
                   img
                   featured
-                  category_id
+                  categoryId
                   parent {
                     id
-                    category_id
+                    categoryId
                   }
                   children {
                     id
@@ -93,10 +93,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                     slug
                     img
                     featured
-                    category_id
+                    categoryId
                     parent {
                       id
-                      category_id
+                      categoryId
                     }
                     children {
                       id
@@ -104,10 +104,10 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                       slug
                       img
                       featured
-                      category_id
+                      categoryId
                       parent {
                         id
-                        category_id
+                        categoryId
                       }
                     }
                   }

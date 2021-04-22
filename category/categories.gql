@@ -25,7 +25,7 @@ query categories(
       id
       name
       namePath
-      category_id
+      categoryId
       # parent
       slug
       img

@@ -28,7 +28,7 @@ query allCategories(
       name
       namePath
       level
-      category_id
+      categoryId
     }
   }
 }
