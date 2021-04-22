@@ -4,7 +4,7 @@ query todayTotal {
   otp
   qty
   amount
-  payment_order_id
+  paymentOrderId
   delivery
   status
   items

@@ -19,7 +19,7 @@ mutation updateOrder($id: ID!, $pid: ID!, $status: String, $tracking: String) {
       }
       total
     }
-    payment_order_id
+    paymentOrderId
     delivery {
       otp
     }

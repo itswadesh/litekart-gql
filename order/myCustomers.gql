@@ -21,7 +21,7 @@ query myCustomers(
           qty
           total
         }
-        payment_order_id
+        paymentOrderId
         user {
           firstName
           lastName

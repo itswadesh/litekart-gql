@@ -1,5 +1,5 @@
 mutation paytmCapturePay($id: String!, $oid: String!) {
-  paytmCapturePay(payment_id: $id, oid: $oid) {
+  paytmCapturePay(paymentId: $id, oid: $oid) {
     id
   }
 }

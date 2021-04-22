@@ -41,7 +41,7 @@ query ordersForPickup(
           firstName
           lastName
         }
-        cod_paid
+        codPaid
         payment {
           method
           status
@@ -56,7 +56,7 @@ query ordersForPickup(
           shipping
           discount
         }
-        payment_order_id
+        paymentOrderId
       }
       items {
         pid

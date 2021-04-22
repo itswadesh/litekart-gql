@@ -12,12 +12,12 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       shipping
       total
     }
-    payment_order_id
-    payment_mode
-    payment_amount
-    payment_currency
-    payment_txStatus
-    payment_referenceId
+    paymentOrderId
+    paymentMode
+    paymentAmount
+    paymentCurrency
+    paymentTxStatus
+    paymentReferenceId
     delivery {
       otp
     }

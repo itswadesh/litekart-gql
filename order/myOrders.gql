@@ -24,10 +24,10 @@ query myOrders(
       otp
       createdAt
       updatedAt
-      cod_paid
-      payment_mode
-      payment_txStatus
-      payment_amount
+      codPaid
+      paymentMode
+      paymentTxStatus
+      paymentAmount
       payment {
         amount_paid
         amount_due

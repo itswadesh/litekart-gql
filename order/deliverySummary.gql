@@ -4,7 +4,7 @@ query deliverySummary {
     count
     amount
     createdAt
-    cod_paid
+    codPaid
   }
   statusSummary {
     _id
@@ -16,6 +16,6 @@ query deliverySummary {
     _id
     count
     amount
-    cod_paid
+    codPaid
   }
 }

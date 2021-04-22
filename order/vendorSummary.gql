@@ -4,6 +4,6 @@ query vendorSummary {
     count
     amount
     createdAt
-    cod_paid
+    codPaid
   }
 }

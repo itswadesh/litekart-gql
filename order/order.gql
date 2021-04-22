@@ -4,16 +4,16 @@ query order($id: ID!) {
     orderNo
     otp
     createdAt
-    cod_paid
+    codPaid
     payment {
       amount_paid
       amount_due
     }
-    payment_mode
-    payment_txStatus
-    payment_amount
-    payment_currency
-    payment_referenceId
+    paymentMode
+    paymentTxStatus
+    paymentAmount
+    paymentCurrency
+    paymentReferenceId
     amount {
       qty
       subtotal
@@ -26,9 +26,9 @@ query order($id: ID!) {
       total
       shipping
     }
-    user_firstName
-    user_lastName
-    user_phone
+    userFirstName
+    userLastName
+    userPhone
     address {
       firstName
       lastName

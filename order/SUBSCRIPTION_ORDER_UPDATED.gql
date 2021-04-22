@@ -4,11 +4,11 @@ subscription($id: ID!) {
     orderNo
     otp
     createdAt
-    cod_paid
-    payment_mode
-    payment_amount
-    payment_txStatus
-    payment_referenceId
+    codPaid
+    paymentMode
+    paymentAmount
+    paymentTxStatus
+    paymentReferenceId
     payment {
       amount_paid
       amount_due

@@ -7,9 +7,9 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
       id
       orderNo
       createdAt
-      user_firstName
-      user_lastName
-      user_phone
+      userFirstName
+      userLastName
+      userPhone
       user {
         firstName
         lastName
@@ -29,8 +29,8 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
         total
         shipping
       }
-      payment_mode
-      payment_amount
+      paymentMode
+      paymentAmount
       payment {
         amount_paid
         amount_due
