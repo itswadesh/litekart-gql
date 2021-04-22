@@ -5,10 +5,11 @@ subscription($id: ID!) {
     otp
     createdAt
     cod_paid
+    payment_mode
+    payment_amount
+    payment_txStatus
+    payment_referenceId
     payment {
-      method
-      status
-      amount
       amount_paid
       amount_due
     }

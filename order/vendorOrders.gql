@@ -11,10 +11,10 @@ query vendorOrders($status: String!, $vendor: ID!) {
       createdAt
       updatedAt
       cod_paid
+      payment_mode
+      payment_txStatus
+      payment_amount
       payment {
-        method
-        status
-        amount
         amount_paid
         amount_due
       }

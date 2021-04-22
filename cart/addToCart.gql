@@ -1,52 +1,53 @@
-mutation addToCart(
-  $qty: Int!
-  $pid: ID!
-  $vid: ID
-  $options: String
-  $vendor: ID
-  $replace: Boolean
-) {
-  addToCart(
-    qty: $qty
-    pid: $pid
-    vid: $vid
-    options: $options
-    vendor: $vendor
-    replace: $replace
-  ) {
+# , $options:String
+mutation checkout($address: ID!, $paymentMethod: String) {
+  # , options:$options
+  checkout(address: $address, paymentMethod: $paymentMethod) {
+    id
+    orderNo
+    otp
+    amount {
+      qty
+      subtotal
+      discount
+      shipping
+      total
+    }
+    payment_order_id
+    payment_mode
+    payment_amount
+    payment_currency
+    payment_txStatus
+    payment_referenceId
+    delivery {
+      otp
+    }
     items {
+      status
       pid
-      vid
+      name
+      slug
+      img
+      tracking
       vendor {
-        _id
+        id
         firstName
         lastName
         phone
       }
-      name
-      slug
-      qty
-      price
-      img
-      options
     }
-    qty
-    subtotal
-    discount {
-      code
-      value
-      text
-      amount
+    address {
+      firstName
+      lastName
+      phone
     }
-    shipping {
-      charge
+    user {
+      id
+      firstName
+      lastName
+      phone
     }
-    total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    createdAt
+    updatedAt
   }
 }
 

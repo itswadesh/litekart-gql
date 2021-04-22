@@ -6,12 +6,14 @@ query order($id: ID!) {
     createdAt
     cod_paid
     payment {
-      method
-      status
-      amount
       amount_paid
       amount_due
     }
+    payment_mode
+    payment_txStatus
+    payment_amount
+    payment_currency
+    payment_referenceId
     amount {
       qty
       subtotal
@@ -24,11 +26,9 @@ query order($id: ID!) {
       total
       shipping
     }
-    user {
-      firstName
-      lastName
-      phone
-    }
+    user_firstName
+    user_lastName
+    user_phone
     address {
       firstName
       lastName

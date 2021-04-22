@@ -13,6 +13,11 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       total
     }
     payment_order_id
+    payment_mode
+    payment_amount
+    payment_currency
+    payment_txStatus
+    payment_referenceId
     delivery {
       otp
     }
@@ -47,6 +52,6 @@ mutation checkout($address: ID!, $paymentMethod: String) {
 }
 
 # {
-#   "address": "6056394384f1ac2c5cc255d1",
+#   "address": "607731ed83429404649a859f",
 #   "paymentMethod": "cod"
 # }
