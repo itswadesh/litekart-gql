@@ -38,30 +38,30 @@ query product1($id: ID!) {
     keywords
     itemId
     warranty
-    age_min
-    age_max
-    age_unit
-    style_code
-    ean_no
-    article_code
-    product_master_id
+    ageMin
+    ageMax
+    ageUnit
+    styleCode
+    eanNo
+    articleCode
+    productMasterId
     currency
     manufacturer
-    country_of_origin
-    return_info
+    countryOfOrigin
+    returnInfo
     gender
     condition
     gtin
     cgst
     sgst
     igst
-    key_features
+    keyFeatures
     features {
       id
       name
       value
     }
-    product_details {
+    productDetails {
       id
       name
       value
@@ -147,7 +147,7 @@ query product1($id: ID!) {
         storePhotos
       }
     }
-    return_info
+    returnInfo
     relatedProducts {
       id
       name

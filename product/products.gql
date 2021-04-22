@@ -45,7 +45,7 @@ query products(
     data {
       id
       sku
-      product_master_id
+      productMasterId
       slug
       name
       type
@@ -72,10 +72,10 @@ query products(
       reviews
       itemId
       warranty
-      discount_percent
-      age_min
-      age_max
-      age_unit
+      discountPercent
+      ageMin
+      ageMax
+      ageUnit
       cgst
       sgst
       igst

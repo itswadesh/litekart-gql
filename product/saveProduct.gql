@@ -35,20 +35,20 @@ mutation saveProduct(
   $keywords: String
   $itemId: String
   $warranty: String
-  $age_min: Int
-  $age_max: Int
-  $age_unit: String
-  $style_code: String
-  $ean_no: String
-  $article_code: String
-  $product_master_id: String
+  $ageMin: Int
+  $ageMax: Int
+  $ageUnit: String
+  $styleCode: String
+  $eanNo: String
+  $articleCode: String
+  $productMasterId: String
   $currency: String
   $manufacturer: String
-  $return_info: String
+  $returnInfo: String
   $gender: String
   $condition: String
   $gtin: String
-  $country_of_origin: String
+  $countryOfOrigin: String
   $cgst: Float
   $sgst: Float
   $igst: Float
@@ -91,20 +91,20 @@ mutation saveProduct(
     keywords: $keywords
     itemId: $itemId
     warranty: $warranty
-    age_min: $age_min
-    age_max: $age_max
-    age_unit: $age_unit
-    style_code: $style_code
-    ean_no: $ean_no
-    article_code: $article_code
-    product_master_id: $product_master_id
+    ageMin: $ageMin
+    ageMax: $ageMax
+    ageUnit: $ageUnit
+    styleCode: $styleCode
+    eanNo: $eanNo
+    articleCode: $articleCode
+    productMasterId: $productMasterId
     currency: $currency
     manufacturer: $manufacturer
-    return_info: $return_info
+    returnInfo: $returnInfo
     gender: $gender
     condition: $condition
     gtin: $gtin
-    country_of_origin: $country_of_origin
+    countryOfOrigin: $countryOfOrigin
     cgst: $cgst
     sgst: $sgst
     igst: $igst
@@ -144,25 +144,25 @@ mutation saveProduct(
     brand
     itemId
     warranty
-    age_min
-    age_max
-    age_unit
-    style_code
-    ean_no
-    article_code
-    product_master_id
+    ageMin
+    ageMax
+    ageUnit
+    styleCode
+    eanNo
+    articleCode
+    productMasterId
     currency
     manufacturer
-    country_of_origin
-    return_info
+    countryOfOrigin
+    returnInfo
     gender
     condition
     gtin
     cgst
     sgst
     igst
-    color_group
-    size_group
+    colorGroup
+    sizeGroup
     category {
       id
       name

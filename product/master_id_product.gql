@@ -4,7 +4,7 @@ query master_id_product(
   $limit: Int
   $search: String
   $sort: String
-  $product_master_id: String!
+  $productMasterId: String!
   $active: Boolean
 ) {
   master_id_product(
@@ -13,7 +13,7 @@ query master_id_product(
     limit: $limit
     search: $search
     sort: $sort
-    product_master_id: $product_master_id
+    productMasterId: $productMasterId
     active: $active
   ) {
     count
@@ -48,12 +48,12 @@ query master_id_product(
       reviews
       itemId
       warranty
-      discount_percent
-      age_min
-      age_max
-      age_unit
-      size_group
-      color_group
+      discountPercent
+      ageMin
+      ageMax
+      ageUnit
+      sizeGroup
+      colorGroup
     }
   }
 }
