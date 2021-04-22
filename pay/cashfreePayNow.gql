@@ -11,5 +11,6 @@ mutation cashfreePayNow($address: ID) {
     returnUrl
     notifyUrl
     signature
+    url
   }
 }
