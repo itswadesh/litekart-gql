@@ -51,7 +51,10 @@ mutation checkout($address: ID!, $paymentMethod: String) {
   }
 }
 
+# for multiple vendor in futute
 # {
 #   "address": "607731ed83429404649a859f",
 #   "paymentMethod": "cod"
+#   "pid": "60151b263101e96f152d5165",
+#   "qty": 1
 # }
