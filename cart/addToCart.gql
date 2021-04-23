@@ -47,6 +47,7 @@ mutation addToCart(
       sgst
       igst
     }
+    sid
   }
 }
 
