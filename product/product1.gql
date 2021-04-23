@@ -49,6 +49,7 @@ query product1($id: ID!) {
     manufacturer
     countryOfOrigin
     returnInfo
+    link
     gender
     condition
     gtin
