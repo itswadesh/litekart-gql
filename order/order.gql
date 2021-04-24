@@ -5,6 +5,7 @@ query order($id: ID!) {
     otp
     createdAt
     codPaid
+    paySuccess
     payment {
       amount_paid
       amount_due
