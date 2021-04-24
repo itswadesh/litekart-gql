@@ -30,7 +30,7 @@ query settings {
       method
     }
     userRoles
-    shopEmail
+    websiteEmail
     shopPhone
     shopAddress
     logo
