@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-mutation paySuccessPageHit($id: ID!) {
-=======
 query paySuccessPageHit($id: ID!) {
->>>>>>> 4cd90f9bc7353b5c7e34177da725bfa73ac59128
   paySuccessPageHit(id: $id)
 }
