@@ -16,7 +16,7 @@ mutation saveSettings(
   $open_graph_image: String
   $tax: TaxIp
   $shipping: ShippingIp
-  $shopEmail: String
+  $websiteEmail: String
   $shopPhone: String
   $shopAddress: String
   $logo: String
@@ -65,7 +65,7 @@ mutation saveSettings(
     open_graph_image: $open_graph_image
     tax: $tax
     shipping: $shipping
-    shopEmail: $shopEmail
+    websiteEmail: $websiteEmail
     shopPhone: $shopPhone
     shopAddress: $shopAddress
     logo: $logo
@@ -118,7 +118,7 @@ mutation saveSettings(
       free
       method
     }
-    shopEmail
+    websiteEmail
     shopPhone
     shopAddress
     logo
