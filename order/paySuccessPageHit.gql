@@ -1,0 +1,3 @@
+query paySuccessPageHit($id: ID!) {
+  paySuccessPageHit(id: $id)
+}
