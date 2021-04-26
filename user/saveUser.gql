@@ -9,6 +9,8 @@ mutation saveUser(
   $city: String
   $phone: String
   $email: String
+  $shippingCharges: Int
+  $freeShippingOn: Int
 ) {
   saveUser(
     id: $id
@@ -21,6 +23,8 @@ mutation saveUser(
     city: $city
     phone: $phone
     email: $email
+    shippingCharges: $shippingCharges
+    freeShippingOn: $freeShippingOn
   ) {
     id
     email
@@ -34,5 +38,13 @@ mutation saveUser(
     phone
     active
     verified
+    shippingCharges
+    freeShippingOn
   }
 }
+
+# {
+#   "id": "606c127255c00f147499139f",
+#   "shippingCharges": 40,
+#   "freeShippingOn": 500
+# }

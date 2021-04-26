@@ -14,6 +14,7 @@ query cart {
       slug
       qty
       price
+      shippingCharge
       img
       options
       tracking

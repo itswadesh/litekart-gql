@@ -27,6 +27,7 @@ mutation addToCart(
       slug
       qty
       price
+      shippingCharge
       img
       options
     }
@@ -47,7 +48,6 @@ mutation addToCart(
       sgst
       igst
     }
-    sid
   }
 }
 

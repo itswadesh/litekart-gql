@@ -10,6 +10,8 @@ mutation updateProfile(
   # $city: String
   $phone: String
   $info: InputInfo
+  $shippingCharges: Int
+  $freeShippingOn: Int
 ) {
   updateProfile(
     firstName: $firstName
@@ -21,6 +23,8 @@ mutation updateProfile(
     gender: $gender
     info: $info
     address: $address
+    shippingCharges: $shippingCharges
+    freeShippingOn: $freeShippingOn
   ) {
     firstName
     lastName
@@ -30,6 +34,8 @@ mutation updateProfile(
     verified
     gender
     city
+    shippingCharges
+    freeShippingOn
     address {
       address
       town
