@@ -35,11 +35,7 @@ query myOrders(
       amount {
         qty
         subtotal
-        tax {
-          cgst
-          sgst
-          igst
-        }
+        tax
         discount
         total
         shipping
@@ -70,6 +66,10 @@ query myOrders(
         price
         qty
         status
+        shippingCharge
+        tax
+        brandName
+        brandImg
         vendor {
           store
           firstName

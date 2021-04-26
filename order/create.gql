@@ -12,11 +12,7 @@ mutation create($id: ID!, $pid: ID!, $status: String, $tracking: String) {
       subtotal
       discount
       shipping
-      tax {
-        cgst
-        sgst
-        igst
-      }
+      tax
       total
     }
     paymentOrderId

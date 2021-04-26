@@ -21,11 +21,7 @@ query vendorOrders($status: String!, $vendor: ID!) {
       amount {
         qty
         subtotal
-        tax {
-          cgst
-          sgst
-          igst
-        }
+        tax
         discount
         total
         shipping

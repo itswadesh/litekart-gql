@@ -15,11 +15,7 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
       amount {
         qty
         subtotal
-        tax {
-          cgst
-          sgst
-          igst
-        }
+        tax
         discount
         total
         shipping
@@ -33,7 +29,6 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
           lng
         }
       }
-
       items {
         pid
         name

@@ -11,6 +11,7 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       discount
       shipping
       total
+      tax
     }
     paymentOrderId
     paymentMode
@@ -28,12 +29,16 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       slug
       img
       tracking
+      shippingCharge
+      tax
       vendor {
         id
         firstName
         lastName
         phone
       }
+      brandName
+      brandImg
     }
     address {
       firstName
@@ -53,8 +58,6 @@ mutation checkout($address: ID!, $paymentMethod: String) {
 
 # for multiple vendor in futute
 # {
-#   "address": "607731ed83429404649a859f",
+#   "address": "6086e9452b06642e24298591",
 #   "paymentMethod": "cod"
-#   "pid": "60151b263101e96f152d5165",
-#   "qty": 1
 # }

@@ -20,11 +20,7 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
       amount {
         qty
         subtotal
-        tax {
-          cgst
-          sgst
-          igst
-        }
+        tax
         discount
         total
         shipping
@@ -52,7 +48,10 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
         slug
         price
         qty
+        shippingCharge
         status
+        brandName
+        brandImg
         vendor {
           store
         }

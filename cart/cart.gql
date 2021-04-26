@@ -3,12 +3,18 @@ query cart {
     id
     items {
       pid
+      barcode
+      tax
       vendor {
         id
         store
         firstName
         lastName
         phone
+      }
+      brand {
+        id
+        name
       }
       name
       slug
@@ -31,10 +37,6 @@ query cart {
       charge
     }
     total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    tax
   }
 }

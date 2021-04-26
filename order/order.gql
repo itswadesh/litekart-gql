@@ -18,11 +18,7 @@ query order($id: ID!) {
     amount {
       qty
       subtotal
-      tax {
-        cgst
-        sgst
-        igst
-      }
+      tax
       discount
       total
       shipping
@@ -46,12 +42,17 @@ query order($id: ID!) {
     items {
       pid
       name
+      barcode
       img
       slug
       price
       qty
+      shippingCharge
+      tax
       time
       options
+      brandName
+      brandImg
       orderStatus {
         id
         event

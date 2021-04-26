@@ -11,6 +11,11 @@ query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
         img
         price
         mrp
+        brand {
+          id
+          name
+          img
+        }
       }
       variant {
         id

@@ -17,17 +17,22 @@ mutation addToCart(
     items {
       pid
       vid
+      barcode
       vendor {
         _id
         firstName
         lastName
         phone
       }
+      brand {
+        name
+      }
       name
       slug
       qty
       price
       shippingCharge
+      tax
       img
       options
     }
@@ -43,11 +48,7 @@ mutation addToCart(
       charge
     }
     total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    tax
   }
 }
 
