@@ -1,0 +1,5 @@
+mutation OrderRefund($oid: ID!, $itemId: ID!) {
+  OrderRefund(oid: $oid, itemId: $itemId) {
+    id
+  }
+}
