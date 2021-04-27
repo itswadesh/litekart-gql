@@ -13,5 +13,6 @@ mutation cashfreePayNow($address: ID) {
     signature
     token
     url
+    stage
   }
 }

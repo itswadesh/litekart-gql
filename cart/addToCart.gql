@@ -19,7 +19,6 @@ mutation addToCart(
       vid
       barcode
       vendor {
-        _id
         firstName
         lastName
         phone
