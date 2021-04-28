@@ -1,7 +1,6 @@
 mutation saveUnit(
   $id: String!
   $name: String
-  $slug: String
   $info: String
   $img: String
   $featured: Boolean
@@ -10,7 +9,6 @@ mutation saveUnit(
   saveUnit(
     id: $id
     name: $name
-    slug: $slug
     info: $info
     img: $img
     featured: $featured
@@ -18,7 +16,6 @@ mutation saveUnit(
   ) {
     id
     name
-    slug
     info
     img
     featured

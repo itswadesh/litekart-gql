@@ -6,7 +6,6 @@ mutation saveOption(
   $val: String
   $categories: [String]
   $position: Int
-  $slug: String
   $isFilter: Boolean
   $preselect: Boolean
   $required: Boolean
@@ -23,7 +22,6 @@ mutation saveOption(
     val: $val
     categories: $categories
     position: $position
-    slug: $slug
     isFilter: $isFilter
     info: $info
     preselect: $preselect
@@ -39,7 +37,6 @@ mutation saveOption(
     val
     categories
     position
-    slug
     info
     preselect
     required
@@ -51,7 +48,6 @@ mutation saveOption(
       id
       name
       default
-      slug
       position
       direction
       type

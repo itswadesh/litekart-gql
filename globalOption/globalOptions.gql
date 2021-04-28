@@ -10,7 +10,6 @@ query globalOptions {
       val
       categories
       position
-      slug
       info
       preselect
       required
@@ -21,7 +20,6 @@ query globalOptions {
         id
         name
         default
-        slug
         position
       }
     }

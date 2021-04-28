@@ -9,7 +9,6 @@ query features($page: Int, $search: String, $limit: Int, $sort: String) {
       value
       type
       product
-      slug
       active
     }
   }

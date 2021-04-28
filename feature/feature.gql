@@ -5,7 +5,6 @@ query feature($id: String!) {
     value
     type
     product
-    slug
     active
   }
 }

@@ -1,8 +1,7 @@
-query state($id: String, $slug: String) {
-  state(id: $id, slug: $slug) {
+query state($id: String) {
+  state(id: $id) {
     id
     name
-    slug
     value
     code
     img

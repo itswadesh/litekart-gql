@@ -17,7 +17,6 @@ mutation saveFeature(
     id
     name
     value
-    slug
     type
     product
     active

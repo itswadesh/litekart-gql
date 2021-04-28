@@ -21,7 +21,6 @@ query globalOptionValues(
       name
       default
       position
-      slug
       active
     }
   }

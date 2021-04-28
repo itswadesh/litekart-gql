@@ -6,7 +6,6 @@ query faqTopics($page: Int, $search: String, $limit: Int, $sort: String) {
     data {
       id
       name
-      slug
       for
       uid
       active

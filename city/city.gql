@@ -8,7 +8,6 @@ query city($id: String!) {
     }
     lat
     lng
-    slug
     active
     createdAt
     updatedAt

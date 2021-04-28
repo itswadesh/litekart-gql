@@ -6,7 +6,6 @@ query globalOption($id: ID!) {
     val
     categories
     position
-    slug
     info
     preselect
     required
@@ -17,7 +16,6 @@ query globalOption($id: ID!) {
       id
       name
       default
-      slug
       position
     }
   }

@@ -2,6 +2,7 @@ query blog($id: String!) {
   blog(id: $id) {
     id
     title
+    slug
     active
     excerpt
     content

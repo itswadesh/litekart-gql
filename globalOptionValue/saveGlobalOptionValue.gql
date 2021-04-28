@@ -4,7 +4,6 @@ mutation saveGlobalOptionValue(
   $name: String
   $default: Boolean
   $position: Int
-  $slug: String
   $active: Boolean
 ) {
   saveGlobalOptionValue(
@@ -13,7 +12,6 @@ mutation saveGlobalOptionValue(
     name: $name
     default: $default
     position: $position
-    slug: $slug
     active: $active
   ) {
     id
@@ -21,7 +19,6 @@ mutation saveGlobalOptionValue(
     name
     default
     position
-    slug
     active
   }
 }

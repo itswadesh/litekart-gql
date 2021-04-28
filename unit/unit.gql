@@ -2,7 +2,6 @@ query unit($id: ID!) {
   unit(id: $id) {
     id
     name
-    slug
     info
     img
     featured

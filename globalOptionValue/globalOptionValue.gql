@@ -5,7 +5,6 @@ query globalOptionValue($id: ID!) {
     name
     default
     position
-    slug
     active
   }
 }

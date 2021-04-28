@@ -1,7 +1,6 @@
 mutation saveCountry(
   $id: String
   $name: String
-  $slug: String
   $value: String
   $code: String
   $img: String
@@ -13,7 +12,6 @@ mutation saveCountry(
   saveCountry(
     id: $id
     name: $name
-    slug: $slug
     value: $value
     code: $code
     img: $img
@@ -24,7 +22,6 @@ mutation saveCountry(
   ) {
     id
     name
-    slug
     value
     code
     img

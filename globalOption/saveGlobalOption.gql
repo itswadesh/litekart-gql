@@ -5,7 +5,6 @@ mutation saveGlobalOption(
   $val: String
   $categories: [String]
   $position: Int
-  $slug: String
   $isFilter: Boolean
   $preselect: Boolean
   $required: Boolean
@@ -20,7 +19,6 @@ mutation saveGlobalOption(
     val: $val
     categories: $categories
     position: $position
-    slug: $slug
     isFilter: $isFilter
     info: $info
     preselect: $preselect
@@ -34,7 +32,6 @@ mutation saveGlobalOption(
     val
     categories
     position
-    slug
     info
     preselect
     required
@@ -45,7 +42,6 @@ mutation saveGlobalOption(
       id
       name
       default
-      slug
       position
     }
   }

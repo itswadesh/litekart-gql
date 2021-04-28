@@ -4,7 +4,6 @@ query color($id: ID!) {
     name
     color_code
     info
-    slug
     featured
     active
     createdAt

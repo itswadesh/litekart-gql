@@ -12,7 +12,6 @@ query cities($page: Int, $search: String, $limit: Int, $sort: String) {
       }
       lat
       lng
-      slug
       active
       createdAt
       updatedAt

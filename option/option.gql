@@ -6,7 +6,6 @@ query option($id: ID!) {
     val
     categories
     position
-    slug
     info
     preselect
     required
@@ -18,7 +17,6 @@ query option($id: ID!) {
       id
       name
       default
-      slug
       position
       direction
       type

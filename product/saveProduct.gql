@@ -1,6 +1,7 @@
 mutation saveProduct(
   $id: String!
   $name: String
+  $slug: String
   $description: String
   $type: String
   $city: String
@@ -57,6 +58,7 @@ mutation saveProduct(
   saveProduct(
     id: $id
     name: $name
+    slug: $slug
     description: $description
     type: $type
     city: $city

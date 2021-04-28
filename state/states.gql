@@ -6,7 +6,6 @@ query states($page: Int, $search: String, $limit: Int, $sort: String) {
     data {
       id
       name
-      slug
       value
       code
       img

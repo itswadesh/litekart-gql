@@ -8,7 +8,6 @@ query colors($page: Int, $search: String, $limit: Int, $sort: String) {
       name
       color_code
       info
-      slug
       featured
       active
       createdAt
