@@ -55,43 +55,14 @@ query product1($id: ID!) {
     igst
     keyFeatures
     returnInfo
-    brand {
-      id
-      name
-    }
-    color {
-      id
-      name
-    }
-    size {
-      id
-      name
-    }
-    features {
-      id
-      name
-      value
-    }
-    productDetails {
-      id
-      name
-      value
-    }
-    liveStreams {
-      id
-      title
-      imageUrl
-      scheduleDateTime
-      user
-    }
-    category {
-      id
-      name
-    }
-    categories {
-      id
-      name
-    }
+    brand
+    color
+    size
+    features
+    productDetails
+    liveStreams
+    category
+    categories
     variants {
       id
       options {
@@ -127,25 +98,7 @@ query product1($id: ID!) {
         default
       }
     }
-    vendor {
-      id
-      firstName
-      lastName
-      phone
-      email
-      address {
-        address
-      }
-      info {
-        store
-        storePhotos
-      }
-    }
-    relatedProducts {
-      id
-      name
-      slug
-      img
-    }
+    vendor
+    relatedProducts
   }
 }
