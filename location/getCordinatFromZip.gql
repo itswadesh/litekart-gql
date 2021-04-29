@@ -1,0 +1,6 @@
+query getCordinatFromZip($zip: Int!) {
+  getCordinatFromZip(zip: $zip) {
+    lat
+    lng
+  }
+}
