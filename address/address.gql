@@ -11,6 +11,8 @@ query address($id: ID!) {
     state
     zip
     phone
+    lat
+    lng
     active
     createdAt
     updatedAt

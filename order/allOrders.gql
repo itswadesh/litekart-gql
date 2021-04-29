@@ -24,13 +24,13 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
         firstName
         lastName
         address
-        coords {
-          lat
-          lng
-        }
+        lat
+        lng
       }
       items {
         pid
+        posInvoiceNo
+        itemOrderNo
         name
         img
         slug

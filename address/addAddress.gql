@@ -11,7 +11,8 @@ mutation {
     state: "raj"
     zip: 322201
     phone: "8003423344"
-    coords: { lat: 27.2046, lng: 77.4977 }
+    lat: 27.2046
+    lng: 77.4977
   ) {
     id
     firstName
@@ -25,5 +26,7 @@ mutation {
     state
     zip
     phone
+    lat
+    lng
   }
 }

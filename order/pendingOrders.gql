@@ -52,10 +52,8 @@ query pendingOrders(
         town
         city
         zip
-        coords {
-          lat
-          lng
-        }
+        lat
+        lng
       }
       createdAt
       updatedAt

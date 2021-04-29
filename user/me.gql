@@ -27,10 +27,8 @@ query me {
       zip
       phone
       active
-      coords {
-        lat
-        lng
-      }
+      lat
+      lng
     }
     info {
       public

@@ -25,6 +25,8 @@ mutation checkout($address: ID!, $paymentMethod: String) {
     items {
       status
       pid
+      posInvoiceNo
+      itemOrderNo
       name
       slug
       img
@@ -44,6 +46,8 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       firstName
       lastName
       phone
+      lat
+      lng
     }
     user {
       id
@@ -56,8 +60,7 @@ mutation checkout($address: ID!, $paymentMethod: String) {
   }
 }
 
-# for multiple vendor in futute
 # {
-#   "address": "6086e9452b06642e24298591",
+#   "address": "608ab6af97116f3a88f700d6",
 #   "paymentMethod": "cod"
 # }
