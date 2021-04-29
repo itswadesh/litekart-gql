@@ -26,7 +26,7 @@ mutation saveProduct(
   $variants: [ID!]
   $popularity: Int
   $sku: String
-  $hsn: Int
+  $hsn: String
   $group: String
   $color: ID
   $size: ID
