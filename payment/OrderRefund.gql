@@ -1,5 +1,12 @@
-mutation OrderRefund($oid: ID!, $itemId: ID!) {
-  OrderRefund(oid: $oid, itemId: $itemId) {
+mutation OrderRefund($oid: ID!, $itemId: ID!, $amount: Float!, $note: String!) {
+  OrderRefund(oid: $oid, itemId: $itemId, amount: $amount, note: $note) {
     id
   }
 }
+
+# {
+#   "oid": "608ac3d553069d34041b8d23",
+#   "itemId": "60897bfa7bcb042afc3cd125",
+#   "amount": 33.33,
+#   "note": "aaa"
+# }

@@ -3,6 +3,7 @@ mutation saveCategory(
   $name: String
   $parent: ID
   $slug: String
+  $refreshSlug: Boolean
   $img: String
   $level: Int
   $metaTitle: String
@@ -19,6 +20,7 @@ mutation saveCategory(
     name: $name
     parent: $parent
     slug: $slug
+    refreshSlug: $refreshSlug
     img: $img
     level: $level
     metaTitle: $metaTitle
@@ -49,3 +51,10 @@ mutation saveCategory(
     updatedAt
   }
 }
+
+# {
+#   "id": "608d3a58ddde26066064e44c",
+#   "parent": "608d3a77ddde26066064e44f",
+#   "slug": "aaa",
+#   "refreshSlug": true
+# }

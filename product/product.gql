@@ -92,6 +92,10 @@ query product($id: ID!) {
       id
       name
     }
+    categoryPool {
+      id
+      name
+    }
     keyFeatures
     features {
       id
