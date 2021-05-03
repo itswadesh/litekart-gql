@@ -63,6 +63,7 @@ query product1($id: ID!) {
     liveStreams
     category
     categories
+    categoryPool
     variants {
       id
       options {
