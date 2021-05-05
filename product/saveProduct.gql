@@ -168,8 +168,8 @@ mutation saveProduct(
     colorGroup
     sizeGroup
     variants
+  }
 }
-
 # {
 #   "id": "new",
 #   "name": "test product 1",
