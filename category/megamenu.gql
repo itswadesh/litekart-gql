@@ -1,5 +1,17 @@
-query megamenu($id: ID, $search: String, $sort: String, $featured: Boolean) {
-  megamenu(id: $id, search: $search, sort: $sort, featured: $featured) {
+query megamenu(
+  $id: ID
+  $slug: String
+  $search: String
+  $sort: String
+  $featured: Boolean
+) {
+  megamenu(
+    id: $id
+    slug: $slug
+    search: $search
+    sort: $sort
+    featured: $featured
+  ) {
     id
     name
     slug
