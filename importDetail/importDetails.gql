@@ -1,0 +1,22 @@
+query importDetails($type: String!) {
+  importDetails(type: $type) {
+    count
+    pageSize
+    page
+    data {
+      id
+      importNo
+      rawNo
+      totalItems
+      message
+      fileName
+      type
+      success
+      user
+    }
+  }
+}
+
+# {
+#   "type": "product"
+# }
