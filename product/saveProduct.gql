@@ -167,20 +167,7 @@ mutation saveProduct(
     relatedProducts
     colorGroup
     sizeGroup
-    variants {
-      options {
-        name
-      }
-      stock
-      weight
-      barcode
-      sku
-      mrp
-      price
-      img
-      sort
-    }
-  }
+    variants
 }
 
 # {
