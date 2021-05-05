@@ -64,41 +64,8 @@ query product1($id: ID!) {
     category
     categories
     categoryPool
-    variants {
-      id
-      options {
-        name
-        val
-      }
-      stock
-      weight
-      barcode
-      sku
-      mrp
-      price
-      images
-      trackInventory
-      active
-      sort
-    }
-    options {
-      id
-      name
-      type
-      position
-      preselect
-      active
-      required
-      default_option
-      values {
-        id
-        name
-        position
-        amount
-        direction
-        default
-      }
-    }
+    variants
+    options
     vendor
     relatedProducts
   }
