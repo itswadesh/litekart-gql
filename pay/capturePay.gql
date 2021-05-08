@@ -11,11 +11,7 @@ mutation capturePay($id: String!, $oid: String!) {
       subtotal
       shipping
       qty
-      tax {
-        cgst
-        sgst
-        igst
-      }
+      tax
     }
     address {
       firstName

@@ -21,10 +21,6 @@ mutation applyCoupon($code: String!) {
       charge
     }
     total
-    tax {
-      cgst
-      sgst
-      igst
-    }
+    tax
   }
 }
