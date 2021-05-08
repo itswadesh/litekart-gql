@@ -1,5 +1,5 @@
-mutation capturePay($id: String!, $oid: String!) {
-  capturePay(paymentId: $id, oid: $oid) {
+mutation capturePay($paymentId: String!, $oid: String!) {
+  capturePay(paymentId: $paymentId, oid: $oid) {
     id
     user {
       firstName

@@ -1,6 +1,8 @@
 mutation razorpay($address: ID) {
   razorpay(address: $address) {
     id
+    key_id
+    amount
   }
 }
 # mutation razorpay(
