@@ -42,6 +42,20 @@ mutation checkout($address: ID!, $paymentMethod: String) {
       brandName
       brandImg
     }
+    orderItems {
+      status
+      pid
+      posInvoiceNo
+      itemOrderNo
+      name
+      slug
+      img
+      tracking
+      shippingCharge
+      tax
+      brandName
+      brandImg
+    }
     address {
       firstName
       lastName

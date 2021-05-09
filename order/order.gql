@@ -82,5 +82,19 @@ query order($id: ID!) {
       }
       status
     }
+    orderItems {
+      status
+      pid
+      posInvoiceNo
+      itemOrderNo
+      name
+      slug
+      img
+      tracking
+      shippingCharge
+      tax
+      brandName
+      brandImg
+    }
   }
 }
