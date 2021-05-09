@@ -1,5 +1,17 @@
-query importDetails($type: String!) {
-  importDetails(type: $type) {
+query importDetails(
+  $type: String!
+  $page: Int
+  $limit: Int
+  $search: String
+  $sort: String
+) {
+  importDetails(
+    type: $type
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+  ) {
     count
     pageSize
     page
@@ -16,7 +28,3 @@ query importDetails($type: String!) {
     }
   }
 }
-
-# {
-#   "type": "product"
-# }
