@@ -1,5 +1,5 @@
-query liveStreams {
-  liveStreams {
+query liveStream($id: ID!) {
+  liveStream(id: $id) {
     id
     product
     products
