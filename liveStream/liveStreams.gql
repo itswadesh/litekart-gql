@@ -1,12 +1,25 @@
 query liveStreams {
   liveStreams {
     id
-    product
-    products
+    product {
+      id
+    }
+    products {
+      id
+      name
+      img
+      slug
+      price
+      mrp
+    }
     scheduleDateTime
     title
     img
-    user
-    users
+    user {
+      id
+    }
+    users {
+      id
+    }
   }
 }
