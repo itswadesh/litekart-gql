@@ -1,25 +1,57 @@
-query liveStreams {
-  liveStreams {
-    id
-    product {
+query liveStreams(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $q: String
+) {
+  liveStreams(
+    page: $page
+    skip: $skip
+    search: $search
+    limit: $limit
+    sort: $sort
+    q: $q
+  ) {
+    count
+    page
+    pageSize
+    data {
       id
-    }
-    products {
-      id
-      name
+      scheduleDateTime
+      title
       img
-      slug
-      price
-      mrp
-    }
-    scheduleDateTime
-    title
-    img
-    user {
-      id
-    }
-    users {
-      id
+      product {
+        id
+        name
+        img
+        slug
+        price
+        mrp
+      }
+      products {
+        id
+        name
+        img
+        slug
+        price
+        mrp
+      }
+      user {
+        id
+        firstName
+        lastName
+        email
+        phone
+      }
+      users {
+        id
+        firstName
+        lastName
+        email
+        phone
+      }
     }
   }
 }

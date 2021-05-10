@@ -2,7 +2,7 @@ mutation saveLiveStream(
   $id: String!
   $product: ID
   $products: [ID]
-  $scheduleDateTime: String
+  $scheduleDateTime: Float!
   $title: String
   $img: String
 ) {
@@ -15,20 +15,12 @@ mutation saveLiveStream(
     title: $title
   ) {
     id
-    product {
-      id
-    }
-    products {
-      id
-    }
+    product
+    products
     scheduleDateTime
     title
     img
-    user {
-      id
-    }
-    users {
-      id
-    }
+    user
+    users
   }
 }
