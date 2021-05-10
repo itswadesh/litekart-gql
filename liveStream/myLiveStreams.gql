@@ -2,9 +2,11 @@ query myLiveStreams {
   myLiveStreams {
     id
     product
+    products
     scheduleDateTime
     title
     imageUrl
     user
+    users
   }
 }

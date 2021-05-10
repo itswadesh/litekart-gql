@@ -1,10 +1,25 @@
 query liveStream($id: ID!) {
   liveStream(id: $id) {
     id
-    product
+    product {
+      id
+    }
+    products {
+      id
+      name
+      img
+      slug
+      price
+      mrp
+    }
     scheduleDateTime
     title
-    imageUrl
-    user
+    img
+    user {
+      id
+    }
+    users {
+      id
+    }
   }
 }
