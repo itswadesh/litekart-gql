@@ -1,8 +1,16 @@
 query liveStream($id: ID!) {
   liveStream(id: $id) {
     id
+    scheduleDateTime
+    title
+    img
     product {
       id
+      name
+      img
+      slug
+      price
+      mrp
     }
     products {
       id
@@ -12,14 +20,19 @@ query liveStream($id: ID!) {
       price
       mrp
     }
-    scheduleDateTime
-    title
-    img
     user {
       id
+      firstName
+      lastName
+      email
+      phone
     }
     users {
       id
+      firstName
+      lastName
+      email
+      phone
     }
   }
 }
