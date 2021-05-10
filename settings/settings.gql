@@ -32,7 +32,6 @@ query settings {
     userRoles
     websiteEmail
     shopPhone
-    shopAddress
     websiteLegalName
     logo
     logoMobile
@@ -83,5 +82,7 @@ query settings {
     instagram
     enableTax
     locationExpiry
+    websiteLegalName
   }
 }
+   

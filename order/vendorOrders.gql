@@ -10,7 +10,7 @@ query vendorOrders($status: String!, $vendor: ID!) {
       otp
       createdAt
       updatedAt
-      codPaid
+      codPaid0
       paymentMode
       paymentTxStatus
       paymentAmount
