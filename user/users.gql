@@ -21,6 +21,7 @@ query users(
       verified
       active
       product_sold
+      luluCustomerNo
       address {
         address
         city
