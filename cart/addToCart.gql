@@ -18,14 +18,6 @@ mutation addToCart(
       pid
       vid
       barcode
-      vendor {
-        firstName
-        lastName
-        phone
-      }
-      brand {
-        name
-      }
       name
       slug
       qty
@@ -34,6 +26,14 @@ mutation addToCart(
       tax
       img
       options
+      brand {
+        name
+      }
+      vendor {
+        firstName
+        lastName
+        phone
+      }
     }
     qty
     subtotal
@@ -46,8 +46,8 @@ mutation addToCart(
     shipping {
       charge
     }
-    total
     tax
+    total
   }
 }
 
