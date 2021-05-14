@@ -13,7 +13,6 @@ query me {
     active
     avatar
     product_sold
-    luluCustomerNo
     address {
       id
       email
