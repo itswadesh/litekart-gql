@@ -1,11 +1,13 @@
 query importDetails(
-  $type: String!
+  $importNo: String
+  $type: String
   $page: Int
   $limit: Int
   $search: String
   $sort: String
 ) {
   importDetails(
+    importNo: $importNo
     type: $type
     page: $page
     search: $search
