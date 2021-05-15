@@ -13,7 +13,6 @@ query cart {
         phone
       }
       brand {
-        id
         name
       }
       name
