@@ -60,7 +60,6 @@ query product1($id: ID!) {
     size
     features
     productDetails
-    liveStreams
     category
     categories
     categoryPool

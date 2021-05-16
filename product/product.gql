@@ -107,16 +107,6 @@ query product($id: ID!) {
       name
       value
     }
-    liveStreams {
-      id
-      title
-      img
-      scheduleDateTime
-      user {
-        firstName
-        lastName
-      }
-    }
     options {
       id
       name
