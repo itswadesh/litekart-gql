@@ -83,5 +83,6 @@ query settings {
     instagram
     enableTax
     locationExpiry
+    WWW_URL
   }
 }
