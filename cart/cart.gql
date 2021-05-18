@@ -5,24 +5,19 @@ query cart {
       pid
       barcode
       tax
-      vendor {
-        id
-        store
-        firstName
-        lastName
-        phone
-      }
-      brand {
-        name
-      }
       name
       slug
       qty
       price
+      mrp
       shippingCharge
       img
       options
       tracking
+      brandName
+      vendorFirstName
+      vendorLastName
+      vendorPhone
     }
     qty
     subtotal

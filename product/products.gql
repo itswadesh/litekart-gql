@@ -45,6 +45,7 @@ query products(
     data {
       id
       sku
+      barcode
       productMasterId
       slug
       name

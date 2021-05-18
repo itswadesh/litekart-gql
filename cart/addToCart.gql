@@ -26,14 +26,10 @@ mutation addToCart(
       tax
       img
       options
-      brand {
-        name
-      }
-      vendor {
-        firstName
-        lastName
-        phone
-      }
+      brandName
+      vendorFirstName
+      vendorLastName
+      vendorPhone
     }
     qty
     subtotal
