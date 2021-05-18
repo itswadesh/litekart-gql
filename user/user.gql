@@ -11,6 +11,8 @@ query user($id: String!) {
     verified
     active
     product_sold
+    shippingCharges
+    freeShippingOn
     luluCustomerNo
     plan
     createdAt

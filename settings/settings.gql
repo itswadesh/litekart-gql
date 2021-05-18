@@ -2,6 +2,7 @@ query settings {
   settings {
     id
     websiteName
+    websiteLegalName
     closed
     closedMessage
     minimumOrderValue
@@ -82,6 +83,6 @@ query settings {
     instagram
     enableTax
     locationExpiry
-    websiteLegalName
+    WWW_URL
   }
 }
