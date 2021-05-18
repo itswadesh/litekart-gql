@@ -1,0 +1,7 @@
+mutation deleteProductViaBarcode($barcodes: [Float!]!) {
+  deleteProductViaBarcode(barcodes: $barcodes)
+}
+
+# {
+#   "barcodes": [98798798765002,98798798222765003]
+# }
