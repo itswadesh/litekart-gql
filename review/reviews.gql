@@ -5,13 +5,12 @@ query reviews($page: Int, $search: String, $limit: Int, $sort: String) {
     pageSize
     data {
       id
-      product {
-        id
-        name
-        slug
-        img
-        type
-      }
+      # product {
+      #   name
+      #   slug
+      #   img
+      #   type
+      # }
       user {
         firstName
         lastName
