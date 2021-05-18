@@ -1,29 +1,3 @@
 mutation removeReview($id: ID!) {
-  removeReview(id: $id) {
-    id
-    product {
-      name
-      slug
-      img
-      type
-    }
-    user {
-      firstName
-      lastName
-      phone
-    }
-    vendor {
-      firstName
-      lastName
-      info {
-        store
-      }
-      phone
-    }
-    rating
-    message
-    active
-    createdAt
-    updatedAt
-  }
+  removeReview(id: $id) 
 }
