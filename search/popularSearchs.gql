@@ -1,0 +1,17 @@
+query popularSearchs(
+  $page: Int
+  $limit: Int
+  $search: String
+  $sort: String
+) {
+  popularSearchs(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+        text
+    popularity
+    }
+  }
+}
