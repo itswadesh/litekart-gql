@@ -1,7 +1,8 @@
-mutation deleteAllProducts($password: String!) {
-  deleteAllProducts(password: $password)
+mutation deleteAllProducts($password: String!,$force: Boolean!) {
+  deleteAllProducts(password: $password,force: $force)
 }
 
 # {
-#   "password": "prakash"
+#   "password": "prakash",
+#   "force": true
 # }
