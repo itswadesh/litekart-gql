@@ -1,4 +1,4 @@
-mutation deleteProductViaBarcode($barcodes: [Float!]!,$force: Boolean!) {
+mutation deleteProductViaBarcode($barcodes: [Float!]!,$force: Boolean) {
   deleteProductViaBarcode(barcodes: $barcodes,force: $force)
 }
 
