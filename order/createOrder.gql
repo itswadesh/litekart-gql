@@ -1,4 +1,4 @@
-mutation createOrder($address: ID!, $user: ID!, $items: [ItemIp!]) {
+mutation createOrder($address: ID, $user: ID!, $items: [ItemIp!]) {
   createOrder(address: $address, user: $user, items: $items) {
     id
     orderNo
@@ -72,17 +72,3 @@ mutation createOrder($address: ID!, $user: ID!, $items: [ItemIp!]) {
   }
 }
 
-# {
-#   "address": "6086e9452b06642e24298591",
-#   "user": "607d25ee0bb9761cb888e727",
-#   "items": [
-#     {
-#     "id": "60963636d4920805681203d9",
-#     "qty": 2
-#     },
-#      {
-#     "id": "60963636d4920805681203f0",
-#     "qty": 1
-#   }
-#   ]
-# }

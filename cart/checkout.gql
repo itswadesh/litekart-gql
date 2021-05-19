@@ -1,5 +1,5 @@
 # , $options:String
-mutation checkout($address: ID!, $paymentMethod: String) {
+mutation checkout($address: ID, $paymentMethod: String) {
   # , options:$options
   checkout(address: $address, paymentMethod: $paymentMethod) {
     id
@@ -73,6 +73,9 @@ mutation checkout($address: ID!, $paymentMethod: String) {
     updatedAt
   }
 }
+
+
+
 
 # {
 #   "address": "608ab6af97116f3a88f700d6",
