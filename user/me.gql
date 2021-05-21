@@ -12,7 +12,7 @@ query me {
     provider
     active
     avatar
-    product_sold
+    # product_sold
     address {
       id
       email
@@ -27,14 +27,14 @@ query me {
       zip
       phone
       active
-      lat
-      lng
+      # lat
+      # lng
     }
     info {
       public
       store
       storePhotos
     }
-    plan
+    # plan
   }
 }
