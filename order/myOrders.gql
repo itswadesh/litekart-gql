@@ -20,18 +20,26 @@ query myOrders(
     data {
       id
       orderNo
-      reviewed
       otp
       createdAt
       updatedAt
       codPaid
       paymentMode
-      paymentTxStatus
-      paymentAmount
-      payment {
-        amount_paid
-        amount_due
-      }
+      paymentStatus
+      paymentCurrency
+      paymentReferenceId
+      paymentOrderId
+      paymentReceipt
+      paymentId
+      invoiceId
+      paymentGateway
+      codPaid
+      amountPaid
+      amountDue
+      paymentStatus
+      paymentMsg
+      paymentTime
+      paid
       amount {
         qty
         subtotal
@@ -40,42 +48,66 @@ query myOrders(
         total
         shipping
       }
-      user {
-        firstName
-        lastName
-        phone
-        email
-        gender
-        info {
-          public
-          store
-          storePhotos
-        }
-        avatar
-      }
+      userFirstName
+      userLastName
+      userPhone
       address {
-        address
         firstName
         lastName
+        town
+        city
+        state
+        zip
+        address
+        lat
+        lng
       }
       items {
         pid
+        posInvoiceNo
+        itemOrderNo
+        name
+        barcode
+        img
+        slug
+        price
+        qty
+        shippingCharge
+        tax
+        time
+        options
+        brandName
+        brandImg
+        orderStatus {
+          id
+          event
+          tracking_id
+          courier_name
+        }
+        vendor {
+          firstName
+          lastName
+          phone
+          address {
+            address
+          }
+          store
+        }
+        status
+      }
+      orderItems {
+        status
+        pid
+        posInvoiceNo
+        itemOrderNo
         name
         slug
         img
-        price
-        qty
-        status
+        tracking
         shippingCharge
         tax
         brandName
         brandImg
-        vendor {
-          store
-          firstName
-          lastName
-          phone
-        }
       }
     }
   }

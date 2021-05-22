@@ -5,42 +5,79 @@ mutation checkout($address: ID, $paymentMethod: String) {
     id
     orderNo
     otp
+    createdAt
+    updatedAt
+    codPaid
+    paymentMode
+    paymentStatus
+    paymentCurrency
+    paymentReferenceId
+    paymentOrderId
+    paymentReceipt
+    paymentId
+    invoiceId
+    paymentGateway
+    codPaid
+    amountPaid
+    amountDue
+    paymentStatus
+    paymentMsg
+    paymentTime
+    paid
     amount {
       qty
       subtotal
-      discount
-      shipping
-      total
       tax
+      discount
+      total
+      shipping
     }
-    paymentOrderId
-    paymentMode
-    paymentAmount
-    paymentCurrency
-    paymentTxStatus
-    paymentReferenceId
-    delivery {
-      otp
+    userFirstName
+    userLastName
+    userPhone
+    address {
+      firstName
+      lastName
+      town
+      city
+      state
+      zip
+      address
+      lat
+      lng
     }
     items {
-      status
       pid
       posInvoiceNo
       itemOrderNo
       name
-      slug
+      barcode
       img
-      tracking
+      slug
+      price
+      qty
       shippingCharge
       tax
-      vendor {
+      time
+      options
+      brandName
+      brandImg
+      orderStatus {
         id
+        event
+        tracking_id
+        courier_name
+      }
+      vendor {
         firstName
         lastName
         phone
+        address {
+          address
+        }
+        store
       }
-      brandName
-      brandImg
+      status
     }
     orderItems {
       status
@@ -56,26 +93,8 @@ mutation checkout($address: ID, $paymentMethod: String) {
       brandName
       brandImg
     }
-    address {
-      firstName
-      lastName
-      phone
-      lat
-      lng
-    }
-    user {
-      id
-      firstName
-      lastName
-      phone
-    }
-    createdAt
-    updatedAt
   }
 }
-
-
-
 
 # {
 #   "address": "608ab6af97116f3a88f700d6",
