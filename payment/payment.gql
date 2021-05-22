@@ -1,28 +1,30 @@
 query payment($id: ID!) {
   payment(id: $id) {
     id
-    entity
-    amount
+    paymentOrderId
+    paymentMode
+    paymentGateway
+    referenceId
+    txMsg
+    txTime
+    invoiceId
+    receipt
+    paid
+    amountPaid
+    amountDue
+    amountRefunded
     currency
-    status
-    order_id
-    invoice_id
-    international
-    method
-    amount_refunded
-    refund_status
     captured
+    status
+    orderId
+    notes
+    refundStatus
     description
-    card_id
-    bank
-    wallet
-    vpa
     email
     contact
     fee
     tax
-    error_code
-    error_description
-    created_at
+    errorCode
+    errorDescription
   }
 }
