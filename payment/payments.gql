@@ -15,6 +15,7 @@ query payments($page: Int, $search: String, $limit: Int, $sort: String) {
       method
       amount_refunded
       refund_status
+      paid
       captured
       description
       card_id
@@ -31,3 +32,4 @@ query payments($page: Int, $search: String, $limit: Int, $sort: String) {
     }
   }
 }
+

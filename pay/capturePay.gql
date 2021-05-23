@@ -1,5 +1,5 @@
 mutation capturePay($paymentId: String!, $oid: String!) {
-  capturePay(paymentId: $paymentId, oid: $oid) {
+  capturePay(paymentId: $paymentId, oid: $oid) {   #oid like :order_HCxgEEdIOsMmJc
     id
     user {
       firstName

@@ -89,6 +89,7 @@ query order($id: ID!) {
       status
     }
     orderItems {
+      id
       status
       pid
       posInvoiceNo
@@ -101,6 +102,12 @@ query order($id: ID!) {
       tax
       brandName
       brandImg
+      orderStatus{
+        id
+        event
+        tracking_id
+        courier_name
+      }
     }
   }
 }

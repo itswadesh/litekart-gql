@@ -16,6 +16,10 @@ query myProducts(
     category: $category
     active: $active
   ) {
+    count
+    page
+    pageSize
+    noOfPage
     data {
       id
       slug
