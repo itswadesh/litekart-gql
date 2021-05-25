@@ -21,7 +21,7 @@ mutation saveProduct(
   $recommended: Boolean
   $position: Int
   $category: ID
-  $categories: [ID]
+  $categories: [ID!]
   $brand: ID
   $variants: [ID!]
   $popularity: Int
