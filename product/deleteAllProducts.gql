@@ -6,3 +6,4 @@ mutation deleteAllProducts($password: String!,$force: Boolean) {
 #   "password": "prakash",
 #   "force": true
 # }
+# force:true means ,ignore if s3 or azure delete function not working
