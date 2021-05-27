@@ -19,6 +19,7 @@ mutation saveBanner(
     heading
     img
     type
+    sort
     active
     createdAt
     updatedAt

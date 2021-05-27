@@ -5,6 +5,7 @@ query banner($id: String!) {
     heading
     img
     type
+    sort
     active
     createdAt
     updatedAt

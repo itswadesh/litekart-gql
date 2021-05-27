@@ -23,6 +23,7 @@ query allBanners(
       heading
       img
       type
+      sort
       active
       createdAt
       updatedAt

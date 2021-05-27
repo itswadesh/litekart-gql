@@ -23,6 +23,7 @@ query banners(
       heading
       img
       type
+      sort
       active
       createdAt
       updatedAt
