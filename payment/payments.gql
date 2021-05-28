@@ -5,31 +5,31 @@ query payments($page: Int, $search: String, $limit: Int, $sort: String) {
     pageSize
     data {
       id
-      entity
-      amount
-      currency
+      orderId
+      paymentOrderId
+      paymentMode
+      paymentGateway
+      referenceId
       status
-      order_id
-      invoice_id
-      international
-      method
-      amount_refunded
-      refund_status
+      txMsg
+      txTime
+      invoiceId
+      receipt
+      currency
       paid
+      amountPaid
+      amountRefunded
+      amountDue
       captured
-      description
-      card_id
-      bank
-      wallet
-      vpa
       email
       contact
+      notes
       fee
       tax
-      error_code
-      error_description
-      created_at
+      errorCode
+      errorDescription
+      refundStatus
+      description
     }
   }
 }
-
