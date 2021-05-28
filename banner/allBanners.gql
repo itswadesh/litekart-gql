@@ -22,8 +22,8 @@ query allBanners(
       link
       heading
       img
-      type
       sort
+      type
       active
       createdAt
       updatedAt

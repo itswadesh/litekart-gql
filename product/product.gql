@@ -101,7 +101,7 @@ query product($id: ID!) {
       id
       name
       value
-    }
+    }  
     specifications {
       id
       name

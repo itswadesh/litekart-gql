@@ -3,6 +3,7 @@ mutation saveBanner(
   $link: String
   $heading: String
   $img: String
+  $sort: Int
   $type: String
   $active: Boolean
 ) {
@@ -11,6 +12,7 @@ mutation saveBanner(
     link: $link
     heading: $heading
     img: $img
+    sort: $sort
     type: $type
     active: $active
   ) {
@@ -18,8 +20,8 @@ mutation saveBanner(
     link
     heading
     img
-    type
     sort
+    type
     active
     createdAt
     updatedAt

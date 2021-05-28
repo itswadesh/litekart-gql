@@ -12,7 +12,6 @@ query me {
     provider
     active
     avatar
-    plan
     # product_sold
     address {
       id

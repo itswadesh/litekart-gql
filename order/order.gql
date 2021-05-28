@@ -4,17 +4,23 @@ query order($id: ID!) {
     orderNo
     otp
     createdAt
-    codPaid
     paySuccess
-    payment {
-      amount_paid
-      amount_due
-    }
     paymentMode
-    # paymentTxStatus
-    paymentAmount
+    paymentStatus
     paymentCurrency
     paymentReferenceId
+    paymentOrderId
+    paymentReceipt
+    paymentId
+    invoiceId
+    paymentGateway
+    codPaid
+    amountPaid
+    amountDue
+    paymentStatus
+    paymentMsg
+    paymentTime
+    paid
     amount {
       qty
       subtotal
@@ -83,6 +89,7 @@ query order($id: ID!) {
       status
     }
     orderItems {
+      id
       status
       pid
       posInvoiceNo
@@ -95,6 +102,12 @@ query order($id: ID!) {
       tax
       brandName
       brandImg
+      orderStatus{
+        id
+        event
+        tracking_id
+        courier_name
+      }
     }
   }
 }
