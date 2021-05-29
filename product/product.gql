@@ -71,6 +71,10 @@ query product($id: ID!) {
       id
       name
     }
+    parentBrand{
+      id
+      name
+    }
     color {
       id
       name

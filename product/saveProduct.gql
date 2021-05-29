@@ -23,6 +23,7 @@ mutation saveProduct(
   $category: ID
   $categories: [ID!]
   $brand: ID
+  $parentBrand: ID
   $variants: [ID!]
   $popularity: Int
   $sku: String
@@ -73,6 +74,7 @@ mutation saveProduct(
     category: $category
     categories: $categories
     brand: $brand
+    parentBrand: $parentBrand
     popularity: $popularity
     sku: $sku
     hsn: $hsn
@@ -131,6 +133,7 @@ mutation saveProduct(
     hsn
     group
     brand
+    parentBrand
     color
     size
     barcode
