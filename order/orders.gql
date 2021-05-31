@@ -28,8 +28,8 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
       paymentMode
       paymentAmount
       payment {
-        amount_paid
-        amount_due
+        amountPaid
+        amountDue
       }
       address {
         firstName
