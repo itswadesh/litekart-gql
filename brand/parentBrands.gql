@@ -1,3 +1,4 @@
+#new changes
 query parentBrands(
   $page: Int
   $search: String
@@ -17,6 +18,7 @@ query parentBrands(
     pageSize
     data {
       id
+      brand_id
       name
       slug
       img

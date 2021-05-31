@@ -1,6 +1,7 @@
 query brand($id: String, $slug: String) {
   brand(id: $id, slug: $slug) {
     id
+    brand_id
     name
     slug
     img

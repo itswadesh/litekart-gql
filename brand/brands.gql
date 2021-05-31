@@ -17,6 +17,7 @@ query brands(
     pageSize
     data {
       id
+      brand_id
       name
       slug
       img

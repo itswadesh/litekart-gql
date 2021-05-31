@@ -1,5 +1,6 @@
 mutation saveBrand(
   $id: String
+  $brand_id: String
   $name: String
   $slug: String
   $parent: ID
@@ -14,6 +15,7 @@ mutation saveBrand(
 ) {
   saveBrand(
     id: $id
+    brand_id: $brand_id
     name: $name
     slug: $slug
     parent: $parent
@@ -27,6 +29,7 @@ mutation saveBrand(
     active: $active
   ) {
     id
+    brand_id
     name
     slug
     img

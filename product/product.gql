@@ -71,7 +71,7 @@ query product($id: ID!) {
       id
       name
     }
-    parentBrand{
+    parentBrand {
       id
       name
     }
@@ -105,7 +105,7 @@ query product($id: ID!) {
       id
       name
       value
-    }  
+    }
     specifications {
       id
       name
