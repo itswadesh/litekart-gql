@@ -6,8 +6,6 @@ mutation saveBanner(
   $sort: Int
   $type: String
   $pageId: String
-  $pageType: String
-  $type: String
   $active: Boolean
 ) {
   saveBanner(
@@ -17,8 +15,7 @@ mutation saveBanner(
     img: $img
     sort: $sort
     type: $type
-    paegId: $paegId
-    pageType: $pageType
+    pageId: $pageId
     active: $active
   ) {
     id
@@ -28,7 +25,6 @@ mutation saveBanner(
     sort
     type
     pageId
-    pageType
     active
     createdAt
     updatedAt

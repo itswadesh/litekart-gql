@@ -24,6 +24,7 @@ query allBanners(
       img
       sort
       type
+      pageId
       active
       createdAt
       updatedAt

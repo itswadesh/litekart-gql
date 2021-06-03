@@ -3,6 +3,7 @@ query brands(
   $search: String
   $limit: Int
   $sort: String
+  $parent: String
   $featured: Boolean
 ) {
   brands(
@@ -10,6 +11,7 @@ query brands(
     search: $search
     limit: $limit
     sort: $sort
+    parent: $parent
     featured: $featured
   ) {
     count

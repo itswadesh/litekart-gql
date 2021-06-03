@@ -4,6 +4,7 @@ query banners(
   $limit: Int
   $sort: String
   $type: String
+  $pageId: String
   $active: Boolean
 ) {
   banners(
@@ -12,6 +13,7 @@ query banners(
     limit: $limit
     sort: $sort
     type: $type
+    pageId: $pageId
     active: $active
   ) {
     count
@@ -25,7 +27,6 @@ query banners(
       sort
       type
       pageId
-      pageType
       active
       createdAt
       updatedAt

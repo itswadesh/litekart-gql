@@ -3,6 +3,7 @@ mutation saveSettings(
   $websiteName: String
   $websiteLegalName: String
   $closed: Boolean
+  $liveCommerce: Boolean
   $closedMessage: String
   $otpLogin: Boolean
   $demo: Boolean
@@ -52,6 +53,8 @@ mutation saveSettings(
     id: $id
     websiteName: $websiteName
     websiteLegalName: $websiteLegalName
+    liveCommerce: $liveCommerce
+    multilingual: $multilingual
     closed: $closed
     closedMessage: $closedMessage
     otpLogin: $otpLogin
@@ -100,6 +103,8 @@ mutation saveSettings(
   ) {
     websiteName
     websiteLegalName
+    liveCommerce
+    multilingual
     closed
     closedMessage
     otpLogin
