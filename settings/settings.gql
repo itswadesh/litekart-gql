@@ -3,6 +3,8 @@ query settings {
     id
     websiteName
     websiteLegalName
+    liveCommerce
+    multilingual
     closed
     closedMessage
     minimumOrderValue

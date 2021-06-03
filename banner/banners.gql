@@ -24,6 +24,8 @@ query banners(
       img
       sort
       type
+      pageId
+      pageType
       active
       createdAt
       updatedAt
