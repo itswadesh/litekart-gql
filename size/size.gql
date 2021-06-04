@@ -1,4 +1,4 @@
-query size($id: ID) {
+query size($id: ID!) {
   size(id: $id) {
     id
     name

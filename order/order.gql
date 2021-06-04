@@ -17,7 +17,6 @@ query order($id: ID!) {
     codPaid
     amountPaid
     amountDue
-    paymentStatus
     paymentMsg
     paymentTime
     paid
@@ -102,7 +101,7 @@ query order($id: ID!) {
       tax
       brandName
       brandImg
-      orderStatus{
+      orderStatus {
         id
         event
         tracking_id

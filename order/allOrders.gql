@@ -7,6 +7,8 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
       id
       orderNo
       createdAt
+      paymentMode
+      paymentStatus
       user {
         firstName
         lastName
