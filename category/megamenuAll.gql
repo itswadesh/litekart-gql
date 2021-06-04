@@ -6,10 +6,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     img
     featured
     categoryId
-    parent {
-      id
-      categoryId
-    }
+    parent
     children {
       id
       name
@@ -17,10 +14,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
       img
       featured
       categoryId
-      parent {
-        id
-        categoryId
-      }
+      parent
       children {
         id
         name
@@ -28,10 +22,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
         img
         featured
         categoryId
-        parent {
-          id
-          categoryId
-        }
+        parent
         children {
           id
           name
@@ -39,10 +30,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
           img
           featured
           categoryId
-          parent {
-            id
-            categoryId
-          }
+          parent
           children {
             id
             name
@@ -50,10 +38,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
             img
             featured
             categoryId
-            parent {
-              id
-              categoryId
-            }
+            parent
             children {
               id
               name
@@ -61,10 +46,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
               img
               featured
               categoryId
-              parent {
-                id
-                categoryId
-              }
+              parent
               children {
                 id
                 name
@@ -72,10 +54,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                 img
                 featured
                 categoryId
-                parent {
-                  id
-                  categoryId
-                }
+                parent
                 children {
                   id
                   name
@@ -83,10 +62,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                   img
                   featured
                   categoryId
-                  parent {
-                    id
-                    categoryId
-                  }
+                  parent
                   children {
                     id
                     name
@@ -94,10 +70,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                     img
                     featured
                     categoryId
-                    parent {
-                      id
-                      categoryId
-                    }
+                    parent
                     children {
                       id
                       name
@@ -105,10 +78,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
                       img
                       featured
                       categoryId
-                      parent {
-                        id
-                        categoryId
-                      }
+                      parent
                     }
                   }
                 }

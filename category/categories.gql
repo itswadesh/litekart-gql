@@ -26,7 +26,7 @@ query categories(
       name
       namePath
       categoryId
-      # parent
+      parent
       slug
       img
       level
