@@ -3,9 +3,11 @@ mutation saveCategory(
   $name: String
   $parent: ID
   $slug: String
+  $description: String
   $refreshSlug: Boolean
   $img: String
   $level: Int
+  $meta: String
   $metaTitle: String
   $metaDescription: String
   $metaKeywords: String
@@ -18,11 +20,13 @@ mutation saveCategory(
   saveCategory(
     id: $id
     name: $name
+    description: $description
     parent: $parent
     slug: $slug
     refreshSlug: $refreshSlug
     img: $img
     level: $level
+    meta: $meta
     metaTitle: $metaTitle
     metaDescription: $metaDescription
     metaKeywords: $metaKeywords
@@ -34,12 +38,15 @@ mutation saveCategory(
   ) {
     id
     name
+    description
     parent {
       name
     }
     slug
     img
+    position
     level
+    meta
     metaTitle
     metaDescription
     metaKeywords

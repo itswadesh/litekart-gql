@@ -2,11 +2,13 @@ query categorySimple($id: String, $slug: String) {
   categorySimple(id: $id, slug: $slug) {
     id
     name
+    description
     parent
     namePath
     slug
     img
     level
+    position
     metaTitle
     metaDescription
     metaKeywords
