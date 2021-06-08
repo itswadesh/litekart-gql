@@ -48,6 +48,7 @@ mutation saveSettings(
   $enableRazorpay: Boolean
   $RAZORPAY_KEY_ID: String
   $locationExpiry: Float
+  $multilingual: Boolean
 ) {
   saveSettings(
     id: $id
