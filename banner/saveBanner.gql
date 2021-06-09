@@ -7,6 +7,8 @@ mutation saveBanner(
   $type: String
   $pageId: String
   $active: Boolean
+  $groupId: String
+  $groupTitle: String
 ) {
   saveBanner(
     id: $id
@@ -17,6 +19,8 @@ mutation saveBanner(
     type: $type
     pageId: $pageId
     active: $active
+    groupId: $groupId
+    groupTitle: $groupTitle
   ) {
     id
     link
@@ -26,7 +30,17 @@ mutation saveBanner(
     type
     pageId
     active
+    groupId
+    groupTitle
     createdAt
     updatedAt
   }
 }
+
+
+# {
+#   "id":"new",
+#   "img":"img2.com",
+#   "groupId":"11",
+#   "groupTitle":"trending in indian"
+# }
