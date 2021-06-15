@@ -3,11 +3,11 @@ mutation sendInstantMessage($channel: String!, $message: String) {
     id
     channel
     message
+    uid
     firstName
     lastName
   }
 }
-
 
 # {
 #   "channel":  "11111",

@@ -5,7 +5,13 @@ query channelMessages(
   $search: String
   $sort: String
 ) {
-  channelMessages(channel: $channel,page: $page, search: $search, limit: $limit, sort: $sort) {
+  channelMessages(
+    channel: $channel
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+  ) {
     count
     page
     pageSize
@@ -13,16 +19,12 @@ query channelMessages(
       id
       channel
       message
+      uid
       firstName
       lastName
-      user{
-        firstName
-        lastName
-      }
     }
   }
 }
-
 
 # {
 #   "channel": "pra11k"

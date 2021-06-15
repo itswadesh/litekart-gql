@@ -3,12 +3,11 @@ subscription messageReceived($channel: String!) {
     id
     channel
     message
+    uid
     firstName
     lastName
   }
 }
-
-
 
 # {
 #   "channel": "11111"
