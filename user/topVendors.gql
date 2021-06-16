@@ -3,7 +3,7 @@ query topVendors($limit: Int) {
     id
     firstName
     lastName
-    product_sold
+    productSold
     avatar
   }
 }

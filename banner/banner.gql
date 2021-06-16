@@ -6,6 +6,8 @@ query banner($id: String!) {
     img
     type
     sort
+    groupId
+    groupTitle
     pageId
     active
     createdAt

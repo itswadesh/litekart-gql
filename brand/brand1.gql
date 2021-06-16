@@ -1,7 +1,7 @@
 query brand1($id: String, $slug: String) {
   brand1(id: $id, slug: $slug) {
     id
-    brand_id
+    brandId
     name
     slug
     img
@@ -12,6 +12,11 @@ query brand1($id: String, $slug: String) {
     metaTitle
     metaDescription
     metaKeywords
+    facebookUrl
+    instaUrl
+    twitterUrl
+    linkedinUrl
+    youtubeUrl
     parent
     user
     createdAt

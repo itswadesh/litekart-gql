@@ -25,6 +25,8 @@ query allBanners(
       sort
       type
       pageId
+      groupId
+      groupTitle
       active
       createdAt
       updatedAt

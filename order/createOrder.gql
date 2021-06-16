@@ -15,7 +15,6 @@ mutation createOrder($address: ID, $user: ID!, $items: [ItemIp!]) {
     paymentMode
     paymentAmount
     paymentCurrency
-    paymentTxStatus
     paymentReferenceId
     delivery {
       otp
@@ -39,6 +38,8 @@ mutation createOrder($address: ID, $user: ID!, $items: [ItemIp!]) {
       }
       brandName
       brandImg
+      parentBrandName
+      parentBrandImg
     }
     orderItems {
       status
@@ -53,6 +54,8 @@ mutation createOrder($address: ID, $user: ID!, $items: [ItemIp!]) {
       tax
       brandName
       brandImg
+      parentBrandName
+      parentBrandImg
     }
     address {
       firstName
@@ -72,3 +75,9 @@ mutation createOrder($address: ID, $user: ID!, $items: [ItemIp!]) {
   }
 }
 
+
+# {
+#   "user": "606c127255c00f147499139f",
+#   "address": "608ab6af97116f3a88f700d6",
+#   "items": [{"id": "60c0d7e9287e0c1e0cccb4c6","qty": 1 }]
+# }

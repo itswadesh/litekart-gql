@@ -4,6 +4,7 @@ query liveStreams(
   $limit: Int
   $search: String
   $sort: String
+  $user:ID
   $q: String
 ) {
   liveStreams(
@@ -12,6 +13,7 @@ query liveStreams(
     search: $search
     limit: $limit
     sort: $sort
+    user: $user
     q: $q
   ) {
     count

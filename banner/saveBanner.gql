@@ -6,9 +6,9 @@ mutation saveBanner(
   $sort: Int
   $type: String
   $pageId: String
-  $active: Boolean
   $groupId: String
   $groupTitle: String
+  $active: Boolean
 ) {
   saveBanner(
     id: $id
@@ -18,9 +18,9 @@ mutation saveBanner(
     sort: $sort
     type: $type
     pageId: $pageId
-    active: $active
     groupId: $groupId
     groupTitle: $groupTitle
+    active: $active
   ) {
     id
     link
@@ -29,14 +29,13 @@ mutation saveBanner(
     sort
     type
     pageId
-    active
     groupId
     groupTitle
+    active
     createdAt
     updatedAt
   }
 }
-
 
 # {
 #   "id":"new",

@@ -5,6 +5,8 @@ query banners(
   $sort: String
   $type: String
   $pageId: String
+  $groupId: String
+  $groupTitle: String
   $active: Boolean
 ) {
   banners(
@@ -14,6 +16,8 @@ query banners(
     sort: $sort
     type: $type
     pageId: $pageId
+    groupId: $groupId
+    groupTitle: $groupTitle
     active: $active
   ) {
     count
@@ -27,6 +31,8 @@ query banners(
       sort
       type
       pageId
+      groupId
+      groupTitle
       active
       createdAt
       updatedAt

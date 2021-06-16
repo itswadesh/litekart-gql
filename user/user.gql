@@ -10,7 +10,7 @@ query user($id: String!) {
     role
     verified
     active
-    product_sold
+    productSold
     shippingCharges
     freeShippingOn
     luluCustomerNo

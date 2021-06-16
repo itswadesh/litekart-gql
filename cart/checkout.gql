@@ -62,6 +62,8 @@ mutation checkout($address: ID, $paymentMethod: String) {
       options
       brandName
       brandImg
+      parentBrandName
+      parentBrandImg
       orderStatus {
         id
         event
@@ -92,9 +94,13 @@ mutation checkout($address: ID, $paymentMethod: String) {
       tax
       brandName
       brandImg
+      parentBrandName
+      parentBrandImg
     }
   }
 }
+
+
 
 # {
 #   "address": "608ab6af97116f3a88f700d6",

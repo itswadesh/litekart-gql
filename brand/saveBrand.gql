@@ -1,6 +1,6 @@
 mutation saveBrand(
   $id: String
-  $brand_id: String
+  $brandId: String
   $name: String
   $slug: String
   $parent: ID
@@ -11,11 +11,16 @@ mutation saveBrand(
   $metaTitle: String
   $metaDescription: String
   $metaKeywords: String
+  $facebookUrl: String
+  $twitterUrl: String
+  $linkedinUrl: String
+  $youtubeUrl: String
+  $instaUrl: String
   $active: Boolean
 ) {
   saveBrand(
     id: $id
-    brand_id: $brand_id
+    brandId: $brandId
     name: $name
     slug: $slug
     parent: $parent
@@ -25,11 +30,16 @@ mutation saveBrand(
     metaTitle: $metaTitle
     metaDescription: $metaDescription
     metaKeywords: $metaKeywords
+    facebookUrl: $facebookUrl
+    twitterUrl: $twitterUrl
+    linkedinUrl: $linkedinUrl
+    youtubeUrl: $youtubeUrl
+    instaUrl: $instaUrl
     featured: $featured
     active: $active
   ) {
     id
-    brand_id
+    brandId
     name
     slug
     img
@@ -37,6 +47,11 @@ mutation saveBrand(
     metaTitle
     metaDescription
     metaKeywords
+    facebookUrl
+    instaUrl
+    twitterUrl
+    linkedinUrl
+    youtubeUrl
     featured
     active
     createdAt

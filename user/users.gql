@@ -20,7 +20,7 @@ query users(
       role
       verified
       active
-      product_sold
+      productSold
       luluCustomerNo
       address {
         address

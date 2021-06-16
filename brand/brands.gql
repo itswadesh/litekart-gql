@@ -19,7 +19,7 @@ query brands(
     pageSize
     data {
       id
-      brand_id
+      brandId
       name
       slug
       img
@@ -28,6 +28,11 @@ query brands(
       metaTitle
       metaDescription
       metaKeywords
+      facebookUrl
+      instaUrl
+      twitterUrl
+      linkedinUrl
+      youtubeUrl
       active
       featured
       parent {

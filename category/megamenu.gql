@@ -4,6 +4,7 @@ query megamenu(
   $search: String
   $sort: String
   $featured: Boolean
+  $brands: [ID]
 ) {
   megamenu(
     id: $id
@@ -11,6 +12,7 @@ query megamenu(
     search: $search
     sort: $sort
     featured: $featured
+    brands: $brands
   ) {
     id
     name
@@ -73,3 +75,8 @@ query megamenu(
     }
   }
 }
+
+
+# {
+#   "brands": ["60b4d95b1515460f94e58d4f"]
+# }
