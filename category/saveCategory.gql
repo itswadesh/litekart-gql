@@ -2,7 +2,7 @@ mutation saveCategory(
   $id: String!
   $name: String
   $parent: ID
-  $brands: [ID]
+  $brand: ID
   $slug: String
   $description: String
   $categoryId: String
@@ -25,7 +25,7 @@ mutation saveCategory(
     description: $description
     categoryId: $categoryId
     parent: $parent
-    brands: $brands
+    brand: $brand
     slug: $slug
     refreshSlug: $refreshSlug
     img: $img
@@ -45,7 +45,7 @@ mutation saveCategory(
     description
     parent
     categoryId
-    brands
+    brand
     slug
     img
     position
@@ -63,10 +63,3 @@ mutation saveCategory(
   }
 }
 
-# {
-#   "id": "608d3a58ddde26066064e44c",
-#   "parent": "608d3a77ddde26066064e44f",
-#   "slug": "aaa",
-#   "refreshSlug": true,
-#   "brands": ["60b4d95b1515460f94e58d4f","60b4d95b1515460f94e58d4d"]
-# }

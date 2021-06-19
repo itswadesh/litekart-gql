@@ -22,12 +22,12 @@ query settings {
     stripePublishableKey
     enableStripe
     enableRazorpay
-    currency_code
-    currency_symbol
-    currency_decimals
-    open_graph_image
+    currencyCode
+    currencySymbol
+    currencyDecimals
+    openGraphImage
     shipping {
-      delivery_days
+      deliveryDays
       charge
       free
       method
@@ -43,7 +43,7 @@ query settings {
     favicon
     CDN_URL
     S3_URL
-    searchbar_text
+    searchbarText
     adminPanelLink
     pageSize
     orderStatuses {
@@ -79,7 +79,19 @@ query settings {
     product {
       moderate
     }
-    GOOGLE_MAPS_API
+    customerOrderNotifications {
+      orderConfirmation
+      orderStatusChanged
+      orderShipped
+      orderIsReadyForPickup
+      downloadEGoods
+      giftCardPurchased
+    }
+    adminNotifications {
+      newOrderPlaced
+      lowStockNotification
+    }
+    googleMapsApi
     facebook
     twitter
     google
@@ -87,5 +99,7 @@ query settings {
     enableTax
     locationExpiry
     WWW_URL
+    referralBonus
+    joiningBonus
   }
 }

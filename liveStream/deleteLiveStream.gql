@@ -1,3 +1,0 @@
-mutation deleteLiveStream($id: ID!) {
-  deleteLiveStream(id: $id)
-}

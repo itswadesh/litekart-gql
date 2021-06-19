@@ -1,19 +1,17 @@
-query liveStreams(
+query myChannels(
   $page: Int
   $skip: Int
   $limit: Int
   $search: String
   $sort: String
-  $user:ID
   $q: String
 ) {
-  liveStreams(
+  myChannels(
     page: $page
     skip: $skip
     search: $search
     limit: $limit
     sort: $sort
-    user: $user
     q: $q
   ) {
     count
@@ -24,6 +22,16 @@ query liveStreams(
       scheduleDateTime
       title
       img
+      requestId
+      cid
+      ctime
+      pushUrl
+      httpPullUrl
+      hlsPullUrl
+      rtmpPullUrl
+      name
+      code
+      msg
       product {
         id
         name

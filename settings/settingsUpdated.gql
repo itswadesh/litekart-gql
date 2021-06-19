@@ -18,12 +18,12 @@ subscription {
     stripePublishableKey
     enableStripe
     enableRazorpay
-    currency_code
-    currency_symbol
-    currency_decimals
-    open_graph_image
+    currencyCode
+    currencySymbol
+    currencyDecimals
+    openGraphImage
     shipping {
-      delivery_days
+      deliveryDays
       charge
       free
       method
@@ -38,7 +38,7 @@ subscription {
     logoMobileDark
     favicon
     CDN_URL
-    searchbar_text
+    searchbarText
     adminPanelLink
     pageSize
     orderStatuses {
@@ -80,12 +80,26 @@ subscription {
       GITHUB_ID
       GITHUB_SECRET
     }
-    GOOGLE_MAPS_API
+    customerOrderNotifications {
+      orderConfirmation
+      orderStatusChanged
+      orderShipped
+      orderIsReadyForPickup
+      downloadEGoods
+      giftCardPurchased
+    }
+    adminNotifications {
+      newOrderPlaced
+      lowStockNotification
+    }
+    googleMapsApi
     facebook
     twitter
     google
     instagram
     enableTax
     locationExpiry
+    referralBonus
+    joiningBonus
   }
 }

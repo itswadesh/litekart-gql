@@ -31,7 +31,7 @@ query category($id: String, $slug: String) {
       category
       active
     }
-    brands{
+    brand{
       id
       name
     }

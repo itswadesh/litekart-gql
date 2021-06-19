@@ -12,10 +12,10 @@ mutation saveSettings(
   $alert: String
   $keywords: String
   $description: String
-  $currency_code: String
-  $currency_symbol: String
-  $currency_decimals: Int
-  $open_graph_image: String
+  $currencyCode: String
+  $currencySymbol: String
+  $currencyDecimals: Int
+  $openGraphImage: String
   $tax: TaxIp
   $shipping: ShippingIp
   $websiteEmail: String
@@ -27,7 +27,7 @@ mutation saveSettings(
   $logoMobileDark: String
   $favicon: String
   $CDN_URL: String
-  $searchbar_text: String
+  $searchbarText: String
   $adminPanelLink: String
   $pageSize: Int
   $paymentStatuses: [String]
@@ -37,7 +37,7 @@ mutation saveSettings(
   $review: ReviewSettingIp
   $product: ProductSettingIp
   $login: LoginSettingIp
-  $GOOGLE_MAPS_API: String
+  $googleMapsApi: String
   $facebook: String
   $twitter: String
   $google: String
@@ -49,6 +49,10 @@ mutation saveSettings(
   $RAZORPAY_KEY_ID: String
   $locationExpiry: Float
   $multilingual: Boolean
+  $customerOrderNotifications: UserNotificationIp
+  $adminNotifications: AdminNotificationIp
+  $referralBonus: Float
+  $joiningBonus: Float
 ) {
   saveSettings(
     id: $id
@@ -65,10 +69,10 @@ mutation saveSettings(
     alert: $alert
     keywords: $keywords
     description: $description
-    currency_code: $currency_code
-    currency_symbol: $currency_symbol
-    currency_decimals: $currency_decimals
-    open_graph_image: $open_graph_image
+    currencyCode: $currencyCode
+    currencySymbol: $currencySymbol
+    currencyDecimals: $currencyDecimals
+    openGraphImage: $openGraphImage
     tax: $tax
     shipping: $shipping
     websiteEmail: $websiteEmail
@@ -80,7 +84,7 @@ mutation saveSettings(
     logoMobileDark: $logoMobileDark
     favicon: $favicon
     CDN_URL: $CDN_URL
-    searchbar_text: $searchbar_text
+    searchbarText: $searchbarText
     adminPanelLink: $adminPanelLink
     pageSize: $pageSize
     paymentStatuses: $paymentStatuses
@@ -90,7 +94,7 @@ mutation saveSettings(
     review: $review
     product: $product
     login: $login
-    GOOGLE_MAPS_API: $GOOGLE_MAPS_API
+    googleMapsApi: $googleMapsApi
     facebook: $facebook
     twitter: $twitter
     google: $google
@@ -101,6 +105,10 @@ mutation saveSettings(
     enableStripe: $enableStripe
     enableRazorpay: $enableRazorpay
     locationExpiry: $locationExpiry
+    customerOrderNotifications: $customerOrderNotifications
+    adminNotifications: $adminNotifications
+    referralBonus: $referralBonus
+    joiningBonus: $joiningBonus
   ) {
     websiteName
     websiteLegalName
@@ -114,15 +122,15 @@ mutation saveSettings(
     alert
     keywords
     description
-    currency_code
-    currency_symbol
+    currencyCode
+    currencySymbol
     tax {
       cgst
       sgst
       igst
     }
     shipping {
-      delivery_days
+      deliveryDays
       charge
       free
       method
@@ -136,7 +144,7 @@ mutation saveSettings(
     logoMobileDark
     favicon
     CDN_URL
-    searchbar_text
+    searchbarText
     adminPanelLink
     pageSize
     orderStatuses {
@@ -180,7 +188,19 @@ mutation saveSettings(
       GITHUB_ID
       GITHUB_SECRET
     }
-    GOOGLE_MAPS_API
+    customerOrderNotifications {
+      orderConfirmation
+      orderStatusChanged
+      orderShipped
+      orderIsReadyForPickup
+      downloadEGoods
+      giftCardPurchased
+    }
+    adminNotifications {
+      newOrderPlaced
+      lowStockNotification
+    }
+    googleMapsApi
     facebook
     twitter
     google
@@ -188,5 +208,7 @@ mutation saveSettings(
     RAZORPAY_KEY_ID
     stripePublishableKey
     locationExpiry
+    joiningBonus
+    referralBonus
   }
 }

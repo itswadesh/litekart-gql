@@ -12,6 +12,8 @@ query me {
     provider
     active
     avatar
+    referralCode
+    currentBalance
     # product_sold
     address {
       id
