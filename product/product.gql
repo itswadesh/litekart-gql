@@ -116,7 +116,7 @@ query product($id: ID!) {
       name
       value
     }
-    liveStreams {
+    channels {
       id
       title
       img
