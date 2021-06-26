@@ -126,6 +126,17 @@ query product($id: ID!) {
         lastName
       }
     }
+    collections {
+      id
+      name
+      description
+      active
+      images
+      img
+      q
+      sort
+      type
+    }
     options {
       id
       name

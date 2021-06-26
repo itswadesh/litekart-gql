@@ -1,0 +1,18 @@
+query collection($id: ID!) {
+  collection(id: $id) {
+    id
+    name
+    description
+    active
+    images
+    img
+    q
+    sort
+    type
+    user {
+      firstName
+    }
+    createdAt
+    updatedAt
+  }
+}
