@@ -21,6 +21,7 @@ mutation saveSettings(
   $websiteEmail: String
   $shopPhone: String
   $shopAddress: String
+  $country: String
   $logo: String
   $logoMobile: String
   $logoDark: String
@@ -78,6 +79,7 @@ mutation saveSettings(
     websiteEmail: $websiteEmail
     shopPhone: $shopPhone
     shopAddress: $shopAddress
+    country: $country
     logo: $logo
     logoMobile: $logoMobile
     logoDark: $logoDark
@@ -138,6 +140,7 @@ mutation saveSettings(
     websiteEmail
     shopPhone
     shopAddress
+    country
     logo
     logoMobile
     logoDark

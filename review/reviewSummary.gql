@@ -1,5 +1,5 @@
-query reviewSummary($product: ID!) {
-  reviewSummary(product: $product) {
+query reviewSummary($pid: ID!) {
+  reviewSummary(pid: $pid) {
     avg
     count
     total

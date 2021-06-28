@@ -5,7 +5,7 @@ query reviews($page: Int, $search: String, $limit: Int, $sort: String) {
     pageSize
     data {
       id
-      product {
+      pid {
         name
         slug
         img

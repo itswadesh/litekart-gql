@@ -1,6 +1,6 @@
 mutation saveReview(
   $id: String!
-  $product: ID
+  $pid: ID
   $variant: ID
   $user: ID
   $rating: Int
@@ -9,7 +9,7 @@ mutation saveReview(
 ) {
   saveReview(
     id: $id
-    product: $product
+    pid: $pid
     variant: $variant
     user: $user
     rating: $rating
@@ -17,7 +17,7 @@ mutation saveReview(
     active: $active
   ) {
     id
-    product {
+    pid {
       name
       slug
       img
