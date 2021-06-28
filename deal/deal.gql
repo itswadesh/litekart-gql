@@ -2,12 +2,18 @@ query deal($id: ID!) {
   deal(id: $id) {
     id
     name
+    img
     startTime
     endTime
     startTimeISO
     endTimeISO
     onGoing
-    products
+    products {
+      id
+      name
+      img
+      slug
+    }
     dealStatus
     active
   }

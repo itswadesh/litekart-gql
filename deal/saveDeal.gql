@@ -1,6 +1,7 @@
 mutation saveDeal(
   $id: ID
   $name: String
+  $img: String
   $startTime: String
   $endTime: String
   $startTimeISO: String
@@ -13,6 +14,7 @@ mutation saveDeal(
   saveDeal(
     id: $id
     name: $name
+    img: $img
     startTime: $startTime
     endTime: $endTime
     startTimeISO: $startTimeISO
@@ -24,6 +26,7 @@ mutation saveDeal(
   ) {
     id
     name
+    img
     startTime
     endTime
     startTimeISO
