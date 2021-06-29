@@ -32,7 +32,7 @@ mutation saveProduct(
   $group: String
   $color: ID
   $size: ID
-  $barcode: Float
+  $barcode: String
   $title: String
   $metaDescription: String
   $keywords: String
