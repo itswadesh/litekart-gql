@@ -54,6 +54,7 @@ mutation saveSettings(
   $adminNotifications: AdminNotificationIp
   $referralBonus: Float
   $joiningBonus: Float
+  $isMultiVendor: Boolean
 ) {
   saveSettings(
     id: $id
@@ -111,6 +112,7 @@ mutation saveSettings(
     adminNotifications: $adminNotifications
     referralBonus: $referralBonus
     joiningBonus: $joiningBonus
+    isMultiVendor: $isMultiVendor
   ) {
     websiteName
     websiteLegalName
@@ -213,5 +215,6 @@ mutation saveSettings(
     locationExpiry
     joiningBonus
     referralBonus
+    isMultiVendor
   }
 }

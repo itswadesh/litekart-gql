@@ -68,6 +68,11 @@ query product1($id: ID!) {
     variants
     options
     vendor
-    relatedProducts
+    relatedProducts {
+      id
+      name
+      slug
+      img
+    }
   }
 }

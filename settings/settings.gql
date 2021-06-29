@@ -101,5 +101,6 @@ query settings {
     WWW_URL
     referralBonus
     joiningBonus
+    isMultiVendor
   }
 }

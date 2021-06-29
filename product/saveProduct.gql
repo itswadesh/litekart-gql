@@ -170,7 +170,12 @@ mutation saveProduct(
     sgst
     igst
     vendor
-    relatedProducts
+    relatedProducts {
+      id
+      name
+      slug
+      img
+    }
     colorGroup
     sizeGroup
     variants
