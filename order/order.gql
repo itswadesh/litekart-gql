@@ -62,6 +62,8 @@ query order($id: ID!) {
       barcode
       img
       slug
+      size
+      mrp
       price
       qty
       shippingCharge
