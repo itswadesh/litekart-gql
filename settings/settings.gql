@@ -36,6 +36,7 @@ query settings {
     websiteEmail
     shopPhone
     shopAddress
+    country
     logo
     logoMobile
     logoDark

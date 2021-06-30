@@ -68,6 +68,7 @@ query product1($id: ID!) {
     variants
     options
     vendor
+    weight
     relatedProducts {
       id
       name
