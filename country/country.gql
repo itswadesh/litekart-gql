@@ -3,6 +3,7 @@ query country($id: String) {
     id
     name
     value
+    dialCode
     code
     img
     flag
@@ -12,7 +13,5 @@ query country($id: String) {
     }
     sort
     active
-    createdAt
-    updatedAt
   }
 }

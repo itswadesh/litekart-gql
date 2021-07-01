@@ -7,6 +7,7 @@ query countries($page: Int, $search: String, $limit: Int, $sort: String) {
       id
       name
       value
+      dialCode
       code
       img
       flag
@@ -16,8 +17,6 @@ query countries($page: Int, $search: String, $limit: Int, $sort: String) {
       }
       sort
       active
-      createdAt
-      updatedAt
     }
   }
 }

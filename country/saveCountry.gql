@@ -2,6 +2,7 @@ mutation saveCountry(
   $id: String
   $name: String
   $value: String
+  $dialCode: String
   $code: String
   $img: String
   $flag: String
@@ -13,6 +14,7 @@ mutation saveCountry(
     id: $id
     name: $name
     value: $value
+    dialCode: $dialCode
     code: $code
     img: $img
     flag: $flag
@@ -23,6 +25,7 @@ mutation saveCountry(
     id
     name
     value
+    dialCode
     code
     img
     flag
