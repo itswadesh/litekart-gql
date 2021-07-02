@@ -73,6 +73,8 @@ query myOrders(
         price
         qty
         shippingCharge
+        subtotal
+        total
         tax
         time
         options
