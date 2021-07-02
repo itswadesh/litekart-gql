@@ -60,7 +60,6 @@ query product1($id: ID!) {
     color
     size
     features
-    productDetails
     channels
     category
     categories
@@ -69,6 +68,15 @@ query product1($id: ID!) {
     options
     vendor
     weight
+    productDetails {
+      name
+      value
+    }
+    specifications {
+      id
+      name
+      value
+    }
     relatedProducts {
       id
       name
