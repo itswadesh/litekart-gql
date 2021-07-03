@@ -6,6 +6,7 @@ query categories(
   $megamenu: Boolean
   $featured: Boolean
   $active: Boolean
+  $img: Boolean
   $shopbycategory: Boolean
 ) {
   categories(
@@ -16,6 +17,7 @@ query categories(
     megamenu: $megamenu
     featured: $featured
     active: $active
+    img: $img
     shopbycategory: $shopbycategory
   ) {
     count
