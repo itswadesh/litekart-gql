@@ -9,11 +9,9 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
       createdAt
       paymentMode
       paymentStatus
-      user {
-        firstName
-        lastName
-        phone
-      }
+      userFirstName
+      userLastName
+      userPhone
       amount {
         qty
         subtotal
@@ -38,8 +36,16 @@ query allOrders($page: Int, $search: String, $limit: Int, $sort: String) {
         slug
         price
         qty
+        subtotal
+        total
         status
         vendor {
+          firstName
+          lastName
+          phone
+          address {
+            address
+          }
           store
         }
       }
