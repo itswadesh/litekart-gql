@@ -11,7 +11,10 @@ query products(
   $sort: String
   $vendor: String
   $category: String
+  $categories: String
   $active: Boolean
+  $stock: Boolean
+  $type: String
   $featured: Boolean
   $new: Boolean
   $hot: Boolean
@@ -31,7 +34,10 @@ query products(
     sort: $sort
     vendor: $vendor
     category: $category
+    categories: $categories
     active: $active
+    stock: $stock
+    type: $type
     featured: $featured
     new: $new
     hot: $hot
@@ -83,7 +89,9 @@ query products(
       category {
         name
       }
-
+      categories {
+        name
+      }
       variants {
         id
         name
