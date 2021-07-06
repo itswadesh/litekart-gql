@@ -5,6 +5,7 @@ query myOrders(
   $search: String
   $sort: String
   $status: String # Pending, Tracking, Delivered
+  $where: String
 ) {
   myOrders(
     page: $page
@@ -13,6 +14,7 @@ query myOrders(
     search: $search
     sort: $sort
     status: $status
+    where: $where
   ) {
     count
     pageSize
