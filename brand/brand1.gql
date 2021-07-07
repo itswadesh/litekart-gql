@@ -17,6 +17,8 @@ query brand1($id: String, $slug: String) {
     twitterUrl
     linkedinUrl
     youtubeUrl
+    pinterestUrl
+    googleUrl
     parent
     user
     createdAt

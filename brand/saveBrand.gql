@@ -16,6 +16,8 @@ mutation saveBrand(
   $linkedinUrl: String
   $youtubeUrl: String
   $instaUrl: String
+  $pinterestUrl: String
+  $googleUrl: String
   $active: Boolean
 ) {
   saveBrand(
@@ -35,6 +37,8 @@ mutation saveBrand(
     linkedinUrl: $linkedinUrl
     youtubeUrl: $youtubeUrl
     instaUrl: $instaUrl
+    pinterestUrl: $pinterestUrl
+    googleUrl: $googleUrl
     featured: $featured
     active: $active
   ) {
@@ -52,6 +56,8 @@ mutation saveBrand(
     twitterUrl
     linkedinUrl
     youtubeUrl
+    pinterestUrl
+    googleUrl
     featured
     active
     createdAt
