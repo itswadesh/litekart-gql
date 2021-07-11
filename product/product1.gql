@@ -68,6 +68,12 @@ query product1($id: ID!) {
     options
     vendor
     weight
+    length
+    width
+    height
+    returnAllowed
+    replaceAllowed
+    returnValidityInDays
     productDetails {
       name
       value

@@ -159,6 +159,9 @@ query product($id: ID!) {
       length
       width
       height
+      returnAllowed
+      replaceAllowed
+      returnValidityInDays
       barcode
       sku
       mrp
