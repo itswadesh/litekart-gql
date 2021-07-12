@@ -4,6 +4,7 @@ mutation saveSize(
   $slug: String
   $info: String
   $img: String
+  $sort: Float
   $featured: Boolean
   $active: Boolean
 ) {
@@ -13,6 +14,7 @@ mutation saveSize(
     slug: $slug
     info: $info
     img: $img
+    sort: $sort
     featured: $featured
     active: $active
   ) {
@@ -21,6 +23,7 @@ mutation saveSize(
     slug
     info
     img
+    sort
     featured
     active
     createdAt

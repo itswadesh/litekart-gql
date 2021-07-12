@@ -9,6 +9,7 @@ query sizes($page: Int, $search: String, $limit: Int, $sort: String) {
       slug
       info
       img
+      sort
       featured
       active
       createdAt
