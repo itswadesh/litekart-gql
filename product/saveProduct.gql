@@ -56,7 +56,6 @@ mutation saveProduct(
   $sgst: Float
   $igst: Float
   $weight: Float
-  $relatedProducts: [ID!]
   $replaceAllowed: Boolean
   $returnAllowed: Boolean
   $returnValidityInDays: Int
