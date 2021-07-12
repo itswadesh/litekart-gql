@@ -97,7 +97,7 @@ query settings {
     twitter
     google
     instagram
-    linkedinUrl
+    linkedin
     enableTax
     locationExpiry
     WWW_URL
