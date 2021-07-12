@@ -1,5 +1,23 @@
-mutation updateOrder($id: ID!, $pid: ID!, $status: String, $tracking: String) {
-  updateOrder(id: $id, pid: $pid, status: $status, tracking: $tracking) {
+mutation updateOrder(
+  $id: ID!
+  $pid: ID!
+  $status: String
+  $tracking: String
+  $trackingId: String
+  $courierName: String
+  $returnTrackingId: String
+  $returnCourierName: String
+) {
+  updateOrder(
+    id: $id
+    pid: $pid
+    status: $status
+    tracking: $tracking
+    trackingId: $trackingId
+    courierName: $courierName
+    returnTrackingId: $returnTrackingId
+    returnCourierName: $returnCourierName
+  ) {
     id
     orderNo
     user {
