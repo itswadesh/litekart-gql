@@ -12,6 +12,10 @@ query collection($id: ID!) {
     user {
       firstName
     }
+    products {
+      id
+      name
+    }
     createdAt
     updatedAt
   }

@@ -55,6 +55,7 @@ query order($id: ID!) {
       lng
     }
     items {
+      id
       pid
       posInvoiceNo
       itemOrderNo
@@ -62,8 +63,6 @@ query order($id: ID!) {
       barcode
       img
       slug
-      size
-      mrp
       price
       qty
       shippingCharge
@@ -72,11 +71,17 @@ query order($id: ID!) {
       options
       brandName
       brandImg
-      orderStatus {
-        id
-        event
-        tracking_id
-        courier_name
+      color
+      size
+      status
+      orderHistory {
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
       }
       vendor {
         firstName
@@ -103,11 +108,22 @@ query order($id: ID!) {
       tax
       brandName
       brandImg
-      orderStatus {
-        id
-        event
-        tracking_id
-        courier_name
+      invoiceLink
+      returnValidTill
+      color
+      size
+      trackingId
+      returnTrackingId
+      courierName
+      returnCourierName
+      orderHistory {
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
       }
     }
   }

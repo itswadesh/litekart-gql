@@ -5,6 +5,7 @@ query orderStatus($id: ID!) {
     item
     event
     tracking_id
+    type
     courier_name
     active
     createdAt

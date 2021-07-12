@@ -43,6 +43,7 @@ mutation saveSettings(
   $twitter: String
   $google: String
   $instagram: String
+  $linkedinUrl: String
   $enableTax: Boolean
   $stripePublishableKey: String
   $enableStripe: Boolean
@@ -102,6 +103,7 @@ mutation saveSettings(
     twitter: $twitter
     google: $google
     instagram: $instagram
+    linkedinUrl: $linkedinUrl
     enableTax: $enableTax
     RAZORPAY_KEY_ID: $RAZORPAY_KEY_ID
     stripePublishableKey: $stripePublishableKey
@@ -210,6 +212,7 @@ mutation saveSettings(
     twitter
     google
     instagram
+    linkedinUrl
     RAZORPAY_KEY_ID
     stripePublishableKey
     locationExpiry

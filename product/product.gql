@@ -15,6 +15,8 @@ query product($id: ID!) {
     active
     popularity
     position
+    ratings
+    reviews
     sku
     hsn
     group
@@ -159,9 +161,6 @@ query product($id: ID!) {
       length
       width
       height
-      returnAllowed
-      replaceAllowed
-      returnValidityInDays
       barcode
       sku
       mrp
@@ -192,5 +191,10 @@ query product($id: ID!) {
       img
     }
     returnInfo
+    returnAllowed
+    replaceAllowed
+    returnValidityInDays
+    createdAt
+    updatedAt
   }
 }

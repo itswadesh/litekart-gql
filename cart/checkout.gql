@@ -58,18 +58,16 @@ mutation checkout($address: ID, $paymentMethod: String) {
       qty
       shippingCharge
       tax
+      subtotal
+      total
       time
       options
       brandName
       brandImg
       parentBrandName
       parentBrandImg
-      orderStatus {
-        id
-        event
-        tracking_id
-        courier_name
-      }
+      color
+      size
       vendor {
         firstName
         lastName
@@ -78,6 +76,11 @@ mutation checkout($address: ID, $paymentMethod: String) {
           address
         }
         store
+      }
+      vendorInfo {
+        firstName
+        lastName
+        phone
       }
       status
     }
@@ -96,13 +99,17 @@ mutation checkout($address: ID, $paymentMethod: String) {
       brandImg
       parentBrandName
       parentBrandImg
+      color
+      size
+      orderHistory {
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
+      }
     }
   }
 }
-
-
-
-# {
-#   "address": "608ab6af97116f3a88f700d6",
-#   "paymentMethod": "cod"
-# }

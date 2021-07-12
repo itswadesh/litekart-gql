@@ -1,8 +1,24 @@
-query orders($page: Int, $search: String, $limit: Int, $sort: String) {
-  orders(page: $page, search: $search, limit: $limit, sort: $sort) {
+query myOrderItems(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $status: String # Pending, Tracking, Delivered
+  $where: String
+) {
+  myOrderItems(
+    page: $page
+    skip: $skip
+    limit: $limit
+    search: $search
+    sort: $sort
+    status: $status
+    where: $where
+  ) {
     count
-    page
     pageSize
+    page
     data {
       id
       status

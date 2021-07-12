@@ -8,6 +8,7 @@ mutation saveCategory(
   $categoryId: String
   $refreshSlug: Boolean
   $img: String
+  $level: Int
   $meta: String
   $metaTitle: String
   $metaDescription: String
@@ -28,6 +29,7 @@ mutation saveCategory(
     slug: $slug
     refreshSlug: $refreshSlug
     img: $img
+    level: $level
     meta: $meta
     metaTitle: $metaTitle
     metaDescription: $metaDescription
@@ -60,3 +62,4 @@ mutation saveCategory(
     updatedAt
   }
 }
+

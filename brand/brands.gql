@@ -24,6 +24,7 @@ query brands(
       slug
       img
       position
+      info
       meta
       metaTitle
       metaDescription

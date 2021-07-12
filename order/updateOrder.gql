@@ -63,3 +63,13 @@ mutation updateOrder(
     updatedAt
   }
 }
+
+# {
+#   "id": "60eb23fbeee69f0748da49f4",
+#   "pid": "60e75ad10c33f8083050cf30",
+#   "status": "Shipped",
+#   "trackingId": "gdmsams333",
+#   "courierName": "DHL",
+#   "returnTrackingId": "u989",
+# 	"returnCourierName": "gati"
+# }

@@ -4,6 +4,7 @@ mutation saveOrderStatus(
   $item: ID
   $event: String
   $tracking_id: String
+  $type: String
   $courier_name: String
   $active: Boolean
 ) {
@@ -13,6 +14,7 @@ mutation saveOrderStatus(
     item: $item
     event: $event
     tracking_id: $tracking_id
+    type: $type
     courier_name: $courier_name
     active: $active
   ) {
@@ -21,6 +23,7 @@ mutation saveOrderStatus(
     item
     event
     tracking_id
+    type
     courier_name
     active
     createdAt
@@ -30,9 +33,10 @@ mutation saveOrderStatus(
 
 # {
 #   "id": "new",
-#   "order": "6045f1fb0a60784dd0f23ad9",
-#   "item": "6003c018fdf19236bb78be3f",
-#   "event": "picked up",
+#   "order": "60e6f550c4d57b0630d7446c",
+#   "item": "60e53dd1f13b3a2f10900217",
+#   "event": "Delivered",
 #   "courier_name": "DHL",
-#   "tracking_id": "12132cddffxcd"
+#   "tracking_id": "12132cddffxcd",
+#   "type": "Delivered"
 # }

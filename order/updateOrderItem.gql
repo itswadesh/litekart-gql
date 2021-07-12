@@ -1,5 +1,21 @@
-query orderItem($id: ID!) {
-  orderItem(id: $id) {
+mutation updateOrderItem(
+  $id: ID!
+  $status: String
+  $tracking: String
+  $trackingId: String
+  $courierName: String
+  $returnTrackingId: String
+  $returnCourierName: String
+) {
+  updateOrderItem(
+    id: $id
+    status: $status
+    tracking: $tracking
+    trackingId: $trackingId
+    courierName: $courierName
+    returnTrackingId: $returnTrackingId
+    returnCourierName: $returnCourierName
+  ) {
     id
     status
     pid
@@ -46,10 +62,6 @@ query orderItem($id: ID!) {
     userPhone
     invoiceLink
     returnValidTill
-    user {
-      id
-      firstName
-    }
     address {
       firstName
       lastName
@@ -80,5 +92,16 @@ query orderItem($id: ID!) {
       }
       store
     }
+    createdAt
+    updatedAt
   }
 }
+
+# {
+#   "id": "60eb23fbeee69f0748da49d0",
+#   "status": "Shipped",
+#   "trackingId": "gdmsams333",
+#   "courierName": "DHL",
+#   "returnTrackingId": "u989",
+# 	"returnCourierName": "gati"
+# }

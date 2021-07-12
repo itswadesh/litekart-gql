@@ -65,6 +65,7 @@ query myOrders(
         lng
       }
       items {
+        id
         pid
         posInvoiceNo
         itemOrderNo
@@ -96,6 +97,7 @@ query myOrders(
         status
       }
       orderItems {
+        id
         status
         pid
         posInvoiceNo
@@ -103,9 +105,16 @@ query myOrders(
         name
         slug
         img
+        qty
+        price
+        mrp
+        color
+        size
         tracking
         shippingCharge
         tax
+        subtotal
+        total
         brandName
         brandImg
       }

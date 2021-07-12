@@ -13,6 +13,10 @@ query collections($page: Int, $search: String, $limit: Int, $sort: String) {
       q
       sort
       type
+      products {
+        id
+        name
+      }
       createdAt
       updatedAt
     }

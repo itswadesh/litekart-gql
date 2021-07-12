@@ -82,6 +82,10 @@ query products(
       cgst
       sgst
       igst
+      returnInfo
+      returnAllowed
+      replaceAllowed
+      returnValidityInDays
       category {
         name
       }

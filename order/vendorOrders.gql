@@ -65,5 +65,5 @@ query vendorOrders($status: String!, $vendor: ID!) {
 
 # {
 #   "vendor": "60784961ca5cbc31b45f2acc",
-#   "status": "Waiting for confirmation"
+#   "status": "Ordered"
 # }
