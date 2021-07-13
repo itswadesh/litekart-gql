@@ -7,6 +7,7 @@ mutation saveBrand(
   $img: String
   $position: Int
   $featured: Boolean
+  $info: String
   $meta: String
   $metaTitle: String
   $metaDescription: String
@@ -29,6 +30,7 @@ mutation saveBrand(
     img: $img
     position: $position
     meta: $meta
+    info: $info
     metaTitle: $metaTitle
     metaDescription: $metaDescription
     metaKeywords: $metaKeywords
@@ -47,6 +49,7 @@ mutation saveBrand(
     name
     slug
     img
+    info
     meta
     metaTitle
     metaDescription

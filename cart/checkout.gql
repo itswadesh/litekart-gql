@@ -35,6 +35,7 @@ mutation checkout($address: ID, $paymentMethod: String) {
     userFirstName
     userLastName
     userPhone
+    userEmail
     address {
       firstName
       lastName

@@ -44,6 +44,7 @@ query orderItem($id: ID!) {
     userFirstName
     userLastName
     userPhone
+    userEmail
     invoiceLink
     returnValidTill
     user {

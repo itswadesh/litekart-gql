@@ -8,6 +8,7 @@ query brand1($id: String, $slug: String) {
     position
     active
     featured
+    info
     meta
     metaTitle
     metaDescription

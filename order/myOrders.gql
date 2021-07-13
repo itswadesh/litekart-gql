@@ -53,6 +53,7 @@ query myOrders(
       userFirstName
       userLastName
       userPhone
+      userEmail
       address {
         firstName
         lastName

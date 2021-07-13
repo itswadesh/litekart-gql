@@ -31,6 +31,7 @@ query order($id: ID!) {
     userFirstName
     userLastName
     userPhone
+    userEmail
     addressId {
       id
       firstName

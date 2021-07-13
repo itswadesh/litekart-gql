@@ -22,18 +22,18 @@ query bannerGroup(
     page
     pageSize
     data {
-        id
-        link
-        heading
-        img
-        sort
-        type
-        pageId
-        active
-        groupId
-        groupTitle
-        createdAt
-        updatedAt
-        }
+      id
+      link
+      heading
+      img
+      sort
+      type
+      pageId
+      active
+      groupId
+      groupTitle
+      createdAt
+      updatedAt
     }
+  }
 }
