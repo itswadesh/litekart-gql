@@ -3,6 +3,7 @@ query product_group($id: ID!) {
     sizeGroup {
       id
       slug
+      stock
       size {
         id
         name
@@ -11,6 +12,7 @@ query product_group($id: ID!) {
     colorGroup {
       id
       slug
+      stock
       color {
         id
         name

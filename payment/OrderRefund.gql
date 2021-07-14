@@ -1,6 +1,6 @@
 mutation OrderRefund(
   $oid: ID!
-  $itemId: ID!
+  $pid: ID!
   $amount: Float!
   $note: String!
   $email: String!
@@ -8,7 +8,7 @@ mutation OrderRefund(
 ) {
   OrderRefund(
     oid: $oid
-    itemId: $itemId
+    pid: $pid
     amount: $amount
     note: $note
     email: $email

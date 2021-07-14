@@ -31,7 +31,7 @@ query trending($type: String) {
     reviews
     itemId
     warranty
-    discountPercent
+    discount
     ageMin
     ageMax
     ageUnit

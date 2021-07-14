@@ -48,7 +48,7 @@ query master_id_product(
       reviews
       itemId
       warranty
-      discountPercent
+      discount
       ageMin
       ageMax
       ageUnit

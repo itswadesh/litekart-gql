@@ -54,6 +54,7 @@ query products(
       type
       price
       mrp
+      discount
       stock
       tax
       img
@@ -75,7 +76,6 @@ query products(
       reviews
       itemId
       warranty
-      discountPercent
       ageMin
       ageMax
       ageUnit
