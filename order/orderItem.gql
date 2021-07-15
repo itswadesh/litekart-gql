@@ -1,6 +1,7 @@
 query orderItem($id: ID!) {
   orderItem(id: $id) {
     id
+    orderId
     status
     pid
     posInvoiceNo
