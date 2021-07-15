@@ -22,6 +22,8 @@ query orderItem($id: ID!) {
     returnTrackingId
     courierName
     returnCourierName
+    days
+    type
     #order level info
     orderNo
     otp

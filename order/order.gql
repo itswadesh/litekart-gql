@@ -75,6 +75,8 @@ query order($id: ID!) {
       color
       size
       status
+      type
+      days
       orderHistory {
         status
         title
@@ -117,6 +119,8 @@ query order($id: ID!) {
       returnTrackingId
       courierName
       returnCourierName
+      type
+      days
       orderHistory {
         status
         title
