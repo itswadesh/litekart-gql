@@ -7,6 +7,10 @@ query category($id: String, $slug: String) {
     slug
     img
     level
+    pathA {
+      slug
+      name
+    }
     metaTitle
     metaDescription
     metaKeywords
