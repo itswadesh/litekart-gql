@@ -42,6 +42,12 @@ query me {
       store
       storePhotos
     }
+    businessDetail {
+      bankName
+      accountNo
+      accountHolderName
+      ifsc
+    }
     # plan
   }
 }
