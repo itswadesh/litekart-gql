@@ -121,6 +121,14 @@ query order($id: ID!) {
       returnCourierName
       type
       days
+      price
+      mrp
+      qty
+      subtotal
+      total
+      vendorInfo {
+        firstName
+      }
       orderHistory {
         status
         title
