@@ -140,6 +140,8 @@ mutation saveSettings(
       charge
       free
       method
+      enabled
+      provider
     }
     websiteEmail
     shopPhone

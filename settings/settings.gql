@@ -31,6 +31,8 @@ query settings {
       charge
       free
       method
+      enabled
+      provider
     }
     userRoles
     websiteEmail
