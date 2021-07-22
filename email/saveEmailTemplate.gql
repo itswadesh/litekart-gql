@@ -1,5 +1,5 @@
 mutation saveEmailTemplate(
-  $id: String
+  $id: String!
   $name: String
   $title: String
   $description: String
@@ -19,8 +19,17 @@ mutation saveEmailTemplate(
     title
     description
     content
+    link
     active
     createdAt
     updatedAt
   }
 }
+
+# {
+#   "id": "60f93c6497e0ac06b0b1b1eb",
+#   "name": "temp",
+#   "title": "asdsf",
+#   "description": "dafdsafsda",
+#   "content": "<html> wala <html>"
+# }
