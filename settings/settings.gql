@@ -106,5 +106,7 @@ query settings {
     referralBonus
     joiningBonus
     isMultiVendor
+    isMegamenu
+    isSearch
   }
 }

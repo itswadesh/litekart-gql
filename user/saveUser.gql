@@ -12,6 +12,8 @@ mutation saveUser(
   $shippingCharges: Int
   $freeShippingOn: Int
   $roles: [ID]
+  $storeName: String
+  $banner: String
 ) {
   saveUser(
     id: $id
@@ -27,6 +29,8 @@ mutation saveUser(
     shippingCharges: $shippingCharges
     freeShippingOn: $freeShippingOn
     roles: $roles
+    storeName: $storeName
+    banner: $banner
   ) {
     id
     email
@@ -42,6 +46,8 @@ mutation saveUser(
     verified
     shippingCharges
     freeShippingOn
+    storeName
+    banner
     roles
   }
 }

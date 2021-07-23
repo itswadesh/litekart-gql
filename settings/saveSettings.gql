@@ -56,6 +56,8 @@ mutation saveSettings(
   $referralBonus: Float
   $joiningBonus: Float
   $isMultiVendor: Boolean
+  $isMegamenu: Boolean
+  $isSearch: Boolean
 ) {
   saveSettings(
     id: $id
@@ -115,6 +117,8 @@ mutation saveSettings(
     referralBonus: $referralBonus
     joiningBonus: $joiningBonus
     isMultiVendor: $isMultiVendor
+    isMegamenu: $isMegamenu
+    isSearch: $isSearch
   ) {
     websiteName
     websiteLegalName
@@ -221,5 +225,7 @@ mutation saveSettings(
     joiningBonus
     referralBonus
     isMultiVendor
+    isMegamenu
+    isSearch
   }
 }

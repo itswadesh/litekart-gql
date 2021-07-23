@@ -12,6 +12,8 @@ mutation updateProfile(
   $info: InputInfo
   $shippingCharges: Int
   $freeShippingOn: Int
+  $storeName: String
+  $banner: String
 ) {
   updateProfile(
     firstName: $firstName
@@ -25,6 +27,8 @@ mutation updateProfile(
     address: $address
     shippingCharges: $shippingCharges
     freeShippingOn: $freeShippingOn
+    storeName: $storeName
+    banner: $banner
   ) {
     firstName
     lastName
@@ -36,6 +40,8 @@ mutation updateProfile(
     city
     shippingCharges
     freeShippingOn
+    storeName
+    banner
     address {
       address
       town
