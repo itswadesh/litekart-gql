@@ -1,0 +1,53 @@
+query stores($page: Int, $search: String, $limit: Int, $sort: String) {
+  stores(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      active
+      address
+      analyticsTrackingId
+      city
+      country
+      currency
+      currencyCode
+      currencySymbol
+      dimentionUnit
+      email
+      facebookPixelId
+      facebookUrl
+      freeShippingOn
+      gdprCookieConsent
+      googleAdsTag
+      img
+      instagramUrl
+      isHideNilStock
+      isOpen
+      legalName
+      minOrderValue
+      name
+      phone
+      pinterestTag
+      pinterestUrl
+      shippingCharge
+      slug
+      snapChatPixel
+      state
+      storeId
+      timeZone
+      twitterUrl
+      weightUnit
+      youtubeUrl
+      zip
+      createdAt
+      updatedAt
+      user {
+        firstName
+        lastName
+        email
+        phone
+      }
+    }
+  }
+}

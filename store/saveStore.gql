@@ -1,0 +1,116 @@
+mutation saveStore(
+  $id: String!
+  $active: Boolean
+  $address: String
+  $analyticsTrackingId: String
+  $city: String
+  $country: String
+  $currency: String
+  $currencyCode: String
+  $currencySymbol: String
+  $dimentionUnit: String
+  $email: String
+  $facebookPixelId: String
+  $facebookUrl: String
+  $freeShippingOn: Float
+  $gdprCookieConsent: String
+  $googleAdsTag: String
+  $img: String
+  $instagramUrl: String
+  $isHideNilStock: Boolean
+  $isOpen: Boolean
+  $legalName: String
+  $minOrderValue: Float
+  $name: String
+  $phone: String
+  $pinterestTag: String
+  $pinterestUrl: String
+  $shippingCharge: Float
+  $slug: String
+  $snapChatPixel: String
+  $state: String
+  $storeId: String
+  $timeZone: String
+  $twitterUrl: String
+  $weightUnit: String
+  $youtubeUrl: String
+  $zip: Float
+) {
+  saveStore(
+    id: $id
+    active: $active
+    address: $address
+    analyticsTrackingId: $analyticsTrackingId
+    city: $city
+    country: $country
+    currency: $currency
+    currencyCode: $currencyCode
+    currencySymbol: $currencySymbol
+    dimentionUnit: $dimentionUnit
+    email: $email
+    facebookPixelId: $facebookPixelId
+    facebookUrl: $facebookUrl
+    freeShippingOn: $freeShippingOn
+    gdprCookieConsent: $gdprCookieConsent
+    googleAdsTag: $googleAdsTag
+    img: $img
+    instagramUrl: $instagramUrl
+    isHideNilStock: $isHideNilStock
+    isOpen: $isOpen
+    legalName: $legalName
+    minOrderValue: $minOrderValue
+    name: $name
+    phone: $phone
+    pinterestTag: $pinterestTag
+    pinterestUrl: $pinterestUrl
+    shippingCharge: $shippingCharge
+    slug: $slug
+    snapChatPixel: $snapChatPixel
+    state: $state
+    storeId: $storeId
+    timeZone: $timeZone
+    twitterUrl: $twitterUrl
+    weightUnit: $weightUnit
+    youtubeUrl: $youtubeUrl
+    zip: $zip
+  ) {
+    id
+    active
+    address
+    analyticsTrackingId
+    city
+    country
+    currency
+    currencyCode
+    currencySymbol
+    dimentionUnit
+    email
+    facebookPixelId
+    facebookUrl
+    freeShippingOn
+    gdprCookieConsent
+    googleAdsTag
+    img
+    instagramUrl
+    isHideNilStock
+    isOpen
+    legalName
+    minOrderValue
+    name
+    phone
+    pinterestTag
+    pinterestUrl
+    shippingCharge
+    slug
+    snapChatPixel
+    state
+    storeId
+    timeZone
+    twitterUrl
+    weightUnit
+    youtubeUrl
+    zip
+    createdAt
+    updatedAt
+  }
+}
