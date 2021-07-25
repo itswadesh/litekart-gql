@@ -6,6 +6,7 @@ query myOrders(
   $sort: String
   $status: String # Pending, Tracking, Delivered
   $where: String
+  $store: ID
 ) {
   myOrders(
     page: $page
@@ -15,6 +16,7 @@ query myOrders(
     sort: $sort
     status: $status
     where: $where
+    store: $store
   ) {
     count
     pageSize
@@ -84,6 +86,11 @@ query myOrders(
         options
         brandName
         brandImg
+        store {
+          id
+          name
+          email
+        }
         orderStatus {
           id
           event
@@ -118,6 +125,11 @@ query myOrders(
         total
         brandName
         brandImg
+        store {
+          id
+          name
+          email
+        }
       }
     }
   }

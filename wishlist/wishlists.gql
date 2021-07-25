@@ -17,6 +17,9 @@ query wishlists(
     pageSize
     data {
       id
+      active
+      createdAt
+      updatedAt
       product {
         id
         name
@@ -38,14 +41,11 @@ query wishlists(
         firstName
         lastName
       }
-      active
       store {
         id
         name
         email
       }
-      createdAt
-      updatedAt
     }
   }
 }

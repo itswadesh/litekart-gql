@@ -17,6 +17,9 @@ query myWishlist(
     pageSize
     data {
       id
+      active
+      createdAt
+      updatedAt
       product {
         id
         name
@@ -43,9 +46,6 @@ query myWishlist(
         name
         email
       }
-      active
-      createdAt
-      updatedAt
     }
   }
 }

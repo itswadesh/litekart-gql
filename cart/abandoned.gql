@@ -29,6 +29,11 @@ query abandoned(
         vendor {
           _id
         }
+        store {
+          id
+          name
+          email
+        }
       }
       qty
       subtotal

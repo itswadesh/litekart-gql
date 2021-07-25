@@ -77,14 +77,10 @@ query order($id: ID!) {
       status
       type
       days
-      orderHistory {
-        status
-        title
-        body
-        icon
-        public
-        index
-        time
+      store {
+        id
+        name
+        email
       }
       vendor {
         firstName
@@ -96,6 +92,15 @@ query order($id: ID!) {
         store
       }
       status
+      orderHistory {
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
+      }
     }
     orderItems {
       id
@@ -128,6 +133,11 @@ query order($id: ID!) {
       total
       vendorInfo {
         firstName
+      }
+      store {
+        id
+        name
+        email
       }
       orderHistory {
         status

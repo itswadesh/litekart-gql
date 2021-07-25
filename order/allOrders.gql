@@ -5,6 +5,7 @@ query allOrders(
   $sort: String
   $status: String
   $where: String
+  $store: ID
 ) {
   allOrders(
     page: $page
@@ -13,6 +14,7 @@ query allOrders(
     sort: $sort
     status: $status
     where: $where
+    store: $store
   ) {
     count
     page
@@ -57,10 +59,15 @@ query allOrders(
           firstName
           lastName
           phone
+          store
           address {
             address
           }
-          store
+        }
+        store {
+          id
+          name
+          email
         }
       }
     }

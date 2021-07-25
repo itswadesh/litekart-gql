@@ -29,6 +29,11 @@ query carts(
         vendor {
           _id
         }
+        store {
+          id
+          name
+          email
+        }
       }
       qty
       subtotal

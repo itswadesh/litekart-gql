@@ -18,6 +18,11 @@ query cart {
       vendorFirstName
       vendorLastName
       vendorPhone
+      store {
+        id
+        name
+        email
+      }
     }
     qty
     subtotal

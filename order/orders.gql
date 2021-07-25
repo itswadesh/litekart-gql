@@ -1,5 +1,17 @@
-query orders($page: Int, $search: String, $limit: Int, $sort: String) {
-  orders(page: $page, search: $search, limit: $limit, sort: $sort) {
+query orders(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  orders(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -66,16 +78,6 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
         lat
         lng
       }
-      orderHistory {
-        id
-        status
-        title
-        body
-        icon
-        public
-        index
-        time
-      }
       amount {
         qty
         subtotal
@@ -87,6 +89,21 @@ query orders($page: Int, $search: String, $limit: Int, $sort: String) {
       payment {
         amountPaid
         amountDue
+      }
+      store {
+        id
+        name
+        email
+      }
+      orderHistory {
+        id
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
       }
     }
   }

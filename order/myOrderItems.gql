@@ -6,6 +6,7 @@ query myOrderItems(
   $sort: String
   $status: String # Pending, Tracking, Delivered
   $where: String
+  $store: ID
 ) {
   myOrderItems(
     page: $page
@@ -15,6 +16,7 @@ query myOrderItems(
     sort: $sort
     status: $status
     where: $where
+    store: $store
   ) {
     count
     pageSize
@@ -82,16 +84,6 @@ query myOrderItems(
         lat
         lng
       }
-      orderHistory {
-        id
-        status
-        title
-        body
-        icon
-        public
-        index
-        time
-      }
       amount {
         qty
         subtotal
@@ -103,6 +95,21 @@ query myOrderItems(
       payment {
         amountPaid
         amountDue
+      }
+      store {
+        id
+        name
+        email
+      }
+      orderHistory {
+        id
+        status
+        title
+        body
+        icon
+        public
+        index
+        time
       }
     }
   }

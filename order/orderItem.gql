@@ -65,15 +65,10 @@ query orderItem($id: ID!) {
       lat
       lng
     }
-    orderHistory {
+    store {
       id
-      status
-      title
-      body
-      icon
-      public
-      index
-      time
+      name
+      email
     }
     vendor {
       firstName
@@ -83,6 +78,16 @@ query orderItem($id: ID!) {
         address
       }
       store
+    }
+    orderHistory {
+      id
+      status
+      title
+      body
+      icon
+      public
+      index
+      time
     }
   }
 }
