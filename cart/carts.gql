@@ -1,5 +1,17 @@
-query carts {
-  carts {
+query carts(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  carts(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     pageSize
     page
     count

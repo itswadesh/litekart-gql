@@ -15,5 +15,10 @@ query emailTemplate($id: ID!) {
       email
       phone
     }
+    store {
+      id
+      name
+      email
+    }
   }
 }

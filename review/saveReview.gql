@@ -6,6 +6,7 @@ mutation saveReview(
   $rating: Int
   $message: String
   $active: Boolean
+  $store: ID
 ) {
   saveReview(
     id: $id
@@ -15,19 +16,12 @@ mutation saveReview(
     rating: $rating
     message: $message
     active: $active
+    store: $store
   ) {
     id
-    pid {
-      name
-      slug
-      img
-      type
-    }
-    user {
-      firstName
-      lastName
-      phone
-    }
+    pid
+    user
+    store
     rating
     message
     active

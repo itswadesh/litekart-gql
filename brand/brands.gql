@@ -5,6 +5,7 @@ query brands(
   $sort: String
   $parent: String
   $featured: Boolean
+  $store: ID
 ) {
   brands(
     page: $page
@@ -13,6 +14,7 @@ query brands(
     sort: $sort
     parent: $parent
     featured: $featured
+    store: $store
   ) {
     count
     page
@@ -41,6 +43,13 @@ query brands(
       parent {
         id
         name
+      }
+      store {
+        id
+        name
+        email
+        phone
+        active
       }
       createdAt
       updatedAt

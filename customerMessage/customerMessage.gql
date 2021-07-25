@@ -4,5 +4,10 @@ query customerMessage($id: ID!) {
     name
     email
     message
+    store {
+      id
+      name
+      email
+    }
   }
 }

@@ -1,5 +1,17 @@
-query attributes($page: Int, $search: String, $limit: Int, $sort: String) {
-  attributes(page: $page, search: $search, limit: $limit, sort: $sort) {
+query attributes(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  attributes(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -11,6 +23,7 @@ query attributes($page: Int, $search: String, $limit: Int, $sort: String) {
       active
       createdAt
       updatedAt
+      store
     }
   }
 }

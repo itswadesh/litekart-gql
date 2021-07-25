@@ -7,5 +7,10 @@ query faq($id: String!) {
     active
     createdAt
     updatedAt
+    store {
+      id
+      name
+      email
+    }
   }
 }

@@ -8,6 +8,7 @@ query allCategories(
   $featured: Boolean
   $active: Boolean
   $shopbycategory: Boolean
+  $store: ID
 ) {
   allCategories(
     page: $page
@@ -19,6 +20,7 @@ query allCategories(
     featured: $featured
     active: $active
     shopbycategory: $shopbycategory
+    store: $store
   ) {
     count
     page

@@ -9,6 +9,7 @@ mutation saveBanner(
   $groupId: String
   $groupTitle: String
   $active: Boolean
+  $store: ID
 ) {
   saveBanner(
     id: $id
@@ -21,6 +22,7 @@ mutation saveBanner(
     groupId: $groupId
     groupTitle: $groupTitle
     active: $active
+    store: $store
   ) {
     id
     link
@@ -32,6 +34,7 @@ mutation saveBanner(
     groupId
     groupTitle
     active
+    store
     createdAt
     updatedAt
   }

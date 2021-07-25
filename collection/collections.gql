@@ -1,5 +1,17 @@
-query collections($page: Int, $search: String, $limit: Int, $sort: String) {
-  collections(page: $page, search: $search, limit: $limit, sort: $sort) {
+query collections(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  collections(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -13,12 +25,18 @@ query collections($page: Int, $search: String, $limit: Int, $sort: String) {
       q
       sort
       type
+      createdAt
+      updatedAt
       products {
         id
         name
       }
-      createdAt
-      updatedAt
+      store {
+        id
+        name
+        email
+        phone
+      }
     }
   }
 }

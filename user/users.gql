@@ -4,8 +4,16 @@ query users(
   $limit: Int
   $sort: String
   $role: String
+  $store: ID
 ) {
-  users(page: $page, search: $search, limit: $limit, sort: $sort, role: $role) {
+  users(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    role: $role
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -23,6 +31,9 @@ query users(
       active
       productSold
       luluCustomerNo
+      plan
+      createdAt
+      updatedAt
       address {
         address
         city
@@ -31,9 +42,7 @@ query users(
         store
         public
       }
-      plan
-      createdAt
-      updatedAt
+      store
     }
   }
 }

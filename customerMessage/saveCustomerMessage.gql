@@ -3,12 +3,20 @@ mutation saveCustomerMessage(
   $name: String
   $email: String
   $message: String
+  $store: ID
 ) {
-  saveCustomerMessage(id: $id, name: $name, message: $message, email: $email) {
+  saveCustomerMessage(
+    id: $id
+    name: $name
+    message: $message
+    email: $email
+    store: $store
+  ) {
     id
     name
     email
     message
+    store
   }
 }
 

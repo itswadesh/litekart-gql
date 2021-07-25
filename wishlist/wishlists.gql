@@ -1,5 +1,17 @@
-query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
-  wishlists(page: $page, search: $search, limit: $limit, sort: $sort) {
+query wishlists(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  wishlists(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -27,6 +39,11 @@ query wishlists($page: Int, $search: String, $limit: Int, $sort: String) {
         lastName
       }
       active
+      store {
+        id
+        name
+        email
+      }
       createdAt
       updatedAt
     }

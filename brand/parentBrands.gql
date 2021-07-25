@@ -36,7 +36,6 @@ query parentBrands(
       featured
       parent {
         id
-        name
       }
       createdAt
       updatedAt

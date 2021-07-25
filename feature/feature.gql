@@ -6,5 +6,10 @@ query feature($id: String!) {
     type
     product
     active
+    store {
+      id
+      name
+      email
+    }
   }
 }

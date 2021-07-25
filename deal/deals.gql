@@ -1,5 +1,17 @@
-query deals($page: Int, $search: String, $limit: Int, $sort: String) {
-  deals(page: $page, search: $search, limit: $limit, sort: $sort) {
+query deals(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  deals(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -12,6 +24,8 @@ query deals($page: Int, $search: String, $limit: Int, $sort: String) {
       startTimeISO
       endTimeISO
       onGoing
+      dealStatus
+      active
       products {
         id
         name
@@ -19,8 +33,11 @@ query deals($page: Int, $search: String, $limit: Int, $sort: String) {
         img
         price
       }
-      dealStatus
-      active
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

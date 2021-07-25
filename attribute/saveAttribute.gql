@@ -4,6 +4,7 @@ mutation saveAttribute(
   $name: String
   $show: Boolean
   $active: Boolean
+  $store: ID
 ) {
   saveAttribute(
     id: $id
@@ -11,6 +12,7 @@ mutation saveAttribute(
     name: $name
     show: $show
     active: $active
+    store: $store
   ) {
     id
     name
@@ -19,5 +21,6 @@ mutation saveAttribute(
     active
     createdAt
     updatedAt
+    store
   }
 }

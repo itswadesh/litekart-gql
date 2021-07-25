@@ -8,6 +8,7 @@ query banners(
   $groupId: String
   $groupTitle: String
   $active: Boolean
+  $store: ID
 ) {
   banners(
     page: $page
@@ -19,6 +20,7 @@ query banners(
     groupId: $groupId
     groupTitle: $groupTitle
     active: $active
+    store: $store
   ) {
     count
     page
@@ -36,6 +38,7 @@ query banners(
       active
       createdAt
       updatedAt
+      store
     }
   }
 }

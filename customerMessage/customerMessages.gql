@@ -3,8 +3,15 @@ query customerMessages(
   $limit: Int
   $search: String
   $sort: String
+  $store: ID
 ) {
-  customerMessages(page: $page, search: $search, limit: $limit, sort: $sort) {
+  customerMessages(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -13,6 +20,11 @@ query customerMessages(
       name
       email
       message
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

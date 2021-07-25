@@ -1,5 +1,5 @@
 mutation saveBrand(
-  $id: String
+  $id: String!
   $brandId: String
   $name: String
   $slug: String
@@ -20,6 +20,7 @@ mutation saveBrand(
   $pinterestUrl: String
   $googleUrl: String
   $active: Boolean
+  $store: ID
 ) {
   saveBrand(
     id: $id
@@ -43,6 +44,7 @@ mutation saveBrand(
     googleUrl: $googleUrl
     featured: $featured
     active: $active
+    store: $store
   ) {
     id
     brandId
@@ -63,6 +65,7 @@ mutation saveBrand(
     googleUrl
     featured
     active
+    store
     createdAt
     updatedAt
   }

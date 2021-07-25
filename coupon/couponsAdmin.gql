@@ -1,5 +1,17 @@
-query couponsAdmin($page: Int, $search: String, $limit: Int, $sort: String) {
-  couponsAdmin(page: $page, search: $search, limit: $limit, sort: $sort) {
+query couponsAdmin(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  couponsAdmin(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -20,6 +32,11 @@ query couponsAdmin($page: Int, $search: String, $limit: Int, $sort: String) {
       active
       createdAt
       updatedAt
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

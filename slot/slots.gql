@@ -1,5 +1,17 @@
-query slots($page: Int, $search: String, $limit: Int, $sort: String) {
-  slots(page: $page, search: $search, limit: $limit, sort: $sort) {
+query slots(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  slots(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -10,6 +22,11 @@ query slots($page: Int, $search: String, $limit: Int, $sort: String) {
       slug
       info
       active
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

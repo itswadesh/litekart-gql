@@ -10,5 +10,10 @@ query size($id: ID!) {
     active
     createdAt
     updatedAt
+    store {
+      id
+      name
+      email
+    }
   }
 }

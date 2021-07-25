@@ -16,5 +16,10 @@ query coupon($id: String!) {
     active
     createdAt
     updatedAt
+    store {
+      id
+      name
+      email
+    }
   }
 }

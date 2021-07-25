@@ -8,6 +8,7 @@ query categories(
   $active: Boolean
   $img: Boolean
   $shopbycategory: Boolean
+  $store: ID
 ) {
   categories(
     page: $page
@@ -19,6 +20,7 @@ query categories(
     active: $active
     img: $img
     shopbycategory: $shopbycategory
+    store: $store
   ) {
     count
     page
@@ -42,6 +44,7 @@ query categories(
       shopbycategory
       createdAt
       updatedAt
+      store
     }
   }
 }

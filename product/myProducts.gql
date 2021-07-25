@@ -6,6 +6,7 @@ query myProducts(
   $sort: String
   $category: String
   $active: String
+  $store: ID
 ) {
   myProducts(
     page: $page
@@ -15,6 +16,7 @@ query myProducts(
     sort: $sort
     category: $category
     active: $active
+    store: $store
   ) {
     count
     page

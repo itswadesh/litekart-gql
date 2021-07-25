@@ -14,6 +14,8 @@ mutation saveAddress(
   $email: String
   $lat: Float
   $lng: Float
+  $store: ID
+  $isResidential: Boolean
 ) {
   saveAddress(
     id: $id
@@ -31,6 +33,8 @@ mutation saveAddress(
     email: $email
     lat: $lat
     lng: $lng
+    store: $store
+    isResidential: $isResidential
   ) {
     id
     firstName
@@ -47,6 +51,8 @@ mutation saveAddress(
     email
     lat
     lng
+    isResidential
+    store
   }
 }
 
@@ -61,5 +67,6 @@ mutation saveAddress(
 #   "state": "raj",
 #   "country": "india",
 #   "lat": 22.222,
-#   "lng": 43.555
+#   "lng": 43.555,
+#   "store": "60fb92e49f73050d30287cae"
 # }

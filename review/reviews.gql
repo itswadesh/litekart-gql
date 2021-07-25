@@ -1,10 +1,27 @@
-query reviews($page: Int, $search: String, $limit: Int, $sort: String) {
-  reviews(page: $page, search: $search, limit: $limit, sort: $sort) {
+query reviews(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  reviews(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
     data {
       id
+      rating
+      message
+      active
+      createdAt
+      updatedAt
       pid {
         name
         slug
@@ -24,11 +41,11 @@ query reviews($page: Int, $search: String, $limit: Int, $sort: String) {
         }
         phone
       }
-      rating
-      message
-      active
-      createdAt
-      updatedAt
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

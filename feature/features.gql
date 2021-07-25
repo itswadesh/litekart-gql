@@ -1,5 +1,17 @@
-query features($page: Int, $search: String, $limit: Int, $sort: String) {
-  features(page: $page, search: $search, limit: $limit, sort: $sort) {
+query features(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  features(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -10,6 +22,11 @@ query features($page: Int, $search: String, $limit: Int, $sort: String) {
       type
       product
       active
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

@@ -8,6 +8,7 @@ mutation createDeal(
   $products: [String]
   $dealStatus: Boolean
   $active: Boolean
+  $store: ID
 ) {
   createDeal(
     name: $name
@@ -19,6 +20,7 @@ mutation createDeal(
     products: $products
     dealStatus: $dealStatus
     active: $active
+    store: $store
   ) {
     id
     name
@@ -30,5 +32,6 @@ mutation createDeal(
     products
     dealStatus
     active
+    store
   }
 }

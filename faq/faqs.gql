@@ -1,5 +1,17 @@
-query faqs($page: Int, $search: String, $limit: Int, $sort: String) {
-  faqs(page: $page, search: $search, limit: $limit, sort: $sort) {
+query faqs(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  faqs(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -11,6 +23,11 @@ query faqs($page: Int, $search: String, $limit: Int, $sort: String) {
       active
       createdAt
       updatedAt
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

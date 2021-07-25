@@ -1,5 +1,17 @@
-query colors($page: Int, $search: String, $limit: Int, $sort: String) {
-  colors(page: $page, search: $search, limit: $limit, sort: $sort) {
+query colors(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  colors(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -12,6 +24,11 @@ query colors($page: Int, $search: String, $limit: Int, $sort: String) {
       active
       createdAt
       updatedAt
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

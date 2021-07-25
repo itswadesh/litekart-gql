@@ -12,12 +12,12 @@ query products(
   $vendor: String
   $category: String
   $active: Boolean
-  $type: String
   $featured: Boolean
   $new: Boolean
   $hot: Boolean
   $sale: Boolean
   $where: String
+  $store: ID
 ) {
   products(
     page: $page
@@ -33,12 +33,12 @@ query products(
     vendor: $vendor
     category: $category
     active: $active
-    type: $type
     featured: $featured
     new: $new
     hot: $hot
     sale: $sale
     where: $where
+    store: $store
   ) {
     count
     pageSize
@@ -51,10 +51,10 @@ query products(
       productMasterId
       slug
       name
+      description
       type
       price
       mrp
-      discount
       stock
       tax
       img
@@ -76,6 +76,7 @@ query products(
       reviews
       itemId
       warranty
+      # discountPercent
       ageMin
       ageMax
       ageUnit
@@ -86,12 +87,15 @@ query products(
       returnAllowed
       replaceAllowed
       returnValidityInDays
+      store {
+        id
+        name
+        email
+      }
       category {
         name
       }
-      categories {
-        name
-      }
+
       variants {
         id
         name

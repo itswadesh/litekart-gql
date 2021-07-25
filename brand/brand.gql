@@ -24,6 +24,13 @@ query brand($id: String, $slug: String) {
       id
       name
     }
+    store {
+      id
+      name
+      email
+      phone
+      active
+    }
     createdAt
     updatedAt
   }

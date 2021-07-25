@@ -12,6 +12,7 @@ mutation saveOption(
   $type: String
   $info: String
   $default_option: ID
+  $store: ID
   $active: Boolean
 ) {
   saveOption(
@@ -28,6 +29,7 @@ mutation saveOption(
     required: $required
     type: $type
     default_option: $default_option
+    store: $store
     active: $active
   ) {
     id
@@ -44,6 +46,7 @@ mutation saveOption(
     isFilter
     active
     default_option
+    store
     values {
       id
       name

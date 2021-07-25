@@ -21,6 +21,7 @@ query brand1($id: String, $slug: String) {
     pinterestUrl
     googleUrl
     parent
+    store
     user
     createdAt
     updatedAt

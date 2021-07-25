@@ -16,6 +16,7 @@ query me {
     currentBalance
     storeName
     banner
+    store
     roles {
       id
       name

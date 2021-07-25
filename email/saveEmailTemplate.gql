@@ -5,6 +5,7 @@ mutation saveEmailTemplate(
   $description: String
   $content: String
   $active: Boolean
+  $store: ID
 ) {
   saveEmailTemplate(
     id: $id
@@ -13,6 +14,7 @@ mutation saveEmailTemplate(
     description: $description
     content: $content
     active: $active
+    store: $store
   ) {
     id
     name
@@ -21,15 +23,8 @@ mutation saveEmailTemplate(
     content
     link
     active
+    store
     createdAt
     updatedAt
   }
 }
-
-# {
-#   "id": "60f93c6497e0ac06b0b1b1eb",
-#   "name": "temp",
-#   "title": "asdsf",
-#   "description": "dafdsafsda",
-#   "content": "<html> wala <html>"
-# }

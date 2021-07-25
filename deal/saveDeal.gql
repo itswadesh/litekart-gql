@@ -10,6 +10,7 @@ mutation saveDeal(
   $products: [String]
   $dealStatus: Boolean
   $active: Boolean
+  $store: ID
 ) {
   saveDeal(
     id: $id
@@ -23,6 +24,7 @@ mutation saveDeal(
     products: $products
     dealStatus: $dealStatus
     active: $active
+    store: $store
   ) {
     id
     name
@@ -32,12 +34,9 @@ mutation saveDeal(
     startTimeISO
     endTimeISO
     onGoing
-    products {
-      name
-      slug
-      img
-    }
     dealStatus
     active
+    products
+    store
   }
 }

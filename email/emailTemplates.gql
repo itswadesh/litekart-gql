@@ -1,5 +1,17 @@
-query emailTemplates($page: Int, $search: String, $limit: Int, $sort: String) {
-  emailTemplates(page: $page, search: $search, limit: $limit, sort: $sort) {
+query emailTemplates(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  emailTemplates(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -18,6 +30,11 @@ query emailTemplates($page: Int, $search: String, $limit: Int, $sort: String) {
         firstName
         email
         phone
+      }
+      store {
+        id
+        name
+        email
       }
     }
   }

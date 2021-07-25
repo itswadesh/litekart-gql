@@ -13,6 +13,7 @@ mutation saveCoupon(
   $validFromDate: String
   $validToDate: String
   $active: Boolean
+  $store: ID
 ) {
   saveCoupon(
     id: $id
@@ -29,6 +30,7 @@ mutation saveCoupon(
     validFromDate: $validFromDate
     validToDate: $validToDate
     active: $active
+    store: $store
   ) {
     id
     code
@@ -39,6 +41,7 @@ mutation saveCoupon(
     text
     terms
     color
+    store
     minimumCartValue
     maxAmount
     validFromDate

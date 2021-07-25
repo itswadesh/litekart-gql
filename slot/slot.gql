@@ -6,5 +6,10 @@ query slot($id: String!) {
     slug
     info
     active
+    store {
+      id
+      name
+      email
+    }
   }
 }

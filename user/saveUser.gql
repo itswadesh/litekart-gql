@@ -14,6 +14,7 @@ mutation saveUser(
   $roles: [ID]
   $storeName: String
   $banner: String
+  $store: ID
 ) {
   saveUser(
     id: $id
@@ -31,6 +32,7 @@ mutation saveUser(
     roles: $roles
     storeName: $storeName
     banner: $banner
+    store: $store
   ) {
     id
     email
@@ -49,11 +51,6 @@ mutation saveUser(
     storeName
     banner
     roles
+    store
   }
 }
-
-# {
-#   "id": "606c127255c00f147499139f",
-#   "shippingCharges": 40,
-#   "freeShippingOn": 500
-# }

@@ -13,6 +13,7 @@ query option($id: ID!) {
     isFilter
     active
     default_option
+    store
     values {
       id
       name
