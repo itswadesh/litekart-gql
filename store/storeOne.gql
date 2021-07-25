@@ -1,5 +1,5 @@
-query store {
-  store {
+query storeOne($id: ID!) {
+  storeOne(id: $id) {
     id
     active
     address
