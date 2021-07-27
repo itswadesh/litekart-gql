@@ -29,11 +29,6 @@ query abandoned(
         vendor {
           _id
         }
-        store {
-          id
-          name
-          email
-        }
       }
       qty
       subtotal
@@ -50,6 +45,11 @@ query abandoned(
       tax
       createdAt
       updatedAt
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

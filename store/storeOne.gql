@@ -4,6 +4,7 @@ query storeOne($id: ID!) {
     active
     address
     analyticsTrackingId
+    banners
     city
     country
     currency

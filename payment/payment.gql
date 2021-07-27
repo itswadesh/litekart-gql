@@ -26,5 +26,10 @@ query payment($id: ID!) {
     tax
     errorCode
     errorDescription
+    store {
+      id
+      name
+      email
+    }
   }
 }

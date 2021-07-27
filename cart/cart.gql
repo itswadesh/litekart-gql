@@ -18,11 +18,6 @@ query cart {
       vendorFirstName
       vendorLastName
       vendorPhone
-      store {
-        id
-        name
-        email
-      }
     }
     qty
     subtotal
@@ -37,5 +32,10 @@ query cart {
     }
     total
     tax
+    store {
+      id
+      name
+      email
+    }
   }
 }

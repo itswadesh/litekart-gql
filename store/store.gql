@@ -4,6 +4,7 @@ query store {
     active
     address
     analyticsTrackingId
+    banners
     city
     country
     currency

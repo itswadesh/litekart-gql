@@ -1,10 +1,22 @@
-query payments($page: Int, $search: String, $limit: Int, $sort: String) {
-  payments(page: $page, search: $search, limit: $limit, sort: $sort) {
+query payments(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  payments(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
     data {
-      id
+      _id
       orderId
       paymentOrderId
       paymentMode
@@ -30,6 +42,11 @@ query payments($page: Int, $search: String, $limit: Int, $sort: String) {
       errorDescription
       refundStatus
       description
+      store {
+        id
+        name
+        email
+      }
     }
   }
 }

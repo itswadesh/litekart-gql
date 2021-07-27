@@ -36,6 +36,10 @@ mutation checkout($address: ID, $paymentMethod: String) {
     userLastName
     userPhone
     userEmail
+    store {
+      id
+      name
+    }
     address {
       firstName
       lastName
@@ -76,7 +80,6 @@ mutation checkout($address: ID, $paymentMethod: String) {
         address {
           address
         }
-        store
       }
       vendorInfo {
         firstName

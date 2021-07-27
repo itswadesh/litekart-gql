@@ -55,6 +55,11 @@ query order($id: ID!) {
       lat
       lng
     }
+    store {
+      id
+      name
+      email
+    }
     items {
       id
       pid
@@ -77,11 +82,6 @@ query order($id: ID!) {
       status
       type
       days
-      store {
-        id
-        name
-        email
-      }
       vendor {
         firstName
         lastName
@@ -133,11 +133,6 @@ query order($id: ID!) {
       total
       vendorInfo {
         firstName
-      }
-      store {
-        id
-        name
-        email
       }
       orderHistory {
         status

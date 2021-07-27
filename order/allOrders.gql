@@ -43,6 +43,11 @@ query allOrders(
         lat
         lng
       }
+      store {
+        id
+        name
+        email
+      }
       items {
         pid
         posInvoiceNo
@@ -63,11 +68,6 @@ query allOrders(
           address {
             address
           }
-        }
-        store {
-          id
-          name
-          email
         }
       }
     }

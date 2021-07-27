@@ -3,6 +3,7 @@ mutation saveStore(
   $active: Boolean
   $address: String
   $analyticsTrackingId: String
+  $banners: [String]
   $city: String
   $country: String
   $currency: String
@@ -41,6 +42,7 @@ mutation saveStore(
     active: $active
     address: $address
     analyticsTrackingId: $analyticsTrackingId
+    banners: $banners
     city: $city
     country: $country
     currency: $currency
@@ -78,6 +80,7 @@ mutation saveStore(
     active
     address
     analyticsTrackingId
+    banners
     city
     country
     currency

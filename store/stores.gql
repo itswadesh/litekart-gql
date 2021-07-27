@@ -8,6 +8,7 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       active
       address
       analyticsTrackingId
+      banners
       city
       country
       currency

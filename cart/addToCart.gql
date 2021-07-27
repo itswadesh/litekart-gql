@@ -30,11 +30,6 @@ mutation addToCart(
       vendorFirstName
       vendorLastName
       vendorPhone
-      store {
-        id
-        name
-        email
-      }
     }
     qty
     subtotal
@@ -49,6 +44,11 @@ mutation addToCart(
     }
     tax
     total
+    store {
+      id
+      name
+      email
+    }
   }
 }
 

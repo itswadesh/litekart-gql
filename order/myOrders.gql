@@ -67,6 +67,11 @@ query myOrders(
         lat
         lng
       }
+      store {
+        id
+        name
+        email
+      }
       items {
         id
         pid
@@ -86,11 +91,6 @@ query myOrders(
         options
         brandName
         brandImg
-        store {
-          id
-          name
-          email
-        }
         orderStatus {
           id
           event
@@ -125,11 +125,6 @@ query myOrders(
         total
         brandName
         brandImg
-        store {
-          id
-          name
-          email
-        }
       }
     }
   }
