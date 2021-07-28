@@ -64,6 +64,7 @@ query orders(
       returnValidTill
       paymentMode
       paymentAmount
+      returnReason
       user {
         firstName
         lastName

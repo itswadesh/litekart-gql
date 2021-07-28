@@ -82,6 +82,7 @@ query order($id: ID!) {
       status
       type
       days
+      returnReason
       vendor {
         firstName
         lastName
@@ -131,6 +132,7 @@ query order($id: ID!) {
       qty
       subtotal
       total
+      returnReason
       vendorInfo {
         firstName
       }

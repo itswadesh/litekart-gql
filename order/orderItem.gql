@@ -50,6 +50,7 @@ query orderItem($id: ID!) {
     userEmail
     invoiceLink
     returnValidTill
+    returnReason
     user {
       id
       firstName
