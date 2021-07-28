@@ -74,6 +74,7 @@ query product1($id: ID!) {
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    files
     productDetails {
       name
       value

@@ -194,6 +194,7 @@ query product($id: ID!) {
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    files
     createdAt
     updatedAt
   }

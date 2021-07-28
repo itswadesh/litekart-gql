@@ -65,6 +65,7 @@ mutation saveProduct(
   $relatedProducts: [ID!]
   $specifications: [ID!]
   $store: ID
+  $files: [String]
 ) {
   saveProduct(
     id: $id
@@ -133,6 +134,7 @@ mutation saveProduct(
     width: $width
     height: $height
     store: $store
+    files: $files
   ) {
     id
     name
@@ -211,6 +213,7 @@ mutation saveProduct(
     replaceAllowed
     returnValidityInDays
     store
+    files
   }
 }
 # {
