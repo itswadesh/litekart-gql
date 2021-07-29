@@ -1,5 +1,5 @@
-query storeOne($id: ID!) {
-  storeOne(id: $id) {
+query storeOne($id: ID, $slug: String) {
+  storeOne(id: $id, slug: $slug) {
     id
     active
     address
