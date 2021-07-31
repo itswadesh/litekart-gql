@@ -29,7 +29,7 @@ mutation saveSettings(
   $favicon: String
   $CDN_URL: String
   $searchbarText: String
-  $adminPanelLink: String
+  $ADMIN_PANEL_LINK: String
   $pageSize: Int
   $paymentStatuses: [String]
   $sms: SmsIp
@@ -92,7 +92,7 @@ mutation saveSettings(
     favicon: $favicon
     CDN_URL: $CDN_URL
     searchbarText: $searchbarText
-    adminPanelLink: $adminPanelLink
+    ADMIN_PANEL_LINK: $ADMIN_PANEL_LINK
     pageSize: $pageSize
     paymentStatuses: $paymentStatuses
     sms: $sms
@@ -160,7 +160,7 @@ mutation saveSettings(
     favicon
     CDN_URL
     searchbarText
-    adminPanelLink
+    ADMIN_PANEL_LINK
     pageSize
     orderStatuses {
       status
