@@ -2,16 +2,24 @@ mutation savePopularSearch(
   $id: String!
   $text: String
   $popularity: String
+  $store: ID
 ) {
-  savePopularSearch(id: $id, text: $text, popularity: $popularity) {
+  savePopularSearch(
+    id: $id
+    text: $text
+    popularity: $popularity
+    store: $store
+  ) {
     id
     text
     popularity
+    store
   }
 }
 
 # {
 #   "id": "new",
 #   "text": "prak",
-#   "popularity": "pra@"
+#   "popularity": "pra@",
+#   "store": "61004670de02af2608738e9a"
 # }

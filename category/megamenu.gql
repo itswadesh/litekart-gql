@@ -5,6 +5,7 @@ query megamenu(
   $sort: String
   $featured: Boolean
   $brand: ID
+  $store: ID
 ) {
   megamenu(
     id: $id
@@ -13,6 +14,7 @@ query megamenu(
     sort: $sort
     featured: $featured
     brand: $brand
+    store: $store
   ) {
     id
     name
@@ -75,7 +77,6 @@ query megamenu(
     }
   }
 }
-
 
 # {
 #   "brand": "60b4d95b1515460f94e58d4f"

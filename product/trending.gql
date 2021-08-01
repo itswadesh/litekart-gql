@@ -1,5 +1,5 @@
-query trending($type: String) {
-  trending(type: $type) {
+query trending($type: String, $store: ID) {
+  trending(type: $type, store: $store) {
     id
     sku
     barcode

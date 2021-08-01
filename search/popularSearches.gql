@@ -1,5 +1,17 @@
-query popularSearches($page: Int, $limit: Int, $search: String, $sort: String) {
-  popularSearches(page: $page, search: $search, limit: $limit, sort: $sort) {
+query popularSearches(
+  $page: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $store: ID
+) {
+  popularSearches(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     count
     page
     pageSize
@@ -7,6 +19,12 @@ query popularSearches($page: Int, $limit: Int, $search: String, $sort: String) {
       id
       text
       popularity
+      store {
+        id
+        name
+        email
+        phone
+      }
     }
   }
 }
