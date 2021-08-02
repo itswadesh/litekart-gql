@@ -2,38 +2,96 @@ query storeOne($id: ID, $slug: String) {
   storeOne(id: $id, slug: $slug) {
     id
     active
+    adminNotifications {
+      lowStockNotification
+      newOrderPlaced
+    }
     address
+    alert
     analyticsTrackingId
     banners
     city
+    closed
+    closedMessage
     country
     currency
     currencyCode
+    currencyDecimals
     currencySymbol
+    customerOrderNotifications {
+      downloadEGoods
+      giftCardPurchased
+      orderConfirmation
+      orderIsReadyForPickup
+      orderShipped
+      orderStatusChanged
+    }
+    description
+    detailMeta
     dimentionUnit
     email
+    facebook
     facebookPixelId
     facebookUrl
+    favicon
     freeShippingOn
     gdprCookieConsent
+    google
     googleAdsTag
+    homeMeta1
+    homeMeta2
+    homeMeta3
+    homeMeta4
     img
+    instagram
     instagramUrl
     isHideNilStock
+    isMegamenu
     isOpen
+    isSearch
+    keywords
     legalName
+    linkedin
+    logo
+    logoDark
+    logoMobile
+    logoMobileDark
+    minimumOrderValue
     minOrderValue
     name
+    openGraphImage
+    pageSize
     phone
     pinterestTag
     pinterestUrl
+    qrCode
+    review {
+      enabled
+      moderate
+    }
+    searchbarText
+    shipping {
+      charge
+      deliveryDays
+      enabled
+      free
+      method
+      provider
+    }
     shippingCharge
+    shopAddress
+    shopPhone
     slug
     snapChatPixel
     state
     storeId
     timeZone
+    title
+    twitter
     twitterUrl
+    websiteEmail
+    websiteLegalName
+    websiteName
     weightUnit
     youtubeUrl
     zip

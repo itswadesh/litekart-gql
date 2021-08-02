@@ -1,38 +1,76 @@
 mutation saveStore(
   $id: String!
   $active: Boolean
+  $adminNotifications: AdminNotificationIp
   $address: String
+  $alert: String
   $analyticsTrackingId: String
   $banners: [String]
   $city: String
+  $closed: Boolean
+  $closedMessage: String
   $country: String
   $currency: String
   $currencyCode: String
+  $currencyDecimals: Float
   $currencySymbol: String
+  $customerOrderNotifications: UserNotificationIp
+  $description: String
+  $detailMeta: String
   $dimentionUnit: String
   $email: String
+  $facebook: String
   $facebookPixelId: String
   $facebookUrl: String
+  $favicon: String
   $freeShippingOn: Float
   $gdprCookieConsent: String
+  $google: String
   $googleAdsTag: String
+  $homeMeta1: String
+  $homeMeta2: String
+  $homeMeta3: String
+  $homeMeta4: String
   $img: String
+  $instagram: String
   $instagramUrl: String
   $isHideNilStock: Boolean
+  $isMegamenu: Boolean
   $isOpen: Boolean
+  $isSearch: Boolean
+  $keywords: String
   $legalName: String
+  $linkedin: String
+  $logo: String
+  $logoDark: String
+  $logoMobile: String
+  $logoMobileDark: String
+  $minimumOrderValue: Float
   $minOrderValue: Float
   $name: String
+  $openGraphImage: String
+  $pageSize: Int
   $phone: String
   $pinterestTag: String
   $pinterestUrl: String
+  $qrCode: String
+  $review: ReviewSettingIp
+  $searchbarText: String
+  $shipping: ShippingIp
   $shippingCharge: Float
+  $shopAddress: String
+  $shopPhone: String
   $slug: String
   $snapChatPixel: String
   $state: String
   $storeId: String
   $timeZone: String
+  $title: String
+  $twitter: String
   $twitterUrl: String
+  $websiteEmail: String
+  $websiteLegalName: String
+  $websiteName: String
   $weightUnit: String
   $youtubeUrl: String
   $zip: Float
@@ -40,80 +78,177 @@ mutation saveStore(
   saveStore(
     id: $id
     active: $active
+    adminNotifications: $adminNotifications
     address: $address
+    alert: $alert
     analyticsTrackingId: $analyticsTrackingId
     banners: $banners
     city: $city
+    closed: $closed
+    closedMessage: $closedMessage
     country: $country
     currency: $currency
     currencyCode: $currencyCode
+    currencyDecimals: $currencyDecimals
     currencySymbol: $currencySymbol
+    customerOrderNotifications: $customerOrderNotifications
+    description: $description
+    detailMeta: $detailMeta
     dimentionUnit: $dimentionUnit
     email: $email
+    facebook: $facebook
     facebookPixelId: $facebookPixelId
     facebookUrl: $facebookUrl
+    favicon: $favicon
     freeShippingOn: $freeShippingOn
     gdprCookieConsent: $gdprCookieConsent
+    google: $google
     googleAdsTag: $googleAdsTag
+    homeMeta1: $homeMeta1
+    homeMeta2: $homeMeta2
+    homeMeta3: $homeMeta3
+    homeMeta4: $homeMeta4
     img: $img
+    instagram: $instagram
     instagramUrl: $instagramUrl
     isHideNilStock: $isHideNilStock
+    isMegamenu: $isMegamenu
     isOpen: $isOpen
+    isSearch: $isSearch
+    keywords: $keywords
     legalName: $legalName
+    linkedin: $linkedin
+    logo: $logo
+    logoDark: $logoDark
+    logoMobile: $logoMobile
+    logoMobileDark: $logoMobileDark
+    minimumOrderValue: $minimumOrderValue
     minOrderValue: $minOrderValue
     name: $name
+    openGraphImage: $openGraphImage
+    pageSize: $pageSize
     phone: $phone
     pinterestTag: $pinterestTag
     pinterestUrl: $pinterestUrl
+    qrCode: $qrCode
+    review: $review
+    searchbarText: $searchbarText
+    shipping: $shipping
     shippingCharge: $shippingCharge
+    shopAddress: $shopAddress
+    shopPhone: $shopPhone
     slug: $slug
     snapChatPixel: $snapChatPixel
     state: $state
     storeId: $storeId
     timeZone: $timeZone
+    title: $title
+    twitter: $twitter
     twitterUrl: $twitterUrl
+    websiteEmail: $websiteEmail
+    websiteLegalName: $websiteLegalName
+    websiteName: $websiteName
     weightUnit: $weightUnit
     youtubeUrl: $youtubeUrl
     zip: $zip
   ) {
     id
     active
+    adminNotifications {
+      lowStockNotification
+      newOrderPlaced
+    }
     address
+    alert
     analyticsTrackingId
     banners
     city
+    closed
+    closedMessage
     country
     currency
     currencyCode
+    currencyDecimals
     currencySymbol
+    customerOrderNotifications {
+      downloadEGoods
+      giftCardPurchased
+      orderConfirmation
+      orderIsReadyForPickup
+      orderShipped
+      orderStatusChanged
+    }
+    description
+    detailMeta
     dimentionUnit
     email
+    facebook
     facebookPixelId
     facebookUrl
+    favicon
     freeShippingOn
     gdprCookieConsent
+    google
     googleAdsTag
+    homeMeta1
+    homeMeta2
+    homeMeta3
+    homeMeta4
     img
+    instagram
     instagramUrl
     isHideNilStock
+    isMegamenu
     isOpen
+    isSearch
+    keywords
     legalName
+    linkedin
+    logo
+    logoDark
+    logoMobile
+    logoMobileDark
+    minimumOrderValue
     minOrderValue
     name
+    openGraphImage
+    pageSize
     phone
     pinterestTag
     pinterestUrl
+    qrCode
+    review {
+      enabled
+      moderate
+    }
+    searchbarText
+    shipping {
+      charge
+      deliveryDays
+      enabled
+      free
+      method
+      provider
+    }
     shippingCharge
+    shopAddress
+    shopPhone
     slug
     snapChatPixel
     state
     storeId
     timeZone
+    title
+    twitter
     twitterUrl
+    websiteEmail
+    websiteLegalName
+    websiteName
     weightUnit
     youtubeUrl
     zip
     createdAt
     updatedAt
+    user
   }
 }
