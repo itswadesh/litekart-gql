@@ -1,0 +1,32 @@
+mutation paypalPayNow($address: ID) {
+  paypalPayNow(address: $address) {
+    id
+    _id
+    orderId
+    paymentOrderId
+    paymentMode
+    paymentGateway
+    referenceId
+    status
+    txTime
+    txMsg
+    invoiceId
+    receipt
+    currency
+    paid
+    amountPaid
+    amountRefunded
+    amountDue
+    captured
+    email
+    contact
+    notes
+    fee
+    tax
+    errorCode
+    errorDescription
+    refundStatus
+    description
+    store
+  }
+}
