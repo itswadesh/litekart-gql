@@ -11,7 +11,6 @@ query summary {
     data {
       _id {
         vendor {
-          id
           firstName
           lastName
           phone
