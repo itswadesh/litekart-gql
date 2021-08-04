@@ -20,6 +20,7 @@ query order($id: ID!) {
     paymentMsg
     paymentTime
     paid
+    amountRefunded
     amount {
       qty
       subtotal
@@ -133,6 +134,7 @@ query order($id: ID!) {
       subtotal
       total
       returnReason
+      amountRefunded
       vendorInfo {
         firstName
       }
