@@ -94,6 +94,7 @@ query settings {
       newOrderPlaced
       lowStockNotification
     }
+    storageProvider
     googleMapsApi
     facebook
     twitter

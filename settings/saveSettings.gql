@@ -34,6 +34,7 @@ mutation saveSettings(
   $sms: SmsIp
   $email: EmailIp
   $storage: StorageIp
+  $storageProvider: String
   $review: ReviewSettingIp
   $product: ProductSettingIp
   $login: LoginSettingIp
@@ -96,6 +97,7 @@ mutation saveSettings(
     sms: $sms
     email: $email
     storage: $storage
+    storageProvider: $storageProvider
     review: $review
     product: $product
     login: $login
@@ -184,6 +186,7 @@ mutation saveSettings(
       enabled
       provider
     }
+    storageProvider
     review {
       moderate
       enabled
