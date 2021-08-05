@@ -20,7 +20,7 @@ query myProducts(
   $store: ID
 ) {
   myProducts(
-    age: $page
+    page: $page
     skip: $skip
     limit: $limit
     search: $search
