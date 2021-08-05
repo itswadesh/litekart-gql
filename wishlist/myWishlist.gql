@@ -23,6 +23,7 @@ query myWishlist(
       product {
         id
         name
+        slug
         img
         price
         mrp
