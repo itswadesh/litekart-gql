@@ -30,7 +30,8 @@ mutation saveProduct(
   $sku: String
   $hsn: String
   $group: String
-  $color: ID
+  $color: String
+  $colorName: String
   $size: ID
   $barcode: String
   $title: String
