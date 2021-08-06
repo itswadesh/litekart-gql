@@ -24,6 +24,13 @@ query orderItem($id: ID!) {
     returnCourierName
     days
     type
+    amountRefunded
+    refund {
+      message
+      time
+      amount
+      refundId
+    }
     #order level info
     orderNo
     otp
@@ -41,6 +48,7 @@ query orderItem($id: ID!) {
     codPaid
     amountPaid
     amountDue
+    totalAmountRefunded
     paymentMsg
     paymentTime
     paid

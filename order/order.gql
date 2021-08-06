@@ -20,7 +20,7 @@ query order($id: ID!) {
     paymentMsg
     paymentTime
     paid
-    amountRefunded
+    totalAmountRefunded
     amount {
       qty
       subtotal
@@ -103,6 +103,13 @@ query order($id: ID!) {
         index
         time
       }
+      amountRefunded
+      refund {
+        amount
+        message
+        refundId
+        time
+      }
     }
     orderItems {
       id
@@ -134,7 +141,6 @@ query order($id: ID!) {
       subtotal
       total
       returnReason
-      amountRefunded
       vendorInfo {
         firstName
       }
@@ -145,6 +151,13 @@ query order($id: ID!) {
         icon
         public
         index
+        time
+      }
+      amountRefunded
+      refund {
+        amount
+        message
+        refundId
         time
       }
     }
