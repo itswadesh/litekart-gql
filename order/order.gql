@@ -104,7 +104,7 @@ query order($id: ID!) {
         time
       }
       amountRefunded
-      refund {
+      refunds {
         qty
         amount
         message
@@ -155,7 +155,7 @@ query order($id: ID!) {
         time
       }
       amountRefunded
-      refund {
+      refunds {
         amount
         qty
         message

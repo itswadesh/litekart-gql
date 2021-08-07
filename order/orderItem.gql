@@ -25,7 +25,7 @@ query orderItem($id: ID!) {
     days
     type
     amountRefunded
-    refund {
+    refunds {
       message
       qty
       time
