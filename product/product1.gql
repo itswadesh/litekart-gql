@@ -58,7 +58,9 @@ query product1($id: ID!) {
     returnInfo
     brand
     parentBrand
-    color
+    color {
+      color_code
+    }
     size
     features
     channels

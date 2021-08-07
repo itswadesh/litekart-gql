@@ -158,7 +158,9 @@ mutation saveProduct(
     group
     brand
     parentBrand
-    color
+    color {
+      color_code
+    }
     size
     barcode
     position
