@@ -1,5 +1,6 @@
 mutation OrderRefund(
   $orderItemId: ID!
+  $qty: Int!
   $amount: Float!
   $note: String!
   $email: String!
@@ -7,6 +8,7 @@ mutation OrderRefund(
 ) {
   OrderRefund(
     orderItemId: $orderItemId
+    qty: $qty
     amount: $amount
     note: $note
     email: $email
@@ -17,9 +19,10 @@ mutation OrderRefund(
 }
 
 # {
-#   "orderItemId": "610a2c57f4773909505717d9",
-#   "amount": 33.33,
-#   "note": "aaa",
+#   "orderItemId": "610e188aff2417200caf4ef4",
+#   "qty": 1,
+#   "amount": 1.5,
+#   "note": "aaap",
 #   "email": "admin@litekart.in",
 #   "password": "Admin"
 # }

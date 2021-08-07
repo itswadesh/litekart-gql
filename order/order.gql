@@ -105,6 +105,7 @@ query order($id: ID!) {
       }
       amountRefunded
       refund {
+        qty
         amount
         message
         refundId
@@ -156,6 +157,7 @@ query order($id: ID!) {
       amountRefunded
       refund {
         amount
+        qty
         message
         refundId
         time

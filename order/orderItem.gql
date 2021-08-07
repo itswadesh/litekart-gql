@@ -27,6 +27,7 @@ query orderItem($id: ID!) {
     amountRefunded
     refund {
       message
+      qty
       time
       amount
       refundId
