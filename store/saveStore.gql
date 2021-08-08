@@ -54,6 +54,7 @@ mutation saveStore(
   $pinterestTag: String
   $pinterestUrl: String
   $qrCode: String
+  $refreshSlug: Boolean
   $review: ReviewSettingIp
   $searchbarText: String
   $shipping: ShippingIp
@@ -131,6 +132,7 @@ mutation saveStore(
     pinterestTag: $pinterestTag
     pinterestUrl: $pinterestUrl
     qrCode: $qrCode
+    refreshSlug: $refreshSlug
     review: $review
     searchbarText: $searchbarText
     shipping: $shipping
