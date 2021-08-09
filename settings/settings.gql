@@ -49,6 +49,7 @@ query settings {
     searchbarText
     ADMIN_PANEL_LINK
     pageSize
+    returnReasons
     orderStatuses {
       status
       title
