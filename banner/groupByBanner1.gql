@@ -9,6 +9,7 @@ query groupByBanner1 {
       type
       pageId
       active
+      store
       groupId
       groupTitle
       createdAt

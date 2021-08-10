@@ -5,6 +5,7 @@ query allBanners(
   $sort: String
   $type: String
   $active: Boolean
+  $store: ID
 ) {
   allBanners(
     page: $page
@@ -13,6 +14,7 @@ query allBanners(
     sort: $sort
     type: $type
     active: $active
+    store: $store
   ) {
     count
     page
@@ -24,6 +26,7 @@ query allBanners(
       img
       sort
       type
+      store
       pageId
       groupId
       groupTitle
