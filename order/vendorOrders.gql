@@ -14,10 +14,6 @@ query vendorOrders($status: String!, $vendor: ID!) {
       paymentMode
       paymentTxStatus
       paymentAmount
-      payment {
-        amount_paid
-        amount_due
-      }
       amount {
         qty
         subtotal

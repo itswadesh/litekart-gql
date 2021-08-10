@@ -42,13 +42,13 @@ mutation updateOrderItem(
     otp
     createdAt
     paySuccess
+    payment
     paymentMode
     paymentStatus
     paymentCurrency
     paymentReferenceId
     paymentOrderId
     paymentReceipt
-    paymentId
     invoiceId
     paymentGateway
     codPaid

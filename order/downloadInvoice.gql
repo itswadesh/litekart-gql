@@ -12,7 +12,6 @@ mutation downloadInvoice($orderItemId: ID!) {
     paymentReferenceId
     paymentOrderId
     paymentReceipt
-    paymentId
     invoiceId
     paymentGateway
     codPaid

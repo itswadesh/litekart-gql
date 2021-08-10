@@ -28,13 +28,13 @@ query myOrders(
       createdAt
       updatedAt
       codPaid
+      payment
       paymentMode
       paymentStatus
       paymentCurrency
       paymentReferenceId
       paymentOrderId
       paymentReceipt
-      paymentId
       invoiceId
       paymentGateway
       codPaid

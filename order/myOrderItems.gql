@@ -54,7 +54,7 @@ query myOrderItems(
       paymentReferenceId
       paymentOrderId
       paymentReceipt
-      paymentId
+      payment
       invoiceId
       paymentGateway
       codPaid

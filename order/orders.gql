@@ -48,7 +48,7 @@ query orders(
       paymentReferenceId
       paymentOrderId
       paymentReceipt
-      paymentId
+      payment
       invoiceId
       paymentGateway
       codPaid

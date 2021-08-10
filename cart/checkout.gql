@@ -8,13 +8,15 @@ mutation checkout($address: ID, $paymentMethod: String) {
     createdAt
     updatedAt
     codPaid
+    payment {
+      id
+    }
     paymentMode
     paymentStatus
     paymentCurrency
     paymentReferenceId
     paymentOrderId
     paymentReceipt
-    paymentId
     invoiceId
     paymentGateway
     codPaid

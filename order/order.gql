@@ -5,13 +5,15 @@ query order($id: ID!) {
     otp
     createdAt
     paySuccess
+    payment {
+      id
+    }
     paymentMode
     paymentStatus
     paymentCurrency
     paymentReferenceId
     paymentOrderId
     paymentReceipt
-    paymentId
     invoiceId
     paymentGateway
     codPaid
