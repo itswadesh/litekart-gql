@@ -29,6 +29,7 @@ query store {
     description
     detailMeta
     dimentionUnit
+    domain
     email
     facebook
     facebookPixelId

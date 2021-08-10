@@ -18,6 +18,7 @@ mutation saveStore(
   $description: String
   $detailMeta: String
   $dimentionUnit: String
+  $domain: String
   $email: String
   $facebook: String
   $facebookPixelId: String
@@ -98,6 +99,7 @@ mutation saveStore(
     description: $description
     detailMeta: $detailMeta
     dimentionUnit: $dimentionUnit
+    domain: $domain
     email: $email
     facebook: $facebook
     facebookPixelId: $facebookPixelId
