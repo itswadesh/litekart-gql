@@ -30,7 +30,6 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     detailMeta
     dimentionUnit
     domain
-    subdomain
     email
     facebook
     facebookPixelId
