@@ -19,6 +19,7 @@ query settings {
     }
     demo
     RAZORPAY_KEY_ID
+    GOOGLE_CLIENT_ID
     stripePublishableKey
     enableStripe
     enableRazorpay
