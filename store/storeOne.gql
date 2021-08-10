@@ -34,6 +34,7 @@ query storeOne($id: ID, $slug: String) {
     facebookPixelId
     facebookUrl
     favicon
+    firstName
     freeShippingOn
     gdprCookieConsent
     google
@@ -50,6 +51,7 @@ query storeOne($id: ID, $slug: String) {
     isOpen
     isSearch
     keywords
+    lastName
     legalName
     linkedin
     logo

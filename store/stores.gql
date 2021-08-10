@@ -38,6 +38,7 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       facebookPixelId
       facebookUrl
       favicon
+      firstName
       freeShippingOn
       gdprCookieConsent
       google
@@ -54,6 +55,7 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       isOpen
       isSearch
       keywords
+      lastName
       legalName
       linkedin
       logo

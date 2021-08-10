@@ -5,7 +5,6 @@ mutation addToCart(
   $options: String
   $vendor: ID
   $replace: Boolean
-  $store: String
 ) {
   addToCart(
     qty: $qty
@@ -14,7 +13,6 @@ mutation addToCart(
     options: $options
     vendor: $vendor
     replace: $replace
-    store: $store
   ) {
     items {
       pid
@@ -46,16 +44,13 @@ mutation addToCart(
     }
     tax
     total
-    store {
-      id
-      name
-      email
-    }
   }
 }
 
 # for multiple vendor in futute
 # {
-#   "pid": "60151b263101e96f152d5165",
-#   "qty": 1
+#   "options": "null",
+#   "pid": "610ff516c5d99b257820d6d5",
+#   "qty": 1,
+#   "vid": "610ff516c5d99b257820d6d5"
 # }

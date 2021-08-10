@@ -39,6 +39,7 @@ mutation saveUser(
     firstName
     lastName
     role
+    slug
     avatar
     verified
     gender

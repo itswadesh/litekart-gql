@@ -32,10 +32,5 @@ query cart {
     }
     total
     tax
-    store {
-      id
-      name
-      email
-    }
   }
 }

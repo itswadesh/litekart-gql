@@ -23,6 +23,7 @@ mutation saveStore(
   $facebookPixelId: String
   $facebookUrl: String
   $favicon: String
+  $firstName: String
   $freeShippingOn: Float
   $gdprCookieConsent: String
   $google: String
@@ -39,6 +40,7 @@ mutation saveStore(
   $isOpen: Boolean
   $isSearch: Boolean
   $keywords: String
+  $lastName: String
   $legalName: String
   $linkedin: String
   $logo: String
@@ -101,6 +103,7 @@ mutation saveStore(
     facebookPixelId: $facebookPixelId
     facebookUrl: $facebookUrl
     favicon: $favicon
+    firstName: $firstName
     freeShippingOn: $freeShippingOn
     gdprCookieConsent: $gdprCookieConsent
     google: $google
@@ -117,6 +120,7 @@ mutation saveStore(
     isOpen: $isOpen
     isSearch: $isSearch
     keywords: $keywords
+    lastName: $lastName
     legalName: $legalName
     linkedin: $linkedin
     logo: $logo
@@ -188,6 +192,7 @@ mutation saveStore(
     facebookPixelId
     facebookUrl
     favicon
+    firstName
     freeShippingOn
     gdprCookieConsent
     google
@@ -204,6 +209,7 @@ mutation saveStore(
     isOpen
     isSearch
     keywords
+    lastName
     legalName
     linkedin
     logo
