@@ -1,5 +1,5 @@
-query storeOne($id: ID, $slug: String) {
-  storeOne(id: $id, slug: $slug) {
+query storeOne($id: ID, $slug: String, $domain: String) {
+  storeOne(id: $id, slug: $slug, domain: $domain) {
     id
     active
     adminNotifications {
@@ -29,6 +29,8 @@ query storeOne($id: ID, $slug: String) {
     description
     detailMeta
     dimentionUnit
+    domain
+    subdomain
     email
     facebook
     facebookPixelId
