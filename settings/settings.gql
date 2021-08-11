@@ -60,6 +60,15 @@ query settings {
       index
     }
     paymentStatuses
+    paymentMethods {
+      active
+      name
+      value
+      img
+      color
+      position
+      text
+    }
     otpLogin
     sms {
       AUTO_VERIFICATION_ID
