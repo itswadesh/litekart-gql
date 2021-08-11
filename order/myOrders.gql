@@ -28,7 +28,10 @@ query myOrders(
       createdAt
       updatedAt
       codPaid
-      payment
+      payment {
+        id
+        amountPaid
+      }
       paymentMode
       paymentStatus
       paymentCurrency

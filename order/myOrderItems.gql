@@ -48,13 +48,15 @@ query myOrderItems(
       otp
       createdAt
       paySuccess
+      payment {
+        id
+      }
       paymentMode
       paymentStatus
       paymentCurrency
       paymentReferenceId
       paymentOrderId
       paymentReceipt
-      payment
       invoiceId
       paymentGateway
       codPaid

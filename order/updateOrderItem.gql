@@ -42,7 +42,6 @@ mutation updateOrderItem(
     otp
     createdAt
     paySuccess
-    payment
     paymentMode
     paymentStatus
     paymentCurrency
