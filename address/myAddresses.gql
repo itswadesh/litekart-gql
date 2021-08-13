@@ -1,17 +1,5 @@
-query myAddresses(
-  $page: Int
-  $search: String
-  $limit: Int
-  $sort: String
-  $store: ID
-) {
-  myAddresses(
-    page: $page
-    search: $search
-    limit: $limit
-    sort: $sort
-    store: $store
-  ) {
+query myAddresses($page: Int, $search: String, $limit: Int, $sort: String) {
+  myAddresses(page: $page, search: $search, limit: $limit, sort: $sort) {
     count
     page
     pageSize
@@ -32,7 +20,6 @@ query myAddresses(
       active
       createdAt
       updatedAt
-      store
     }
   }
 }

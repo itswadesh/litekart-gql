@@ -3,6 +3,7 @@ query paymentMethods(
   $search: String
   $limit: Int
   $sort: String
+  $store: ID
   $active: Boolean
 ) {
   paymentMethods(
@@ -11,6 +12,7 @@ query paymentMethods(
     limit: $limit
     sort: $sort
     active: $active
+    store: $store
   ) {
     count
     page
