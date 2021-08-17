@@ -67,6 +67,7 @@ mutation saveProduct(
   $specifications: [ID!]
   $store: ID
   $files: [String]
+  $sizechart: String
 ) {
   saveProduct(
     id: $id
@@ -137,6 +138,7 @@ mutation saveProduct(
     height: $height
     store: $store
     files: $files
+    sizechart: $sizechart
   ) {
     id
     name
@@ -218,6 +220,7 @@ mutation saveProduct(
     returnValidityInDays
     store
     files
+    sizechart
   }
 }
 # {

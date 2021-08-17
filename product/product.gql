@@ -54,6 +54,7 @@ query product($id: ID!) {
     cgst
     sgst
     igst
+    sizechart
     sizeGroup {
       _id
       slug
