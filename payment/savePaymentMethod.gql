@@ -6,6 +6,7 @@ mutation savePaymentMethod(
   $color: String
   $img: String
   $text: String
+  $instructions: String
   $position: Int
   $active: Boolean
 ) {
@@ -17,6 +18,7 @@ mutation savePaymentMethod(
     color: $color
     img: $img
     text: $text
+    instructions: $instructions
     position: $position
     active: $active
   ) {
@@ -26,6 +28,7 @@ mutation savePaymentMethod(
     color
     img
     text
+    instructions
     value
     position
     active
