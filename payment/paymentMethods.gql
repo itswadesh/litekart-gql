@@ -25,6 +25,7 @@ query paymentMethods(
       color
       key
       text
+      instructions
       position
       active
     }

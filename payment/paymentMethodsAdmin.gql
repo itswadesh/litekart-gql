@@ -23,6 +23,7 @@ query paymentMethodsAdmin(
       color
       key
       text
+      instructions
       position
       active
     }
