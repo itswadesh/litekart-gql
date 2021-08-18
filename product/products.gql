@@ -87,6 +87,7 @@ query products(
       returnAllowed
       replaceAllowed
       returnValidityInDays
+      sizechart
       store {
         id
         name

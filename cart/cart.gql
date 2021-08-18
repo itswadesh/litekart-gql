@@ -30,7 +30,7 @@ query cart {
     shipping {
       charge
     }
-    total
     tax
+    total
   }
 }
