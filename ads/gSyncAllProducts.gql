@@ -1,0 +1,15 @@
+mutation gSyncAllProducts(
+  $category: String
+  $authCode: String!
+  $batchId: String!
+  $contentLanguage: String
+  $targetCountry: String
+) {
+  gSyncAllProducts(
+    category: $category
+    authCode: $authCode
+    batchId: $batchId
+    contentLanguage: $contentLanguage
+    targetCountry: $targetCountry
+  )
+}
