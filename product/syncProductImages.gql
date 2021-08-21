@@ -1,7 +1,3 @@
-mutation syncProductImages($password: String!) {
-  syncProductImages(password: $password)
+mutation syncProductImages {
+  syncProductImages
 }
-
-# {
-#   "password": "prakash"
-# }

@@ -1,7 +1,3 @@
-mutation syncAutoComplete($password: String!) {
-  syncAutoComplete(password: $password)
+mutation syncAutoComplete {
+  syncAutoComplete
 }
-
-# {
-#   "password": "prakash"
-# }
