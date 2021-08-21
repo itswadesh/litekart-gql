@@ -10,5 +10,6 @@ query paymentMethod($id: ID!) {
     instructions
     position
     active
+    isError
   }
 }
