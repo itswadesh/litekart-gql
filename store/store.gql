@@ -88,6 +88,9 @@ query store {
     snapChatPixel
     state
     storeId
+    bankAccountNo
+    bankAccountHolderName
+    bankIfscCode
     timeZone
     title
     twitter
