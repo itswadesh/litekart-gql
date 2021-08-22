@@ -45,6 +45,9 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     homeMeta3
     homeMeta4
     img
+    bankAccountNo
+    bankAccountHolderName
+    bankIfscCode
     instagram
     instagramUrl
     isHideNilStock
