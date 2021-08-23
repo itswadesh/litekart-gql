@@ -1,11 +1,11 @@
-mutation gSyncAllProducts(
+mutation SyncProductsToGoogle(
   $category: String
   $authCode: String!
   $batchId: String!
   $contentLanguage: String
   $targetCountry: String
 ) {
-  gSyncAllProducts(
+  SyncProductsToGoogle(
     category: $category
     authCode: $authCode
     batchId: $batchId
