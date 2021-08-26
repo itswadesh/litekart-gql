@@ -1,5 +1,5 @@
-mutation fileUpload($files: [Upload!], $folder: String) {
-  fileUpload(files: $files, folder: $folder) {
+mutation fileUpload($files: [Upload!], $folder: String, $productId: ID) {
+  fileUpload(files: $files, folder: $folder, productId: $productId) {
     filename
     mimetype
     encoding
