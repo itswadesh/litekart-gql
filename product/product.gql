@@ -55,6 +55,9 @@ query product($id: ID!) {
     sgst
     igst
     sizechart
+    batchNo
+    mfgDate
+    expiryDate
     sizeGroup {
       _id
       slug

@@ -78,6 +78,9 @@ query product1($id: ID!) {
     replaceAllowed
     returnValidityInDays
     files
+    batchNo
+    mfgDate
+    expiryDate
     productDetails {
       name
       value

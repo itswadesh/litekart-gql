@@ -88,6 +88,9 @@ query products(
       replaceAllowed
       returnValidityInDays
       sizechart
+      batchNo
+      mfgDate
+      expiryDate
       store {
         id
         name

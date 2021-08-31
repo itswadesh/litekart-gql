@@ -68,6 +68,9 @@ mutation saveProduct(
   $store: ID
   $files: [String]
   $sizechart: String
+  $mfgDate: String
+  $batchNo: String
+  $expiryDate: String
 ) {
   saveProduct(
     id: $id
@@ -139,6 +142,9 @@ mutation saveProduct(
     store: $store
     files: $files
     sizechart: $sizechart
+    mfgDate: $mfgDate
+    batchNo: $batchNo
+    expiryDate: $expiryDate
   ) {
     id
     name
@@ -221,6 +227,9 @@ mutation saveProduct(
     store
     files
     sizechart
+    batchNo
+    mfgDate
+    expiryDate
   }
 }
 # {
