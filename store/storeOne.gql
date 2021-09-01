@@ -56,8 +56,11 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     isSearch
     keywords
     lastName
+    lat
     legalName
     linkedin
+    lng
+    locality
     logo
     logoDark
     logoMobile

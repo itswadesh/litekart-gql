@@ -45,8 +45,11 @@ mutation saveStore(
   $isSearch: Boolean
   $keywords: String
   $lastName: String
+  $lat: Float
   $legalName: String
   $linkedin: String
+  $lng: Float
+  $locality: String
   $logo: String
   $logoDark: String
   $logoMobile: String
@@ -129,8 +132,11 @@ mutation saveStore(
     isSearch: $isSearch
     keywords: $keywords
     lastName: $lastName
+    lat: $lat
     legalName: $legalName
     linkedin: $linkedin
+    lng: $lng
+    locality: $locality
     logo: $logo
     logoDark: $logoDark
     logoMobile: $logoMobile
@@ -218,8 +224,11 @@ mutation saveStore(
     isSearch
     keywords
     lastName
+    lat
     legalName
     linkedin
+    lng
+    locality
     logo
     logoDark
     logoMobile

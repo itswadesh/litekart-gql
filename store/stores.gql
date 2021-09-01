@@ -56,8 +56,11 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       isSearch
       keywords
       lastName
+      lat
       legalName
       linkedin
+      lng
+      locality
       logo
       logoDark
       logoMobile
