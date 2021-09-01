@@ -62,6 +62,14 @@ query orderItem($id: ID!) {
     invoiceLink
     returnValidTill
     returnReason
+    discount
+    totalDiscount
+    amount {
+      total
+      discount
+      totalDiscount
+      subtotal
+    }
     user {
       id
       firstName

@@ -142,6 +142,8 @@ query order($id: ID!) {
       mrp
       qty
       subtotal
+      discount
+      totalDiscount
       total
       returnReason
       vendorInfo {
