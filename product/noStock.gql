@@ -5,7 +5,8 @@ query noStock(
   $search: String
   $sort: String
   $category: String
-  $active: String
+  $store: ID
+  $active: Boolean
 ) {
   noStock(
     page: $page
@@ -14,8 +15,12 @@ query noStock(
     search: $search
     sort: $sort
     category: $category
+    store: $store
     active: $active
   ) {
+    count
+    pageSize
+    page
     data {
       id
       slug
@@ -38,8 +43,5 @@ query noStock(
         }
       }
     }
-    count
-    pageSize
-    page
   }
 }

@@ -1,5 +1,21 @@
-query subscriptions {
-  subscriptions {
+query subscriptions(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $store: ID
+  $active: Boolean
+) {
+  subscriptions(
+    page: $page
+    skip: $skip
+    limit: $limit
+    search: $search
+    sort: $sort
+    store: $store
+    active: $active
+  ) {
     count
     page
     data {

@@ -5,6 +5,7 @@ query noPrice(
   $search: String
   $sort: String
   $category: String
+  $store: ID
 ) {
   noPrice(
     page: $page
@@ -13,6 +14,7 @@ query noPrice(
     search: $search
     sort: $sort
     category: $category
+    store: $store
   ) {
     data {
       id

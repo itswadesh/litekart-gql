@@ -5,7 +5,8 @@ query invalidVendor(
   $search: String
   $sort: String
   $category: String
-  $active: String
+  $store: ID
+  $active: Boolean
 ) {
   invalidVendor(
     page: $page
@@ -14,6 +15,7 @@ query invalidVendor(
     search: $search
     sort: $sort
     category: $category
+    store: $store
     active: $active
   ) {
     data {
