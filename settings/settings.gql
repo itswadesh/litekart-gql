@@ -48,7 +48,7 @@ query settings {
     CDN_URL
     S3_URL
     searchbarText
-    ADMIN_PANEL_LINK
+    adminPanelLink
     pageSize
     returnReasons
     orderStatuses {
