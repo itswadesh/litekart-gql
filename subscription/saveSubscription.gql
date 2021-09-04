@@ -1,46 +1,84 @@
 mutation saveSubscription(
   $id: String!
-  $name: String
-  $img: String
-  $mrp: Int
-  $price: Int
-  $days: Int
-  $sort: Int
+  $abandonnedCartRecovery: Boolean
   $active: Boolean
-  $subscription: SubscriptionIp
+  $annualMonthlyPrice: Float
+  $chatSupport: Boolean
+  $customDomain: Boolean
+  $description: String
+  $discountCoupons: Boolean
+  $emailSupport: Boolean
+  $freeSSL: Boolean
+  $misReports: Boolean
+  $monthlyPrice: Float
+  $name: String
+  $onlineStore: Boolean
+  $premiumSupport: Boolean
+  $productImportExport: Boolean
+  $productsAllowed: Int
+  $removeMisikiLogo: Boolean
+  $salesChannels: Boolean
+  $seoOptions: Boolean
+  $title: String
+  $transactionFees: Float
+  $transactionFeesType: String
+  $unlimitedProducts: Boolean
+  $unlimitedValidity: Boolean
 ) {
   saveSubscription(
     id: $id
-    name: $name
-    img: $img
-    mrp: $mrp
-    price: $price
-    days: $days
-    sort: $sort
+    abandonnedCartRecovery: $abandonnedCartRecovery
     active: $active
-    subscription: $subscription
+    annualMonthlyPrice: $annualMonthlyPrice
+    chatSupport: $chatSupport
+    customDomain: $customDomain
+    description: $description
+    discountCoupons: $discountCoupons
+    emailSupport: $emailSupport
+    freeSSL: $freeSSL
+    misReports: $misReports
+    monthlyPrice: $monthlyPrice
+    name: $name
+    onlineStore: $onlineStore
+    premiumSupport: $premiumSupport
+    productImportExport: $productImportExport
+    productsAllowed: $productsAllowed
+    removeMisikiLogo: $removeMisikiLogo
+    salesChannels: $salesChannels
+    seoOptions: $seoOptions
+    title: $title
+    transactionFees: $transactionFees
+    transactionFeesType: $transactionFeesType
+    unlimitedProducts: $unlimitedProducts
+    unlimitedValidity: $unlimitedValidity
   ) {
     id
     name
-    img
-    mrp
-    price
-    sort
-    days
+    abandonnedCartRecovery
     active
-    subscription {
-      productsAllowed
-    }
+    annualMonthlyPrice
+    chatSupport
+    customDomain
+    description
+    discountCoupons
+    emailSupport
+    freeSSL
+    misReports
+    monthlyPrice
+    name
+    onlineStore
+    premiumSupport
+    productImportExport
+    productsAllowed
+    removeMisikiLogo
+    salesChannels
+    seoOptions
+    title
+    transactionFees
+    transactionFeesType
+    unlimitedProducts
+    unlimitedValidity
+    createdAt
+    updatedAt
   }
 }
-
-# {
-#   "id": "60b62c4815ff1f158c9c6f39",
-#   "name": "prime",
-#   "mrp": 297,
-#   "price": 247,
-#   "days": 36,
-#   "subscription": {
-#     "productsAllowed": 20
-#   }
-# }

@@ -2,19 +2,31 @@ query subscription($id: ID!) {
   subscription(id: $id) {
     id
     name
-    img
-    type
-    mrp
-    price
-    sort
-    days
+    abandonnedCartRecovery
     active
-    vendor {
-      firstName
-      lastName
-    }
-    subscription {
-      productsAllowed
-    }
+    annualMonthlyPrice
+    chatSupport
+    customDomain
+    description
+    discountCoupons
+    emailSupport
+    freeSSL
+    misReports
+    monthlyPrice
+    name
+    onlineStore
+    premiumSupport
+    productImportExport
+    productsAllowed
+    removeMisikiLogo
+    salesChannels
+    seoOptions
+    title
+    transactionFees
+    transactionFeesType
+    unlimitedProducts
+    unlimitedValidity
+    createdAt
+    updatedAt
   }
 }

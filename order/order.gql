@@ -84,7 +84,6 @@ query order($id: ID!) {
       size
       status
       type
-      days
       returnReason
       vendor {
         firstName
@@ -137,7 +136,6 @@ query order($id: ID!) {
       courierName
       returnCourierName
       type
-      days
       price
       mrp
       qty

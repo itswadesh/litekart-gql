@@ -22,7 +22,6 @@ query orderItem($id: ID!) {
     returnTrackingId
     courierName
     returnCourierName
-    days
     type
     amountRefunded
     refunds {

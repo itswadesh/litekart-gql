@@ -1,19 +1,15 @@
 query subscriptions(
   $page: Int
-  $skip: Int
   $limit: Int
   $search: String
   $sort: String
-  $store: ID
   $active: Boolean
 ) {
   subscriptions(
     page: $page
-    skip: $skip
     limit: $limit
     search: $search
     sort: $sort
-    store: $store
     active: $active
   ) {
     count
@@ -21,19 +17,32 @@ query subscriptions(
     data {
       id
       name
-      type
-      img
-      mrp
-      price
-      days
+      abandonnedCartRecovery
       active
-      vendor {
-        firstName
-        lastName
-      }
-      subscription {
-        productsAllowed
-      }
+      annualMonthlyPrice
+      chatSupport
+      customDomain
+      description
+      discountCoupons
+      emailSupport
+      freeSSL
+      misReports
+      monthlyPrice
+      name
+      onlineStore
+      premiumSupport
+      productImportExport
+      productsAllowed
+      removeMisikiLogo
+      salesChannels
+      seoOptions
+      title
+      transactionFees
+      transactionFeesType
+      unlimitedProducts
+      unlimitedValidity
+      createdAt
+      updatedAt
     }
   }
 }
