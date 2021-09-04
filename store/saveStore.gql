@@ -1,6 +1,7 @@
 mutation saveStore(
   $id: String!
   $active: Boolean
+  $featured: Boolean
   $adminNotifications: AdminNotificationIp
   $address: String
   $alert: String
@@ -88,6 +89,7 @@ mutation saveStore(
   saveStore(
     id: $id
     active: $active
+    featured: $featured
     adminNotifications: $adminNotifications
     address: $address
     alert: $alert
@@ -174,6 +176,7 @@ mutation saveStore(
   ) {
     id
     active
+    featured
     adminNotifications {
       lowStockNotification
       newOrderPlaced
