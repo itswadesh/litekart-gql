@@ -7,6 +7,7 @@ mutation saveSubscription(
   $days: Int
   $sort: Int
   $active: Boolean
+  $subscription: SubscriptionIp
 ) {
   saveSubscription(
     id: $id
@@ -17,6 +18,7 @@ mutation saveSubscription(
     days: $days
     sort: $sort
     active: $active
+    subscription: $subscription
   ) {
     id
     name
@@ -26,6 +28,9 @@ mutation saveSubscription(
     sort
     days
     active
+    subscription {
+      productsAllowed
+    }
   }
 }
 
@@ -34,5 +39,8 @@ mutation saveSubscription(
 #   "name": "prime",
 #   "mrp": 297,
 #   "price": 247,
-#   "days": 36
+#   "days": 36,
+#   "subscription": {
+#     "productsAllowed": 20
+#   }
 # }

@@ -31,6 +31,9 @@ query subscriptions(
         firstName
         lastName
       }
+      subscription {
+        productsAllowed
+      }
     }
   }
 }

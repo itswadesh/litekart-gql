@@ -13,5 +13,8 @@ query subscription($id: ID!) {
       firstName
       lastName
     }
+    subscription {
+      productsAllowed
+    }
   }
 }
