@@ -5,7 +5,7 @@ query noImage(
   $search: String
   $sort: String
   $category: String
-  $active: String
+  $active: Boolean
 ) {
   noImage(
     page: $page
