@@ -35,6 +35,7 @@ mutation saveStore(
   $homeMeta3: String
   $homeMeta4: String
   $img: String
+  $images: [String]
   $bankAccountNo: String
   $bankAccountHolderName: String
   $bankIfscCode: String
@@ -76,6 +77,7 @@ mutation saveStore(
   $state: String
   $storeId: String
   $timeZone: String
+  $timing: String
   $title: String
   $twitter: String
   $twitterUrl: String
@@ -123,6 +125,7 @@ mutation saveStore(
     homeMeta3: $homeMeta3
     homeMeta4: $homeMeta4
     img: $img
+    images: $images
     bankAccountNo: $bankAccountNo
     bankAccountHolderName: $bankAccountHolderName
     bankIfscCode: $bankIfscCode
@@ -164,6 +167,7 @@ mutation saveStore(
     state: $state
     storeId: $storeId
     timeZone: $timeZone
+    timing: $timing
     title: $title
     twitter: $twitter
     twitterUrl: $twitterUrl
@@ -219,6 +223,7 @@ mutation saveStore(
     homeMeta3
     homeMeta4
     img
+    images
     instagram
     instagramUrl
     isHideNilStock
@@ -266,6 +271,7 @@ mutation saveStore(
     state
     storeId
     timeZone
+    timing
     title
     twitter
     twitterUrl

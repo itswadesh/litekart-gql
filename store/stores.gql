@@ -49,6 +49,7 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       homeMeta3
       homeMeta4
       img
+      images
       instagram
       instagramUrl
       isHideNilStock
@@ -96,6 +97,7 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       state
       storeId
       timeZone
+      timing
       title
       twitter
       twitterUrl

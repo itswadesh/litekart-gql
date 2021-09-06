@@ -45,6 +45,7 @@ query store {
     homeMeta3
     homeMeta4
     img
+    images
     instagram
     instagramUrl
     isHideNilStock
@@ -95,6 +96,7 @@ query store {
     bankAccountHolderName
     bankIfscCode
     timeZone
+    timing
     title
     twitter
     twitterUrl

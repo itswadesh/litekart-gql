@@ -45,6 +45,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     homeMeta3
     homeMeta4
     img
+    images
     bankAccountNo
     bankAccountHolderName
     bankIfscCode
@@ -95,6 +96,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     state
     storeId
     timeZone
+    timing
     title
     twitter
     twitterUrl
