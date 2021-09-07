@@ -39,7 +39,6 @@ subscription {
     favicon
     CDN_URL
     searchbarText
-    ADMIN_PANEL_LINK
     pageSize
     orderStatuses {
       status
