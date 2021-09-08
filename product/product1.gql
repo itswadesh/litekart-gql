@@ -62,6 +62,7 @@ query product1($id: ID!) {
       color_code
     }
     size
+    sizechart
     features
     channels
     category
