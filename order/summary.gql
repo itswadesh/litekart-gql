@@ -1,4 +1,4 @@
-query summary1 {
+query summary {
   statusSummary {
     _id
     count
