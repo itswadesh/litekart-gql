@@ -21,6 +21,7 @@ query faqs(
       topic
       answer
       active
+      opened
       createdAt
       updatedAt
       store {

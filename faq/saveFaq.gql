@@ -4,6 +4,7 @@ mutation saveFaq(
   $topic: String
   $answer: String
   $active: Boolean
+  $opened: Boolean
   $store: ID
 ) {
   saveFaq(
@@ -12,6 +13,7 @@ mutation saveFaq(
     topic: $topic
     answer: $answer
     active: $active
+    opened: $opened
     store: $store
   ) {
     id
@@ -19,6 +21,7 @@ mutation saveFaq(
     topic
     answer
     active
+    opened
     store
   }
 }
