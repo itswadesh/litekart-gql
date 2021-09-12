@@ -4,7 +4,8 @@ query page($id: String) {
     name
     slug
     title
-    description
+    metaDescription
+    keywords
     content
     menuTitle
     active

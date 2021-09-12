@@ -5,7 +5,8 @@ query pages($page: Int, $search: String, $limit: Int, $sort: String) {
       name
       slug
       title
-      description
+      metaDescription
+      keywords
       content
       menuTitle
       active
