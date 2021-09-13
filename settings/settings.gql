@@ -48,7 +48,6 @@ query settings {
     CDN_URL
     S3_URL
     searchbarText
-    ADMIN_PANEL_LINK
     pageSize
     returnReasons
     orderStatuses {
@@ -106,6 +105,7 @@ query settings {
       lowStockNotification
     }
     ADMIN_PANEL_LINK
+    DOCS_LINK
     storageProvider
     googleMapsApi
     facebook
