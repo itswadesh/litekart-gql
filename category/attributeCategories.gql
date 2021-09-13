@@ -1,5 +1,5 @@
-query {
-  attributeCategories {
+query attributeCategories($store: ID) {
+  attributeCategories(store: $store) {
     id
     index
     name
