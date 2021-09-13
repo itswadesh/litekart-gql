@@ -1,10 +1,11 @@
-query pageSlug($slug: String) {
-  pageSlug(slug: $slug) {
+query pageSlug($slug: String, $store: ID) {
+  pageSlug(slug: $slug, store: $store) {
     id
     name
     slug
     title
-    description
+    metaDescription
+    keywords
     content
     menuTitle
     active

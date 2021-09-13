@@ -3,7 +3,8 @@ mutation savePage(
   $name: String
   $title: String
   $slug: String
-  $description: String
+  $metaDescription: String
+  $keywords: String
   $content: String
   $menuTitle: String
   $active: Boolean
@@ -13,7 +14,8 @@ mutation savePage(
     name: $name
     title: $title
     slug: $slug
-    description: $description
+    metaDescription: $metaDescription
+    keywords: $keywords
     content: $content
     menuTitle: $menuTitle
     active: $active
@@ -22,7 +24,8 @@ mutation savePage(
     name
     slug
     title
-    description
+    metaDescription
+    keywords
     content
     menuTitle
     active
