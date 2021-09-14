@@ -11,5 +11,12 @@ query page($id: String) {
     active
     createdAt
     updatedAt
+    user {
+      name
+    }
+    store {
+      id
+      name
+    }
   }
 }

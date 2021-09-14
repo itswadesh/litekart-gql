@@ -31,5 +31,7 @@ mutation savePage(
     active
     createdAt
     updatedAt
+    user
+    store
   }
 }

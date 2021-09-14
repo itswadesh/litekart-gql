@@ -1,5 +1,5 @@
-query pageSlug($slug: String, $store: ID) {
-  pageSlug(slug: $slug, store: $store) {
+query pageSlug($slug: String) {
+  pageSlug(slug: $slug) {
     id
     name
     slug
@@ -11,5 +11,13 @@ query pageSlug($slug: String, $store: ID) {
     active
     createdAt
     updatedAt
+    user {
+      id
+      name
+    }
+    store {
+      id
+      name
+    }
   }
 }

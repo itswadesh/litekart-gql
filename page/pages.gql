@@ -1,5 +1,17 @@
-query pages($page: Int, $search: String, $limit: Int, $sort: String) {
-  pages(page: $page, search: $search, limit: $limit, sort: $sort) {
+query pages(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  pages(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
     data {
       id
       name
