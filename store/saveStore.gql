@@ -17,7 +17,7 @@ mutation saveStore(
   $currencySymbol: String
   $customerOrderNotifications: UserNotificationIp
   $description: String
-  $detailMeta: String
+  $metaDescription: String
   $dimentionUnit: String
   $domain: String
   $email: String
@@ -107,7 +107,7 @@ mutation saveStore(
     currencySymbol: $currencySymbol
     customerOrderNotifications: $customerOrderNotifications
     description: $description
-    detailMeta: $detailMeta
+    metaDescription: $metaDescription
     dimentionUnit: $dimentionUnit
     domain: $domain
     email: $email
@@ -206,7 +206,7 @@ mutation saveStore(
       orderStatusChanged
     }
     description
-    detailMeta
+    metaDescription
     dimentionUnit
     email
     facebook

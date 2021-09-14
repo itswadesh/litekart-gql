@@ -27,7 +27,7 @@ query store {
       orderStatusChanged
     }
     description
-    detailMeta
+    metaDescription
     dimentionUnit
     domain
     email

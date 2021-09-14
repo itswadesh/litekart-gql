@@ -27,7 +27,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
       orderStatusChanged
     }
     description
-    detailMeta
+    metaDescription
     dimentionUnit
     domain
     email
