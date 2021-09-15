@@ -121,6 +121,7 @@ query settings {
     isMultiVendor
     isMultiStore
     isMegamenu
+    isSaas
     isSearch
   }
 }
