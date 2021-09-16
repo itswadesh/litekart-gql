@@ -4,6 +4,7 @@ query popularSearches(
   $search: String
   $sort: String
   $store: ID
+  $domain: String
 ) {
   popularSearches(
     page: $page
@@ -11,6 +12,7 @@ query popularSearches(
     limit: $limit
     sort: $sort
     store: $store
+    domain: $domain
   ) {
     count
     page

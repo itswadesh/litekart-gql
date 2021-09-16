@@ -12,6 +12,7 @@ query groupByBanner(
   ) {
     _id {
       title
+      type
     }
     data {
       link
