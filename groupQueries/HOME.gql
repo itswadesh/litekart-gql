@@ -1,4 +1,4 @@
-query PDR($store: ID) {
+query HOME($store: ID) {
   brands(parent: null, limit: 30, page: 0, featured: true, store: $store) {
     count
     page

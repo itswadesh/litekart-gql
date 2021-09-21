@@ -1,4 +1,4 @@
-query PW($id: ID!) {
+query DETAIL($id: ID!) {
   product(id: $id) {
     id
     slug

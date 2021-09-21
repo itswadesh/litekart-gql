@@ -1,4 +1,4 @@
-query SOM($domain: String) {
+query INIT($domain: String) {
   settings {
     id
     websiteName
