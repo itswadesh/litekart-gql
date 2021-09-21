@@ -6,6 +6,7 @@ mutation saveBlog(
   $content: String
   $published_at: String
   $img: String
+  $tags: [String]
   $active: Boolean
 ) {
   saveBlog(
@@ -16,6 +17,7 @@ mutation saveBlog(
     content: $content
     published_at: $published_at
     img: $img
+    tags: $tags
     active: $active
   ) {
     id
@@ -26,6 +28,7 @@ mutation saveBlog(
     content
     published_at
     img
+    tags
     active
   }
 }
