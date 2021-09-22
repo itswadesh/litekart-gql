@@ -9,6 +9,7 @@ mutation saveBanner(
   $groupId: String
   $groupTitle: String
   $active: Boolean
+  $isMobile: Boolean
   $store: ID
 ) {
   saveBanner(
@@ -22,6 +23,7 @@ mutation saveBanner(
     groupId: $groupId
     groupTitle: $groupTitle
     active: $active
+    isMobile: $isMobile
     store: $store
   ) {
     id
@@ -35,6 +37,7 @@ mutation saveBanner(
     groupTitle
     active
     store
+    isMobile
     createdAt
     updatedAt
   }

@@ -6,6 +6,7 @@ query bannerGroup(
   $type: String
   $pageId: String
   $active: Boolean
+  $isMobile: Boolean
   $groupId: String!
   $store: ID
 ) {
@@ -17,6 +18,7 @@ query bannerGroup(
     type: $type
     pageId: $pageId
     active: $active
+    isMobile: $isMobile
     groupId: $groupId
     store: $store
   ) {
@@ -34,6 +36,7 @@ query bannerGroup(
       pageId
       active
       groupId
+      isMobile
       groupTitle
       createdAt
       updatedAt

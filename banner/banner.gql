@@ -11,6 +11,7 @@ query banner($id: String!) {
     groupTitle
     pageId
     active
+    isMobile
     createdAt
     updatedAt
   }
