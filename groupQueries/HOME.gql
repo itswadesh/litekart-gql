@@ -80,6 +80,7 @@ query HOME($store: ID) {
       groupId
       groupTitle
       active
+      isMobile
       createdAt
       updatedAt
       store
