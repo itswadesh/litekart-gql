@@ -18,6 +18,7 @@ query category($id: String, $slug: String) {
     megamenu
     active
     featured
+    featuredSort
     shopbycategory
     createdAt
     updatedAt

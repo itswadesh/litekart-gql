@@ -16,6 +16,7 @@ query categorySimple($id: String, $slug: String) {
     megamenu
     active
     featured
+    featuredSort
     createdAt
     updatedAt
   }

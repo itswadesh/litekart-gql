@@ -15,6 +15,7 @@ mutation saveCategory(
   $metaKeywords: String
   $position: Int
   $featured: Boolean
+  $featuredSort: Float
   $megamenu: Boolean
   $active: Boolean
   $shopbycategory: Boolean
@@ -38,6 +39,7 @@ mutation saveCategory(
     position: $position
     megamenu: $megamenu
     featured: $featured
+    featuredSort: $featuredSort
     active: $active
     shopbycategory: $shopbycategory
     store: $store
@@ -58,6 +60,7 @@ mutation saveCategory(
     metaKeywords
     megamenu
     featured
+    featuredSort
     active
     shopbycategory
     createdAt

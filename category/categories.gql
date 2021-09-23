@@ -41,6 +41,7 @@ query categories(
       megamenu
       active
       featured
+      featuredSort
       shopbycategory
       createdAt
       updatedAt

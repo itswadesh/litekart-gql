@@ -6,6 +6,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     slug
     img
     featured
+    featuredSort
     categoryId
     position
     parent
@@ -23,6 +24,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
       slug
       img
       featured
+      featuredSort
       categoryId
       position
       parent
@@ -40,6 +42,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
         slug
         img
         featured
+        featuredSort
         categoryId
         position
         parent
@@ -57,6 +60,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
           slug
           img
           featured
+          featuredSort
           categoryId
           position
           parent
@@ -74,6 +78,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
             slug
             img
             featured
+            featuredSort
             categoryId
             position
             parent
@@ -91,6 +96,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
               slug
               img
               featured
+              featuredSort
               categoryId
               position
               parent
