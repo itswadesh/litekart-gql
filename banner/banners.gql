@@ -8,6 +8,7 @@ query banners(
   $groupId: String
   $groupTitle: String
   $active: Boolean
+  $isMobile: Boolean
   $store: ID
 ) {
   banners(
@@ -20,6 +21,7 @@ query banners(
     groupId: $groupId
     groupTitle: $groupTitle
     active: $active
+    isMobile: $isMobile
     store: $store
   ) {
     count
@@ -36,6 +38,7 @@ query banners(
       groupId
       groupTitle
       active
+      isMobile
       createdAt
       updatedAt
       store

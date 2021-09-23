@@ -5,6 +5,7 @@ query allBanners(
   $sort: String
   $type: String
   $active: Boolean
+  $isMobile: Boolean
   $store: ID
 ) {
   allBanners(
@@ -14,6 +15,7 @@ query allBanners(
     sort: $sort
     type: $type
     active: $active
+    isMobile: $isMobile
     store: $store
   ) {
     count
@@ -31,6 +33,7 @@ query allBanners(
       groupId
       groupTitle
       active
+      isMobile
       createdAt
       updatedAt
     }
