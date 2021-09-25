@@ -37,6 +37,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     favicon
     firstName
     freeShippingOn
+    gdpr
     gdprCookieConsent
     google
     googleAdsTag

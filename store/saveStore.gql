@@ -27,6 +27,7 @@ mutation saveStore(
   $favicon: String
   $firstName: String
   $freeShippingOn: Float
+  $gdpr: Boolean
   $gdprCookieConsent: String
   $google: String
   $googleAdsTag: String
@@ -117,6 +118,7 @@ mutation saveStore(
     favicon: $favicon
     firstName: $firstName
     freeShippingOn: $freeShippingOn
+    gdpr: $gdpr
     gdprCookieConsent: $gdprCookieConsent
     google: $google
     googleAdsTag: $googleAdsTag
@@ -215,6 +217,7 @@ mutation saveStore(
     favicon
     firstName
     freeShippingOn
+    gdpr
     gdprCookieConsent
     google
     googleAdsTag
