@@ -82,6 +82,8 @@ query product1($id: ID!) {
     batchNo
     mfgDate
     expiryDate
+    unit
+    dimensionUnit
     productDetails {
       name
       value

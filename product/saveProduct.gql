@@ -71,6 +71,8 @@ mutation saveProduct(
   $mfgDate: String
   $batchNo: String
   $expiryDate: String
+  $unit: String
+  $dimensionUnit: String
 ) {
   saveProduct(
     id: $id
@@ -145,6 +147,8 @@ mutation saveProduct(
     mfgDate: $mfgDate
     batchNo: $batchNo
     expiryDate: $expiryDate
+    unit: $unit
+    dimensionUnit: $dimensionUnit
   ) {
     id
     name
@@ -230,6 +234,8 @@ mutation saveProduct(
     batchNo
     mfgDate
     expiryDate
+    dimensionUnit
+    unit
   }
 }
 # {

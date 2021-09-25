@@ -199,6 +199,8 @@ query product($id: ID!) {
     replaceAllowed
     returnValidityInDays
     files
+    unit
+    dimensionUnit
     createdAt
     updatedAt
   }
