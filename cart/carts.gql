@@ -17,6 +17,9 @@ query carts(
     count
     data {
       id
+      currencyCode
+      currencyName
+      currencySymbol
       items {
         pid
         name

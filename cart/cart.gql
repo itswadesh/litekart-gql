@@ -2,6 +2,8 @@ query cart {
   cart {
     id
     currencyCode
+    currencyName
+    currencySymbol
     items {
       pid
       barcode
