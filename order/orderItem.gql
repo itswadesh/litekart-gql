@@ -98,6 +98,17 @@ query orderItem($id: ID!) {
       }
       store
     }
+    vendorAddress {
+      firstName
+      lastName
+      town
+      city
+      state
+      zip
+      address
+      lat
+      lng
+    }
     orderHistory {
       id
       status
