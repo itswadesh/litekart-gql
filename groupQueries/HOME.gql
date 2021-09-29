@@ -39,7 +39,12 @@ query HOME($store: ID) {
       updatedAt
     }
   }
-  categories(img: true, shopbycategory: true, store: $store) {
+  categories(
+    img: true
+    shopbycategory: true
+    store: $store
+    sort: "featuredSort"
+  ) {
     count
     page
     pageSize
