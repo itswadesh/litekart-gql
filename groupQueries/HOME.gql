@@ -39,7 +39,12 @@ query HOME($store: ID) {
       updatedAt
     }
   }
-  categories(img: true, shopbycategory: true, store: $store) {
+  categories(
+    img: true
+    shopbycategory: true
+    store: $store
+    sort: "featuredSort"
+  ) {
     count
     page
     pageSize
@@ -129,7 +134,7 @@ query HOME($store: ID) {
     variants
     vendor
   }
-  groupByBanner(pageId: "home", store: $store) {
+  groupByBanner(active: true, pageId: "home", store: $store) {
     _id {
       title
       type
