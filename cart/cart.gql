@@ -1,5 +1,5 @@
-query cart {
-  cart {
+query cart($store: ID) {
+  cart(store: $store) {
     id
     currencyCode
     currencyName

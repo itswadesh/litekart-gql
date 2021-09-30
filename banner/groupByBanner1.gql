@@ -2,6 +2,7 @@ query groupByBanner1 {
   groupByBanner1 {
     _id
     data {
+      _id
       link
       heading
       img

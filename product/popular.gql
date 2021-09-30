@@ -1,5 +1,5 @@
-query popular {
-  popular(page: 0) {
+query popular($store: ID, $page: Int) {
+  popular(store: $store, page: $page) {
     data {
       id
       slug
