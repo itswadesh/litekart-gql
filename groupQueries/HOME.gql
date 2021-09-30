@@ -134,7 +134,7 @@ query HOME($store: ID) {
     variants
     vendor
   }
-  groupByBanner(pageId: "home", store: $store) {
+  groupByBanner(active: true, pageId: "home", store: $store) {
     _id {
       title
       type

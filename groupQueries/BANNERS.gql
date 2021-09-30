@@ -1,0 +1,69 @@
+query BANNERS($pageId: String, $store: ID) {
+  banners(sort: "sort", pageId: $pageId, store: $store) {
+    count
+    page
+    pageSize
+    data {
+      id
+      link
+      heading
+      img
+      sort
+      type
+      pageId
+      groupId
+      groupTitle
+      active
+      isMobile
+      createdAt
+      updatedAt
+      store
+    }
+  }
+  allBanners(
+    active: false
+    sort: "type isMobile updatedAt"
+    pageId: $pageId
+    store: $store
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      link
+      heading
+      img
+      sort
+      type
+      pageId
+      groupId
+      groupTitle
+      active
+      isMobile
+      createdAt
+      updatedAt
+      store
+    }
+  }
+  groupByBanner(pageId: $pageId, store: $store) {
+    _id {
+      title
+      type
+    }
+    data {
+      link
+      heading
+      img
+      sort
+      type
+      pageId
+      store
+      active
+      groupId
+      groupTitle
+      createdAt
+      updatedAt
+    }
+  }
+}

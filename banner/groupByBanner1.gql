@@ -1,5 +1,5 @@
-query groupByBanner1 {
-  groupByBanner1 {
+query groupByBanner1($store: ID) {
+  groupByBanner1(store: $store) {
     _id
     data {
       link
