@@ -12,8 +12,10 @@ query orderItem($id: ID!) {
     tracking
     shippingCharge
     price
+    basePrice
     qty
     tax
+    baseTax
     brandName
     brandImg
     size
@@ -24,6 +26,7 @@ query orderItem($id: ID!) {
     returnCourierName
     type
     amountRefunded
+    baseAmountRefunded
     refunds {
       message
       qty
@@ -48,9 +51,11 @@ query orderItem($id: ID!) {
     invoiceId
     paymentGateway
     codPaid
+    baseCodPaid
     amountPaid
     amountDue
     totalAmountRefunded
+    baseTotalAmountRefunded
     paymentMsg
     paymentTime
     paid
@@ -62,8 +67,16 @@ query orderItem($id: ID!) {
     returnValidTill
     returnReason
     discount
+    baseDiscount
     totalDiscount
+    baseTotalDiscount
     amount {
+      total
+      discount
+      totalDiscount
+      subtotal
+    }
+    baseAmount {
       total
       discount
       totalDiscount

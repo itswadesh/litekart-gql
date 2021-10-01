@@ -7,7 +7,6 @@ mutation checkout($address: ID, $paymentMethod: String) {
     otp
     createdAt
     updatedAt
-    codPaid
     payment {
       id
     }
@@ -20,6 +19,7 @@ mutation checkout($address: ID, $paymentMethod: String) {
     invoiceId
     paymentGateway
     codPaid
+    baseCodPaid
     amountPaid
     amountDue
     paymentStatus
@@ -28,6 +28,13 @@ mutation checkout($address: ID, $paymentMethod: String) {
     paid
     amount {
       qty
+      subtotal
+      tax
+      discount
+      total
+      shipping
+    }
+    baseAmount {
       subtotal
       tax
       discount
@@ -62,11 +69,16 @@ mutation checkout($address: ID, $paymentMethod: String) {
       img
       slug
       price
+      basePrice
       qty
       shippingCharge
+      baseShippingCharge
       tax
+      baseTax
       subtotal
+      baseSubtotal
       total
+      baseTotal
       time
       options
       brandName
@@ -91,31 +103,7 @@ mutation checkout($address: ID, $paymentMethod: String) {
       status
     }
     orderItems {
-      status
-      pid
-      posInvoiceNo
-      itemOrderNo
-      name
-      slug
-      img
-      tracking
-      shippingCharge
-      tax
-      brandName
-      brandImg
-      parentBrandName
-      parentBrandImg
-      color
-      size
-      orderHistory {
-        status
-        title
-        body
-        icon
-        public
-        index
-        time
-      }
+      id
     }
   }
 }

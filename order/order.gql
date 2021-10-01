@@ -17,13 +17,23 @@ query order($id: ID!) {
     invoiceId
     paymentGateway
     codPaid
+    baseCodPaid
     amountPaid
     amountDue
     paymentMsg
     paymentTime
     paid
     totalAmountRefunded
+    baseTotalAmountRefunded
     amount {
+      qty
+      subtotal
+      tax
+      discount
+      total
+      shipping
+    }
+    baseAmount {
       qty
       subtotal
       tax
@@ -73,9 +83,12 @@ query order($id: ID!) {
       img
       slug
       price
+      basePrice
       qty
       shippingCharge
+      baseShippingCharge
       tax
+      baseTax
       time
       options
       brandName
@@ -116,6 +129,7 @@ query order($id: ID!) {
         time
       }
       amountRefunded
+      baseAmountRefunded
       refunds {
         qty
         amount
