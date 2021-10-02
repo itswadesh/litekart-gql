@@ -1,5 +1,21 @@
-mutation getShippingRates($orderItemId: ID!) {
-  getShippingRates(orderItemId: $orderItemId) {
+mutation getShippingRates(
+  $orderItems: [ID!]!
+  $length: Float!
+  $width: Float!
+  $height: Float!
+  $distance_unit: String!
+  $weight: Float!
+  $mass_unit: String!
+) {
+  getShippingRates(
+    orderItems: $orderItems
+    length: $length
+    width: $width
+    height: $height
+    distance_unit: $distance_unit
+    weight: $weight
+    mass_unit: $mass_unit
+  ) {
     rates {
       object_id
       object_created
@@ -33,3 +49,13 @@ mutation getShippingRates($orderItemId: ID!) {
     }
   }
 }
+
+# {
+#   "orderItems": ["61583c5733ccd420085ced71"],
+#   "length": 10,
+#   "width": 15,
+#   "height": 10,
+#   "distance_unit": "cm",
+#   "weight": 1,
+#   "mass_unit": "g"
+# }
