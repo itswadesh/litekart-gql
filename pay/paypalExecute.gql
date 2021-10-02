@@ -1,5 +1,5 @@
-mutation paypalExecute($payerId: String!, $paymentId: String!, $token: String) {
-  paypalExecute(paymentId: $paymentId, payerId: $payerId, token: $token) {
+mutation paypalExecute($PayerID: String!, $paymentId: String!, $token: String) {
+  paypalExecute(PayerID: $PayerID, paymentId: $paymentId, token: $token) {
     id
     orderNo
     otp
