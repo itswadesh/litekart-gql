@@ -1,5 +1,6 @@
 mutation getShippingRates(
-  $orderItems: [ID!]!
+  $fromAddress: ID!
+  $toAddress: ID!
   $length: Float!
   $width: Float!
   $height: Float!
@@ -8,7 +9,8 @@ mutation getShippingRates(
   $mass_unit: String!
 ) {
   getShippingRates(
-    orderItems: $orderItems
+    fromAddress: $fromAddress
+    toAddress: $toAddress
     length: $length
     width: $width
     height: $height
@@ -16,6 +18,11 @@ mutation getShippingRates(
     weight: $weight
     mass_unit: $mass_unit
   ) {
+    messages {
+      text
+      code
+      source
+    }
     rates {
       object_id
       object_created
@@ -42,20 +49,5 @@ mutation getShippingRates(
         parent_servicelevel
       }
     }
-    messages {
-      text
-      code
-      source
-    }
   }
 }
-
-# {
-#   "orderItems": ["61583c5733ccd420085ced71"],
-#   "length": 10,
-#   "width": 15,
-#   "height": 10,
-#   "distance_unit": "cm",
-#   "weight": 1,
-#   "mass_unit": "g"
-# }

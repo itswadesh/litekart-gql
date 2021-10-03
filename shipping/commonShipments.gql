@@ -1,0 +1,46 @@
+mutation commonShipments($orderItems: [ID!]!) {
+  commonShipments(orderItems: $orderItems) {
+    vendorAddress {
+      id
+      firstName
+      lastName
+      address
+      town
+      district
+      city
+      type
+      country
+      state
+      zip
+      phone
+      lat
+      lng
+    }
+    customerAddress {
+      id
+      firstName
+      lastName
+      address
+      town
+      district
+      city
+      type
+      country
+      state
+      zip
+      phone
+      lat
+      lng
+    }
+    length
+    width
+    height
+    distance_unit
+    weight
+    mass_unit
+    items {
+      id
+      name
+    }
+  }
+}
