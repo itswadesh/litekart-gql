@@ -87,6 +87,7 @@ mutation saveStore(
   $websiteName: String
   $weightUnit: String
   $youtubeUrl: String
+  $webmail: String
   $zip: Float
 ) {
   saveStore(
@@ -178,6 +179,7 @@ mutation saveStore(
     websiteName: $websiteName
     weightUnit: $weightUnit
     youtubeUrl: $youtubeUrl
+    webmail: $webmail
     zip: $zip
   ) {
     id
@@ -283,6 +285,7 @@ mutation saveStore(
     websiteName
     weightUnit
     youtubeUrl
+    webmail
     zip
     createdAt
     updatedAt
