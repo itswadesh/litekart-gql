@@ -106,6 +106,7 @@ query store {
     websiteName
     weightUnit
     youtubeUrl
+    webmail
     zip
     createdAt
     updatedAt

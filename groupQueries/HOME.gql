@@ -133,6 +133,21 @@ query HOME($store: ID) {
     category
     variants
     vendor
+    returnInfo
+    description
+    keyFeatures
+    productDetails {
+      name
+      value
+    }
+    specifications {
+      name
+      value
+    }
+    countryOfOrigin
+    colorGroup
+    sizeGroup
+    stock
   }
   groupByBanner(active: true, pageId: "home", store: $store) {
     _id {
