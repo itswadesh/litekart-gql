@@ -1,8 +1,6 @@
-query shippoLabels($page: Int) {
-  shippoLabels(page: $page) {
-    next
-    previous
-    results {
+query shippoLabels($page: Int, $limit: Int) {
+  shippoLabels(page: $page, limit: $limit) {
+    data {
       object_state
       status
       object_id
