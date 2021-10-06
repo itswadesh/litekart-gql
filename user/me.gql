@@ -50,6 +50,7 @@ query me {
       accountNo
       accountHolderName
       ifsc
+      address
     }
     # plan
   }
