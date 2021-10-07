@@ -381,12 +381,6 @@ query INIT($domain: String) {
       store
       storePhotos
     }
-    businessDetail {
-      bankName
-      accountNo
-      accountHolderName
-      ifsc
-    }
     # plan
   }
   popularSearches(sort: "-popularity", domain: $domain) {

@@ -1,0 +1,29 @@
+query storeVendorInfo($store: ID!) {
+  storeVendorInfo(store: $store) {
+    count
+    page
+    pageSize
+    data {
+      id
+      bankAccountNo
+      bankName
+      bankIfsc
+      bankAccountHolderName
+      createdAt
+      updatedAt
+      createdAt
+      updatedAt
+      user {
+        id
+      }
+      address {
+        id
+      }
+      store {
+        id
+        name
+        email
+      }
+    }
+  }
+}

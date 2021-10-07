@@ -45,13 +45,7 @@ query me {
       store
       storePhotos
     }
-    businessDetail {
-      bankName
-      accountNo
-      accountHolderName
-      ifsc
-      address
-    }
+    vendorInfo
     # plan
   }
 }

@@ -1,0 +1,28 @@
+mutation saveVendorInfo(
+  $id: String!
+  $bankAccountNo: Float
+  $bankName: String
+  $bankIfsc: String
+  $bankAccountHolderName: String
+  $address: ID
+) {
+  saveVendorInfo(
+    id: $id
+    bankAccountNo: $bankAccountNo
+    bankName: $bankName
+    bankIfsc: $bankIfsc
+    bankAccountHolderName: $bankAccountHolderName
+    address: $address
+  ) {
+    id
+    bankAccountNo
+    bankName
+    bankIfsc
+    bankAccountHolderName
+    createdAt
+    updatedAt
+    user
+    store
+    address
+  }
+}
