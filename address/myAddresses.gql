@@ -9,6 +9,7 @@ query myAddresses($page: Int, $search: String, $limit: Int, $sort: String) {
       firstName
       lastName
       address
+      locality
       town
       city
       country

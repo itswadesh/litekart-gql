@@ -4,6 +4,7 @@ mutation saveAddress(
   $lastName: String
   $type: String
   $address: String
+  $locality: String
   $town: String
   $district: String
   $city: String
@@ -23,6 +24,7 @@ mutation saveAddress(
     lastName: $lastName
     type: $type
     address: $address
+    locality: $locality
     town: $town
     district: $district
     city: $city
@@ -40,6 +42,7 @@ mutation saveAddress(
     firstName
     lastName
     address
+    locality
     town
     district
     city

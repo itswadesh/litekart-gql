@@ -21,6 +21,7 @@ query addresses(
       firstName
       lastName
       address
+      locality
       town
       city
       country

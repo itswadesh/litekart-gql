@@ -19,8 +19,9 @@ mutation saveMyVendorInfo(
     bankAccountHolderName
     createdAt
     updatedAt
-    user
-    store
-    address
+    address {
+      id
+      firstName
+    }
   }
 }

@@ -5,6 +5,7 @@ query address($id: ID!) {
     firstName
     lastName
     address
+    locality
     town
     city
     country
