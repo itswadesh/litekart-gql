@@ -87,6 +87,17 @@ mutation checkout($address: ID, $paymentMethod: String) {
       parentBrandImg
       color
       size
+      vendorAddress {
+        firstName
+        lastName
+        town
+        city
+        state
+        zip
+        address
+        lat
+        lng
+      }
       vendor {
         firstName
         lastName
