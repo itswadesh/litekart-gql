@@ -14,6 +14,14 @@ query vendorInfo($id: ID) {
     }
     address {
       id
+      address
+      locality
+      city
+      state
+      country
+      zip
+      lat
+      lng
     }
     store {
       id

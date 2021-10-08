@@ -21,7 +21,14 @@ mutation saveMyVendorInfo(
     updatedAt
     address {
       id
-      firstName
+      address
+      locality
+      city
+      state
+      country
+      zip
+      lat
+      lng
     }
   }
 }
