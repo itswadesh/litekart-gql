@@ -12,6 +12,8 @@ query DETAIL($id: ID!) {
     tax
     img
     images
+    imgCdn
+    imagesCdn
     time
     active
     popularity
@@ -126,6 +128,7 @@ query DETAIL($id: ID!) {
       id
       title
       img
+      imgCdn
       scheduleDateTime
       user {
         firstName
@@ -193,6 +196,7 @@ query DETAIL($id: ID!) {
       name
       slug
       img
+      imgCdn
     }
     returnInfo
     returnAllowed
