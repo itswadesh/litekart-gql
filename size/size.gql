@@ -5,6 +5,7 @@ query size($id: ID!) {
     slug
     info
     img
+    imgCdn
     sort
     featured
     active

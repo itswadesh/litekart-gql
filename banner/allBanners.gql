@@ -26,6 +26,7 @@ query allBanners(
       link
       heading
       img
+      imgCdn
       sort
       type
       store

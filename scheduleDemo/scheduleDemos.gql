@@ -22,10 +22,12 @@ query scheduleDemos(
       scheduleDateTime
       title
       img
+      imgCdn
       product {
         id
         name
         img
+        imgCdn
         slug
         price
         mrp
@@ -34,6 +36,7 @@ query scheduleDemos(
         id
         name
         img
+        imgCdn
         slug
         price
         mrp

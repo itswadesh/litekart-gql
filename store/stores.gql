@@ -51,7 +51,9 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       homeMeta3
       homeMeta4
       img
+      imgCdn
       images
+      imagesCdn
       instagram
       instagramUrl
       isHideNilStock

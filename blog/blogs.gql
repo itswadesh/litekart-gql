@@ -24,6 +24,7 @@ query blogs(
       content
       published_at
       img
+      imgCdn
       createdAt
       updatedAt
       user {

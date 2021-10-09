@@ -4,7 +4,7 @@ query channels(
   $limit: Int
   $search: String
   $sort: String
-  $user:ID
+  $user: ID
   $q: String
 ) {
   channels(
@@ -24,6 +24,7 @@ query channels(
       scheduleDateTime
       title
       img
+      imgCdn
       requestId
       cid
       ctime

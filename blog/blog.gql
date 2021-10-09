@@ -8,6 +8,7 @@ query blog($id: String!) {
     content
     published_at
     img
+    imgCdn
     createdAt
     updatedAt
     user {

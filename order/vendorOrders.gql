@@ -45,6 +45,7 @@ query vendorOrders($status: String!, $vendor: ID!) {
         name
         slug
         img
+        imgCdn
         price
         qty
         status

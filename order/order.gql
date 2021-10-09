@@ -81,6 +81,7 @@ query order($id: ID!) {
       name
       barcode
       img
+      imgCdn
       slug
       price
       basePrice
@@ -93,6 +94,7 @@ query order($id: ID!) {
       options
       brandName
       brandImg
+      brandImgCdn
       color
       size
       status
@@ -147,11 +149,13 @@ query order($id: ID!) {
       name
       slug
       img
+      imgCdn
       tracking
       shippingCharge
       tax
       brandName
       brandImg
+      brandImgCdn
       invoiceLink
       returnValidTill
       color

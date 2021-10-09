@@ -6,6 +6,7 @@ query groupByBanner1($store: ID) {
       link
       heading
       img
+      imgCdn
       sort
       type
       pageId

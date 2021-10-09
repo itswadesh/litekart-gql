@@ -25,6 +25,7 @@ mutation saveSize(
     slug
     info
     img
+    imgCdn
     sort
     featured
     active

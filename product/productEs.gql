@@ -1,5 +1,5 @@
-query productEs( $query: String) {
-  productEs(query:$query) {
+query productEs($query: String) {
+  productEs(query: $query) {
     took
     count
     data {
@@ -14,7 +14,9 @@ query productEs( $query: String) {
         price
         mrp
         img
+        imgCdn
         images
+        imagesCdn
         brand {
           name
         }

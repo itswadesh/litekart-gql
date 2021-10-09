@@ -24,6 +24,7 @@ query orders(
       name
       slug
       img
+      imgCdn
       tracking
       shippingCharge
       price
@@ -31,6 +32,7 @@ query orders(
       tax
       brandName
       brandImg
+      brandImgCdn
       size
       color
       trackingId

@@ -30,6 +30,7 @@ mutation saveBanner(
     link
     heading
     img
+    imgCdn
     sort
     type
     pageId

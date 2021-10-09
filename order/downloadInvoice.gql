@@ -51,6 +51,7 @@ mutation downloadInvoice($orderItemId: ID!) {
       name
       barcode
       img
+      imgCdn
       slug
       price
       qty
@@ -62,8 +63,10 @@ mutation downloadInvoice($orderItemId: ID!) {
       options
       brandName
       brandImg
+      brandImgCdn
       parentBrandName
       parentBrandImg
+      parentBrandImgCdn
       color
       size
       vendor {

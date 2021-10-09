@@ -9,6 +9,7 @@ query bestSellers {
       items {
         pid
         img
+        imgCdn
         name
         slug
         price

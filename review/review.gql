@@ -11,6 +11,7 @@ query review($id: ID!) {
       name
       slug
       img
+      imgCdn
       type
     }
     user {

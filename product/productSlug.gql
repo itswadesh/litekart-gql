@@ -4,7 +4,9 @@ query productSlug($slug: String!) {
     name
     slug
     img
+    imgCdn
     images
+    imagesCdn
     price
     stock
     ratings

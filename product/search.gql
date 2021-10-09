@@ -26,6 +26,7 @@ query search(
       price
       stock
       img
+      imgCdn
       time
       ratings
       reviews

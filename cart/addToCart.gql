@@ -25,6 +25,7 @@ mutation addToCart(
       shippingCharge
       tax
       img
+      imgCdn
       options
       brandName
       vendorFirstName

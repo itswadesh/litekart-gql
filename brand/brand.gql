@@ -5,6 +5,7 @@ query brand($id: String, $slug: String) {
     name
     slug
     img
+    imgCdn
     position
     active
     featured

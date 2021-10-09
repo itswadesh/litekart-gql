@@ -15,6 +15,7 @@ query cart($store: ID) {
       mrp
       shippingCharge
       img
+      imgCdn
       options
       tracking
       brandName

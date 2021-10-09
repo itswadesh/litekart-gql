@@ -30,6 +30,7 @@ query master_id_product(
       mrp
       stock
       img
+      imgCdn
       images
       time
       active

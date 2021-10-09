@@ -5,6 +5,7 @@ query state($id: String) {
     value
     code
     img
+    imgCdn
     flag
     lang
     sort

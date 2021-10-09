@@ -25,6 +25,7 @@ mutation saveState(
     value
     code
     img
+    imgCdn
     flag
     lang
     sort

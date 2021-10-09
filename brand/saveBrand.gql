@@ -51,6 +51,7 @@ mutation saveBrand(
     name
     slug
     img
+    imgCdn
     info
     meta
     metaTitle

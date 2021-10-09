@@ -27,6 +27,7 @@ mutation savePaymentMethod(
     key
     color
     img
+    imgCdn
     text
     instructions
     value

@@ -10,6 +10,7 @@ query countries($page: Int, $search: String, $limit: Int, $sort: String) {
       dialCode
       code
       img
+      imgCdn
       flag
       lang
       states {

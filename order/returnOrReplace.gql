@@ -39,13 +39,16 @@ mutation returnOrReplace(
       name
       slug
       img
+      imgCdn
       tracking
       shippingCharge
       tax
       brandName
       brandImg
+      brandImgCdn
       parentBrandName
       parentBrandImg
+      parentBrandImgCdn
     }
     orderItems {
       status

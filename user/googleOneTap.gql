@@ -7,6 +7,7 @@ mutation googleOneTap($credential: String!) {
     city
     phone
     avatar
+    avatarCdn
     role
     verified
     active

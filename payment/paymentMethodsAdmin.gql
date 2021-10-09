@@ -21,6 +21,7 @@ query paymentMethodsAdmin(
       id
       name
       img
+      imgCdn
       value
       color
       key

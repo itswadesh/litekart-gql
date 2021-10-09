@@ -5,6 +5,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     description
     slug
     img
+    imgCdn
     featured
     featuredSort
     categoryId

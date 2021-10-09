@@ -6,6 +6,7 @@ query discount($id: ID!) {
     applyOn
     description
     img
+    imgCdn
     name
     q
     ruleType

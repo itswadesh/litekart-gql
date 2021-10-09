@@ -60,6 +60,7 @@ query ordersByStatus(
         name
         slug
         img
+        imgCdn
         price
         qty
         time

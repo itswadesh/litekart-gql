@@ -36,6 +36,7 @@ mutation updateProfile(
     lastName
     email
     avatar
+    avatarCdn
     role
     verified
     gender

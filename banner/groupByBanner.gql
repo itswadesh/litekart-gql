@@ -19,6 +19,7 @@ query groupByBanner(
       link
       heading
       img
+      imgCdn
       sort
       type
       pageId

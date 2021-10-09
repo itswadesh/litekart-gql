@@ -67,6 +67,7 @@ mutation checkout($address: ID, $paymentMethod: String) {
       name
       barcode
       img
+      imgCdn
       slug
       price
       basePrice
@@ -83,8 +84,10 @@ mutation checkout($address: ID, $paymentMethod: String) {
       options
       brandName
       brandImg
+      brandImgCdn
       parentBrandName
       parentBrandImg
+      parentBrandImgCdn
       color
       size
       vendorAddress {

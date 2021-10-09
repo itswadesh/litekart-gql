@@ -22,6 +22,7 @@ query myChannels(
       scheduleDateTime
       title
       img
+      imgCdn
       requestId
       cid
       ctime
@@ -36,6 +37,7 @@ query myChannels(
         id
         name
         img
+        imgCdn
         slug
         price
         mrp
@@ -44,6 +46,7 @@ query myChannels(
         id
         name
         img
+        imgCdn
         slug
         price
         mrp

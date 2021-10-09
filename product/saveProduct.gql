@@ -161,7 +161,9 @@ mutation saveProduct(
     stock
     tax
     img
+    imgCdn
     images
+    imagesCdn
     time
     active
     popularity

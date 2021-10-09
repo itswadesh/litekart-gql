@@ -19,6 +19,7 @@ query deals(
       id
       name
       img
+      imgCdn
       startTime
       endTime
       startTimeISO
@@ -31,6 +32,7 @@ query deals(
         name
         slug
         img
+        imgCdn
         price
       }
       store {

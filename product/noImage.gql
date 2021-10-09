@@ -24,7 +24,9 @@ query noImage(
       price
       stock
       img
+      imgCdn
       images
+      imagesCdn
       time
       vendor {
         id

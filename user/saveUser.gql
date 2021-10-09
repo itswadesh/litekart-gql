@@ -41,6 +41,7 @@ mutation saveUser(
     role
     slug
     avatar
+    avatarCdn
     verified
     gender
     city

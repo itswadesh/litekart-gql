@@ -6,6 +6,7 @@ query country($id: String) {
     dialCode
     code
     img
+    imgCdn
     flag
     lang
     states {

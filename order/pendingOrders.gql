@@ -36,6 +36,7 @@ query pendingOrders(
         name
         slug
         img
+        imgCdn
         rate
         qty
         status

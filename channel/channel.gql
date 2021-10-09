@@ -4,6 +4,7 @@ query channel($id: ID!) {
     scheduleDateTime
     title
     img
+    imgCdn
     requestId
     cid
     ctime

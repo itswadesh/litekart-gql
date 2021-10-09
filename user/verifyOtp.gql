@@ -9,6 +9,7 @@ mutation verifyOtp($phone: String!, $otp: String!) {
     verified
     active
     avatar
+    avatarCdn
     sid
   }
 }

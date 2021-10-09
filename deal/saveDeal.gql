@@ -29,6 +29,7 @@ mutation saveDeal(
     id
     name
     img
+    imgCdn
     startTime
     endTime
     startTimeISO

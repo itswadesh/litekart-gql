@@ -21,6 +21,7 @@ query sizes(
       slug
       info
       img
+      imgCdn
       sort
       featured
       active

@@ -9,6 +9,7 @@ mutation updateProfile(
     firstName
     lastName
     avatar
+    avatarCdn
     address {
       address
       town

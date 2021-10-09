@@ -22,6 +22,7 @@ query parentBrands(
       name
       slug
       img
+      imgCdn
       position
       meta
       metaTitle

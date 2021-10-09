@@ -3,6 +3,7 @@ query paymentMethod($id: ID!) {
     id
     name
     img
+    imgCdn
     value
     color
     key

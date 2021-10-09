@@ -5,6 +5,7 @@ query user($id: String!) {
     firstName
     lastName
     avatar
+    avatarCdn
     city
     phone
     role

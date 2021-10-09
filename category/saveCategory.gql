@@ -52,6 +52,7 @@ mutation saveCategory(
     brand
     slug
     img
+    imgCdn
     position
     level
     meta

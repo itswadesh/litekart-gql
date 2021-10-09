@@ -32,6 +32,7 @@ query banners(
       link
       heading
       img
+      imgCdn
       sort
       type
       pageId

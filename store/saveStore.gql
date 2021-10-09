@@ -228,7 +228,9 @@ mutation saveStore(
     homeMeta3
     homeMeta4
     img
+    imgCdn
     images
+    imagesCdn
     instagram
     instagramUrl
     isHideNilStock

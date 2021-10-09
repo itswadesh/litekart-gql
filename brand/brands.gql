@@ -25,6 +25,7 @@ query brands(
       name
       slug
       img
+      imgCdn
       position
       info
       meta

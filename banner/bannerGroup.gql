@@ -30,6 +30,7 @@ query bannerGroup(
       link
       heading
       img
+      imgCdn
       sort
       type
       store

@@ -9,6 +9,7 @@ query states($page: Int, $search: String, $limit: Int, $sort: String) {
       value
       code
       img
+      imgCdn
       flag
       lang
       sort

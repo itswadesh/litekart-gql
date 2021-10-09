@@ -31,6 +31,7 @@ query listDeals(
         price
         slug
         img
+        imgCdn
       }
       store {
         id

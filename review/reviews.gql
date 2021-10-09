@@ -26,6 +26,7 @@ query reviews(
         name
         slug
         img
+        imgCdn
         type
       }
       user {

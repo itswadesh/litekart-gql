@@ -10,6 +10,7 @@ query discounts($page: Int, $search: String, $limit: Int, $sort: String) {
       applyOn
       description
       img
+      imgCdn
       name
       q
       ruleType

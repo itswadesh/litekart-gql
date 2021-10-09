@@ -8,7 +8,9 @@ query popular($store: ID, $page: Int) {
       price
       stock
       img
+      imgCdn
       images
+      imagesCdn
       time
       ratings
       reviews

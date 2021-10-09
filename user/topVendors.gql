@@ -5,5 +5,6 @@ query topVendors($limit: Int) {
     lastName
     productSold
     avatar
+    avatarCdn
   }
 }

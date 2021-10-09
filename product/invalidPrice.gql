@@ -27,6 +27,7 @@ query invalidPrice(
       mrp
       stock
       img
+      imgCdn
       images
       time
       vendor {

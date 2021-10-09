@@ -28,6 +28,7 @@ mutation saveCountry(
     dialCode
     code
     img
+    imgCdn
     flag
     lang
     states {

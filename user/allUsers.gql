@@ -24,6 +24,7 @@ query allUsers(
       lastName
       name
       avatar
+      avatarCdn
       city
       phone
       role

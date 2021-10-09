@@ -28,6 +28,7 @@ mutation saveBlog(
     content
     published_at
     img
+    imgCdn
     tags
     active
   }

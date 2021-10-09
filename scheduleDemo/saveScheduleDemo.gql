@@ -18,10 +18,12 @@ mutation saveScheduleDemo(
     scheduleDateTime
     title
     img
+    imgCdn
     product {
       id
       name
       img
+      imgCdn
       slug
       price
       mrp

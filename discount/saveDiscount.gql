@@ -38,6 +38,7 @@ mutation saveDiscount(
     applyOn
     description
     img
+    imgCdn
     name
     q
     ruleType

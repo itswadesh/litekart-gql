@@ -10,6 +10,7 @@ query listAll($page: Int, $search: String, $limit: Int, $sort: String) {
       # parent
       slug
       img
+      imgCdn
       level
       metaTitle
       metaDescription

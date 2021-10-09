@@ -30,6 +30,7 @@ query myOrderItems(
       name
       slug
       img
+      imgCdn
       tracking
       shippingCharge
       price
@@ -37,6 +38,7 @@ query myOrderItems(
       tax
       brandName
       brandImg
+      brandImgCdn
       size
       color
       trackingId

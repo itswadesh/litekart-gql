@@ -25,7 +25,9 @@ query noPrice(
       mrp
       stock
       img
+      imgCdn
       images
+      imagesCdn
       time
       active
       popularity

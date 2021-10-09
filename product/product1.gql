@@ -11,7 +11,9 @@ query product1($id: ID!) {
     stock
     tax
     img
+    imgCdn
     images
+    imagesCdn
     time
     active
     popularity

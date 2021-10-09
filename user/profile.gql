@@ -5,6 +5,7 @@ query profile($id: ID!) {
     firstName
     lastName
     avatar
+    avatarCdn
     banner
     address
     city

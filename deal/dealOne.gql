@@ -3,6 +3,7 @@ query dealOne($id: ID!) {
     id
     name
     img
+    imgCdn
     startTime
     endTime
     startTimeISO

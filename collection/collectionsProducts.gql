@@ -16,6 +16,7 @@ query collectionsProducts($ids: [ID!]) {
       stock
       tax
       img
+      imgCdn
       images
       time
       active

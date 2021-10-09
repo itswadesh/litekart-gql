@@ -58,7 +58,9 @@ query products(
       stock
       tax
       img
+      imgCdn
       images
+      imagesCdn
       time
       active
       popularity

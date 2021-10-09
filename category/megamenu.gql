@@ -20,6 +20,7 @@ query megamenu(
     name
     slug
     img
+    imgCdn
     featured
     children {
       name

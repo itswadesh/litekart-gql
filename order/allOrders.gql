@@ -54,6 +54,7 @@ query allOrders(
         itemOrderNo
         name
         img
+        imgCdn
         slug
         price
         qty

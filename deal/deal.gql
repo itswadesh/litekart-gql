@@ -3,6 +3,7 @@ query deal($id: ID!) {
     id
     name
     img
+    imgCdn
     startTime
     endTime
     startTimeISO
@@ -12,6 +13,7 @@ query deal($id: ID!) {
       id
       name
       img
+      imgCdn
       slug
     }
     dealStatus

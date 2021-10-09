@@ -24,6 +24,7 @@ query abandoned(
         qty
         price
         img
+        imgCdn
         tracking
         options
         vendor {

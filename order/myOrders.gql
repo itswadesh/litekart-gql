@@ -83,6 +83,7 @@ query myOrders(
         name
         barcode
         img
+        imgCdn
         slug
         price
         qty
@@ -94,6 +95,7 @@ query myOrders(
         options
         brandName
         brandImg
+        brandImgCdn
         orderStatus {
           id
           event
@@ -116,6 +118,7 @@ query myOrders(
         name
         slug
         img
+        imgCdn
         qty
         price
         mrp
@@ -128,6 +131,7 @@ query myOrders(
         total
         brandName
         brandImg
+        brandImgCdn
       }
     }
   }

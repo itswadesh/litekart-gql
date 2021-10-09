@@ -15,6 +15,7 @@ query {
     metaDescription
     metaKeywords
     img
+    imgCdn
     featured
     featuredSort
     shopbycategory

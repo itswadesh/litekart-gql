@@ -33,6 +33,7 @@ query categories(
       parent
       slug
       img
+      imgCdn
       level
       metaTitle
       metaDescription

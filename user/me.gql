@@ -12,6 +12,7 @@ query me {
     provider
     active
     avatar
+    avatarCdn
     referralCode
     currentBalance
     storeName

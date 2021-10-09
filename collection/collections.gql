@@ -22,6 +22,7 @@ query collections(
       active
       images
       img
+      imgCdn
       q
       sort
       type

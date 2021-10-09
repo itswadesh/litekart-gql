@@ -26,6 +26,7 @@ query invalidVendor(
       price
       stock
       img
+      imgCdn
       images
       time
       vendor {

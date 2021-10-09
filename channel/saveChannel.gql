@@ -18,6 +18,7 @@ mutation saveChannel(
     scheduleDateTime
     title
     img
+    imgCdn
     requestId
     cid
     ctime

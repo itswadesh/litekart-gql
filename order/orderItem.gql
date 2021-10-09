@@ -9,6 +9,7 @@ query orderItem($id: ID!) {
     name
     slug
     img
+    imgCdn
     tracking
     shippingCharge
     price
@@ -18,6 +19,7 @@ query orderItem($id: ID!) {
     baseTax
     brandName
     brandImg
+    brandImgCdn
     size
     color
     trackingId

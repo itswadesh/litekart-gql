@@ -4,6 +4,7 @@ query productsByIds($ids: [ID!]) {
     name
     slug
     img
+    imgCdn
     price
     stock
     ratings

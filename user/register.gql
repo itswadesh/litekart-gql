@@ -28,6 +28,7 @@ mutation register(
     verified
     active
     avatar
+    avatarCdn
     provider
     createdAt
     updatedAt

@@ -28,6 +28,7 @@ mutation saveCollection(
     active
     images
     img
+    imgCdn
     q
     sort
     type
