@@ -9,6 +9,7 @@ query HOME($store: ID) {
       name
       slug
       img
+      imgCdn
       position
       info
       meta
@@ -56,6 +57,7 @@ query HOME($store: ID) {
       parent
       slug
       img
+      imgCdn
       level
       metaTitle
       metaDescription
@@ -79,6 +81,7 @@ query HOME($store: ID) {
       link
       heading
       img
+      imgCdn
       sort
       type
       pageId
@@ -105,6 +108,7 @@ query HOME($store: ID) {
     stock
     tax
     img
+    imgCdn
     images
     time
     active
@@ -158,6 +162,7 @@ query HOME($store: ID) {
       link
       heading
       img
+      imgCdn
       sort
       type
       pageId
