@@ -46,6 +46,7 @@ mutation saveSettings(
   $linkedin: String
   $enableTax: Boolean
   $stripePublishableKey: String
+  $brainTreePublicKey: String
   $enableStripe: Boolean
   $enableRazorpay: Boolean
   $RAZORPAY_KEY_ID: String
@@ -111,6 +112,7 @@ mutation saveSettings(
     enableTax: $enableTax
     RAZORPAY_KEY_ID: $RAZORPAY_KEY_ID
     stripePublishableKey: $stripePublishableKey
+    brainTreePublicKey: $brainTreePublicKey
     enableStripe: $enableStripe
     enableRazorpay: $enableRazorpay
     locationExpiry: $locationExpiry
@@ -225,6 +227,7 @@ mutation saveSettings(
     linkedin
     RAZORPAY_KEY_ID
     stripePublishableKey
+    brainTreePublicKey
     locationExpiry
     joiningBonus
     referralBonus

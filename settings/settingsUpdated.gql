@@ -16,6 +16,7 @@ subscription {
     }
     RAZORPAY_KEY_ID
     stripePublishableKey
+    brainTreePublicKey
     enableStripe
     enableRazorpay
     currencyCode

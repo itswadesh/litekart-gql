@@ -21,6 +21,7 @@ query settings {
     RAZORPAY_KEY_ID
     GOOGLE_CLIENT_ID
     stripePublishableKey
+    brainTreePublicKey
     enableStripe
     enableRazorpay
     currencyCode
