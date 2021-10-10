@@ -110,6 +110,7 @@ query HOME($store: ID) {
     img
     imgCdn
     images
+    imagesCdn
     time
     active
     popularity
