@@ -19,6 +19,7 @@ mutation saveCategory(
   $megamenu: Boolean
   $active: Boolean
   $shopbycategory: Boolean
+  $keywords: String
   $store: ID
 ) {
   saveCategory(
@@ -42,6 +43,7 @@ mutation saveCategory(
     featuredSort: $featuredSort
     active: $active
     shopbycategory: $shopbycategory
+    keywords: $keywords
     store: $store
   ) {
     id
@@ -64,6 +66,7 @@ mutation saveCategory(
     featuredSort
     active
     shopbycategory
+    keywords
     createdAt
     updatedAt
   }

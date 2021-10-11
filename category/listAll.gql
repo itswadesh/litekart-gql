@@ -15,6 +15,7 @@ query listAll($page: Int, $search: String, $limit: Int, $sort: String) {
       metaTitle
       metaDescription
       metaKeywords
+      keywords
       position
       megamenu
       active

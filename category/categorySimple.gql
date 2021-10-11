@@ -13,6 +13,7 @@ query categorySimple($id: String, $slug: String) {
     metaTitle
     metaDescription
     metaKeywords
+    keywords
     position
     megamenu
     active

@@ -15,6 +15,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     metaTitle
     metaDescription
     metaKeywords
+    keywords
     active
     megamenu
     shopbycategory

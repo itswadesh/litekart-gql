@@ -38,6 +38,7 @@ query categories(
       metaTitle
       metaDescription
       metaKeywords
+      keywords
       position
       megamenu
       active
