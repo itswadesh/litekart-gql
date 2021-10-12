@@ -60,6 +60,7 @@ query product($id: ID!) {
     batchNo
     mfgDate
     expiryDate
+    isSearchable
     sizeGroup {
       _id
       slug

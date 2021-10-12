@@ -89,6 +89,7 @@ query myProducts(
       returnAllowed
       replaceAllowed
       returnValidityInDays
+      isSearchable
       store {
         id
         name

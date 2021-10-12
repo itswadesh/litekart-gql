@@ -73,6 +73,7 @@ mutation saveProduct(
   $expiryDate: String
   $unit: String
   $dimensionUnit: String
+  $isSearchable: Boolean
 ) {
   saveProduct(
     id: $id
@@ -149,6 +150,7 @@ mutation saveProduct(
     expiryDate: $expiryDate
     unit: $unit
     dimensionUnit: $dimensionUnit
+    isSearchable: $isSearchable
   ) {
     id
     name
@@ -238,6 +240,7 @@ mutation saveProduct(
     expiryDate
     dimensionUnit
     unit
+    isSearchable
   }
 }
 # {

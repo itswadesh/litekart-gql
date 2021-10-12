@@ -93,6 +93,7 @@ query products(
       batchNo
       mfgDate
       expiryDate
+      isSearchable
       store {
         id
         name

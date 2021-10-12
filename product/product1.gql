@@ -86,6 +86,7 @@ query product1($id: ID!) {
     expiryDate
     unit
     dimensionUnit
+    isSearchable
     productDetails {
       name
       value
