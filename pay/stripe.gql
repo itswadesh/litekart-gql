@@ -27,6 +27,7 @@ mutation stripe($address: ID, $paymentMethodId: String!) {
     errorCode
     errorDescription
     token
+    clientSecret
     approvalUrl
   }
 }
