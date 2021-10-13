@@ -64,6 +64,7 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
       name
       barcode
       img
+      imgCdn
       slug
       price
       basePrice
