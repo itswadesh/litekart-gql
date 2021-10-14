@@ -38,6 +38,7 @@ query me {
       zip
       phone
       active
+      verified
       # lat
       # lng
     }

@@ -19,6 +19,7 @@ query myAddresses($page: Int, $search: String, $limit: Int, $sort: String) {
       lat
       lng
       active
+      verified
       createdAt
       updatedAt
     }
