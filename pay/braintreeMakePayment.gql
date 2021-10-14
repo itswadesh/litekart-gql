@@ -1,5 +1,5 @@
-mutation braintreeMakePayment($nonce: String) {
-  braintreeMakePayment(nonce: $nonce) {
+mutation braintreeMakePayment($nonce: String!, $token: String!) {
+  braintreeMakePayment(nonce: $nonce, token: $token) {
     id
     orderNo
     otp
