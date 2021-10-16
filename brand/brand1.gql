@@ -21,6 +21,8 @@ query brand1($id: String, $slug: String) {
     youtubeUrl
     pinterestUrl
     googleUrl
+    banner
+    bannerCdn
     parent
     store
     user

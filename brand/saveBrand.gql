@@ -19,6 +19,7 @@ mutation saveBrand(
   $instaUrl: String
   $pinterestUrl: String
   $googleUrl: String
+  $banner: String
   $active: Boolean
   $store: ID
 ) {
@@ -42,6 +43,7 @@ mutation saveBrand(
     instaUrl: $instaUrl
     pinterestUrl: $pinterestUrl
     googleUrl: $googleUrl
+    banner: $banner
     featured: $featured
     active: $active
     store: $store
@@ -64,6 +66,8 @@ mutation saveBrand(
     youtubeUrl
     pinterestUrl
     googleUrl
+    banner
+    bannerCdn
     featured
     active
     store

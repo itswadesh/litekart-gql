@@ -33,6 +33,8 @@ query parentBrands(
       twitterUrl
       linkedinUrl
       youtubeUrl
+      banner
+      bannerCdn
       active
       featured
       parent {

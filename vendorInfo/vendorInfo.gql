@@ -5,8 +5,8 @@ query vendorInfo($id: ID) {
     bankName
     bankIfsc
     bankAccountHolderName
-    createdAt
-    updatedAt
+    banner
+    bannerCdn
     createdAt
     updatedAt
     user {

@@ -9,8 +9,8 @@ query storeVendorInfo($store: ID!) {
       bankName
       bankIfsc
       bankAccountHolderName
-      createdAt
-      updatedAt
+      banner
+      bannerCdn
       createdAt
       updatedAt
       user {

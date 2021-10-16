@@ -39,6 +39,8 @@ query brands(
       youtubeUrl
       pinterestUrl
       googleUrl
+      banner
+      bannerCdn
       active
       featured
       parent {
