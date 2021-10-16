@@ -1,4 +1,4 @@
-query BANNERS($pageId: String, $store: ID) {
+query BANNERS($pageId: String, $store: ID, $page: Int) {
   banners(sort: "sort", pageId: $pageId, store: $store) {
     count
     page
@@ -22,8 +22,9 @@ query BANNERS($pageId: String, $store: ID) {
   }
   allBanners(
     active: false
-    sort: "type isMobile updatedAt"
+    sort: "type isMobile -updatedAt"
     pageId: $pageId
+    page: $page
     store: $store
   ) {
     count
