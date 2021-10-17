@@ -1,0 +1,32 @@
+query vendorBySlug($slug: String!) {
+  vendorBySlug(slug: $slug) {
+    id
+    bankAccountNo
+    bankName
+    bankIfsc
+    bankAccountHolderName
+    banner
+    bannerCdn
+    createdAt
+    updatedAt
+    user {
+      id
+    }
+    address {
+      id
+      address
+      locality
+      city
+      state
+      country
+      zip
+      lat
+      lng
+    }
+    store {
+      id
+      name
+      email
+    }
+  }
+}
