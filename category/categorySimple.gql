@@ -8,6 +8,8 @@ query categorySimple($id: String, $slug: String) {
     slug
     img
     imgCdn
+    banner
+    bannerCdn
     level
     position
     metaTitle

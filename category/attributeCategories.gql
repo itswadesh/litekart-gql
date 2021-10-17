@@ -17,6 +17,8 @@ query {
     keywords
     img
     imgCdn
+    banner
+    bannerCdn
     featured
     featuredSort
     shopbycategory

@@ -11,6 +11,8 @@ query listAll($page: Int, $search: String, $limit: Int, $sort: String) {
       slug
       img
       imgCdn
+      banner
+      bannerCdn
       level
       metaTitle
       metaDescription

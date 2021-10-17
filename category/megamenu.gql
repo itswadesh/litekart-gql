@@ -21,6 +21,8 @@ query megamenu(
     slug
     img
     imgCdn
+    banner
+    bannerCdn
     featured
     children {
       name
