@@ -1,5 +1,5 @@
-query brand($id: String, $slug: String) {
-  brand(id: $id, slug: $slug) {
+query brand($id: String, $slug: String, $name: String) {
+  brand(id: $id, slug: $slug, name: $name) {
     id
     brandId
     name
