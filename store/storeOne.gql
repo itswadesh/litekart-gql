@@ -35,6 +35,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     facebookPixelId
     facebookUrl
     favicon
+    faviconCdn
     firstName
     freeShippingOn
     gdpr
@@ -69,10 +70,15 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     logoDark
     logoMobile
     logoMobileDark
+    logoCdn
+    logoDarkCdn
+    logoMobileCdn
+    logoMobileDarkCdn
     minimumOrderValue
     minOrderValue
     name
     openGraphImage
+    openGraphImageCdn
     pageSize
     phone
     pinterestTag

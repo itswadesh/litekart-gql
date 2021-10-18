@@ -217,6 +217,7 @@ mutation saveStore(
     facebookPixelId
     facebookUrl
     favicon
+    faviconCdn
     firstName
     freeShippingOn
     gdpr
@@ -248,10 +249,14 @@ mutation saveStore(
     logoDark
     logoMobile
     logoMobileDark
+    logoCdn
+    logoDarkCdn
+    logoMobileCdn
+    logoMobileDarkCdn
     minimumOrderValue
     minOrderValue
     name
-    openGraphImage
+    openGraphImageCdn
     pageSize
     phone
     pinterestTag

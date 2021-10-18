@@ -35,6 +35,7 @@ query store {
     facebookPixelId
     facebookUrl
     favicon
+    faviconCdn
     firstName
     freeShippingOn
     gdpr
@@ -66,10 +67,15 @@ query store {
     logoDark
     logoMobile
     logoMobileDark
+    logoCdn
+    logoDarkCdn
+    logoMobileCdn
+    logoMobileDarkCdn
     minimumOrderValue
     minOrderValue
     name
     openGraphImage
+    openGraphImageCdn
     pageSize
     phone
     pinterestTag
