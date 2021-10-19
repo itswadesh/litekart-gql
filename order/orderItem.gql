@@ -72,6 +72,7 @@ query orderItem($id: ID!) {
     baseDiscount
     totalDiscount
     baseTotalDiscount
+    vendorCommission
     amount {
       total
       discount

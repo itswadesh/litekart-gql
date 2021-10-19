@@ -4,6 +4,8 @@ mutation saveMyVendorInfo(
   $bankIfsc: String
   $bankAccountHolderName: String
   $bankSwiftCode: String
+  $commissionType: String
+  $commissionValue: Float
   $banner: String
   $address: ID
 ) {
@@ -13,6 +15,8 @@ mutation saveMyVendorInfo(
     bankIfsc: $bankIfsc
     bankAccountHolderName: $bankAccountHolderName
     bankSwiftCode: $bankSwiftCode
+    commissionType: $commissionType
+    commissionValue: $commissionValue
     banner: $banner
     address: $address
   ) {
@@ -24,6 +28,8 @@ mutation saveMyVendorInfo(
     bankSwiftCode
     banner
     bannerCdn
+    commissionType
+    commissionValue
     createdAt
     updatedAt
     address {
