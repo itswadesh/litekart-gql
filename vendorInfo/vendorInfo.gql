@@ -5,6 +5,7 @@ query vendorInfo($id: ID) {
     bankName
     bankIfsc
     bankAccountHolderName
+    bankSwiftCode
     banner
     bannerCdn
     createdAt

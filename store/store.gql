@@ -104,6 +104,7 @@ query store {
     bankAccountNo
     bankAccountHolderName
     bankIfscCode
+    bankSwiftCode
     timeZone
     timing
     title

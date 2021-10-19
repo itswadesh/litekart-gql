@@ -5,6 +5,7 @@ query vendorBySlug($slug: String!) {
     bankName
     bankIfsc
     bankAccountHolderName
+    bankSwiftCode
     banner
     bannerCdn
     createdAt

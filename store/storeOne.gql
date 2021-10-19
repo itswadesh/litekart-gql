@@ -53,6 +53,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     bankAccountNo
     bankAccountHolderName
     bankIfscCode
+    bankSwiftCode
     instagram
     instagramUrl
     isHideNilStock

@@ -40,6 +40,7 @@ mutation saveStore(
   $bankAccountNo: String
   $bankAccountHolderName: String
   $bankIfscCode: String
+  $bankSwiftCode: String
   $instagram: String
   $instagramUrl: String
   $isHideNilStock: Boolean
@@ -132,6 +133,7 @@ mutation saveStore(
     bankAccountNo: $bankAccountNo
     bankAccountHolderName: $bankAccountHolderName
     bankIfscCode: $bankIfscCode
+    bankSwiftCode: $bankSwiftCode
     instagram: $instagram
     instagramUrl: $instagramUrl
     isHideNilStock: $isHideNilStock

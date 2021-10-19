@@ -9,6 +9,7 @@ query storeVendorInfo($store: ID!) {
       bankName
       bankIfsc
       bankAccountHolderName
+      bankSwiftCode
       banner
       bannerCdn
       createdAt

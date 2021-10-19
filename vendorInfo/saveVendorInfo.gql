@@ -4,6 +4,7 @@ mutation saveVendorInfo(
   $bankName: String
   $bankIfsc: String
   $bankAccountHolderName: String
+  $bankSwiftCode: String
   $address: ID
 ) {
   saveVendorInfo(
@@ -12,6 +13,7 @@ mutation saveVendorInfo(
     bankName: $bankName
     bankIfsc: $bankIfsc
     bankAccountHolderName: $bankAccountHolderName
+    bankSwiftCode: $bankSwiftCode
     address: $address
   ) {
     id
@@ -19,6 +21,7 @@ mutation saveVendorInfo(
     bankName
     bankIfsc
     bankAccountHolderName
+    bankSwiftCode
     createdAt
     updatedAt
     user
