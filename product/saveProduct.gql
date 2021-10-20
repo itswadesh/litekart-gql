@@ -74,6 +74,7 @@ mutation saveProduct(
   $unit: String
   $dimensionUnit: String
   $isSearchable: Boolean
+  $preOrder: Boolean
 ) {
   saveProduct(
     id: $id
@@ -151,6 +152,7 @@ mutation saveProduct(
     unit: $unit
     dimensionUnit: $dimensionUnit
     isSearchable: $isSearchable
+    preOrder: $preOrder
   ) {
     id
     name
@@ -241,6 +243,7 @@ mutation saveProduct(
     dimensionUnit
     unit
     isSearchable
+    preOrder
   }
 }
 # {

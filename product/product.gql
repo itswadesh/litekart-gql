@@ -61,6 +61,7 @@ query product($id: ID!) {
     mfgDate
     expiryDate
     isSearchable
+    preOrder
     sizeGroup {
       _id
       slug

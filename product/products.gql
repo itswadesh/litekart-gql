@@ -94,6 +94,7 @@ query products(
       mfgDate
       expiryDate
       isSearchable
+      preOrder
       store {
         id
         name

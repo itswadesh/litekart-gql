@@ -87,6 +87,7 @@ query product1($id: ID!) {
     unit
     dimensionUnit
     isSearchable
+    preOrder
     productDetails {
       name
       value
