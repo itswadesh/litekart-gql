@@ -5,7 +5,9 @@ query orderItem($id: ID!) {
     status
     pid
     posInvoiceNo
+    invoiceId
     itemOrderNo
+    shippingOrderId
     name
     slug
     img
@@ -17,6 +19,9 @@ query orderItem($id: ID!) {
     qty
     tax
     baseTax
+    total
+    totalDiscount
+    subtotal
     brandName
     brandImg
     brandImgCdn

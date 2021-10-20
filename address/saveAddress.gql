@@ -61,15 +61,17 @@ mutation saveAddress(
 
 # {
 #   "id":"new",
-#   "firstName":"llllppp",
-#   "lastName":"last",
-#   "zip":322200,
+#   "firstName":"prj",
+#   "lastName":"jassi",
+#   "zip":303012,
 #   "phone":"9898989898",
-#   "city": "ggc",
-#   "district": "swm",
-#   "state": "raj",
+#   "city": "bassi",
+#   "district": "jaipur",
+#   "state": "rajasthan",
 #   "country": "india",
 #   "lat": 22.222,
 #   "lng": 43.555,
+#   "store": "6165098655cbc55580bda783",
+#   "address": "local street",
 #   "store": "60fb92e49f73050d30287cae"
 # }
