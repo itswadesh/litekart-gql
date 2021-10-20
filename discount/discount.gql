@@ -19,5 +19,9 @@ query discount($id: ID!) {
       id
       firstName
     }
+    store {
+      id
+      name
+    }
   }
 }
