@@ -5,6 +5,7 @@ query allTransactions(
   $search: String
   $sort: String
   $q: String
+  $store: ID
 ) {
   allTransactions(
     page: $page
@@ -13,20 +14,21 @@ query allTransactions(
     limit: $limit
     sort: $sort
     q: $q
+    store: $store
   ) {
     count
     page
     pageSize
     data {
       id
-    amount
-    remark
-    direction
-    user
-    balance
-    referedUser
-    createdAt
-    updatedAt
+      amount
+      remark
+      direction
+      user
+      balance
+      referedUser
+      createdAt
+      updatedAt
     }
   }
 }

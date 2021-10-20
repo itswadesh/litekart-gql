@@ -1,11 +1,19 @@
-query{
-  transaction(walletId:"60cb5aa44d4efd459460b486"){
+query transaction($transactionId: ID!) {
+  transaction(transactionId: $transactionId) {
     id
     amount
     remark
     direction
-    user
-    referedUser
+    user {
+      id
+      firstName
+      lastName
+    }
+    referedUser {
+      id
+      firstName
+      lastName
+    }
     createdAt
     updatedAt
   }

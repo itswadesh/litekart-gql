@@ -19,14 +19,14 @@ query myTransactions(
     pageSize
     data {
       id
-    amount
-    remark
-    direction
-    user
-    balance
-    referedUser
-    createdAt
-    updatedAt
+      amount
+      remark
+      direction
+      user
+      balance
+      referedUser
+      createdAt
+      updatedAt
     }
   }
 }
