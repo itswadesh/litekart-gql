@@ -1,7 +1,22 @@
-query store {
-  store {
+mutation updateStoreTiming(
+  $id: ID!
+  $day: String
+  $fromTime: String
+  $isOpen: Boolean
+  $online: Boolean
+  $toTime: String
+) {
+  updateStoreTiming(
+    id: $id
+    day: $day
+    fromTime: $fromTime
+    isOpen: $isOpen
+    online: $online
+    toTime: $toTime
+  ) {
     id
     active
+    featured
     adminNotifications {
       lowStockNotification
       newOrderPlaced
@@ -29,7 +44,6 @@ query store {
     description
     metaDescription
     dimentionUnit
-    domain
     email
     facebook
     facebookPixelId
@@ -74,7 +88,6 @@ query store {
     minimumOrderValue
     minOrderValue
     name
-    openGraphImage
     openGraphImageCdn
     pageSize
     phone
@@ -101,10 +114,6 @@ query store {
     snapChatPixel
     state
     storeId
-    bankAccountNo
-    bankAccountHolderName
-    bankIfscCode
-    bankSwiftCode
     timeZone
     timing
     title
@@ -117,14 +126,6 @@ query store {
     youtubeUrl
     webmail
     zip
-    createdAt
-    updatedAt
-    user {
-      firstName
-      lastName
-      email
-      phone
-    }
     storeTiming {
       day
       fromTime
@@ -135,3 +136,11 @@ query store {
     }
   }
 }
+
+# {
+#   "id": "6165098655cbc55580bda783",
+#   	"day": "saturday",
+#   "toTime": "1 pm",
+#   "fromTime": "9am",
+#   "isOpen": true
+# }
