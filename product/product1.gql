@@ -91,6 +91,7 @@ query product1($id: ID!) {
     totalSold
     preOrder
     zips
+    foodType
     location
     country
     productDetails {

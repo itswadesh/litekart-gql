@@ -78,6 +78,7 @@ mutation saveProduct(
   $preOrder: Boolean
   $isUnlimited: Boolean
   $zips: [Float]
+  $foodType: String
 ) {
   saveProduct(
     id: $id
@@ -159,6 +160,7 @@ mutation saveProduct(
     preOrder: $preOrder
     isUnlimited: $isUnlimited
     zips: $zips
+    foodType: $foodType
   ) {
     id
     name
@@ -251,6 +253,7 @@ mutation saveProduct(
     preOrder
     isUnlimited
     zips
+    foodType
     location
     country
   }

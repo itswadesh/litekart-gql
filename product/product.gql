@@ -1,5 +1,5 @@
-query product($id: ID!) {
-  product(id: $id) {
+query product($id: ID!, $zip: Float) {
+  product(id: $id, zip: $zip) {
     id
     slug
     name
@@ -65,6 +65,7 @@ query product($id: ID!) {
     totalSold
     preOrder
     zips
+    foodType
     location {
       id
       name
