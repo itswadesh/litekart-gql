@@ -4,7 +4,8 @@ mutation saveProduct(
   $slug: String
   $description: String
   $type: String
-  $city: String
+  $location: ID
+  $country: ID
   $price: Float
   $mrp: Float
   $stock: Int
@@ -76,6 +77,7 @@ mutation saveProduct(
   $isSearchable: Boolean
   $preOrder: Boolean
   $isUnlimited: Boolean
+  $zips: [Float]
 ) {
   saveProduct(
     id: $id
@@ -83,7 +85,8 @@ mutation saveProduct(
     slug: $slug
     description: $description
     type: $type
-    city: $city
+    location: $location
+    country: $country
     price: $price
     mrp: $mrp
     stock: $stock
@@ -155,13 +158,13 @@ mutation saveProduct(
     isSearchable: $isSearchable
     preOrder: $preOrder
     isUnlimited: $isUnlimited
+    zips: $zips
   ) {
     id
     name
     description
     slug
     type
-    city
     price
     mrp
     stock
@@ -247,6 +250,9 @@ mutation saveProduct(
     isSearchable
     preOrder
     isUnlimited
+    zips
+    location
+    country
   }
 }
 # {

@@ -64,6 +64,15 @@ query product($id: ID!) {
     isUnlimited
     totalSold
     preOrder
+    zips
+    location {
+      id
+      name
+    }
+    country {
+      id
+      name
+    }
     sizeGroup {
       _id
       slug

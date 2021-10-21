@@ -12,6 +12,7 @@ query vendorBySlug($slug: String!) {
     commissionValue
     createdAt
     updatedAt
+    zips
     user {
       id
     }

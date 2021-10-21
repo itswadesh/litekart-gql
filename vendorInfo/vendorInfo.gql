@@ -12,6 +12,7 @@ query vendorInfo($id: ID) {
     commissionValue
     createdAt
     updatedAt
+    zips
     user {
       id
     }

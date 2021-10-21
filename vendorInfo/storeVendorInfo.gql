@@ -16,6 +16,7 @@ query storeVendorInfo($store: ID!) {
       commissionValue
       createdAt
       updatedAt
+      zips
       user {
         id
       }

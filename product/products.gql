@@ -97,6 +97,7 @@ query products(
       isUnlimited
       totalSold
       preOrder
+      zips
       store {
         id
         name

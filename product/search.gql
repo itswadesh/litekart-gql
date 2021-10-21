@@ -3,10 +3,12 @@ query search(
   $skip: Int
   $limit: Int
   $type: String
-  $city: String
+  $location: ID
+  $country: ID
   $search: String
   $sort: String
   $q: String
+  $zip: Float
 ) {
   search(
     page: $page
@@ -14,9 +16,11 @@ query search(
     skip: $skip
     limit: $limit
     type: $type
-    city: $city
+    location: $location
+    country: $country
     search: $search
     sort: $sort
+    zip: $zip
   ) {
     data {
       id

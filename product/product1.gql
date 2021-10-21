@@ -90,6 +90,9 @@ query product1($id: ID!) {
     isUnlimited
     totalSold
     preOrder
+    zips
+    location
+    country
     productDetails {
       name
       value
