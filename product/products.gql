@@ -94,6 +94,8 @@ query products(
       mfgDate
       expiryDate
       isSearchable
+      isUnlimited
+      totalSold
       preOrder
       store {
         id

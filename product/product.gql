@@ -61,6 +61,8 @@ query product($id: ID!) {
     mfgDate
     expiryDate
     isSearchable
+    isUnlimited
+    totalSold
     preOrder
     sizeGroup {
       _id
