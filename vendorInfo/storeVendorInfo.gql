@@ -17,6 +17,10 @@ query storeVendorInfo($store: ID!) {
       createdAt
       updatedAt
       zips
+      country {
+        id
+        name
+      }
       user {
         id
       }

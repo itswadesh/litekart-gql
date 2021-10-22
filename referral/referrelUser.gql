@@ -1,5 +1,5 @@
-mutation{
-  referrelUser(referralCode:"RXxk1",phone:"9694039043"){
+mutation {
+  referrelUser(referralCode: "RXxk1", phone: "9694039043") {
     id
     phone
     referralCode
@@ -7,3 +7,4 @@ mutation{
     referedUsers
   }
 }
+# not in use

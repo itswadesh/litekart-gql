@@ -13,6 +13,10 @@ query vendorInfo($id: ID) {
     createdAt
     updatedAt
     zips
+    country {
+      id
+      name
+    }
     user {
       id
     }

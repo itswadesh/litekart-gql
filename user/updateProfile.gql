@@ -14,7 +14,6 @@ mutation updateProfile(
   $freeShippingOn: Int
   $storeName: String
   $banner: String
-  $store: ID
 ) {
   updateProfile(
     firstName: $firstName
@@ -30,7 +29,6 @@ mutation updateProfile(
     freeShippingOn: $freeShippingOn
     storeName: $storeName
     banner: $banner
-    store: $store
   ) {
     firstName
     lastName
