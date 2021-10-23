@@ -99,6 +99,11 @@ query products(
       preOrder
       zips
       foodType
+      slots {
+        id
+        name
+        value
+      }
       store {
         id
         name

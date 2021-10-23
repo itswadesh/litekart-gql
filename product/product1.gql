@@ -92,6 +92,7 @@ query product1($id: ID!) {
     preOrder
     zips
     foodType
+    slots
     location
     country
     productDetails {

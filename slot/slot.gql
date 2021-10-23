@@ -1,11 +1,15 @@
-query slot($id: String!) {
+query slot($id: ID!) {
   slot(id: $id) {
     id
     name
-    val
-    slug
+    value
     info
     active
+    user {
+      id
+      firstName
+      lastName
+    }
     store {
       id
       name

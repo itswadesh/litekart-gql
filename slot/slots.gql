@@ -18,8 +18,7 @@ query slots(
     data {
       id
       name
-      val
-      slug
+      value
       info
       active
       store {

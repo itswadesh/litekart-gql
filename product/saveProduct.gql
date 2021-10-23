@@ -79,6 +79,7 @@ mutation saveProduct(
   $isUnlimited: Boolean
   $zips: [Float]
   $foodType: String
+  $slots: [ID]
 ) {
   saveProduct(
     id: $id
@@ -161,6 +162,7 @@ mutation saveProduct(
     isUnlimited: $isUnlimited
     zips: $zips
     foodType: $foodType
+    slots: $slots
   ) {
     id
     name
@@ -256,15 +258,14 @@ mutation saveProduct(
     foodType
     location
     country
+    slots
   }
 }
+
 # {
 #   "id": "new",
-#   "name": "test product 1",
-#   "category": "60828b3a300e0a4504e1234f",
-#   "categories": ["60828b3a300e0a4504e1234f","60828b3a300e0a4504e12351","608290d28bf5970d5c7d79eb"],
-#   "brand": "6086970ea3d8e916e8c897bf",
-#   "color": "6086970ea3d8e916e8c897bf",
-#   "size": "6086970ea3d8e916e8c897bf",
-#   "relatedProducts": ["6087c1a325c8f03d202051dd","6087c1a025c8f03d202051da"]
+#   "name": "test product",
+#   "stock": 1000,
+#   "mrp": 199,
+#   "price": 149,
 # }
