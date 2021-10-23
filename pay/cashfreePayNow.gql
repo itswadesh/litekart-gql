@@ -1,5 +1,5 @@
-mutation cashfreePayNow($address: ID) {
-  cashfreePayNow(address: $address) {
+mutation cashfreePayNow($address: ID, $slot: ID) {
+  cashfreePayNow(address: $address, slot: $slot) {
     appId
     orderId
     orderAmount

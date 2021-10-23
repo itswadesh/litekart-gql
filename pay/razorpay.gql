@@ -1,5 +1,5 @@
-mutation razorpay($address: ID) {
-  razorpay(address: $address) {
+mutation razorpay($address: ID, $slot: ID) {
+  razorpay(address: $address, slot: $slot) {
     id
   }
 }

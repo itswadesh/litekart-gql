@@ -1,5 +1,5 @@
-mutation paypalPayNow($address: ID) {
-  paypalPayNow(address: $address) {
+mutation paypalPayNow($address: ID, $slot: ID) {
+  paypalPayNow(address: $address, slot: $slot) {
     id
     intent
     state

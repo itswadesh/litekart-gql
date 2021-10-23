@@ -1,5 +1,5 @@
-mutation stripe($address: ID, $paymentMethodId: String) {
-  stripe(address: $address, paymentMethodId: $paymentMethodId) {
+mutation stripe($address: ID, $paymentMethodId: String, $slot: ID) {
+  stripe(address: $address, paymentMethodId: $paymentMethodId, slot: $slot) {
     id
     paymentOrderId
     paymentMode

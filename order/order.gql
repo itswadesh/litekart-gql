@@ -100,6 +100,12 @@ query order($id: ID!) {
       status
       type
       returnReason
+      slot {
+        name
+        value
+        info
+        active
+      }
       vendor {
         firstName
         lastName

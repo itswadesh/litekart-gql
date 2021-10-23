@@ -110,6 +110,12 @@ query orderItem($id: ID!) {
       name
       email
     }
+    slot {
+      name
+      value
+      info
+      active
+    }
     vendor {
       firstName
       lastName

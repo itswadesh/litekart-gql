@@ -1,5 +1,5 @@
-mutation braintreeToken($address: ID) {
-  braintreeToken(address: $address) {
+mutation braintreeToken($address: ID, $slot: ID) {
+  braintreeToken(address: $address, slot: $slot) {
     id
     paymentOrderId
     paymentMode
