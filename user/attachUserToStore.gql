@@ -13,7 +13,6 @@ mutation attachUserToStore($storeId: ID!, $userId: ID!) {
     city
     phone
     active
-    verified
     shippingCharges
     freeShippingOn
     storeName
