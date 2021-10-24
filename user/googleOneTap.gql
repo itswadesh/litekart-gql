@@ -1,5 +1,5 @@
-mutation googleOneTap($credential: String!, $store: ID) {
-  googleOneTap(credential: $credential, store: $store) {
+mutation googleOneTap($credential: String!) {
+  googleOneTap(credential: $credential) {
     id
     email
     firstName

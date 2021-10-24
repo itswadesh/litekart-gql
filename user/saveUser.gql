@@ -14,7 +14,6 @@ mutation saveUser(
   $roles: [ID]
   $storeName: String
   $banner: String
-  $store: ID
 ) {
   saveUser(
     id: $id
@@ -32,7 +31,6 @@ mutation saveUser(
     roles: $roles
     storeName: $storeName
     banner: $banner
-    store: $store
   ) {
     id
     email
@@ -53,6 +51,5 @@ mutation saveUser(
     storeName
     banner
     roles
-    store
   }
 }

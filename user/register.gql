@@ -7,7 +7,6 @@ mutation register(
   $referrer: String
   $role: String
   $phone: String
-  $store: ID
 ) {
   register(
     email: $email
@@ -18,7 +17,6 @@ mutation register(
     referrer: $referrer
     role: $role
     phone: $phone
-    store: $store
   ) {
     id
     email
@@ -32,7 +30,6 @@ mutation register(
     avatar
     avatarCdn
     provider
-    store
     createdAt
     updatedAt
   }
