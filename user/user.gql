@@ -18,6 +18,7 @@ query user($id: String!) {
     plan
     storeName
     banner
+    store
     createdAt
     updatedAt
   }
