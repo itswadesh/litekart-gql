@@ -1,4 +1,4 @@
-subscription($id: ID!) {
+subscription ($id: ID!) {
   orderUpdated(id: $id) {
     id
     orderNo

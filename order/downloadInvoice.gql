@@ -76,7 +76,9 @@ mutation downloadInvoice($orderItemId: ID!) {
         address {
           address
         }
-        store
+        store {
+          name
+        }
       }
       vendorInfo {
         firstName

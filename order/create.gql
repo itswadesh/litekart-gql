@@ -31,7 +31,9 @@ mutation create($id: ID!, $pid: ID!, $status: String, $tracking: String) {
       vendor {
         firstName
         lastName
-        store
+        store {
+          name
+        }
         phone
       }
     }
