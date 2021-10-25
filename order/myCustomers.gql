@@ -58,7 +58,9 @@ query myCustomers(
             address
           }
           phone
-          store
+          store {
+            name
+          }
         }
       }
     }
