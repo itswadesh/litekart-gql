@@ -20,6 +20,8 @@ query emailTemplates(
       name
       title
       description
+      icon
+      iconCdn
       content
       link
       active

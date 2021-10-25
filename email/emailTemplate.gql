@@ -4,6 +4,8 @@ query emailTemplate($id: ID!) {
     name
     title
     description
+    icon
+    iconCdn
     content
     link
     active
