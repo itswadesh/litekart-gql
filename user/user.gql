@@ -17,6 +17,7 @@ query user($id: String!) {
     luluCustomerNo
     plan
     storeName
+    vendorInfo
     banner
     store
     createdAt

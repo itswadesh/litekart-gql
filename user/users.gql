@@ -43,7 +43,9 @@ query users(
         store
         public
       }
-      store
+      store {
+        name
+      }
     }
   }
 }
