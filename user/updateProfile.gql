@@ -43,7 +43,9 @@ mutation updateProfile(
     freeShippingOn
     storeName
     banner
-    store
+    store {
+      name
+    }
     info {
       public
       store
