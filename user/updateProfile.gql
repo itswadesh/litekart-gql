@@ -44,13 +44,6 @@ mutation updateProfile(
     storeName
     banner
     store
-    address {
-      address
-      town
-      city
-      state
-      zip
-    }
     info {
       public
       store
