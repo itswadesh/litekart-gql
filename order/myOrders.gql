@@ -105,7 +105,9 @@ query myOrders(
         vendor {
           firstName
           lastName
-          store
+          store {
+            name
+          }
         }
         status
       }
