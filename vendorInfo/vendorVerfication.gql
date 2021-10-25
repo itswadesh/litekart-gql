@@ -1,10 +1,17 @@
-mutation vendorVerfication(
+mutation vendorVerification(
   $id: ID!
   $country: ID
+  $store: ID
   $zips: [Float]
   $zip: String
 ) {
-  vendorVerfication(id: $id, country: $country, zips: $zips, zip: $zip) {
+  vendorVerification(
+    id: $id
+    country: $country
+    store: $store
+    zips: $zips
+    zip: $zip
+  ) {
     id
     zips
     country {
