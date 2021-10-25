@@ -113,7 +113,9 @@ query order($id: ID!) {
         address {
           address
         }
-        store
+        store {
+          name
+        }
       }
       vendorAddress {
         firstName
