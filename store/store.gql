@@ -14,7 +14,12 @@ query store {
     closed
     closedMessage
     country
-    currency
+    currency {
+      id
+      isoCode
+      name
+      symbol
+    }
     currencyCode
     currencyDecimals
     currencySymbol

@@ -29,7 +29,6 @@ mutation updateStoreTiming(
     closed
     closedMessage
     country
-    currency
     currencyCode
     currencyDecimals
     currencySymbol

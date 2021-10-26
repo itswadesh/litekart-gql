@@ -11,7 +11,7 @@ mutation saveStore(
   $closed: Boolean
   $closedMessage: String
   $country: String
-  $currency: String
+  $currency: ID
   $currencyCode: String
   $currencyDecimals: Float
   $currencySymbol: String
