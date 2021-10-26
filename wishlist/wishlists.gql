@@ -24,6 +24,7 @@ query wishlists(
         id
         name
         img
+        slug
         price
         mrp
         brand {
