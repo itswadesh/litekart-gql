@@ -49,7 +49,9 @@ mutation updateOrder(
       vendor {
         firstName
         lastName
-        store
+        store {
+          name
+        }
         phone
       }
     }
