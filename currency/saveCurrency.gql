@@ -47,7 +47,6 @@ mutation saveCurrency(
     subUnit
     smallestDenomination
     subunitToUnit
-    store
     createdAt
     updatedAt
   }
