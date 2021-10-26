@@ -160,8 +160,10 @@ query INIT($domain: String) {
     facebookPixelId
     facebookUrl
     favicon
+    faviconCdn
     firstName
     freeShippingOn
+    gdpr
     gdprCookieConsent
     google
     googleAdsTag
@@ -170,10 +172,13 @@ query INIT($domain: String) {
     homeMeta3
     homeMeta4
     img
+    imgCdn
     images
+    imagesCdn
     bankAccountNo
     bankAccountHolderName
     bankIfscCode
+    bankSwiftCode
     instagram
     instagramUrl
     isHideNilStock
@@ -191,10 +196,15 @@ query INIT($domain: String) {
     logoDark
     logoMobile
     logoMobileDark
+    logoCdn
+    logoDarkCdn
+    logoMobileCdn
+    logoMobileDarkCdn
     minimumOrderValue
     minOrderValue
     name
     openGraphImage
+    openGraphImageCdn
     pageSize
     phone
     pinterestTag
@@ -230,6 +240,7 @@ query INIT($domain: String) {
     websiteName
     weightUnit
     youtubeUrl
+    webmail
     zip
     createdAt
     updatedAt
