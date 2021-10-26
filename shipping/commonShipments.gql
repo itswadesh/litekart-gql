@@ -41,6 +41,8 @@ mutation commonShipments($orderItems: [ID!]!) {
     items {
       id
       name
+      img
+      slug
     }
   }
 }
