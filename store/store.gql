@@ -14,7 +14,8 @@ query store {
     closed
     closedMessage
     country
-    currency {
+    currency
+    currencyDetail {
       id
       isoCode
       name
@@ -124,12 +125,7 @@ query store {
     zip
     createdAt
     updatedAt
-    user {
-      firstName
-      lastName
-      email
-      phone
-    }
+    user
     storeTiming {
       day
       fromTime
