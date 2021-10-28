@@ -94,7 +94,67 @@ query HOME($store: ID) {
       store
     }
   }
-  trending(store: $store) {
+  youMayLike(type: "sale", store: $store) {
+    id
+    sku
+    barcode
+    description
+    productMasterId
+    slug
+    name
+    type
+    price
+    mrp
+    stock
+    tax
+    img
+    imgCdn
+    images
+    imagesCdn
+    time
+    active
+    popularity
+    position
+    trending
+    featured
+    hot
+    new
+    sale
+    recommended
+    title
+    metaDescription
+    keywords
+    ratings
+    reviews
+    itemId
+    warranty
+    discount
+    ageMin
+    ageMax
+    ageUnit
+    cgst
+    sgst
+    igst
+    category
+    variants
+    vendor
+    returnInfo
+    description
+    keyFeatures
+    productDetails {
+      name
+      value
+    }
+    specifications {
+      name
+      value
+    }
+    countryOfOrigin
+    colorGroup
+    sizeGroup
+    stock
+  }
+  trending(type: "hot", store: $store) {
     id
     sku
     barcode
