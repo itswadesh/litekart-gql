@@ -94,7 +94,7 @@ query HOME($store: ID) {
       store
     }
   }
-  youMayLike(type: "sale", store: $store) {
+  youMayLike(store: $store) {
     id
     sku
     barcode
