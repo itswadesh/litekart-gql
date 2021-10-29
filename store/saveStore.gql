@@ -90,6 +90,8 @@ mutation saveStore(
   $youtubeUrl: String
   $webmail: String
   $zip: Float
+  $timeDisplayFormat: String
+  $priceDisplayFormat: String
 ) {
   saveStore(
     id: $id
@@ -183,6 +185,8 @@ mutation saveStore(
     youtubeUrl: $youtubeUrl
     webmail: $webmail
     zip: $zip
+    timeDisplayFormat: $timeDisplayFormat
+    priceDisplayFormat: $priceDisplayFormat
   ) {
     id
     active
@@ -296,6 +300,8 @@ mutation saveStore(
     youtubeUrl
     webmail
     zip
+    timeDisplayFormat
+    priceDisplayFormat
     createdAt
     updatedAt
     user

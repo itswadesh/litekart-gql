@@ -123,6 +123,8 @@ query store {
     youtubeUrl
     webmail
     zip
+    timeDisplayFormat
+    priceDisplayFormat
     createdAt
     updatedAt
     user

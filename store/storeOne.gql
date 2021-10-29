@@ -122,6 +122,8 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     youtubeUrl
     webmail
     zip
+    timeDisplayFormat
+    priceDisplayFormat
     createdAt
     updatedAt
     user {

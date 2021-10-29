@@ -122,6 +122,8 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       weightUnit
       youtubeUrl
       zip
+      timeDisplayFormat
+      priceDisplayFormat
       createdAt
       updatedAt
       user {
