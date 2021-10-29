@@ -1,5 +1,5 @@
-mutation updateShippoLabel($orderItemId: ID!, $labelId: String) {
-  updateShippoLabel(orderItemId: $orderItemId, labelId: $labelId) {
+mutation updateShippoData($orderItemId: ID!) {
+  updateShippoData(orderItemId: $orderItemId) {
     id
     orderId
     status
@@ -7,7 +7,6 @@ mutation updateShippoLabel($orderItemId: ID!, $labelId: String) {
     posInvoiceNo
     invoiceId
     itemOrderNo
-    shippingOrderId
     name
     slug
     img
@@ -41,6 +40,7 @@ mutation updateShippoLabel($orderItemId: ID!, $labelId: String) {
       amount
       refundId
     }
+    shippingOrderId
     shippingProvider
     shippingLabelId
     shippingRateId

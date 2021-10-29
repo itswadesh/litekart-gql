@@ -8,6 +8,14 @@ query orderItem($id: ID!) {
     invoiceId
     itemOrderNo
     shippingOrderId
+    shippingProvider
+    shippingLabelId
+    shippingRateId
+    shippingTrackingNumber
+    shippingTrackingStatus
+    shippingTrackingUrlProvider
+    shippingLabelUrl
+    shippingCommercialInvoiceUrl
     name
     slug
     img

@@ -75,3 +75,17 @@ mutation saveAddress(
 #   "address": "local street",
 #   "store": "60fb92e49f73050d30287cae"
 # }
+
+# shippo servicable
+# {
+#   "id":"new",
+#   "firstName":"MISIKI",
+#   "lastName":"LLP",
+#   "zip":90262,
+#   "phone":"9694039047",
+#   "city": "bassi",
+#   "district": "riverSide",
+#   "state": "riverSide",
+#   "country": "CA",
+#   "address": "local street"
+# }
