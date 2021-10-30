@@ -4,6 +4,7 @@ mutation commonShipments($orderItems: [ID!]!) {
       id
       firstName
       lastName
+      email
       address
       town
       district
@@ -20,6 +21,7 @@ mutation commonShipments($orderItems: [ID!]!) {
       id
       firstName
       lastName
+      email
       address
       town
       district
