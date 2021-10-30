@@ -4,6 +4,7 @@ query emailTemplate($id: ID!) {
     name
     title
     description
+    emailTemplateId
     icon
     iconCdn
     content
