@@ -182,6 +182,8 @@ query order($id: ID!) {
       totalDiscount
       total
       returnReason
+      weight
+      unit
       vendorInfo {
         firstName
       }
