@@ -76,6 +76,7 @@ query order($id: ID!) {
     items {
       id
       pid
+      orderItemId
       posInvoiceNo
       itemOrderNo
       name

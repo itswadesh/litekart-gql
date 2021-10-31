@@ -50,6 +50,7 @@ query allOrders(
       }
       items {
         pid
+        orderItemId
         posInvoiceNo
         itemOrderNo
         name
