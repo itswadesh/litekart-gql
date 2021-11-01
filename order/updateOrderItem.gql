@@ -89,7 +89,9 @@ mutation updateOrderItem(
       address {
         address
       }
-      store
+      store{
+        name
+      }
     }
     createdAt
     updatedAt
