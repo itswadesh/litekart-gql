@@ -2,13 +2,14 @@ query emailTemplate($id: ID!) {
   emailTemplate(id: $id) {
     id
     name
+    fileName
     title
     description
-    emailTemplateId
+    templateId
     icon
     iconCdn
     content
-    link
+    folder
     active
     createdAt
     updatedAt

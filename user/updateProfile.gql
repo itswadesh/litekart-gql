@@ -33,6 +33,7 @@ mutation updateProfile(
     firstName
     lastName
     email
+    phone
     avatar
     avatarCdn
     role
@@ -43,9 +44,6 @@ mutation updateProfile(
     freeShippingOn
     storeName
     banner
-    store {
-      name
-    }
     info {
       public
       store

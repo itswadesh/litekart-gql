@@ -20,12 +20,14 @@ mutation saveEmailTemplate(
   ) {
     id
     name
+    fileName
+    templateId
+    folder
     title
     description
     icon
     iconCdn
     content
-    link
     active
     store
     createdAt
