@@ -11,6 +11,7 @@ query emailTemplate($id: ID!) {
     content
     folder
     active
+    variables
     createdAt
     updatedAt
     user {

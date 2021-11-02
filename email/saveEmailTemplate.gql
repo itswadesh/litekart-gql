@@ -6,6 +6,7 @@ mutation saveEmailTemplate(
   $content: String
   $icon: String
   $active: Boolean
+  $variables: [String]
   $store: ID
 ) {
   saveEmailTemplate(
@@ -16,6 +17,7 @@ mutation saveEmailTemplate(
     icon: $icon
     content: $content
     active: $active
+    variables: $variables
     store: $store
   ) {
     id
@@ -29,6 +31,7 @@ mutation saveEmailTemplate(
     iconCdn
     content
     active
+    variables
     store
     createdAt
     updatedAt

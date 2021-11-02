@@ -27,6 +27,7 @@ query emailTemplates(
       content
       folder
       active
+      variables
       createdAt
       updatedAt
       user {
