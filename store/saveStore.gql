@@ -92,6 +92,8 @@ mutation saveStore(
   $zip: Float
   $timeDisplayFormat: String
   $priceDisplayFormat: String
+  $currencySuffix: String
+  $hideDecimalInCurrency: Boolean
 ) {
   saveStore(
     id: $id
@@ -187,6 +189,8 @@ mutation saveStore(
     zip: $zip
     timeDisplayFormat: $timeDisplayFormat
     priceDisplayFormat: $priceDisplayFormat
+    currencySuffix: $currencySuffix
+    hideDecimalInCurrency: $hideDecimalInCurrency
   ) {
     id
     active
@@ -302,6 +306,8 @@ mutation saveStore(
     zip
     timeDisplayFormat
     priceDisplayFormat
+    currencySuffix
+    hideDecimalInCurrency
     createdAt
     updatedAt
     user

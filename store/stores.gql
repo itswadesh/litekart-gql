@@ -124,6 +124,8 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       zip
       timeDisplayFormat
       priceDisplayFormat
+      currencySuffix
+      hideDecimalInCurrency
       createdAt
       updatedAt
       user {

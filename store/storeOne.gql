@@ -124,6 +124,8 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     zip
     timeDisplayFormat
     priceDisplayFormat
+    currencySuffix
+    hideDecimalInCurrency
     createdAt
     updatedAt
     user {
