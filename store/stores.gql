@@ -18,7 +18,18 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       city
       closed
       closedMessage
-      country
+      country {
+        id
+        name
+        value
+        dialCode
+        code
+        img
+        imgCdn
+        flag
+        lang
+        active
+      }
       currency {
         id
         isoCode
