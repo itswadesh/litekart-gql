@@ -41,6 +41,18 @@ query settings {
     shopPhone
     shopAddress
     country
+    countryDetail {
+      id
+      name
+      value
+      dialCode
+      code
+      img
+      imgCdn
+      flag
+      lang
+      active
+    }
     logo
     logoMobile
     logoDark
