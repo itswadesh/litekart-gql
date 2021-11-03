@@ -222,6 +222,8 @@ query product($id: ID!, $zip: Float) {
     files
     unit
     dimensionUnit
+    formattedMrp
+    formattedPrice
     createdAt
     updatedAt
   }

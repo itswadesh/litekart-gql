@@ -95,6 +95,8 @@ query product1($id: ID!) {
     slots
     location
     country
+    formattedMrp
+    formattedPrice
     productDetails {
       name
       value

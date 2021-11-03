@@ -259,6 +259,8 @@ mutation saveProduct(
     location
     country
     slots
+    formattedMrp
+    formattedPrice
   }
 }
 

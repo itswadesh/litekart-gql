@@ -90,6 +90,8 @@ query myProducts(
       replaceAllowed
       returnValidityInDays
       isSearchable
+      formattedMrp
+      formattedPrice
       store {
         id
         name

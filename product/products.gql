@@ -99,6 +99,8 @@ query products(
       preOrder
       zips
       foodType
+      formattedMrp
+      formattedPrice
       slots {
         id
         name
