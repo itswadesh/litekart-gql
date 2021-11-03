@@ -1,0 +1,185 @@
+query HOME {
+  dailySales {
+    _id
+    total
+    qty
+  }
+  topVendors {
+    id
+    firstName
+    lastName
+    productSold
+    avatar
+    avatarCdn
+  }
+  userSummary {
+    count
+  }
+  productSummary {
+    count
+  }
+  categorySummary {
+    count
+  }
+  orderSummary {
+    count
+    amount
+  }
+  paymentsSummary {
+    count
+    amount
+  }
+  vendorSummary {
+    _id
+    count
+    amount
+    createdAt
+    codPaid
+  }
+  statusSummary {
+    _id
+    count
+    amount
+  }
+  byVendor {
+    count
+    pageSize
+    page
+    data {
+      _id {
+        vendor {
+          firstName
+          lastName
+          phone
+        }
+      }
+      date
+      items {
+        pid
+        name
+      }
+      total
+      count
+    }
+  }
+  myOrders(sort: "-createdAt", store: $store) {
+    count
+    pageSize
+    page
+    data {
+      id
+      orderNo
+      otp
+      createdAt
+      updatedAt
+      codPaid
+      payment {
+        id
+        amountPaid
+      }
+      paymentMode
+      paymentStatus
+      paymentCurrency
+      paymentReferenceId
+      paymentOrderId
+      paymentReceipt
+      invoiceId
+      paymentGateway
+      codPaid
+      amountPaid
+      amountDue
+      paymentStatus
+      paymentMsg
+      paymentTime
+      paid
+      amount {
+        qty
+        subtotal
+        tax
+        discount
+        total
+        shipping
+      }
+      userFirstName
+      userLastName
+      userPhone
+      userEmail
+      address {
+        firstName
+        lastName
+        town
+        city
+        state
+        zip
+        address
+        lat
+        lng
+      }
+      store {
+        id
+        name
+        email
+      }
+      items {
+        id
+        pid
+        posInvoiceNo
+        itemOrderNo
+        name
+        barcode
+        img
+        imgCdn
+        slug
+        price
+        qty
+        shippingCharge
+        subtotal
+        total
+        tax
+        time
+        options
+        brandName
+        brandImg
+        brandImgCdn
+        orderStatus {
+          id
+          event
+          tracking_id
+          courier_name
+        }
+        vendor {
+          firstName
+          lastName
+          store {
+            name
+          }
+        }
+        status
+      }
+      orderItems {
+        id
+        status
+        pid
+        posInvoiceNo
+        itemOrderNo
+        name
+        slug
+        img
+        imgCdn
+        qty
+        price
+        mrp
+        color
+        size
+        tracking
+        shippingCharge
+        tax
+        subtotal
+        total
+        brandName
+        brandImg
+        brandImgCdn
+      }
+    }
+  }
+}
