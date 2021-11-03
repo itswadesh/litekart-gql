@@ -5,8 +5,6 @@ query cart($store: ID) {
     currencyCode
     currencyName
     currencySymbol
-    formattedSubtotal
-    formattedTotal
     items {
       pid
       barcode
@@ -22,12 +20,22 @@ query cart($store: ID) {
       options
       tracking
       brandName
-      vendorFirstName
-      vendorLastName
-      vendorPhone
+      vendor {
+        id
+        firstName
+        email
+      }
+      formattedItemAmount {
+        mrp
+        price
+        tax
+        shippingCharge
+      }
     }
     qty
+    tax
     subtotal
+    total
     discount {
       code
       value
@@ -37,7 +45,11 @@ query cart($store: ID) {
     shipping {
       charge
     }
-    tax
-    total
+    formattedAmount {
+      offer_total
+      tax
+      subtotal
+      total
+    }
   }
 }

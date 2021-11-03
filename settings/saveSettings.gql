@@ -21,7 +21,7 @@ mutation saveSettings(
   $websiteEmail: String
   $shopPhone: String
   $shopAddress: String
-  $country: String
+  $country: ID
   $logo: String
   $logoMobile: String
   $logoDark: String
