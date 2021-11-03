@@ -137,8 +137,6 @@ query store {
     zip
     timeDisplayFormat
     priceDisplayFormat
-    currencySuffix
-    hideDecimalInCurrency
     createdAt
     updatedAt
     user
