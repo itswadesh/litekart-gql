@@ -8,7 +8,7 @@ query PRODUCT_CCCBSV($store: ID) {
       name
     }
   }
-  countries(page: 0, limit: 300, store: $store) {
+  countries(page: 0, limit: 300) {
     count
     page
     pageSize

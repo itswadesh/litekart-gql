@@ -1,4 +1,4 @@
-query HOME {
+query HOME($store: ID) {
   dailySales {
     _id
     total
