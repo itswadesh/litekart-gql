@@ -38,6 +38,8 @@ query trending($type: String, $store: ID) {
     cgst
     sgst
     igst
+    formattedMrp
+    formattedPrice
     category
     variants
     vendor

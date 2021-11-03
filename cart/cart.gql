@@ -5,6 +5,8 @@ query cart($store: ID) {
     currencyCode
     currencyName
     currencySymbol
+    formattedSubtotal
+    formattedTotal
     items {
       pid
       barcode
