@@ -148,6 +148,30 @@ query orderItem($id: ID!) {
       lat
       lng
     }
+    formattedSubtotal
+    formattedShippingCharge
+    formattedMrp
+    formattedAmountRefunded
+    formattedPrice
+    formattedTax
+    formattedTotal
+    formattedTotalDiscount
+    formattedVendorCommission
+    formattedAmountDue
+    formattedAmountPaid
+    formattedCodPaid
+    formattedDiscount
+    formattedPaymentAmount
+    formattedTotalAmountRefunded
+    formattedAmount {
+      subtotal
+      tax
+      discount
+      shipping
+      total
+      totalDiscount
+      exchangeRate
+    }
     orderHistory {
       id
       status
