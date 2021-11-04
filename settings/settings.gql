@@ -41,7 +41,7 @@ query settings {
     shopPhone
     shopAddress
     country
-    countryDetail {
+    countryDetails {
       id
       name
       value
@@ -52,6 +52,13 @@ query settings {
       flag
       lang
       active
+    }
+    currency
+    currencyDetails {
+      id
+      isoCode
+      name
+      symbol
     }
     logo
     logoMobile

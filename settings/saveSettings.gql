@@ -12,6 +12,7 @@ mutation saveSettings(
   $alert: String
   $keywords: String
   $description: String
+  $currency: ID
   $currencyCode: String
   $currencySymbol: String
   $currencyDecimals: Int
@@ -77,6 +78,7 @@ mutation saveSettings(
     alert: $alert
     keywords: $keywords
     description: $description
+    currency: $currency
     currencyCode: $currencyCode
     currencySymbol: $currencySymbol
     currencyDecimals: $currencyDecimals
@@ -138,6 +140,7 @@ mutation saveSettings(
     alert
     keywords
     description
+    currency
     currencyCode
     currencySymbol
     tax {
