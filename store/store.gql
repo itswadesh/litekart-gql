@@ -64,6 +64,7 @@ query store {
     homeMeta2
     homeMeta3
     homeMeta4
+    hideDecimalInCurrency
     img
     imgCdn
     images
