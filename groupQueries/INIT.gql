@@ -21,6 +21,7 @@ query INIT($domain: String) {
     RAZORPAY_KEY_ID
     GOOGLE_CLIENT_ID
     stripePublishableKey
+    brainTreePublicKey
     enableStripe
     enableRazorpay
     currencyCode
@@ -40,6 +41,25 @@ query INIT($domain: String) {
     shopPhone
     shopAddress
     country
+    countryDetails {
+      id
+      name
+      value
+      dialCode
+      code
+      img
+      imgCdn
+      flag
+      lang
+      active
+    }
+    currency
+    currencyDetails {
+      id
+      isoCode
+      name
+      symbol
+    }
     logo
     logoMobile
     logoDark
@@ -138,7 +158,9 @@ query INIT($domain: String) {
     city
     closed
     closedMessage
-    country
+    country {
+      name
+    }
     currency {
       id
       isoCode
