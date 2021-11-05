@@ -1,17 +1,5 @@
-query units(
-  $page: Int
-  $search: String
-  $limit: Int
-  $sort: String
-  $store: ID
-) {
-  units(
-    page: $page
-    search: $search
-    limit: $limit
-    sort: $sort
-    store: $store
-  ) {
+query units($page: Int, $search: String, $limit: Int, $sort: String) {
+  units(page: $page, search: $search, limit: $limit, sort: $sort) {
     count
     page
     pageSize
@@ -24,11 +12,6 @@ query units(
       active
       createdAt
       updatedAt
-      store {
-        id
-        name
-        email
-      }
     }
   }
 }
