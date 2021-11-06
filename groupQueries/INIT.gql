@@ -160,6 +160,7 @@ query INIT($domain: String) {
     closedMessage
     country {
       name
+      code
     }
     currency {
       id
