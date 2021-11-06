@@ -14,7 +14,7 @@ query store {
     closed
     closedMessage
     country
-    countryDetail {
+    countryDetails {
       id
       name
       value
@@ -27,7 +27,7 @@ query store {
       active
     }
     currency
-    currencyDetail {
+    currencyDetails {
       id
       isoCode
       name
