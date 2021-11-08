@@ -8,5 +8,6 @@ query location($id: String!) {
     lat
     lng
     zips
+    zip
   }
 }
