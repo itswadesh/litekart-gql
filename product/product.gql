@@ -66,6 +66,7 @@ query product($id: ID!, $zip: Float) {
     preOrder
     zips
     foodType
+    deliveryDetails
     slots {
       id
       name

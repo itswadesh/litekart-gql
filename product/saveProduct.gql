@@ -79,6 +79,7 @@ mutation saveProduct(
   $isUnlimited: Boolean
   $zips: [Float]
   $foodType: String
+  $deliveryDetails: String
   $slots: [ID]
 ) {
   saveProduct(
@@ -162,6 +163,7 @@ mutation saveProduct(
     isUnlimited: $isUnlimited
     zips: $zips
     foodType: $foodType
+    deliveryDetails: $deliveryDetails
     slots: $slots
   ) {
     id
@@ -261,6 +263,7 @@ mutation saveProduct(
     slots
     formattedMrp
     formattedPrice
+    deliveryDetails
   }
 }
 

@@ -97,6 +97,7 @@ query product1($id: ID!) {
     country
     formattedMrp
     formattedPrice
+    deliveryDetails
     productDetails {
       name
       value

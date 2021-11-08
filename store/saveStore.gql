@@ -48,6 +48,7 @@ mutation saveStore(
   $isOpen: Boolean
   $isSearch: Boolean
   $isHyperlocal: Boolean
+  $isFnb: Boolean
   $keywords: String
   $lastName: String
   $lat: Float
@@ -146,6 +147,7 @@ mutation saveStore(
     isOpen: $isOpen
     isSearch: $isSearch
     isHyperlocal: $isHyperlocal
+    isFnb: $isFnb
     keywords: $keywords
     lastName: $lastName
     lat: $lat
@@ -251,6 +253,7 @@ mutation saveStore(
     isOpen
     isSearch
     isHyperlocal
+    isFnb
     keywords
     lastName
     lat

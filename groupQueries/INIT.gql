@@ -144,6 +144,11 @@ query INIT($domain: String) {
     isMegamenu
     isSaas
     isSearch
+    foodTypes {
+      name
+      val
+      img
+    }
   }
   storeOne(domain: $domain) {
     id
@@ -215,6 +220,7 @@ query INIT($domain: String) {
     isOpen
     isSearch
     isHyperlocal
+    isFnb
     keywords
     lastName
     lat
