@@ -75,6 +75,7 @@ query store {
     isMegamenu
     isOpen
     isSearch
+    isHyperlocal
     keywords
     lastName
     lat

@@ -47,6 +47,7 @@ mutation saveStore(
   $isMegamenu: Boolean
   $isOpen: Boolean
   $isSearch: Boolean
+  $isHyperlocal: Boolean
   $keywords: String
   $lastName: String
   $lat: Float
@@ -144,6 +145,7 @@ mutation saveStore(
     isMegamenu: $isMegamenu
     isOpen: $isOpen
     isSearch: $isSearch
+    isHyperlocal: $isHyperlocal
     keywords: $keywords
     lastName: $lastName
     lat: $lat
@@ -248,6 +250,7 @@ mutation saveStore(
     isMegamenu
     isOpen
     isSearch
+    isHyperlocal
     keywords
     lastName
     lat

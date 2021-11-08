@@ -76,6 +76,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     isMegamenu
     isOpen
     isSearch
+    isHyperlocal
     keywords
     lastName
     lat
