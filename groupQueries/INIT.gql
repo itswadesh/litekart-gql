@@ -20,6 +20,7 @@ query INIT($domain: String) {
     demo
     RAZORPAY_KEY_ID
     GOOGLE_CLIENT_ID
+    LIVE_COMMERCE_URL
     stripePublishableKey
     brainTreePublicKey
     enableStripe

@@ -67,6 +67,7 @@ query settings {
     favicon
     CDN_URL
     S3_URL
+    LIVE_COMMERCE_URL
     searchbarText
     pageSize
     returnReasons

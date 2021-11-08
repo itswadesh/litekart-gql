@@ -36,5 +36,8 @@ query vendorInfo($id: ID) {
       name
       email
     }
+    about
+    businessName
+    banners
   }
 }
