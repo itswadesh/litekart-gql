@@ -2,44 +2,33 @@ query search(
   $page: Int
   $skip: Int
   $limit: Int
-  $type: String
-  $location: ID
-  $country: ID
+  $foodType: String
+  $zip: Float
   $search: String
   $sort: String
   $q: String
-  $zip: Float
 ) {
   search(
     page: $page
     q: $q
     skip: $skip
     limit: $limit
-    type: $type
-    location: $location
-    country: $country
+    foodType: $foodType
+    zip: $zip
     search: $search
     sort: $sort
-    zip: $zip
   ) {
     data {
       id
       slug
       name
-      type
+      foodType
       price
       stock
       img
-      imgCdn
       time
       ratings
       reviews
-      trending
-      hot
-      sale
-      featured
-      recommended
-      new
       vendor {
         id
         firstName

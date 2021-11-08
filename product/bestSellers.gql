@@ -1,5 +1,5 @@
-query bestSellers {
-  bestSellers {
+query bestSellers($zip: Float) {
+  bestSellers(zip: $zip) {
     t {
       count
       amount
@@ -9,7 +9,6 @@ query bestSellers {
       items {
         pid
         img
-        imgCdn
         name
         slug
         price

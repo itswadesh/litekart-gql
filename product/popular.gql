@@ -1,11 +1,12 @@
-query popular($store: ID, $page: Int) {
-  popular(store: $store, page: $page) {
+query popular($store: ID, $page: Int, $zip: Float) {
+  popular(store: $store, page: $page, zip: $zip) {
     data {
       id
       slug
       name
       type
       price
+      mrp
       stock
       img
       imgCdn
@@ -14,6 +15,7 @@ query popular($store: ID, $page: Int) {
       time
       ratings
       reviews
+      zips
       vendor {
         id
         firstName
