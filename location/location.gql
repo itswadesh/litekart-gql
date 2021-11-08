@@ -3,6 +3,8 @@ query location($id: String!) {
     id
     name
     active
+    zip
+    country
     lat
     lng
     zips
