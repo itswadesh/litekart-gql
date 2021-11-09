@@ -1,0 +1,3 @@
+mutation gdprDataDeletionProcess($id: ID!) {
+  gdprDataDeletionProcess(id: $id)
+}
