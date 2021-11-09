@@ -20,8 +20,12 @@ query carts(
       currencyCode
       currencyName
       currencySymbol
-      formattedSubtotal
-      formattedTotal
+      formattedAmount{
+        total
+        subtotal
+        offer_total
+        tax
+      }
       items {
         pid
         name
