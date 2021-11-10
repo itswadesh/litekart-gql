@@ -1,0 +1,8 @@
+mutation gdprDataDeleteRequest {
+  gdprDataDeleteRequest {
+    id
+    reason
+    status
+    user
+  }
+}

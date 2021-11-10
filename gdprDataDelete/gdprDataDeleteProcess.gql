@@ -1,0 +1,8 @@
+mutation gdprDataDeleteProcess($id: ID!, $status: String!, $reason: String) {
+  gdprDataDeleteProcess(id: $id, status: $status, reason: $reason) {
+    id
+    status
+    reason
+    user
+  }
+}
