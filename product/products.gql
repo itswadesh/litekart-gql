@@ -74,6 +74,7 @@ query products(
       title
       metaDescription
       keywords
+      keywordsA
       ratings
       reviews
       itemId

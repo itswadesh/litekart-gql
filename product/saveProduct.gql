@@ -202,6 +202,7 @@ mutation saveProduct(
     title
     metaDescription
     keywords
+    keywordsA
     itemId
     warranty
     ageMin

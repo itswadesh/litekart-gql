@@ -19,10 +19,5 @@ mutation removeUserFromStore($userId: ID!) {
     storeName
     banner
     roles
-    store
   }
 }
-
-# {
-#   "userId": "5ec8160b8dec20283f337aba"
-# }

@@ -36,6 +36,7 @@ query product1($id: ID!) {
     title
     metaDescription
     keywords
+    keywordsA
     itemId
     warranty
     ageMin

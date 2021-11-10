@@ -38,6 +38,7 @@ query product($id: ID!, $zip: Float) {
     warranty
     metaDescription
     keywords
+    keywordsA
     ageMin
     ageMax
     ageUnit
