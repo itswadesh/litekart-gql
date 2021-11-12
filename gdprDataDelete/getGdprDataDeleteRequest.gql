@@ -1,6 +1,8 @@
 query getGdprDataDeleteRequest($id: ID!) {
   getGdprDataDeleteRequest(id: $id) {
     id
+    comment
+    description
     reason
     status
     user {
