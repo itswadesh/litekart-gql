@@ -96,6 +96,7 @@ mutation saveStore(
   $priceDisplayFormat: String
   $currencySuffix: String
   $hideDecimalInCurrency: Boolean
+  $sms: SmsIp
 ) {
   saveStore(
     id: $id
@@ -195,6 +196,7 @@ mutation saveStore(
     priceDisplayFormat: $priceDisplayFormat
     currencySuffix: $currencySuffix
     hideDecimalInCurrency: $hideDecimalInCurrency
+    sms: $sms
   ) {
     id
     active
@@ -317,5 +319,8 @@ mutation saveStore(
     createdAt
     updatedAt
     user
+    sms {
+      AUTO_VERIFICATION_ID
+    }
   }
 }

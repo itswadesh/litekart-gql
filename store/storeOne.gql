@@ -141,6 +141,9 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     hideDecimalInCurrency
     createdAt
     updatedAt
+    sms {
+      AUTO_VERIFICATION_ID
+    }
     user {
       firstName
       lastName

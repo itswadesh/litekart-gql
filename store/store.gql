@@ -143,6 +143,9 @@ query store {
     createdAt
     updatedAt
     user
+    sms {
+      AUTO_VERIFICATION_ID
+    }
     storeTiming {
       day
       fromTime
