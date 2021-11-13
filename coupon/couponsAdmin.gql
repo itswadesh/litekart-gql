@@ -27,6 +27,7 @@ query couponsAdmin(
       color
       minimumCartValue
       maxAmount
+      usesPerCustomer
       validFromDate
       validToDate
       active

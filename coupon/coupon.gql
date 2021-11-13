@@ -11,6 +11,7 @@ query coupon($id: String!) {
     color
     minimumCartValue
     maxAmount
+    usesPerCustomer
     validFromDate
     validToDate
     active
