@@ -6,6 +6,7 @@ query channels(
   $sort: String
   $user: ID
   $q: String
+  $upcoming: Boolean
 ) {
   channels(
     page: $page
@@ -15,6 +16,7 @@ query channels(
     sort: $sort
     user: $user
     q: $q
+    upcoming: $upcoming
   ) {
     count
     page
@@ -25,6 +27,7 @@ query channels(
       title
       img
       imgCdn
+      isLive
       requestId
       cid
       ctime

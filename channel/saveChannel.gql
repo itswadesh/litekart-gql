@@ -5,6 +5,7 @@ mutation saveChannel(
   $scheduleDateTime: String
   $title: String
   $img: String
+  $isLive: Boolean
 ) {
   saveChannel(
     id: $id
@@ -12,6 +13,7 @@ mutation saveChannel(
     products: $products
     scheduleDateTime: $scheduleDateTime
     img: $img
+    isLive: $isLive
     title: $title
   ) {
     id
@@ -19,6 +21,7 @@ mutation saveChannel(
     title
     img
     imgCdn
+    isLive
     requestId
     cid
     ctime

@@ -23,6 +23,7 @@ query myChannels(
       title
       img
       imgCdn
+      isLive
       requestId
       cid
       ctime

@@ -5,6 +5,7 @@ query channel($id: ID!) {
     title
     img
     imgCdn
+    isLive
     requestId
     cid
     ctime
