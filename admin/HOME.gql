@@ -1,4 +1,4 @@
-query HOME($store: ID) {
+query HOME {
   dailySales {
     _id
     total
@@ -62,16 +62,27 @@ query HOME($store: ID) {
       count
     }
   }
-  myOrderItems(store: $store) {
+  orderItems {
     count
-    pageSize
     page
+    pageSize
     data {
       id
+      orderId
       status
       pid
       posInvoiceNo
+      invoiceId
       itemOrderNo
+      shippingOrderId
+      shippingProvider
+      shippingLabelId
+      shippingRateId
+      shippingTrackingNumber
+      shippingTrackingStatus
+      shippingTrackingUrlProvider
+      shippingLabelUrl
+      shippingCommercialInvoiceUrl
       name
       slug
       img
@@ -79,8 +90,13 @@ query HOME($store: ID) {
       tracking
       shippingCharge
       price
+      basePrice
       qty
       tax
+      baseTax
+      total
+      totalDiscount
+      subtotal
       brandName
       brandImg
       brandImgCdn
@@ -90,6 +106,16 @@ query HOME($store: ID) {
       returnTrackingId
       courierName
       returnCourierName
+      type
+      amountRefunded
+      baseAmountRefunded
+      refunds {
+        message
+        qty
+        time
+        amount
+        refundId
+      }
       #order level info
       orderNo
       otp
@@ -107,48 +133,85 @@ query HOME($store: ID) {
       invoiceId
       paymentGateway
       codPaid
+      baseCodPaid
       amountPaid
       amountDue
+      totalAmountRefunded
+      baseTotalAmountRefunded
       paymentMsg
       paymentTime
       paid
       userFirstName
       userLastName
       userPhone
+      userEmail
       invoiceLink
       returnValidTill
-      paymentMode
-      paymentAmount
+      returnReason
+      discount
+      baseDiscount
+      totalDiscount
+      baseTotalDiscount
+      vendorCommission
+      amount {
+        total
+        discount
+        totalDiscount
+        subtotal
+      }
+      baseAmount {
+        total
+        discount
+        totalDiscount
+        subtotal
+      }
       user {
+        id
         firstName
-        lastName
-        email
-        phone
-        role
       }
       address {
         firstName
         lastName
+        town
+        city
+        state
+        zip
         address
         lat
         lng
-      }
-      amount {
-        qty
-        subtotal
-        tax
-        discount
-        total
-        shipping
-      }
-      payment {
-        amountPaid
-        amountDue
       }
       store {
         id
         name
         email
+      }
+      slot {
+        name
+        value
+        info
+        active
+      }
+      vendor {
+        firstName
+        lastName
+        phone
+        address {
+          address
+        }
+        store {
+          name
+        }
+      }
+      vendorAddress {
+        firstName
+        lastName
+        town
+        city
+        state
+        zip
+        address
+        lat
+        lng
       }
       orderHistory {
         id
