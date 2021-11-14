@@ -62,20 +62,41 @@ query HOME($store: ID) {
       count
     }
   }
-  myOrders(sort: "-createdAt", store: $store) {
+  myOrderItems(store: $store) {
     count
     pageSize
     page
     data {
       id
+      status
+      pid
+      posInvoiceNo
+      itemOrderNo
+      name
+      slug
+      img
+      imgCdn
+      tracking
+      shippingCharge
+      price
+      qty
+      tax
+      brandName
+      brandImg
+      brandImgCdn
+      size
+      color
+      trackingId
+      returnTrackingId
+      courierName
+      returnCourierName
+      #order level info
       orderNo
       otp
       createdAt
-      updatedAt
-      codPaid
+      paySuccess
       payment {
         id
-        amountPaid
       }
       paymentMode
       paymentStatus
@@ -88,10 +109,30 @@ query HOME($store: ID) {
       codPaid
       amountPaid
       amountDue
-      paymentStatus
       paymentMsg
       paymentTime
       paid
+      userFirstName
+      userLastName
+      userPhone
+      invoiceLink
+      returnValidTill
+      paymentMode
+      paymentAmount
+      user {
+        firstName
+        lastName
+        email
+        phone
+        role
+      }
+      address {
+        firstName
+        lastName
+        address
+        lat
+        lng
+      }
       amount {
         qty
         subtotal
@@ -100,85 +141,24 @@ query HOME($store: ID) {
         total
         shipping
       }
-      userFirstName
-      userLastName
-      userPhone
-      userEmail
-      address {
-        firstName
-        lastName
-        town
-        city
-        state
-        zip
-        address
-        lat
-        lng
+      payment {
+        amountPaid
+        amountDue
       }
       store {
         id
         name
         email
       }
-      items {
+      orderHistory {
         id
-        pid
-        posInvoiceNo
-        itemOrderNo
-        name
-        barcode
-        img
-        imgCdn
-        slug
-        price
-        qty
-        shippingCharge
-        subtotal
-        total
-        tax
+        status
+        title
+        body
+        icon
+        public
+        index
         time
-        options
-        brandName
-        brandImg
-        brandImgCdn
-        orderStatus {
-          id
-          event
-          tracking_id
-          courier_name
-        }
-        vendor {
-          firstName
-          lastName
-          store {
-            name
-          }
-        }
-        status
-      }
-      orderItems {
-        id
-        status
-        pid
-        posInvoiceNo
-        itemOrderNo
-        name
-        slug
-        img
-        imgCdn
-        qty
-        price
-        mrp
-        color
-        size
-        tracking
-        shippingCharge
-        tax
-        subtotal
-        total
-        brandName
-        brandImg
-        brandImgCdn
       }
     }
   }
