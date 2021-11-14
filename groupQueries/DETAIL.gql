@@ -8,6 +8,7 @@ query DETAIL($id: ID!) {
     price
     mrp
     discount
+    deliveryDetails
     stock
     tax
     img
