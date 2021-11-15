@@ -61,7 +61,7 @@ mutation saveStore(
   $logoMobile: String
   $logoMobileDark: String
   $minimumOrderValue: Float
-  $minOrderValue: Float
+  $minOrderValue: Float ## not in use
   $name: String
   $openGraphImage: String
   $pageSize: Int

@@ -93,7 +93,6 @@ query store {
     logoMobileCdn
     logoMobileDarkCdn
     minimumOrderValue
-    minOrderValue
     name
     openGraphImage
     openGraphImageCdn
