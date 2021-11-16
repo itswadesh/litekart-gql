@@ -1,10 +1,11 @@
-query getGdprDataDeleteRequest($id: ID!) {
+query getGdprDataDeleteRequest($id: ID) {
   getGdprDataDeleteRequest(id: $id) {
     id
     comment
     description
     reason
     status
+    createdAt
     user {
       id
       firstName
