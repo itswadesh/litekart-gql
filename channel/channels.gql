@@ -60,6 +60,7 @@ query channels(
         lastName
         email
         phone
+        avatar
       }
       users {
         id
