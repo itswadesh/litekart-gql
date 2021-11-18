@@ -60,6 +60,7 @@ mutation saveSettings(
   $isMultiVendor: Boolean
   $isMultiStore: Boolean
   $isMegamenu: Boolean
+  $isVerifyEmail: Boolean
   $isSearch: Boolean
   $isSaas: Boolean
 ) {
@@ -125,6 +126,7 @@ mutation saveSettings(
     isMultiVendor: $isMultiVendor
     isMultiStore: $isMultiStore
     isMegamenu: $isMegamenu
+    isVerifyEmail: $isVerifyEmail
     isSearch: $isSearch
     isSaas: $isSaas
   ) {
@@ -237,6 +239,7 @@ mutation saveSettings(
     isMultiVendor
     isMultiStore
     isMegamenu
+    isVerifyEmail
     isSearch
   }
 }
