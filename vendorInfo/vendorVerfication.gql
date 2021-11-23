@@ -13,6 +13,11 @@ mutation vendorVerification(
     zip: $zip
   ) {
     id
+    store {
+      id
+      name
+      domain
+    }
     zips
     country {
       id
