@@ -2,6 +2,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
   storeOne(id: $id, slug: $slug, domain: $domain) {
     id
     active
+    featured
     adminNotifications {
       lowStockNotification
       newOrderPlaced
