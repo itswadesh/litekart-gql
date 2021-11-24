@@ -20,6 +20,7 @@ query gdprDataDeleteRequests(
       email
       reason
       status
+      createdAt
       user {
         id
         firstName
