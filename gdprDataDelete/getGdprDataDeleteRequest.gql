@@ -3,6 +3,7 @@ query getGdprDataDeleteRequest($id: ID) {
     id
     comment
     description
+    email
     reason
     status
     createdAt

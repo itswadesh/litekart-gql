@@ -4,6 +4,7 @@ mutation gdprDataDeleteProcess($id: ID!, $status: String!, $comment: String) {
     status
     reason
     description
+    email
     comment
     user
   }

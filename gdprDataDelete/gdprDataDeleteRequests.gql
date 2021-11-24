@@ -17,6 +17,7 @@ query gdprDataDeleteRequests(
       id
       comment
       description
+      email
       reason
       status
       user {
