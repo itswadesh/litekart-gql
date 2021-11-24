@@ -37,7 +37,6 @@ mutation updateProfile(
     avatar
     avatarCdn
     role
-    verified
     gender
     city
     shippingCharges
