@@ -23,6 +23,8 @@ query vendorInfo($id: ID) {
     }
     address {
       id
+      firstName
+      lastName
       address
       locality
       city
