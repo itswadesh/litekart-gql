@@ -63,6 +63,7 @@ mutation saveAddress(
 #   "id":"new",
 #   "firstName":"prj",
 #   "lastName":"jassi",
+#   "email": "prakashjayaswal62@gmail.com",
 #   "zip":303012,
 #   "phone":"9898989898",
 #   "city": "bassi",
@@ -71,9 +72,7 @@ mutation saveAddress(
 #   "country": "india",
 #   "lat": 22.222,
 #   "lng": 43.555,
-#   "store": "6165098655cbc55580bda783",
-#   "address": "local street",
-#   "store": "60fb92e49f73050d30287cae"
+#   "address": "local street"
 # }
 
 # shippo servicable
