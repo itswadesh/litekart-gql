@@ -103,6 +103,7 @@ query HOME($store: ID) {
     slug
     name
     type
+    foodType
     price
     mrp
     stock
@@ -163,6 +164,7 @@ query HOME($store: ID) {
     slug
     name
     type
+    foodType
     price
     mrp
     stock

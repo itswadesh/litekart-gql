@@ -5,6 +5,7 @@ query DETAIL($id: ID!) {
     name
     description
     type
+    foodType
     price
     mrp
     discount
