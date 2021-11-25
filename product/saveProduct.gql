@@ -223,6 +223,7 @@ mutation saveProduct(
     cgst
     sgst
     igst
+    vendorInfo
     vendor
     specifications {
       id
@@ -267,11 +268,3 @@ mutation saveProduct(
     deliveryDetails
   }
 }
-
-# {
-#   "id": "new",
-#   "name": "test product",
-#   "stock": 1000,
-#   "mrp": 199,
-#   "price": 149,
-# }

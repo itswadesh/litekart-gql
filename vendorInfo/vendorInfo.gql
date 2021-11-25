@@ -1,6 +1,7 @@
 query vendorInfo($id: ID) {
   vendorInfo(id: $id) {
     id
+    businessName
     bankAccountNo
     bankName
     bankIfsc
@@ -37,7 +38,6 @@ query vendorInfo($id: ID) {
       email
     }
     about
-    businessName
     banners
   }
 }

@@ -134,6 +134,10 @@ query products(
         active
         sort
       }
+      vendorInfo {
+        id
+        businessName
+      }
       vendor {
         id
         firstName

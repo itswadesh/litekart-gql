@@ -73,6 +73,7 @@ query product1($id: ID!) {
     categoryPool
     variants
     options
+    vendorInfo
     vendor
     weight
     length

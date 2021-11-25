@@ -5,6 +5,7 @@ query storeVendorInfo($store: ID!) {
     pageSize
     data {
       id
+      businessName
       bankAccountNo
       bankName
       bankIfsc

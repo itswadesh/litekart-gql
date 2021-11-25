@@ -17,5 +17,6 @@ query vendorInfo1($id: ID) {
     user
     address
     store
+    businessName
   }
 }

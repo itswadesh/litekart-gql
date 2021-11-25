@@ -197,6 +197,10 @@ query product($id: ID!, $zip: Float) {
       active
       sort
     }
+    vendorInfo {
+      id
+      businessName
+    }
     vendor {
       id
       firstName
