@@ -96,6 +96,9 @@ query myOrders(
         brandName
         brandImg
         brandImgCdn
+        vendorInfoBusinessName
+        vendorFirstName
+        vendorLastName
         orderStatus {
           id
           event

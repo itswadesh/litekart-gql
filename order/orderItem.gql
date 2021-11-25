@@ -7,6 +7,7 @@ query orderItem($id: ID!) {
     posInvoiceNo
     invoiceId
     itemOrderNo
+    deliveryDetails
     shippingOrderId
     shippingProvider
     shippingLabelId
@@ -137,6 +138,13 @@ query orderItem($id: ID!) {
         name
       }
     }
+    vendorFirstName
+    vendorLastName
+    vendorPhone
+    vendorEmail
+    vendorInfoBusinessName
+    vendorInfoCommissionType
+    vendorInfoCommissionValue
     vendorAddress {
       firstName
       lastName

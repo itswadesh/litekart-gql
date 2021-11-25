@@ -20,6 +20,8 @@ query cart($store: ID) {
       options
       tracking
       brandName
+      vendorInfoBusinessName
+      foodType
       vendor {
         id
         firstName
