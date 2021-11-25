@@ -1,6 +1,7 @@
 query vendorBySlug($slug: String!) {
   vendorBySlug(slug: $slug) {
     id
+    businessName
     bankAccountNo
     bankName
     bankIfsc

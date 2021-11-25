@@ -8,6 +8,7 @@ mutation saveVendorInfo(
   $commissionType: String
   $commissionValue: Float
   $address: ID
+  $businessName: String
 ) {
   saveVendorInfo(
     id: $id
@@ -19,6 +20,7 @@ mutation saveVendorInfo(
     commissionType: $commissionType
     commissionValue: $commissionValue
     address: $address
+    businessName: $businessName
   ) {
     id
     bankAccountNo
@@ -33,5 +35,6 @@ mutation saveVendorInfo(
     user
     store
     address
+    businessName
   }
 }
