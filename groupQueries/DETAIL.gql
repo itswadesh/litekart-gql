@@ -193,6 +193,9 @@ query DETAIL($id: ID!) {
         storePhotos
       }
     }
+    vendorInfo {
+      businessName
+    }
     relatedProducts {
       id
       name

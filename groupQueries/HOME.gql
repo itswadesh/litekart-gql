@@ -142,6 +142,9 @@ query HOME($store: ID) {
     returnInfo
     description
     keyFeatures
+    vendorInfo {
+      businessName
+    }
     productDetails {
       name
       value
@@ -203,6 +206,9 @@ query HOME($store: ID) {
     returnInfo
     description
     keyFeatures
+    vendorInfo {
+      businessName
+    }
     productDetails {
       name
       value
