@@ -40,8 +40,9 @@ query trending($type: String, $store: ID) {
     igst
     formattedMrp
     formattedPrice
-    category
-    variants
-    vendor
+    vendorInfo {
+      id
+      businessName
+    }
   }
 }
