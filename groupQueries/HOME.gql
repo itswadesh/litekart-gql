@@ -136,9 +136,6 @@ query HOME($store: ID) {
     cgst
     sgst
     igst
-    category
-    variants
-    vendor
     returnInfo
     description
     keyFeatures
@@ -154,8 +151,6 @@ query HOME($store: ID) {
       value
     }
     countryOfOrigin
-    colorGroup
-    sizeGroup
     stock
   }
   trending(type: "hot", store: $store) {
@@ -200,9 +195,6 @@ query HOME($store: ID) {
     cgst
     sgst
     igst
-    category
-    variants
-    vendor
     returnInfo
     description
     keyFeatures
@@ -218,8 +210,6 @@ query HOME($store: ID) {
       value
     }
     countryOfOrigin
-    colorGroup
-    sizeGroup
     stock
   }
   groupByBanner(active: true, pageId: "home", store: $store) {
