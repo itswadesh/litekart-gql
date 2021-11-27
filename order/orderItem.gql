@@ -80,6 +80,7 @@ query orderItem($id: ID!) {
     userPhone
     userEmail
     invoiceLink
+    replaceValidTill
     returnValidTill
     returnReason
     discount

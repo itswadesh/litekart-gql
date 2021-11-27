@@ -225,6 +225,7 @@ query product($id: ID!, $zip: Float) {
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    replaceValidityInDays
     files
     unit
     dimensionUnit

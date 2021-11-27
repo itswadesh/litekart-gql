@@ -1,86 +1,180 @@
 mutation returnOrReplace(
-  $orderId: ID!
-  $pId: String!
+  $orderItemId: ID!
   $reason: String!
   $requestType: String!
-  $qty: Int
 ) {
   returnOrReplace(
-    orderId: $orderId
-    pId: $pId
+    orderItemId: $orderItemId
     reason: $reason
     requestType: $requestType
-    qty: $qty
   ) {
     id
+    orderId
+    status
+    pid
+    posInvoiceNo
+    invoiceId
+    itemOrderNo
+    deliveryDetails
+    shippingOrderId
+    shippingProvider
+    shippingLabelId
+    shippingRateId
+    shippingTrackingNumber
+    shippingTrackingStatus
+    shippingTrackingUrlProvider
+    shippingLabelUrl
+    shippingCommercialInvoiceUrl
+    name
+    slug
+    img
+    imgCdn
+    tracking
+    shippingCharge
+    price
+    basePrice
+    qty
+    tax
+    baseTax
+    total
+    totalDiscount
+    subtotal
+    brandName
+    brandImg
+    brandImgCdn
+    size
+    color
+    trackingId
+    returnTrackingId
+    courierName
+    returnCourierName
+    type
+    amountRefunded
+    baseAmountRefunded
+    refunds {
+      message
+      qty
+      time
+      amount
+      refundId
+    }
+    #order level info
     orderNo
     otp
-    amount {
-      qty
-      subtotal
-      discount
-      shipping
-      total
-      tax
-    }
-    paymentOrderId
+    createdAt
+    paySuccess
     paymentMode
-    paymentAmount
+    paymentStatus
     paymentCurrency
     paymentReferenceId
-    delivery {
-      otp
+    paymentOrderId
+    paymentReceipt
+    invoiceId
+    paymentGateway
+    codPaid
+    baseCodPaid
+    amountPaid
+    amountDue
+    totalAmountRefunded
+    baseTotalAmountRefunded
+    paymentMsg
+    paymentTime
+    paid
+    userFirstName
+    userLastName
+    userPhone
+    userEmail
+    invoiceLink
+    replaceValidTill
+    returnValidTill
+    returnReason
+    discount
+    baseDiscount
+    totalDiscount
+    baseTotalDiscount
+    vendorCommission
+    weight
+    unit
+    amount {
+      total
+      discount
+      totalDiscount
+      subtotal
     }
-    items {
-      status
-      pid
-      posInvoiceNo
-      itemOrderNo
-      name
-      slug
-      img
-      imgCdn
-      tracking
-      shippingCharge
-      tax
-      brandName
-      brandImg
-      brandImgCdn
-      parentBrandName
-      parentBrandImg
-      parentBrandImgCdn
-    }
-    orderItems {
-      status
-      pid
-      posInvoiceNo
-      itemOrderNo
-      name
-      slug
-      img
-      tracking
-      shippingCharge
-      tax
-      brandName
-      brandImg
-      parentBrandName
-      parentBrandImg
+    baseAmount {
+      total
+      discount
+      totalDiscount
+      subtotal
     }
     address {
       firstName
       lastName
-      phone
+      town
+      city
+      state
+      zip
+      address
       lat
       lng
     }
-    createdAt
-    updatedAt
+    vendorFirstName
+    vendorLastName
+    vendorPhone
+    vendorEmail
+    vendorInfoBusinessName
+    vendorInfoCommissionType
+    vendorInfoCommissionValue
+    vendorAddress {
+      firstName
+      lastName
+      town
+      city
+      state
+      zip
+      address
+      lat
+      lng
+    }
+    formattedSubtotal
+    formattedShippingCharge
+    formattedMrp
+    formattedAmountRefunded
+    formattedPrice
+    formattedTax
+    formattedTotal
+    formattedTotalDiscount
+    formattedVendorCommission
+    formattedAmountDue
+    formattedAmountPaid
+    formattedCodPaid
+    formattedDiscount
+    formattedPaymentAmount
+    formattedTotalAmountRefunded
+    formattedAmount {
+      subtotal
+      tax
+      discount
+      shipping
+      total
+      totalDiscount
+      exchangeRate
+    }
+    orderHistory {
+      id
+      status
+      title
+      body
+      icon
+      public
+      index
+      time
+    }
   }
 }
 
 # {
-#   "orderId": "60e816e814c68f2458b595b2",
-#   "pId": "60e75ad10c33f8083050cfef",
-#   "requestType": "replace",
+#   "orderItemId": "61a271d01a6f7e4f081c5263",
+#   "requestType": "return", replace
 #   "reason": "damaged"
 # }

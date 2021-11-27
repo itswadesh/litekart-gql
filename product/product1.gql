@@ -82,6 +82,7 @@ query product1($id: ID!) {
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    replaceValidityInDays
     files
     batchNo
     mfgDate

@@ -61,6 +61,7 @@ mutation saveProduct(
   $replaceAllowed: Boolean
   $returnAllowed: Boolean
   $returnValidityInDays: Int
+  $replaceValidityInDays: Int
   $length: Float
   $width: Float
   $height: Float
@@ -147,6 +148,7 @@ mutation saveProduct(
     replaceAllowed: $replaceAllowed
     returnAllowed: $returnAllowed
     returnValidityInDays: $returnValidityInDays
+    replaceValidityInDays: $replaceValidityInDays
     length: $length
     width: $width
     height: $height
@@ -247,6 +249,7 @@ mutation saveProduct(
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    replaceValidityInDays
     store
     files
     sizechart

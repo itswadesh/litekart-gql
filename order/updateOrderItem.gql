@@ -60,6 +60,7 @@ mutation updateOrderItem(
     userLastName
     userPhone
     invoiceLink
+    replaceValidTill
     returnValidTill
     address {
       firstName
@@ -89,7 +90,7 @@ mutation updateOrderItem(
       address {
         address
       }
-      store{
+      store {
         name
       }
     }
