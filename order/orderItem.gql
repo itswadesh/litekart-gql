@@ -22,6 +22,7 @@ query orderItem($id: ID!) {
     img
     imgCdn
     tracking
+    foodType
     shippingCharge
     price
     basePrice

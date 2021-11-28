@@ -66,6 +66,7 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
       img
       imgCdn
       slug
+      foodType
       price
       basePrice
       qty
@@ -82,7 +83,10 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
       status
       type
       returnReason
-
+      status
+      amountRefunded
+      baseAmountRefunded
+      vendorInfoBusinessName
       vendorAddress {
         firstName
         lastName
@@ -94,7 +98,6 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
         lat
         lng
       }
-      status
       orderHistory {
         status
         title
@@ -104,8 +107,6 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
         index
         time
       }
-      amountRefunded
-      baseAmountRefunded
     }
   }
 }

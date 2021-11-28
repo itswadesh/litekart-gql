@@ -84,6 +84,7 @@ query order($id: ID!) {
       img
       imgCdn
       slug
+      foodType
       price
       basePrice
       qty
@@ -184,9 +185,9 @@ query order($id: ID!) {
       returnReason
       weight
       unit
-      vendorInfo {
-        firstName
-      }
+      vendorInfoBusinessName
+      vendorInfoCommissionType
+      vendorInfoCommissionValue
       orderHistory {
         status
         title

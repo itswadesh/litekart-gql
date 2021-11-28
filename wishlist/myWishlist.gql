@@ -27,6 +27,11 @@ query myWishlist(
         img
         price
         mrp
+        foodType
+        vendorInfo {
+          id
+          businessName
+        }
         brand {
           id
           name

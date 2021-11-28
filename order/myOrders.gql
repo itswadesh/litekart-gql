@@ -23,6 +23,7 @@ query myOrders(
     page
     data {
       id
+      paySuccess
       orderNo
       otp
       createdAt
@@ -84,6 +85,7 @@ query myOrders(
         barcode
         img
         imgCdn
+        foodType
         slug
         price
         qty
