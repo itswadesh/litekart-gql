@@ -1,3 +1,0 @@
-query shippoAddressServiceable($addressId: ID!) {
-  shippoAddressServiceable(addressId: $addressId)
-}

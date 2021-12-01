@@ -1,3 +1,0 @@
-mutation removeLanguage($id: ID!) {
-  removeLanguage(id: $id)
-}
