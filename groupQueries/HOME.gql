@@ -1,4 +1,4 @@
-query HOME($store: ID) {
+query HOME($store: ID, $zip: Float) {
   brands(parent: null, limit: 30, page: 0, featured: true, store: $store) {
     count
     page
@@ -232,5 +232,34 @@ query HOME($store: ID) {
       createdAt
       updatedAt
     }
+  }
+  popular(store: $store, page: 0, zip: $zip) {
+    data {
+      id
+      slug
+      name
+      type
+      price
+      mrp
+      stock
+      img
+      imgCdn
+      images
+      imagesCdn
+      time
+      ratings
+      reviews
+      zips
+      vendor {
+        id
+        firstName
+        lastName
+        phone
+        email
+      }
+    }
+    count
+    pageSize
+    page
   }
 }
