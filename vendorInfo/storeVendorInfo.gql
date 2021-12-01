@@ -24,6 +24,7 @@ query storeVendorInfo($store: ID!) {
       }
       user {
         id
+        avatar
       }
       address {
         id
