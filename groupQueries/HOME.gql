@@ -212,27 +212,6 @@ query HOME($store: ID, $zip: Float) {
     countryOfOrigin
     stock
   }
-  groupByBanner(active: true, pageId: "home", store: $store) {
-    _id {
-      title
-      type
-    }
-    data {
-      link
-      heading
-      img
-      imgCdn
-      sort
-      type
-      pageId
-      store
-      active
-      groupId
-      groupTitle
-      createdAt
-      updatedAt
-    }
-  }
   popular(store: $store, page: 0, zip: $zip) {
     data {
       id
@@ -261,5 +240,26 @@ query HOME($store: ID, $zip: Float) {
     count
     pageSize
     page
+  }
+  groupByBanner(active: true, pageId: "home", store: $store) {
+    _id {
+      title
+      type
+    }
+    data {
+      link
+      heading
+      img
+      imgCdn
+      sort
+      type
+      pageId
+      store
+      active
+      groupId
+      groupTitle
+      createdAt
+      updatedAt
+    }
   }
 }
