@@ -1,56 +1,132 @@
 mutation saveCoupon(
   $id: String!
-  $code: String!
-  $value: Int!
-  $type: String
+  $isMultiple: Boolean
+  $howMany: Int
+  $code: String
+  $name: String
+  $description: String
   $info: String
   $msg: String
   $text: String
   $terms: String
   $color: String
-  $minimumCartValue: Int
   $maxAmount: Int
-  $usesPerCustomer: Int
-  $validFromDate: String
-  $validToDate: String
+  $maxUselimit: Int
+  $oneUsePerCustomer: Boolean
+  $oneUsePerUniqueCode: Boolean
+  $validFrom: String
+  $validTo: String
   $active: Boolean
   $store: ID
+  $discount: DiscountIp
 ) {
   saveCoupon(
     id: $id
+    isMultiple: $isMultiple
+    howMany: $howMany
     code: $code
-    value: $value
-    type: $type
+    name: $name
+    description: $description
     info: $info
     msg: $msg
     text: $text
     terms: $terms
     color: $color
-    minimumCartValue: $minimumCartValue
     maxAmount: $maxAmount
-    usesPerCustomer: $usesPerCustomer
-    validFromDate: $validFromDate
-    validToDate: $validToDate
+    maxUselimit: $maxUselimit
+    oneUsePerCustomer: $oneUsePerCustomer
+    oneUsePerUniqueCode: $oneUsePerUniqueCode
+    validFrom: $validFrom
+    validTo: $validTo
     active: $active
     store: $store
+    discount: $discount
   ) {
     id
+    isMultiple
     code
-    value
-    type
+    name
+    used
     info
+    description
+    codes {
+      uniqueCode
+      used
+    }
+    discount {
+      type
+      isPercent
+      value
+      currency
+      excludeCategories
+      shippingMethod
+      product
+      minProductQty
+      maxProductQty
+      category
+      minProductPrice
+      minOrderTotal
+    }
     msg
     text
     terms
     color
-    store
-    minimumCartValue
     maxAmount
-    usesPerCustomer
-    validFromDate
-    validToDate
+    maxUselimit
+    oneUsePerCustomer
+    oneUsePerUniqueCode
+    validFrom
+    validTo
     active
+    store
     createdAt
     updatedAt
   }
 }
+
+# IN CASE OF MULTIPLE CODE("isMultiple": true)
+# {
+#   "id": "new",
+#   "isMultiple": true,
+#   "howMany": 2,
+#   "name": "dewali1",
+#   "description": "test des",
+#   "info": "test info",
+#   "msg": "test msg",
+#   "text": "test text",
+#   "terms": "test terms",
+#   "color": "test color",
+#   "maxAmount": 15,
+#   "maxUselimit": 2,
+#   "oneUsePerCustomer": true,
+#   "oneUsePerUniqueCode": true,
+#   "validTo": "2021-12-02T20:31:20.101Z",
+#   "validFrom": "2022-12-03T20:31:20.101Z",
+#   "discount": {
+#     "isPercent": true,
+#     "value":  2
+#   }
+# }
+
+# IN CASE OF SINGLE CODE("isMultiple": false)
+# {
+#   "id": "new",
+#   "isMultiple": false,
+#   "code": "diwali",
+#   "description": "test des",
+#   "info": "test info",
+#   "msg": "test msg",
+#   "text": "test text",
+#   "terms": "test terms",
+#   "color": "test color",
+#   "maxAmount": 15,
+#   "maxUselimit": 2,
+#   "oneUsePerCustomer": true,
+#   "oneUsePerUniqueCode": true,
+#   "validTo": "2021-12-02T20:31:20.101Z",
+#   "validFrom": "2022-12-03T20:31:20.101Z",
+#   "discount": {
+#     "isPercent": true,
+#     "value":  2
+#   }
+# }

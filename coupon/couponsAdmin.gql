@@ -17,19 +17,40 @@ query couponsAdmin(
     pageSize
     data {
       id
+      isMultiple
       code
-      value
-      type
+      name
+      used
       info
+      description
+      codes {
+        uniqueCode
+        used
+      }
+      discount {
+        type
+        isPercent
+        value
+        currency
+        excludeCategories
+        shippingMethod
+        product
+        minProductQty
+        maxProductQty
+        category
+        minProductPrice
+        minOrderTotal
+      }
       msg
       text
       terms
       color
-      minimumCartValue
       maxAmount
-      usesPerCustomer
-      validFromDate
-      validToDate
+      maxUselimit
+      oneUsePerCustomer
+      oneUsePerUniqueCode
+      validFrom
+      validTo
       active
       createdAt
       updatedAt
