@@ -194,6 +194,7 @@ query DETAIL($id: ID!) {
       }
     }
     vendorInfo {
+      id
       businessName
     }
     relatedProducts {
