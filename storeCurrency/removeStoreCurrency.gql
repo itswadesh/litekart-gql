@@ -1,0 +1,3 @@
+mutation removeStoreCurrency($id: ID!) {
+  removeStoreCurrency(id: $id)
+}

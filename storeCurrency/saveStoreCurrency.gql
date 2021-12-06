@@ -1,0 +1,20 @@
+mutation saveStoreCurrency(
+  $id: String!
+  $currency: ID
+  $default: Boolean
+  $active: Boolean
+) {
+  saveStoreCurrency(
+    id: $id
+    currency: $currency
+    default: $default
+    active: $active
+  ) {
+    id
+    default
+    active
+    currency
+    user
+    store
+  }
+}

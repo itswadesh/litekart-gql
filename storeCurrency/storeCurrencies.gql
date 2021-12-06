@@ -1,0 +1,47 @@
+query storeCurrencies(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID!
+) {
+  storeCurrencies(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      default
+      active
+      currency {
+        id
+        name
+        sort
+        isoCode
+        isoNumericCode
+        thousandsSeparator
+        decimalMark
+        symbolFirst
+        active
+        symbol
+        disambiguateSymbol
+        htmlEntity
+        subUnit
+        smallestDenomination
+        subunitToUnit
+      }
+      user {
+        id
+        firstName
+        lastName
+        email
+      }
+    }
+  }
+}
