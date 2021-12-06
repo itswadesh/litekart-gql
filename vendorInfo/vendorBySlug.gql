@@ -1,6 +1,7 @@
 query vendorBySlug($slug: String!) {
   vendorBySlug(slug: $slug) {
     id
+    slug
     businessName
     bankAccountNo
     bankName
@@ -11,9 +12,26 @@ query vendorBySlug($slug: String!) {
     bannerCdn
     commissionType
     commissionValue
-    createdAt
-    updatedAt
     zips
+    freeShippingOn
+    meta
+    metaDescription
+    metaKeywords
+    metaTitle
+    productSold
+    ratings
+    reviews
+    shippingCharges
+    storeName
+    facebookUrl
+    githubUrl
+    googleUrl
+    twitterUrl
+    info {
+      public
+      store
+      storePhotos
+    }
     country {
       id
       name
@@ -37,5 +55,7 @@ query vendorBySlug($slug: String!) {
       name
       email
     }
+    createdAt
+    updatedAt
   }
 }

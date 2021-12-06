@@ -1,6 +1,7 @@
-query vendorInfo2($id: ID!) {
-  vendorInfo2(id: $id) {
+query vendorInfo2($id: ID, $slug: String) {
+  vendorInfo2(id: $id, slug: $slug) {
     id
+    slug
     businessName
     bankAccountNo
     bankName
@@ -14,6 +15,25 @@ query vendorInfo2($id: ID!) {
     createdAt
     updatedAt
     zips
+    freeShippingOn
+    meta
+    metaDescription
+    metaKeywords
+    metaTitle
+    productSold
+    ratings
+    reviews
+    shippingCharges
+    storeName
+    facebookUrl
+    githubUrl
+    googleUrl
+    twitterUrl
+    info {
+      public
+      store
+      storePhotos
+    }
     country {
       id
       name

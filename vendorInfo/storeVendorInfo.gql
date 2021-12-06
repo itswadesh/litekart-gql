@@ -5,6 +5,7 @@ query storeVendorInfo($store: ID!) {
     pageSize
     data {
       id
+      slug
       businessName
       bankAccountNo
       bankName
@@ -15,9 +16,26 @@ query storeVendorInfo($store: ID!) {
       bannerCdn
       commissionType
       commissionValue
-      createdAt
-      updatedAt
       zips
+      freeShippingOn
+      meta
+      metaDescription
+      metaKeywords
+      metaTitle
+      productSold
+      ratings
+      reviews
+      shippingCharges
+      storeName
+      facebookUrl
+      githubUrl
+      googleUrl
+      twitterUrl
+      info {
+        public
+        store
+        storePhotos
+      }
       country {
         id
         name
@@ -34,6 +52,8 @@ query storeVendorInfo($store: ID!) {
         name
         email
       }
+      createdAt
+      updatedAt
     }
   }
 }

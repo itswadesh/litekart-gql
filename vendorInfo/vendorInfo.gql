@@ -1,6 +1,7 @@
 query vendorInfo($id: ID) {
   vendorInfo(id: $id) {
     id
+    slug
     businessName
     bankAccountNo
     bankName
@@ -14,6 +15,25 @@ query vendorInfo($id: ID) {
     createdAt
     updatedAt
     zips
+    freeShippingOn
+    meta
+    metaDescription
+    metaKeywords
+    metaTitle
+    productSold
+    ratings
+    reviews
+    shippingCharges
+    storeName
+    facebookUrl
+    githubUrl
+    googleUrl
+    twitterUrl
+    info {
+      public
+      store
+      storePhotos
+    }
     country {
       id
       name

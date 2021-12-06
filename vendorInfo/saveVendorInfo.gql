@@ -9,6 +9,17 @@ mutation saveVendorInfo(
   $commissionValue: Float
   $address: ID
   $businessName: String
+  $freeShippingOn: Float
+  $info: InputInfo
+  $meta: String
+  $metaDescription: String
+  $metaKeywords: String
+  $metaTitle: String
+  $shippingCharges: Float
+  $facebookUrl: String
+  $githubUrl: String
+  $googleUrl: String
+  $twitterUrl: String
 ) {
   saveVendorInfo(
     id: $id
@@ -21,8 +32,21 @@ mutation saveVendorInfo(
     commissionValue: $commissionValue
     address: $address
     businessName: $businessName
+    freeShippingOn: $freeShippingOn
+    info: $info
+    meta: $meta
+    metaDescription: $metaDescription
+    metaKeywords: $metaKeywords
+    metaTitle: $metaTitle
+    shippingCharges: $shippingCharges
+    facebookUrl: $facebookUrl
+    githubUrl: $githubUrl
+    googleUrl: $googleUrl
+    twitterUrl: $twitterUrl
   ) {
     id
+    slug
+    businessName
     bankAccountNo
     bankName
     bankIfsc
@@ -30,11 +54,26 @@ mutation saveVendorInfo(
     bankSwiftCode
     commissionType
     commissionValue
-    createdAt
-    updatedAt
+    freeShippingOn
+    meta
+    metaDescription
+    metaKeywords
+    metaTitle
+    shippingCharges
+    storeName
+    facebookUrl
+    githubUrl
+    googleUrl
+    twitterUrl
+    info {
+      public
+      store
+      storePhotos
+    }
     user
     store
     address
-    businessName
+    createdAt
+    updatedAt
   }
 }

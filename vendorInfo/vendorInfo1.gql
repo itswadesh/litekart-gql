@@ -1,6 +1,7 @@
 query vendorInfo1($id: ID) {
   vendorInfo1(id: $id) {
     id
+    slug
     bankAccountNo
     bankName
     bankIfsc
@@ -18,5 +19,24 @@ query vendorInfo1($id: ID) {
     address
     store
     businessName
+    freeShippingOn
+    meta
+    metaDescription
+    metaKeywords
+    metaTitle
+    productSold
+    ratings
+    reviews
+    shippingCharges
+    storeName
+    facebookUrl
+    githubUrl
+    googleUrl
+    twitterUrl
+    info {
+      public
+      store
+      storePhotos
+    }
   }
 }
