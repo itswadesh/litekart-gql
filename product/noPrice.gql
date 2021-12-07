@@ -64,15 +64,15 @@ query noPrice(
       }
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
-        address {
-          address
-        }
+        slug
+        businessName
+        banner
+        bannerCdn
+        ratings
+        reviews
         info {
           store
+          public
           storePhotos
         }
       }

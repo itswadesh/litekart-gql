@@ -18,12 +18,15 @@ query popular($store: ID, $page: Int, $zip: Float) {
       zips
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
+        slug
+        businessName
+        banner
+        bannerCdn
+        ratings
+        reviews
         info {
           store
+          public
           storePhotos
         }
       }

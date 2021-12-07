@@ -225,8 +225,6 @@ mutation saveProduct(
     cgst
     sgst
     igst
-    vendorInfo
-    vendor
     specifications {
       id
       name
@@ -250,7 +248,6 @@ mutation saveProduct(
     replaceAllowed
     returnValidityInDays
     replaceValidityInDays
-    store
     files
     sizechart
     batchNo
@@ -269,5 +266,7 @@ mutation saveProduct(
     formattedMrp
     formattedPrice
     deliveryDetails
+    vendor
+    store
   }
 }

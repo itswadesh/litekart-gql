@@ -6,6 +6,7 @@ query noImage(
   $sort: String
   $category: String
   $active: Boolean
+  $store: ID
 ) {
   noImage(
     page: $page
@@ -15,6 +16,7 @@ query noImage(
     sort: $sort
     category: $category
     active: $active
+    store: $store
   ) {
     data {
       id
@@ -30,12 +32,15 @@ query noImage(
       time
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
+        slug
+        businessName
+        banner
+        bannerCdn
+        ratings
+        reviews
         info {
           store
+          public
           storePhotos
         }
       }

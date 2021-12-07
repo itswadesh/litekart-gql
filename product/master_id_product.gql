@@ -53,8 +53,8 @@ query master_id_product(
       ageMin
       ageMax
       ageUnit
-      sizeGroup
-      colorGroup
+      # sizeGroup
+      # colorGroup
     }
   }
 }

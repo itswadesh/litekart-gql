@@ -32,12 +32,15 @@ query invalidPrice(
       time
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
+        slug
+        businessName
+        banner
+        bannerCdn
+        ratings
+        reviews
         info {
           store
+          public
           storePhotos
         }
       }

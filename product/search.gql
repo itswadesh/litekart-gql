@@ -31,13 +31,15 @@ query search(
       reviews
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
-        avatar
+        slug
+        businessName
+        banner
+        bannerCdn
+        ratings
+        reviews
         info {
           store
+          public
           storePhotos
         }
       }

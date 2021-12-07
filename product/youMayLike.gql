@@ -40,7 +40,7 @@ query youMayLike($store: ID) {
     igst
     formattedMrp
     formattedPrice
-    vendorInfo {
+    vendor {
       id
       businessName
     }

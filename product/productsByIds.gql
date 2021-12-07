@@ -11,10 +11,10 @@ query productsByIds($ids: [ID!]) {
     reviews
     vendor {
       id
-      firstName
-      lastName
-      city
-      avatar
+      slug
+      businessName
+      banner
+      bannerCdn
       ratings
       reviews
       info {
