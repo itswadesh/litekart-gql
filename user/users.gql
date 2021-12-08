@@ -44,8 +44,10 @@ query users(
         public
       }
       store {
+        id
         name
       }
+      vendorInfo
     }
   }
 }

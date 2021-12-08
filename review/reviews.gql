@@ -35,12 +35,11 @@ query reviews(
         phone
       }
       vendor {
-        firstName
-        lastName
-        info {
-          store
-        }
-        phone
+        id
+        slug
+        businessName
+        banner
+        bannerCdn
       }
       store {
         id

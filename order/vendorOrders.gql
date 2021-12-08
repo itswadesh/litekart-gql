@@ -12,7 +12,7 @@ query vendorOrders($status: String!, $vendor: ID!) {
       updatedAt
       codPaid
       paymentMode
-      paymentTxStatus
+      paymentStatus
       paymentAmount
       amount {
         qty
@@ -50,17 +50,13 @@ query vendorOrders($status: String!, $vendor: ID!) {
         qty
         status
         vendor {
-          store
-          firstName
-          lastName
-          phone
+          id
+          slug
+          businessName
+          banner
+          bannerCdn
         }
       }
     }
   }
 }
-
-# {
-#   "vendor": "60784961ca5cbc31b45f2acc",
-#   "status": "Ordered"
-# }

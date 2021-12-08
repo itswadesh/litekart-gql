@@ -62,6 +62,7 @@ mutation checkout($address: ID, $slot: ID, $paymentMethod: String) {
     }
     items {
       pid
+      status
       posInvoiceNo
       itemOrderNo
       name
@@ -102,19 +103,9 @@ mutation checkout($address: ID, $slot: ID, $paymentMethod: String) {
         lng
       }
       vendor {
-        firstName
-        lastName
-        phone
-        address {
-          address
-        }
+        id
+        businessName
       }
-      vendorInfo {
-        firstName
-        lastName
-        phone
-      }
-      status
     }
     orderItems {
       id

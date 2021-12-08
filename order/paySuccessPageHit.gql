@@ -86,7 +86,7 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
       status
       amountRefunded
       baseAmountRefunded
-      vendorInfoBusinessName
+      vendorBusinessName
       vendorAddress {
         firstName
         lastName

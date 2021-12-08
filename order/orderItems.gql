@@ -103,7 +103,6 @@ query orderItems(
       baseDiscount
       totalDiscount
       baseTotalDiscount
-      vendorCommission
       amount {
         total
         discount
@@ -143,15 +142,11 @@ query orderItems(
         active
       }
       vendor {
-        firstName
-        lastName
-        phone
-        address {
-          address
-        }
-        store {
-          name
-        }
+        id
+        slug
+        businessName
+        banner
+        bannerCdn
       }
       vendorAddress {
         firstName

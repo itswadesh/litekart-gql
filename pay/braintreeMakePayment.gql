@@ -78,7 +78,8 @@ mutation braintreeMakePayment($nonce: String!, $token: String!) {
       status
       type
       returnReason
-
+      amountRefunded
+      baseAmountRefunded
       vendorAddress {
         firstName
         lastName
@@ -90,7 +91,6 @@ mutation braintreeMakePayment($nonce: String!, $token: String!) {
         lat
         lng
       }
-      status
       orderHistory {
         status
         title
@@ -100,8 +100,6 @@ mutation braintreeMakePayment($nonce: String!, $token: String!) {
         index
         time
       }
-      amountRefunded
-      baseAmountRefunded
     }
   }
 }

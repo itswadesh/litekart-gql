@@ -19,6 +19,7 @@ mutation addToCart(
       vid
       barcode
       name
+      type
       slug
       qty
       price
@@ -28,9 +29,7 @@ mutation addToCart(
       imgCdn
       options
       brandName
-      vendorFirstName
-      vendorLastName
-      vendorPhone
+      vendorBusinessName
     }
     needAddress
     qty

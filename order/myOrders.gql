@@ -79,6 +79,7 @@ query myOrders(
       items {
         id
         pid
+        status
         posInvoiceNo
         itemOrderNo
         name
@@ -98,23 +99,20 @@ query myOrders(
         brandName
         brandImg
         brandImgCdn
-        vendorInfoBusinessName
-        vendorFirstName
-        vendorLastName
+        vendorBusinessName
+        vendor {
+          id
+          slug
+          businessName
+          banner
+          bannerCdn
+        }
         orderStatus {
           id
           event
           tracking_id
           courier_name
         }
-        vendor {
-          firstName
-          lastName
-          store {
-            name
-          }
-        }
-        status
       }
       orderItems {
         id

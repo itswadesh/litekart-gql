@@ -4,6 +4,7 @@ mutation vendorVerification(
   $store: ID
   $zips: [Float]
   $zip: String
+  $verified: Boolean
 ) {
   vendorVerification(
     id: $id
@@ -11,14 +12,11 @@ mutation vendorVerification(
     store: $store
     zips: $zips
     zip: $zip
+    verified: $verified
   ) {
     id
-    store {
-      id
-      name
-      domain
-    }
     zips
+    verified
     country {
       id
       name
@@ -33,6 +31,11 @@ mutation vendorVerification(
         name
       }
       active
+    }
+    store {
+      id
+      name
+      domain
     }
     createdAt
     updatedAt

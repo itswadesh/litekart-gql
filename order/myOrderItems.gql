@@ -75,7 +75,14 @@ query myOrderItems(
       returnValidTill
       paymentMode
       paymentAmount
-      vendorInfoBusinessName
+      vendorBusinessName
+      vendor {
+        id
+        slug
+        businessName
+        banner
+        bannerCdn
+      }
       user {
         firstName
         lastName

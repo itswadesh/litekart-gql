@@ -84,15 +84,11 @@ mutation updateOrderItem(
       time
     }
     vendor {
-      firstName
-      lastName
-      phone
-      address {
-        address
-      }
-      store {
-        name
-      }
+      id
+      slug
+      businessName
+      banner
+      bannerCdn
     }
     createdAt
     updatedAt
@@ -100,7 +96,7 @@ mutation updateOrderItem(
 }
 
 # {
-#   "id": "60eb23fbeee69f0748da49d0",
+#   "id": "61b0b88da2c5db0e8caaba0e",
 #   "status": "Shipped",
 #   "trackingId": "gdmsams333",
 #   "courierName": "DHL",

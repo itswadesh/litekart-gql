@@ -20,7 +20,7 @@ query carts(
       currencyCode
       currencyName
       currencySymbol
-      formattedAmount{
+      formattedAmount {
         total
         subtotal
         offer_total
@@ -36,9 +36,7 @@ query carts(
         imgCdn
         tracking
         options
-        vendor {
-          _id
-        }
+        vendorBusinessName
       }
       qty
       subtotal

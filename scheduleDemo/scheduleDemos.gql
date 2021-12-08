@@ -5,6 +5,7 @@ query scheduleDemos(
   $search: String
   $sort: String
   $q: String
+  $store: ID
 ) {
   scheduleDemos(
     page: $page
@@ -13,6 +14,7 @@ query scheduleDemos(
     limit: $limit
     sort: $sort
     q: $q
+    store: $store
   ) {
     count
     page

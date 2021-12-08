@@ -48,9 +48,7 @@ query HOME {
     data {
       _id {
         vendor {
-          firstName
-          lastName
-          phone
+          businessName
         }
       }
       date
@@ -152,7 +150,6 @@ query HOME {
       baseDiscount
       totalDiscount
       baseTotalDiscount
-      vendorCommission
       amount {
         total
         discount
@@ -192,12 +189,7 @@ query HOME {
         active
       }
       vendor {
-        firstName
-        lastName
-        phone
-        address {
-          address
-        }
+        businessName
         store {
           name
         }

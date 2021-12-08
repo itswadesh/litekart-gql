@@ -92,7 +92,6 @@ mutation returnOrReplace(
     baseDiscount
     totalDiscount
     baseTotalDiscount
-    vendorCommission
     weight
     unit
     amount {
@@ -118,13 +117,9 @@ mutation returnOrReplace(
       lat
       lng
     }
-    vendorFirstName
-    vendorLastName
-    vendorPhone
-    vendorEmail
-    vendorInfoBusinessName
-    vendorInfoCommissionType
-    vendorInfoCommissionValue
+    vendorBusinessName
+    vendorCommissionType
+    vendorCommissionValue
     vendorAddress {
       firstName
       lastName

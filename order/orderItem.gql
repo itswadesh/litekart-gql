@@ -88,7 +88,6 @@ query orderItem($id: ID!) {
     baseDiscount
     totalDiscount
     baseTotalDiscount
-    vendorCommission
     weight
     unit
     amount {
@@ -130,23 +129,15 @@ query orderItem($id: ID!) {
       active
     }
     vendor {
-      firstName
-      lastName
-      phone
-      address {
-        address
-      }
-      store {
-        name
-      }
+      id
+      slug
+      businessName
+      banner
+      bannerCdn
     }
-    vendorFirstName
-    vendorLastName
-    vendorPhone
-    vendorEmail
-    vendorInfoBusinessName
-    vendorInfoCommissionType
-    vendorInfoCommissionValue
+    vendorBusinessName
+    vendorCommissionType
+    vendorCommissionValue
     vendorAddress {
       firstName
       lastName

@@ -21,9 +21,7 @@ query cart1($store: ID) {
       options
       tracking
       brandName
-      vendorFirstName
-      vendorLastName
-      vendorPhone
+      vendorBusinessName
     }
     qty
     subtotal

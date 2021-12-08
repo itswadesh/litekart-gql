@@ -46,6 +46,7 @@ mutation downloadInvoice($orderItemId: ID!) {
     }
     items {
       pid
+      status
       posInvoiceNo
       itemOrderNo
       name
@@ -70,22 +71,12 @@ mutation downloadInvoice($orderItemId: ID!) {
       color
       size
       vendor {
-        firstName
-        lastName
-        phone
-        address {
-          address
-        }
-        store {
-          name
-        }
+        id
+        slug
+        businessName
+        banner
+        bannerCdn
       }
-      vendorInfo {
-        firstName
-        lastName
-        phone
-      }
-      status
     }
     orderItems {
       status
@@ -104,15 +95,6 @@ mutation downloadInvoice($orderItemId: ID!) {
       parentBrandImg
       color
       size
-      orderHistory {
-        status
-        title
-        body
-        icon
-        public
-        index
-        time
-      }
     }
   }
 }

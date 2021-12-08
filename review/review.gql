@@ -20,12 +20,11 @@ query review($id: ID!) {
       phone
     }
     vendor {
-      firstName
-      lastName
-      info {
-        store
-      }
-      phone
+      id
+      slug
+      businessName
+      banner
+      bannerCdn
     }
     store {
       id

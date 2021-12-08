@@ -42,13 +42,13 @@ query ordersForPickup(
           lastName
         }
         codPaid
-        payment {
-          method
-          status
-          amount
-          amount_paid
-          amount_due
-        }
+        # payment {
+        #   method
+        #   status
+        #   amount
+        #   amount_paid
+        #   amount_due
+        # }
         amount {
           qty
           subtotal
@@ -67,12 +67,7 @@ query ordersForPickup(
         price
         qty
         status
-        vendor {
-          store
-          firstName
-          lastName
-          phone
-        }
+        vendorBusinessName
       }
     }
   }

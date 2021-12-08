@@ -11,6 +11,7 @@ query cart($store: ID) {
       barcode
       tax
       name
+      type
       slug
       qty
       price
@@ -21,12 +22,11 @@ query cart($store: ID) {
       options
       tracking
       brandName
-      vendorInfoBusinessName
+      vendorBusinessName
       foodType
       vendor {
         id
-        firstName
-        email
+        businessName
       }
       formattedItemAmount {
         mrp

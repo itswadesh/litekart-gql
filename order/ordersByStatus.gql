@@ -65,12 +65,7 @@ query ordersByStatus(
         qty
         time
         status
-        vendor {
-          store
-          firstName
-          lastName
-          phone
-        }
+        vendorBusinessName
       }
     }
   }

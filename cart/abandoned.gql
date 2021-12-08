@@ -27,9 +27,7 @@ query abandoned(
         imgCdn
         tracking
         options
-        vendor {
-          _id
-        }
+        vendorBusinessName
       }
       qty
       subtotal

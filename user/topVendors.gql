@@ -1,10 +1,9 @@
 query topVendors($limit: Int) {
   topVendors(limit: $limit) {
     id
-    firstName
-    lastName
+    businessName
     productSold
-    avatar
-    avatarCdn
+    banner
+    bannerCdn
   }
 }
