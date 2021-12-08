@@ -229,6 +229,7 @@ query HOME($store: ID, $zip: Float) {
       ratings
       reviews
       zips
+      foodType
       vendor {
         id
         firstName

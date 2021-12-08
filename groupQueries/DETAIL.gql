@@ -183,6 +183,7 @@ query DETAIL($id: ID!) {
       id
       firstName
       lastName
+      slug
       phone
       email
       address {
@@ -196,6 +197,7 @@ query DETAIL($id: ID!) {
     vendorInfo {
       id
       businessName
+      slug
     }
     relatedProducts {
       id
