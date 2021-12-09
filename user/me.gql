@@ -47,7 +47,7 @@ query me {
       store
       storePhotos
     }
-    vendorInfo
+    vendor
     # plan
   }
 }

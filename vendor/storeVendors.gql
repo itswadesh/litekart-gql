@@ -1,5 +1,5 @@
-query storeVendorInfo($store: ID!) {
-  storeVendorInfo(store: $store) {
+query storeVendors($store: ID!) {
+  storeVendors(store: $store) {
     count
     page
     pageSize
@@ -7,6 +7,7 @@ query storeVendorInfo($store: ID!) {
       id
       slug
       businessName
+      verified
       bankAccountNo
       bankName
       bankIfsc
@@ -43,6 +44,8 @@ query storeVendorInfo($store: ID!) {
       user {
         id
         avatar
+        firstName
+        lastName
       }
       address {
         id

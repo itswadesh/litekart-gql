@@ -139,7 +139,7 @@ query HOME($store: ID, $zip: Float) {
     returnInfo
     description
     keyFeatures
-    vendorInfo {
+    vendor {
       businessName
     }
     productDetails {
@@ -198,7 +198,7 @@ query HOME($store: ID, $zip: Float) {
     returnInfo
     description
     keyFeatures
-    vendorInfo {
+    vendor {
       businessName
     }
     productDetails {
@@ -232,10 +232,10 @@ query HOME($store: ID, $zip: Float) {
       foodType
       vendor {
         id
-        firstName
-        lastName
-        phone
-        email
+        slug
+        businessName
+        banner
+        bannerCdn
       }
     }
     count

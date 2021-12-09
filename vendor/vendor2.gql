@@ -1,8 +1,9 @@
-query vendorInfo($id: ID) {
-  vendorInfo(id: $id) {
+query vendor2($id: ID, $slug: String) {
+  vendor2(id: $id, slug: $slug) {
     id
     slug
     businessName
+    verified
     bankAccountNo
     bankName
     bankIfsc

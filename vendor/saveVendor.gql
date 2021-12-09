@@ -1,4 +1,5 @@
-mutation saveMyVendorInfo(
+mutation saveVendor(
+  $id: String!
   $bankAccountNo: Float
   $bankName: String
   $bankIfsc: String
@@ -6,7 +7,6 @@ mutation saveMyVendorInfo(
   $bankSwiftCode: String
   $commissionType: String
   $commissionValue: Float
-  $banner: String
   $address: ID
   $businessName: String
   $freeShippingOn: Float
@@ -21,7 +21,8 @@ mutation saveMyVendorInfo(
   $googleUrl: String
   $twitterUrl: String
 ) {
-  saveMyVendorInfo(
+  saveVendor(
+    id: $id
     bankAccountNo: $bankAccountNo
     bankName: $bankName
     bankIfsc: $bankIfsc
@@ -29,7 +30,6 @@ mutation saveMyVendorInfo(
     bankSwiftCode: $bankSwiftCode
     commissionType: $commissionType
     commissionValue: $commissionValue
-    banner: $banner
     address: $address
     businessName: $businessName
     freeShippingOn: $freeShippingOn
@@ -52,8 +52,6 @@ mutation saveMyVendorInfo(
     bankIfsc
     bankAccountHolderName
     bankSwiftCode
-    banner
-    bannerCdn
     commissionType
     commissionValue
     freeShippingOn
@@ -72,46 +70,10 @@ mutation saveMyVendorInfo(
       store
       storePhotos
     }
-    address {
-      id
-      address
-      locality
-      city
-      state
-      country
-      zip
-      lat
-      lng
-    }
+    user
+    store
+    address
     createdAt
     updatedAt
   }
 }
-
-# TESTED Arguments
-# {
-#   "bankAccountNo": 1234567890,
-#   "bankName": "SBI",
-#   "bankIfsc": "SBIN01234",
-#   "bankAccountHolderName": "test account owner",
-#   "bankSwiftCode": "test",
-#   "commissionType": "percent",
-#   "commissionValue": 12,
-#   "banner": "abc banner",
-#   "businessName": "test business name",
-#   "freeShippingOn": 499,
-#   "meta": "meta",
-#   "metaDescription": "MD",
-#   "metaTitle": "MT",
-#   "metaKeywords": "MK",
-#   "shippingCharges": 60,
-#   "facebookUrl": "test fb url",
-#   "githubUrl": "test git url",
-#   "googleUrl": "test google url",
-#   "twitterUrl": "test twitter url",
-#   "info": {
-#     "public": true,
-#     "store": "store",
-#     "storePhotos": "ab"
-#   }
-# }

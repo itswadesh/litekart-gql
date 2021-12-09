@@ -47,7 +47,7 @@ query users(
         id
         name
       }
-      vendorInfo
+      vendor
     }
   }
 }

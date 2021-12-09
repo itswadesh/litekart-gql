@@ -1,5 +1,4 @@
-mutation saveVendorInfo(
-  $id: String!
+mutation saveMyVendor(
   $bankAccountNo: Float
   $bankName: String
   $bankIfsc: String
@@ -7,6 +6,7 @@ mutation saveVendorInfo(
   $bankSwiftCode: String
   $commissionType: String
   $commissionValue: Float
+  $banner: String
   $address: ID
   $businessName: String
   $freeShippingOn: Float
@@ -21,8 +21,7 @@ mutation saveVendorInfo(
   $googleUrl: String
   $twitterUrl: String
 ) {
-  saveVendorInfo(
-    id: $id
+  saveMyVendor(
     bankAccountNo: $bankAccountNo
     bankName: $bankName
     bankIfsc: $bankIfsc
@@ -30,6 +29,7 @@ mutation saveVendorInfo(
     bankSwiftCode: $bankSwiftCode
     commissionType: $commissionType
     commissionValue: $commissionValue
+    banner: $banner
     address: $address
     businessName: $businessName
     freeShippingOn: $freeShippingOn
@@ -52,6 +52,8 @@ mutation saveVendorInfo(
     bankIfsc
     bankAccountHolderName
     bankSwiftCode
+    banner
+    bannerCdn
     commissionType
     commissionValue
     freeShippingOn
@@ -70,10 +72,46 @@ mutation saveVendorInfo(
       store
       storePhotos
     }
-    user
-    store
-    address
+    address {
+      id
+      address
+      locality
+      city
+      state
+      country
+      zip
+      lat
+      lng
+    }
     createdAt
     updatedAt
   }
 }
+
+# TESTED Arguments
+# {
+#   "bankAccountNo": 1234567890,
+#   "bankName": "SBI",
+#   "bankIfsc": "SBIN01234",
+#   "bankAccountHolderName": "test account owner",
+#   "bankSwiftCode": "test",
+#   "commissionType": "percent",
+#   "commissionValue": 12,
+#   "banner": "abc banner",
+#   "businessName": "test business name",
+#   "freeShippingOn": 499,
+#   "meta": "meta",
+#   "metaDescription": "MD",
+#   "metaTitle": "MT",
+#   "metaKeywords": "MK",
+#   "shippingCharges": 60,
+#   "facebookUrl": "test fb url",
+#   "githubUrl": "test git url",
+#   "googleUrl": "test google url",
+#   "twitterUrl": "test twitter url",
+#   "info": {
+#     "public": true,
+#     "store": "store",
+#     "storePhotos": "ab"
+#   }
+# }

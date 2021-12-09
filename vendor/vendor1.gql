@@ -1,8 +1,9 @@
-query vendorInfo2($id: ID, $slug: String) {
-  vendorInfo2(id: $id, slug: $slug) {
+query vendor1($id: ID) {
+  vendor1(id: $id) {
     id
     slug
     businessName
+    verified
     bankAccountNo
     bankName
     bankIfsc
@@ -15,6 +16,10 @@ query vendorInfo2($id: ID, $slug: String) {
     createdAt
     updatedAt
     zips
+    country
+    user
+    address
+    store
     freeShippingOn
     meta
     metaDescription
@@ -34,33 +39,5 @@ query vendorInfo2($id: ID, $slug: String) {
       store
       storePhotos
     }
-    country {
-      id
-      name
-    }
-    user {
-      id
-      avatar
-    }
-    address {
-      id
-      firstName
-      lastName
-      address
-      locality
-      city
-      state
-      country
-      zip
-      lat
-      lng
-    }
-    store {
-      id
-      name
-      email
-    }
-    about
-    banners
   }
 }

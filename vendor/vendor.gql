@@ -1,7 +1,9 @@
-query vendorInfo1($id: ID) {
-  vendorInfo1(id: $id) {
+query vendor($id: ID) {
+  vendor(id: $id) {
     id
     slug
+    businessName
+    verified
     bankAccountNo
     bankName
     bankIfsc
@@ -14,11 +16,6 @@ query vendorInfo1($id: ID) {
     createdAt
     updatedAt
     zips
-    country
-    user
-    address
-    store
-    businessName
     freeShippingOn
     meta
     metaDescription
@@ -38,5 +35,33 @@ query vendorInfo1($id: ID) {
       store
       storePhotos
     }
+    country {
+      id
+      name
+    }
+    user {
+      id
+      avatar
+    }
+    address {
+      id
+      firstName
+      lastName
+      address
+      locality
+      city
+      state
+      country
+      zip
+      lat
+      lng
+    }
+    store {
+      id
+      name
+      email
+    }
+    about
+    banners
   }
 }
