@@ -181,24 +181,10 @@ query DETAIL($id: ID!) {
     }
     vendor {
       id
-      firstName
-      lastName
       slug
-      phone
-      email
-      address {
-        address
-      }
-      info {
-        store
-        storePhotos
-      }
-    }
-    vendorInfo {
-      id
       businessName
-      slug
     }
+
     relatedProducts {
       id
       name
