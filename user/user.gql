@@ -11,14 +11,7 @@ query user($id: String!) {
     role
     verified
     active
-    productSold
-    shippingCharges
-    freeShippingOn
-    luluCustomerNo
     plan
-    storeName
-    vendorInfo
-    banner
     store
     createdAt
     updatedAt

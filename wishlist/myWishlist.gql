@@ -28,8 +28,9 @@ query myWishlist(
         price
         mrp
         foodType
-        vendorInfo {
+        vendor {
           id
+          slug
           businessName
         }
         brand {

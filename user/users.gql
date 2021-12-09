@@ -30,24 +30,9 @@ query users(
       role
       verified
       active
-      productSold
-      luluCustomerNo
       plan
       createdAt
       updatedAt
-      address {
-        address
-        city
-      }
-      info {
-        store
-        public
-      }
-      store {
-        id
-        name
-      }
-      vendorInfo
     }
   }
 }
