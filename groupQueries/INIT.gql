@@ -364,9 +364,11 @@ query INIT($domain: String) {
       options
       tracking
       brandName
-      vendorFirstName
-      vendorLastName
-      vendorPhone
+      vendor {
+        id
+        slug
+        businessName
+      }
     }
     qty
     subtotal

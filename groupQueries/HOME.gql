@@ -234,8 +234,11 @@ query HOME($store: ID, $zip: Float) {
         id
         slug
         businessName
+<<<<<<< HEAD
         banner
         bannerCdn
+=======
+>>>>>>> 8ec22814898acda8f9499add9e21b98ed7a3773b
       }
     }
     count
