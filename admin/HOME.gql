@@ -6,11 +6,7 @@ query HOME {
   }
   topVendors {
     id
-    firstName
-    lastName
     productSold
-    avatar
-    avatarCdn
   }
   myCustomers {
     count
@@ -190,9 +186,6 @@ query HOME {
       }
       vendor {
         businessName
-        store {
-          name
-        }
       }
       vendorAddress {
         firstName
