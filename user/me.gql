@@ -10,45 +10,10 @@ query me {
     verified
     active
     provider
-    active
     avatar
     avatarCdn
     referralCode
     currentBalance
     store
-<<<<<<< HEAD
-    roles {
-      id
-      name
-      roles
-    }
-    # product_sold
-    address {
-      id
-      email
-      firstName
-      lastName
-      address
-      town
-      city
-      district
-      state
-      country
-      zip
-      phone
-      active
-      verified
-      # lat
-      # lng
-    }
-    info {
-      public
-      store
-      storePhotos
-    }
-    vendor
-    # plan
-=======
->>>>>>> 8ec22814898acda8f9499add9e21b98ed7a3773b
   }
 }
