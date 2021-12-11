@@ -6,10 +6,14 @@ query HOME {
   }
   topVendors {
     id
+<<<<<<< HEAD
     slug
     businessName
     banner
     bannerCdn
+=======
+    productSold
+>>>>>>> bd56a6a23a4942496f5019012107f0f63b369eed
   }
   myCustomers {
     count
@@ -189,9 +193,6 @@ query HOME {
       }
       vendor {
         businessName
-        store {
-          name
-        }
       }
       vendorAddress {
         firstName
