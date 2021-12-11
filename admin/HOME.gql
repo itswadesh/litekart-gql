@@ -6,11 +6,10 @@ query HOME {
   }
   topVendors {
     id
-    firstName
-    lastName
-    productSold
-    avatar
-    avatarCdn
+    slug
+    businessName
+    banner
+    bannerCdn
   }
   myCustomers {
     count
