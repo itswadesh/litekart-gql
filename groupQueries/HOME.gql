@@ -220,6 +220,7 @@ query HOME($store: ID, $zip: Float) {
       type
       price
       mrp
+      discount
       stock
       img
       imgCdn
