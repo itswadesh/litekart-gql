@@ -1,0 +1,7 @@
+mutation updateAllVendor($password: String!) {
+  updateAllVendor(password: $password)
+}
+
+# {
+#   "password": "prakash"
+# }
