@@ -67,11 +67,6 @@ mutation saveMyVendor(
     githubUrl
     googleUrl
     twitterUrl
-    info {
-      public
-      store
-      storePhotos
-    }
     address {
       id
       address
