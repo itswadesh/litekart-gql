@@ -31,6 +31,12 @@ query users(
       verified
       active
       plan
+      store {
+        id
+        slug
+        name
+      }
+      vendor
       createdAt
       updatedAt
     }
