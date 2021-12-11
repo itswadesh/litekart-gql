@@ -37,6 +37,7 @@ query carts(
         tracking
         options
         vendorBusinessName
+        deliveryDetails
       }
       qty
       subtotal

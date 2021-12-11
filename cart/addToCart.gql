@@ -30,6 +30,7 @@ mutation addToCart(
       options
       brandName
       vendorBusinessName
+      deliveryDetails
     }
     needAddress
     qty
