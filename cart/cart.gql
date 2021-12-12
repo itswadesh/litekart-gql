@@ -27,6 +27,7 @@ query cart($store: ID) {
       foodType
       vendor {
         id
+        slug
         businessName
       }
       formattedItemAmount {
