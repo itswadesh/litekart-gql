@@ -88,23 +88,17 @@ mutation saveCoupon(
 # {
 #   "id": "new",
 #   "isMultiple": true,
-#   "howMany": 2,
-#   "name": "dewali1",
-#   "description": "test des",
-#   "info": "test info",
-#   "msg": "test msg",
-#   "text": "test text",
-#   "terms": "test terms",
-#   "color": "test color",
-#   "maxAmount": 15,
-#   "maxUselimit": 2,
-#   "oneUsePerCustomer": true,
+#   "active": true,
+#   "howMany": 5,
+#   "name": "dewali",
+#   "maxAmount": 50,
 #   "oneUsePerUniqueCode": true,
-#   "validTo": "2021-12-02T20:31:20.101Z",
-#   "validFrom": "2022-12-03T20:31:20.101Z",
+#   "validTo": "2022-12-02T20:31:20.101Z",
+#   "validFrom": "2021-12-03T20:31:20.101Z",
 #   "discount": {
 #     "isPercent": true,
-#     "value":  2
+#     "value":  2,
+#     "minOrderTotal": 100
 #   }
 # }
 
@@ -112,7 +106,7 @@ mutation saveCoupon(
 # {
 #   "id": "new",
 #   "isMultiple": false,
-#   "code": "diwali",
+#   "code": "holi",
 #   "description": "test des",
 #   "info": "test info",
 #   "msg": "test msg",
@@ -120,13 +114,14 @@ mutation saveCoupon(
 #   "terms": "test terms",
 #   "color": "test color",
 #   "maxAmount": 15,
-#   "maxUselimit": 2,
-#   "oneUsePerCustomer": true,
-#   "oneUsePerUniqueCode": true,
-#   "validTo": "2021-12-02T20:31:20.101Z",
-#   "validFrom": "2022-12-03T20:31:20.101Z",
+#   "maxUselimit": 9,
+#   "oneUsePerCustomer": false,
+#   "validTo": "2022-12-02T20:31:20.101Z",
+#   "validFrom": "2021-12-03T20:31:20.101Z",
 #   "discount": {
 #     "isPercent": true,
-#     "value":  2
-#   }
+#     "value":  15,
+#     "minOrderTotal": 100
+#   },
+#   "active": true
 # }
