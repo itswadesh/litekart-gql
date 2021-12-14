@@ -1,0 +1,52 @@
+query promotions(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  promotions(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      name
+      used
+      description
+      discount {
+        type
+        isPercent
+        value
+        currency
+        excludeCategories
+        shippingMethod
+        product
+        minProductQty
+        maxProductQty
+        category
+        minProductPrice
+        minOrderTotal
+      }
+      maxAmount
+      maxUselimit
+      oneUsePerCustomer
+      validFrom
+      validTo
+      active
+      featured
+      img
+      imgCdn
+      platform
+      priority
+      createdAt
+      updatedAt
+    }
+  }
+}

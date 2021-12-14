@@ -1,16 +1,9 @@
-query coupon($id: ID!) {
-  coupon(id: $id) {
+query promotion($id: ID!) {
+  promotion(id: $id) {
     id
-    isMultiple
-    code
     name
     used
-    info
     description
-    codes {
-      uniqueCode
-      used
-    }
     discount {
       type
       isPercent
@@ -25,17 +18,17 @@ query coupon($id: ID!) {
       minProductPrice
       minOrderTotal
     }
-    msg
-    text
-    terms
-    color
     maxAmount
     maxUselimit
     oneUsePerCustomer
-    oneUsePerUniqueCode
     validFrom
     validTo
     active
+    featured
+    img
+    imgCdn
+    platform
+    priority
     createdAt
     updatedAt
     store {

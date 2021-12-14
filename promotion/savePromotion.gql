@@ -1,0 +1,84 @@
+mutation savePromotion(
+  $id: String!
+  $name: String
+  $description: String
+  $maxAmount: Int
+  $maxUselimit: Int
+  $oneUsePerCustomer: Boolean
+  $validFrom: String
+  $validTo: String
+  $active: Boolean
+  $featured: Boolean
+  $img: String
+  $platform: String
+  $priority: Int
+  $store: ID
+  $discount: DiscountIp
+) {
+  savePromotion(
+    id: $id
+    name: $name
+    description: $description
+    maxAmount: $maxAmount
+    maxUselimit: $maxUselimit
+    oneUsePerCustomer: $oneUsePerCustomer
+    validFrom: $validFrom
+    validTo: $validTo
+    active: $active
+    featured: $featured
+    img: $img
+    platform: $platform
+    priority: $priority
+    store: $store
+    discount: $discount
+  ) {
+    id
+    name
+    used
+    description
+    discount {
+      type
+      isPercent
+      value
+      currency
+      excludeCategories
+      shippingMethod
+      product
+      minProductQty
+      maxProductQty
+      category
+      minProductPrice
+      minOrderTotal
+    }
+    maxAmount
+    maxUselimit
+    oneUsePerCustomer
+    validFrom
+    validTo
+    active
+    featured
+    img
+    imgCdn
+    platform
+    priority
+    store
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "id": "new",
+#   "active": true,
+#   "name": "new year sale",
+#   "maxAmount": 50,
+#   "validTo": "2022-12-02T20:31:20.101Z",
+#   "validFrom": "2021-12-03T20:31:20.101Z",
+#   "discount": {
+#     "isPercent": false,
+#     "value":  6,
+#     "minOrderTotal": 50,
+#     "type": "shipping"
+#   },
+#   "priority": 1
+# }

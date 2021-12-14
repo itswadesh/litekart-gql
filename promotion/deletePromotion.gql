@@ -1,0 +1,3 @@
+mutation deletePromotion($id: ID!) {
+  deletePromotion(id: $id)
+}
