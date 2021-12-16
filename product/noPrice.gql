@@ -32,22 +32,6 @@ query noPrice(
       active
       popularity
       position
-      variants {
-        id
-        options {
-          name
-        }
-        stock
-        weight
-        barcode
-        sku
-        mrp
-        price
-        images
-        trackInventory
-        active
-        sort
-      }
       trending
       featured
       hot

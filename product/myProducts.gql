@@ -100,24 +100,6 @@ query myProducts(
       category {
         name
       }
-
-      variants {
-        id
-        name
-        options {
-          name
-        }
-        stock
-        weight
-        barcode
-        sku
-        mrp
-        price
-        images
-        trackInventory
-        active
-        sort
-      }
       vendor {
         id
         slug

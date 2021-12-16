@@ -5,16 +5,14 @@ query DETAIL($id: ID!) {
     name
     description
     type
-    foodType
     price
     mrp
     discount
-    deliveryDetails
     stock
     tax
     img
-    images
     imgCdn
+    images
     imagesCdn
     time
     active
@@ -40,6 +38,7 @@ query DETAIL($id: ID!) {
     warranty
     metaDescription
     keywords
+    keywordsA
     ageMin
     ageMax
     ageUnit
@@ -62,6 +61,26 @@ query DETAIL($id: ID!) {
     batchNo
     mfgDate
     expiryDate
+    isSearchable
+    isUnlimited
+    totalSold
+    preOrder
+    zips
+    foodType
+    deliveryDetails
+    slots {
+      id
+      name
+      value
+    }
+    location {
+      id
+      name
+    }
+    country {
+      id
+      name
+    }
     sizeGroup {
       _id
       slug
@@ -130,7 +149,6 @@ query DETAIL($id: ID!) {
       id
       title
       img
-      imgCdn
       scheduleDateTime
       user {
         firstName
@@ -151,54 +169,49 @@ query DETAIL($id: ID!) {
     options {
       id
       name
-      type
-      default_option
+      inputType
+      preselectDefault
+      position
       values {
         id
-        name
+        value
         default
+        position
+        direction
+        isPercent
+        amount
       }
-    }
-    variants {
-      id
-      options {
-        name
-        val
-      }
-      stock
-      weight
-      length
-      width
-      height
-      barcode
-      sku
-      mrp
-      price
-      images
-      trackInventory
-      active
-      sort
     }
     vendor {
       id
-      businessName
       slug
+      businessName
       banner
       bannerCdn
+      ratings
+      reviews
+      info {
+        store
+        public
+        storePhotos
+      }
     }
-
     relatedProducts {
       id
       name
       slug
       img
-      imgCdn
     }
     returnInfo
     returnAllowed
     replaceAllowed
     returnValidityInDays
+    replaceValidityInDays
     files
+    unit
+    dimensionUnit
+    formattedMrp
+    formattedPrice
     createdAt
     updatedAt
   }

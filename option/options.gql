@@ -1,31 +1,22 @@
-query options($pid: ID!) {
-  options(pid: $pid) {
+query options($product: ID!) {
+  options(product: $product) {
     count
     page
     pageSize
     data {
       id
-      pid
       name
-      key
-      val
-      categories
+      inputType
+      preselectDefault
       position
-      info
-      preselect
-      required
-      type
-      isFilter
-      active
-      store
       values {
         id
         name
         default
-        direction
-        type
-        amount
         position
+        direction
+        isPercent
+        value
       }
     }
   }

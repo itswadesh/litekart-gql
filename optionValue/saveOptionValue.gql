@@ -1,40 +1,36 @@
 mutation saveOptionValue(
   $id: String!
-  $option_id: ID
+  $option: ID
   $name: String
   $default: Boolean
   $position: Int
-  $amount: Float
-  $type: String
+  $value: Float
   $direction: String
-  $active: Boolean
+  $isPercent: Boolean
 ) {
   saveOptionValue(
     id: $id
-    option_id: $option_id
+    option: $option
     name: $name
     default: $default
     position: $position
-    amount: $amount
-    type: $type
+    value: $value
     direction: $direction
-    active: $active
+    isPercent: $isPercent
   ) {
     id
-    option_id
     name
     default
     position
     direction
-    type
-    amount
-    active
+    isPercent
+    value
   }
 }
 
 # {
 #    "id": "new",
-#   "option_id": "60557db71d76790db44dd096",
-#    "name": "green",
+#   "option": "61bb47aa038cf5356c863ec3",
+#    "name": "yes",
 #   "default": true
 #  }

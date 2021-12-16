@@ -79,7 +79,6 @@ query products(
       reviews
       itemId
       warranty
-      # discountPercent
       ageMin
       ageMax
       ageUnit
@@ -115,24 +114,6 @@ query products(
       }
       category {
         name
-      }
-
-      variants {
-        id
-        name
-        options {
-          name
-        }
-        stock
-        weight
-        barcode
-        sku
-        mrp
-        price
-        images
-        trackInventory
-        active
-        sort
       }
       vendor {
         id

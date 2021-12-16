@@ -72,7 +72,6 @@ query product1($id: ID!) {
     categories
     categoryPool
     variants
-    options
     vendor
     weight
     length
@@ -114,6 +113,22 @@ query product1($id: ID!) {
       name
       slug
       img
+    }
+    options {
+      id
+      name
+      inputType
+      preselectDefault
+      position
+      values {
+        id
+        name
+        default
+        position
+        direction
+        isPercent
+        value
+      }
     }
   }
 }

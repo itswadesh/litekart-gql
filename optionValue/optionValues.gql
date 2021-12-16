@@ -3,26 +3,26 @@ query optionValues(
   $limit: Int
   $search: String
   $sort: String
-  $option_id: ID
+  $option: ID
 ) {
   optionValues(
     page: $page
     limit: $limit
     search: $search
     sort: $sort
-    option_id: $option_id
+    option: $option
   ) {
     count
     page
     pageSize
     data {
       id
-      option_id
       name
       default
       position
-      type
-      amount
+      direction
+      isPercent
+      value
     }
   }
 }
