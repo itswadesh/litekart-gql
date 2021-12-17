@@ -22,14 +22,11 @@ query cart($store: ID) {
       options
       tracking
       brandName
+      vendor
+      vendorSlug
       vendorBusinessName
       deliveryDetails
       foodType
-      vendor {
-        id
-        slug
-        businessName
-      }
       formattedItemAmount {
         mrp
         price

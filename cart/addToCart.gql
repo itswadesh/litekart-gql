@@ -5,6 +5,7 @@ mutation addToCart(
   $options: String
   $vendor: ID
   $replace: Boolean
+  $optionValues: [ID]
 ) {
   addToCart(
     qty: $qty
@@ -13,6 +14,7 @@ mutation addToCart(
     options: $options
     vendor: $vendor
     replace: $replace
+    optionValues: $optionValues
   ) {
     items {
       pid
@@ -29,6 +31,8 @@ mutation addToCart(
       imgCdn
       options
       brandName
+      vendor
+      vendorSlug
       vendorBusinessName
       deliveryDetails
     }
@@ -52,7 +56,8 @@ mutation addToCart(
 # for multiple vendor in futute
 # {
 #   "options": "null",
-#   "pid": "610ff516c5d99b257820d6d5",
-#   "qty": 1,
-#   "vid": "610ff516c5d99b257820d6d5"
+#   "pid": "61bb679cae9d890438612b83",
+#   "qty":1,
+#   "vid": "61bb679cae9d890438612b83",
+#   "optionValues": "61bb7174aa5a773af4b5da98"
 # }
