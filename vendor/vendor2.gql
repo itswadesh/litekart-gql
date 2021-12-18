@@ -11,6 +11,8 @@ query vendor2($id: ID, $slug: String) {
     bankSwiftCode
     banner
     bannerCdn
+    banners
+    bannersCdn
     commissionType
     commissionValue
     createdAt
@@ -30,6 +32,7 @@ query vendor2($id: ID, $slug: String) {
     githubUrl
     googleUrl
     twitterUrl
+    about
     info {
       public
       store
@@ -61,7 +64,5 @@ query vendor2($id: ID, $slug: String) {
       name
       email
     }
-    about
-    banners
   }
 }

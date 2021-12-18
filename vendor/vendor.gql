@@ -13,8 +13,6 @@ query vendor($id: ID) {
     bannerCdn
     commissionType
     commissionValue
-    createdAt
-    updatedAt
     zips
     freeShippingOn
     meta
@@ -30,6 +28,9 @@ query vendor($id: ID) {
     githubUrl
     googleUrl
     twitterUrl
+    about
+    banners
+    bannersCdn
     info {
       public
       store
@@ -61,7 +62,7 @@ query vendor($id: ID) {
       name
       email
     }
-    about
-    banners
+    createdAt
+    updatedAt
   }
 }

@@ -68,6 +68,7 @@ query DETAIL($id: ID!) {
     zips
     foodType
     deliveryDetails
+    expiryDate
     slots {
       id
       name

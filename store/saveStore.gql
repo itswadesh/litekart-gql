@@ -49,6 +49,8 @@ mutation saveStore(
   $isSearch: Boolean
   $isHyperlocal: Boolean
   $isFnb: Boolean
+  $isWishlist: Boolean
+  $isCart: Boolean
   $keywords: String
   $lastName: String
   $lat: Float
@@ -149,6 +151,8 @@ mutation saveStore(
     isSearch: $isSearch
     isHyperlocal: $isHyperlocal
     isFnb: $isFnb
+    isWishlist: $isWishlist
+    isCart: $isCart
     keywords: $keywords
     lastName: $lastName
     lat: $lat
@@ -256,6 +260,8 @@ mutation saveStore(
     isSearch
     isHyperlocal
     isFnb
+    isWishlist
+    isCart
     keywords
     lastName
     lat

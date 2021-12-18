@@ -139,6 +139,7 @@ query HOME($store: ID, $zip: Float) {
     returnInfo
     description
     keyFeatures
+    expiryDate
     vendor {
       businessName
     }
@@ -198,6 +199,7 @@ query HOME($store: ID, $zip: Float) {
     returnInfo
     description
     keyFeatures
+    expiryDate
     vendor {
       businessName
     }
@@ -231,6 +233,7 @@ query HOME($store: ID, $zip: Float) {
       reviews
       zips
       foodType
+      expiryDate
       vendor {
         id
         slug

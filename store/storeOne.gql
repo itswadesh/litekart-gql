@@ -79,6 +79,8 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     isSearch
     isHyperlocal
     isFnb
+    isWishlist
+    isCart
     keywords
     lastName
     lat

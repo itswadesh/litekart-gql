@@ -77,6 +77,8 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       isMegamenu
       isOpen
       isSearch
+      isWishlist
+      isCart
       keywords
       lastName
       lat

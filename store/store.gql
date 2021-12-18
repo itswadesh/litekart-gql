@@ -77,6 +77,8 @@ query store {
     isSearch
     isHyperlocal
     isFnb
+    isWishlist
+    isCart
     keywords
     lastName
     lat

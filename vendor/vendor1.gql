@@ -11,6 +11,8 @@ query vendor1($id: ID) {
     bankSwiftCode
     banner
     bannerCdn
+    banners
+    bannersCdn
     commissionType
     commissionValue
     createdAt
@@ -34,6 +36,7 @@ query vendor1($id: ID) {
     githubUrl
     googleUrl
     twitterUrl
+    about
     info {
       public
       store
