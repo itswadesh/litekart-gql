@@ -35,7 +35,7 @@ query carts(
         img
         imgCdn
         tracking
-        options
+        # options
         vendorBusinessName
         deliveryDetails
       }

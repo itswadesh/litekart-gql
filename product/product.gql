@@ -170,6 +170,7 @@ query product($id: ID!, $zip: Float, $optionValues: [ID]) {
       id
       name
       inputType
+      required
       preselectDefault
       position
       values {

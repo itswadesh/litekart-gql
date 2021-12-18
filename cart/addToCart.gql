@@ -2,10 +2,9 @@ mutation addToCart(
   $qty: Int!
   $pid: ID!
   $vid: ID
-  $options: String
+  $options: [OptionIp1]
   $vendor: ID
   $replace: Boolean
-  $optionValues: [ID]
 ) {
   addToCart(
     qty: $qty
@@ -14,7 +13,6 @@ mutation addToCart(
     options: $options
     vendor: $vendor
     replace: $replace
-    optionValues: $optionValues
   ) {
     items {
       pid
@@ -29,7 +27,7 @@ mutation addToCart(
       tax
       img
       imgCdn
-      options
+      # options
       brandName
       vendor
       vendorSlug
@@ -58,6 +56,5 @@ mutation addToCart(
 #   "options": "null",
 #   "pid": "61bb679cae9d890438612b83",
 #   "qty":1,
-#   "vid": "61bb679cae9d890438612b83",
-#   "optionValues": "61bb7174aa5a773af4b5da98"
+#   "vid": "61bb679cae9d890438612b83"
 # }

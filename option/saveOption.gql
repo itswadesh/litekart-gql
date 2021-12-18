@@ -3,6 +3,7 @@ mutation saveOption(
   $name: String
   $inputType: String
   $preselectDefault: Boolean
+  $required: Boolean
   $position: Int
   $product: ID
 ) {
@@ -11,6 +12,7 @@ mutation saveOption(
     name: $name
     inputType: $inputType
     preselectDefault: $preselectDefault
+    required: $required
     position: $position
     product: $product
   ) {
@@ -18,6 +20,7 @@ mutation saveOption(
     name
     inputType
     preselectDefault
+    required
     position
     product
   }

@@ -70,7 +70,6 @@ mutation stripeCancel($paymentIntentId: String!) {
       tax
       baseTax
       time
-      options
       brandName
       brandImg
       color

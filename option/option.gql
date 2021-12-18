@@ -5,6 +5,7 @@ query option($id: ID!) {
     inputType
     preselectDefault
     position
+    required
     values {
       id
       name

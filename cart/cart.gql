@@ -19,7 +19,7 @@ query cart($store: ID) {
       shippingCharge
       img
       imgCdn
-      options
+      # options
       tracking
       brandName
       vendor

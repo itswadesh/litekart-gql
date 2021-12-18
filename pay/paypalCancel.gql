@@ -70,7 +70,7 @@ mutation paypalCancel($token: String!) {
       tax
       baseTax
       time
-      options
+      # options
       brandName
       brandImg
       color

@@ -82,7 +82,7 @@ mutation checkout($address: ID, $slot: ID, $paymentMethod: String) {
       total
       baseTotal
       time
-      options
+      # options
       brandName
       brandImg
       brandImgCdn

@@ -9,6 +9,7 @@ query options($product: ID!) {
       inputType
       preselectDefault
       position
+      required
       values {
         id
         name
