@@ -179,7 +179,6 @@ query DETAIL($id: ID!) {
         position
         direction
         isPercent
-        amount
       }
     }
     vendor {
