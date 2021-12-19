@@ -164,6 +164,8 @@ query INIT($domain: String) {
     city
     closed
     closedMessage
+    isWishlist
+    isCart
     country {
       name
       code

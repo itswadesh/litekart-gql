@@ -13,6 +13,8 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     banners
     city
     closed
+    isWishlist
+    isCart
     closedMessage
     country {
       id
