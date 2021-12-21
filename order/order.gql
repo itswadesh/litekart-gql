@@ -93,7 +93,6 @@ query order($id: ID!) {
       tax
       baseTax
       time
-      options
       brandName
       brandImg
       brandImgCdn
@@ -181,6 +180,10 @@ query order($id: ID!) {
       returnReason
       weight
       unit
+      usedOptions {
+        name
+        val
+      }
       orderHistory {
         status
         title

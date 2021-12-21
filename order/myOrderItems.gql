@@ -25,6 +25,10 @@ query myOrderItems(
       id
       status
       pid
+      usedOptions {
+        name
+        val
+      }
       posInvoiceNo
       itemOrderNo
       name
