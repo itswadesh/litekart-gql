@@ -19,7 +19,6 @@ query cart($store: ID) {
       shippingCharge
       img
       imgCdn
-      # options
       tracking
       brandName
       vendor
@@ -27,6 +26,10 @@ query cart($store: ID) {
       vendorBusinessName
       deliveryDetails
       foodType
+      usedOptions {
+        name
+        val
+      }
       formattedItemAmount {
         mrp
         price

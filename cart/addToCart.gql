@@ -27,12 +27,15 @@ mutation addToCart(
       tax
       img
       imgCdn
-      # options
       brandName
       vendor
       vendorSlug
       vendorBusinessName
       deliveryDetails
+      usedOptions {
+        name
+        val
+      }
     }
     needAddress
     qty
@@ -53,8 +56,21 @@ mutation addToCart(
 
 # for multiple vendor in futute
 # {
-#   "options": "null",
+#   "options": null,
 #   "pid": "61bb679cae9d890438612b83",
 #   "qty":1,
 #   "vid": "61bb679cae9d890438612b83"
+# }
+
+# {
+#   "pid": "61bd8d96345c3607b024fe03",
+#   "qty":1,
+#   "vid": "61bd8d96345c3607b024fe03",
+#   "options": [{
+#   	"option":"61bd8df1345c3607b024fe1f",
+#     "values": "01bd8e30345c3607b024fe2b"
+#   },{
+#     "option":"61bd91ed544e4905248e13a3",
+#     "text": "please come neary sarvodaya school"
+#   }]
 # }
