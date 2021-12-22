@@ -143,6 +143,8 @@ query orderItem($id: ID!) {
       bannerCdn
     }
     vendorBusinessName
+    vendorPhone
+    vendorEmail
     vendorCommissionType
     vendorCommissionValue
     vendorAddress {

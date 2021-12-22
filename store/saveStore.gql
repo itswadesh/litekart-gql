@@ -99,6 +99,7 @@ mutation saveStore(
   $currencySuffix: String
   $hideDecimalInCurrency: Boolean
   $sms: SmsIp
+  $vendorNotifications: VendorNotificationIp
 ) {
   saveStore(
     id: $id
@@ -201,6 +202,7 @@ mutation saveStore(
     currencySuffix: $currencySuffix
     hideDecimalInCurrency: $hideDecimalInCurrency
     sms: $sms
+    vendorNotifications: $vendorNotifications
   ) {
     id
     active
@@ -228,6 +230,10 @@ mutation saveStore(
       orderIsReadyForPickup
       orderShipped
       orderStatusChanged
+      orderConfirmationSms
+    }
+    vendorNotifications {
+      orderConfirmationSms
     }
     description
     metaDescription

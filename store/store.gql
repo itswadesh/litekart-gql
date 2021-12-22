@@ -43,6 +43,10 @@ query store {
       orderIsReadyForPickup
       orderShipped
       orderStatusChanged
+      orderConfirmationSms
+    }
+    vendorNotifications {
+      orderConfirmationSms
     }
     description
     metaDescription
