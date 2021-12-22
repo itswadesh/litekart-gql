@@ -26,6 +26,7 @@ query subscription($id: ID!) {
     transactionFeesType
     unlimitedProducts
     unlimitedValidity
+    maxAdminAllowed
     createdAt
     updatedAt
   }

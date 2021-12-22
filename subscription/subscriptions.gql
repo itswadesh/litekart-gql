@@ -41,6 +41,7 @@ query subscriptions(
       transactionFeesType
       unlimitedProducts
       unlimitedValidity
+      maxAdminAllowed
       createdAt
       updatedAt
     }

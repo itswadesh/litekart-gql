@@ -24,6 +24,7 @@ mutation saveSubscription(
   $transactionFeesType: String
   $unlimitedProducts: Boolean
   $unlimitedValidity: Boolean
+  $maxAdminAllowed: Int
 ) {
   saveSubscription(
     id: $id
@@ -51,6 +52,7 @@ mutation saveSubscription(
     transactionFeesType: $transactionFeesType
     unlimitedProducts: $unlimitedProducts
     unlimitedValidity: $unlimitedValidity
+    maxAdminAllowed: $maxAdminAllowed
   ) {
     id
     name
@@ -78,6 +80,7 @@ mutation saveSubscription(
     transactionFeesType
     unlimitedProducts
     unlimitedValidity
+    maxAdminAllowed
     createdAt
     updatedAt
   }
