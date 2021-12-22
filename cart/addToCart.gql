@@ -35,6 +35,9 @@ mutation addToCart(
       usedOptions {
         name
         val
+        date
+        fromDate
+        toDate
       }
     }
     needAddress
@@ -56,7 +59,7 @@ mutation addToCart(
 
 # for multiple vendor in futute
 # {
-#   "options": null,
+#   "options": "null",
 #   "pid": "61bb679cae9d890438612b83",
 #   "qty":1,
 #   "vid": "61bb679cae9d890438612b83"
@@ -72,5 +75,25 @@ mutation addToCart(
 #   },{
 #     "option":"61bd91ed544e4905248e13a3",
 #     "text": "please come neary sarvodaya school"
+#   }]
+# }
+
+# {
+#   "pid": "61bd8d96345c3607b024fe03",
+#   "qty":-1,
+#   "vid": "61bd8d96345c3607b024fe03",
+#     "options": [{
+#   	"option":"61bd8df1345c3607b024fe1f",
+#     "values": ["61bd8e30345c3607b024fe2b"]
+#   },{
+#     "option":"61bd91ed544e4905248e13a3",
+#     "text": "please come neary sarvodaya school"
+#   },{
+#     "option":"61c2cbad64df9016840108a1",
+#     "date":"2022-12-22T07:36:48.709Z"
+#   },{
+#     "option":"61c2cc2d64df9016840108bc",
+#     "fromDate": "2022-12-22T07:36:48.709Z",
+#     "toDate": "2022-12-22T07:36:48.709Z"
 #   }]
 # }
