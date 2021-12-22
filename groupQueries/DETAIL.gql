@@ -175,6 +175,7 @@ query DETAIL($id: ID!) {
       position
       values {
         id
+        name
         value
         default
         position
