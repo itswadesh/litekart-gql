@@ -99,6 +99,7 @@ query myOrders(
         brandImg
         brandImgCdn
         vendorBusinessName
+
         vendor {
           id
           slug
@@ -136,6 +137,12 @@ query myOrders(
         brandName
         brandImg
         brandImgCdn
+        foodType
+        usedOptions {
+          name
+          val
+          dates
+        }
       }
     }
   }
