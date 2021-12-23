@@ -31,6 +31,10 @@ query cart($store: ID) {
         val
         dates
       }
+      options {
+        option
+        values
+      }
       formattedItemAmount {
         mrp
         price

@@ -49,6 +49,7 @@ mutation saveSettings(
   $stripePublishableKey: String
   $brainTreePublicKey: String
   $enableStripe: Boolean
+  $enableSubsription: Boolean
   $enableRazorpay: Boolean
   $RAZORPAY_KEY_ID: String
   $locationExpiry: Float
@@ -117,6 +118,7 @@ mutation saveSettings(
     stripePublishableKey: $stripePublishableKey
     brainTreePublicKey: $brainTreePublicKey
     enableStripe: $enableStripe
+    enableSubsription: $enableSubsription
     enableRazorpay: $enableRazorpay
     locationExpiry: $locationExpiry
     customerOrderNotifications: $customerOrderNotifications

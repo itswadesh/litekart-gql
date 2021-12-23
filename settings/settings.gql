@@ -23,6 +23,7 @@ query settings {
     stripePublishableKey
     brainTreePublicKey
     enableStripe
+    enableSubsription
     enableRazorpay
     currencyCode
     currencySymbol
