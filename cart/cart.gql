@@ -29,9 +29,7 @@ query cart($store: ID) {
       usedOptions {
         name
         val
-        date
-        fromDate
-        toDate
+        dates
       }
       formattedItemAmount {
         mrp

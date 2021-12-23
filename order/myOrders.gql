@@ -95,7 +95,6 @@ query myOrders(
         total
         tax
         time
-        options
         brandName
         brandImg
         brandImgCdn

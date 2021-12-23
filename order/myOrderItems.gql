@@ -28,9 +28,7 @@ query myOrderItems(
       usedOptions {
         name
         val
-        date
-        fromDate
-        toDate
+        dates
       }
       posInvoiceNo
       itemOrderNo
