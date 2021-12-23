@@ -75,7 +75,11 @@ mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
       tax
       baseTax
       time
-      options
+      usedOptions {
+        name
+        val
+        dates
+      }
       brandName
       brandImg
       color
