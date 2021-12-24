@@ -32,6 +32,10 @@ mutation addToCart(
       vendorSlug
       vendorBusinessName
       deliveryDetails
+      options {
+        option
+        values
+      }
       usedOptions {
         name
         val
