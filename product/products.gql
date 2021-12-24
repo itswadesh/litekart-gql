@@ -92,6 +92,7 @@ query products(
       sizechart
       batchNo
       mfgDate
+      expired
       expiryDate
       isSearchable
       isUnlimited

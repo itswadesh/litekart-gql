@@ -60,6 +60,7 @@ query product($id: ID!, $zip: Float, $optionValues: [ID]) {
     sizechart
     batchNo
     mfgDate
+    expired
     expiryDate
     isSearchable
     isUnlimited

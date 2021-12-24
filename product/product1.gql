@@ -84,6 +84,7 @@ query product1($id: ID!) {
     files
     batchNo
     mfgDate
+    expired
     expiryDate
     unit
     dimensionUnit
