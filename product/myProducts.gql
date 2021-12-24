@@ -114,6 +114,7 @@ query myProducts(
           storePhotos
         }
       }
+      updatedAt
     }
     count
     pageSize
