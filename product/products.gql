@@ -18,6 +18,7 @@ query products(
   $sale: Boolean
   $where: String
   $store: ID
+  $types: [String]
 ) {
   products(
     page: $page
@@ -39,6 +40,7 @@ query products(
     sale: $sale
     where: $where
     store: $store
+    types: $types
   ) {
     count
     pageSize
