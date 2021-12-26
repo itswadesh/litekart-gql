@@ -1,0 +1,13 @@
+mutation braintreeMakePaymentSubscription($nonce: String!, $token: String!) {
+  braintreeMakePaymentSubscription(nonce: $nonce, token: $token) {
+    id
+    createdAt
+    amountPaid
+    amountDue
+    paid
+    payment {
+      id
+      status
+    }
+  }
+}

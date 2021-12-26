@@ -1,0 +1,41 @@
+mutation stripeSubscription(
+  $subscription: ID!
+  $billiingInterval: String
+  $paymentMethodId: String
+) {
+  stripeSubscription(
+    subscription: $subscription
+    billiingInterval: $billiingInterval
+    paymentMethodId: $paymentMethodId
+  ) {
+    id
+    subscribe
+    paymentMode
+    paymentGateway
+    referenceId
+    txMsg
+    txTime
+    invoiceId
+    receipt
+    paid
+    amountPaid
+    amountDue
+    amountRefunded
+    currency
+    captured
+    status
+    orderId
+    notes
+    refundStatus
+    description
+    email
+    contact
+    fee
+    tax
+    errorCode
+    errorDescription
+    token
+    clientSecret
+    approvalUrl
+  }
+}

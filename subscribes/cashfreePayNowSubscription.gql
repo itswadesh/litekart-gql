@@ -1,0 +1,26 @@
+mutation cashfreePayNowSubscription(
+  $subscription: ID!
+  $billiingInterval: String
+) {
+  cashfreePayNowSubscription(
+    subscription: $subscription
+    billiingInterval: $billiingInterval
+  ) {
+    appId
+    orderId
+    orderAmount
+    orderCurrency
+    orderNote
+    customerName
+    customerEmail
+    customerPhone
+    returnUrl
+    notifyUrl
+    signature
+    token
+    url
+    stage
+  }
+}
+
+# billiingInterval: annually or monthly(default)

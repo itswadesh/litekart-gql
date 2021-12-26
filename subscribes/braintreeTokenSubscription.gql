@@ -1,0 +1,37 @@
+mutation braintreeTokenSubscription(
+  $subscription: ID!
+  $billiingInterval: String
+) {
+  braintreeTokenSubscription(
+    subscription: $subscription
+    billiingInterval: $billiingInterval
+  ) {
+    id
+    subscribe
+    paymentMode
+    paymentGateway
+    referenceId
+    txMsg
+    txTime
+    invoiceId
+    receipt
+    paid
+    amountPaid
+    amountDue
+    amountRefunded
+    currency
+    captured
+    status
+    orderId
+    notes
+    refundStatus
+    description
+    email
+    contact
+    fee
+    tax
+    errorCode
+    errorDescription
+    token
+  }
+}
