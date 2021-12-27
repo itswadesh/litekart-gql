@@ -1,0 +1,8 @@
+query getLocationFromZipIndia($zip: Int!) {
+  getLocationFromZipIndia(zip: $zip) {
+    zip
+    state
+    city
+    country
+  }
+}
