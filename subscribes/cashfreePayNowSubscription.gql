@@ -1,10 +1,7 @@
-mutation cashfreePayNowSubscription(
-  $subscription: ID!
-  $billiingInterval: String
-) {
+mutation cashfreePayNowSubscription($subscription: ID!, $intervalType: String) {
   cashfreePayNowSubscription(
     subscription: $subscription
-    billiingInterval: $billiingInterval
+    intervalType: $intervalType
   ) {
     appId
     orderId
@@ -23,4 +20,4 @@ mutation cashfreePayNowSubscription(
   }
 }
 
-# billiingInterval: annually or monthly(default)
+# intervalType: year or month(default)

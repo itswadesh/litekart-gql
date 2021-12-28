@@ -1,11 +1,11 @@
 mutation stripeSubscription(
   $subscription: ID!
-  $billiingInterval: String
+  $intervalType: String
   $paymentMethodId: String
 ) {
   stripeSubscription(
     subscription: $subscription
-    billiingInterval: $billiingInterval
+    intervalType: $intervalType
     paymentMethodId: $paymentMethodId
   ) {
     id

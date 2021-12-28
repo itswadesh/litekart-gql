@@ -1,10 +1,7 @@
-mutation braintreeTokenSubscription(
-  $subscription: ID!
-  $billiingInterval: String
-) {
+mutation braintreeTokenSubscription($subscription: ID!, $intervalType: String) {
   braintreeTokenSubscription(
     subscription: $subscription
-    billiingInterval: $billiingInterval
+    intervalType: $intervalType
   ) {
     id
     subscribe
