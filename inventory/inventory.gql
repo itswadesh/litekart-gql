@@ -1,0 +1,11 @@
+query inventory($id: ID!) {
+  inventory(id: $id) {
+    id
+    quantity
+    left
+    type
+    action
+    reason
+    notes
+  }
+}

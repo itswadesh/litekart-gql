@@ -58,6 +58,7 @@ query products(
       price
       mrp
       stock
+      trackInventory
       tax
       img
       imgCdn

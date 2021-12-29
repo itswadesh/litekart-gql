@@ -82,6 +82,7 @@ mutation saveProduct(
   $foodType: String
   $deliveryDetails: String
   $slots: [ID]
+  $trackInventory: Boolean
 ) {
   saveProduct(
     id: $id
@@ -167,6 +168,7 @@ mutation saveProduct(
     foodType: $foodType
     deliveryDetails: $deliveryDetails
     slots: $slots
+    trackInventory: $trackInventory
   ) {
     id
     name
@@ -186,6 +188,7 @@ mutation saveProduct(
     popularity
     sku
     hsn
+    trackInventory
     group
     brand
     parentBrand

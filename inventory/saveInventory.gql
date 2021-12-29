@@ -1,0 +1,22 @@
+mutation saveInventory(
+  $product: ID!
+  $quantity: Int
+  $action: String!
+  $reason: String
+  $notes: String
+) {
+  saveInventory(
+    product: $product
+    quantity: $quantity
+    action: $action
+    reason: $reason
+    notes: $notes
+  ) {
+    id
+    quantity
+    left
+    action
+    reason
+    notes
+  }
+}

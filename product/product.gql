@@ -9,6 +9,7 @@ query product($id: ID!, $zip: Float, $optionValues: [ID]) {
     mrp
     discount
     stock
+    trackInventory
     tax
     img
     imgCdn

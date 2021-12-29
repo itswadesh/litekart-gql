@@ -1,0 +1,28 @@
+query inventories(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $product: ID!
+) {
+  inventories(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    product: $product
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      quantity
+      left
+      type
+      action
+      reason
+      notes
+    }
+  }
+}

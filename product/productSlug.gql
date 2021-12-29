@@ -9,6 +9,7 @@ query productSlug($slug: String!) {
     imagesCdn
     price
     stock
+    trackInventory
     ratings
     reviews
     vendor {
