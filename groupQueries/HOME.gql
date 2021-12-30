@@ -58,6 +58,7 @@ query HOME($store: ID, $zip: Float) {
       slug
       img
       imgCdn
+      link
       level
       metaTitle
       metaDescription
