@@ -11,6 +11,7 @@ query categorySimple($id: String, $slug: String) {
     banner
     bannerCdn
     level
+    link
     position
     metaTitle
     metaDescription

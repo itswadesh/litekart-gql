@@ -8,6 +8,7 @@ query {
     slugPath
     namePath
     level
+    link
     position
     megamenu
     meta

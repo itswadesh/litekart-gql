@@ -24,31 +24,37 @@ query megamenu(
     banner
     bannerCdn
     featured
+    link
     children {
       name
       slug
       img
       featured
+      link
       children {
         name
         slug
         img
         featured
+        link
         children {
           name
           slug
           img
           featured
+          link
           children {
             name
             slug
             img
             featured
+            link
             children {
               name
               slug
               img
               featured
+              link
               children {
                 name
                 slug

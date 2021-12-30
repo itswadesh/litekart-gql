@@ -10,6 +10,7 @@ query category($id: String, $slug: String) {
     banner
     bannerCdn
     level
+    link
     pathA {
       slug
       name

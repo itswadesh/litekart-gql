@@ -19,6 +19,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
     active
     megamenu
     shopbycategory
+    link
     children {
       id
       name
@@ -37,6 +38,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
       active
       megamenu
       shopbycategory
+      link
       children {
         id
         name
@@ -55,6 +57,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
         active
         megamenu
         shopbycategory
+        link
         children {
           id
           name
@@ -73,6 +76,7 @@ query megamenuAll($id: ID, $search: String, $sort: String, $featured: Boolean) {
           active
           megamenu
           shopbycategory
+          link
           children {
             id
             name

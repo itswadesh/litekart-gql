@@ -10,6 +10,7 @@ mutation saveCategory(
   $img: String
   $banner: String
   $level: Int
+  $link: String
   $meta: String
   $metaTitle: String
   $metaDescription: String
@@ -35,6 +36,7 @@ mutation saveCategory(
     img: $img
     banner: $banner
     level: $level
+    link: $link
     meta: $meta
     metaTitle: $metaTitle
     metaDescription: $metaDescription
@@ -61,6 +63,7 @@ mutation saveCategory(
     bannerCdn
     position
     level
+    link
     meta
     metaTitle
     metaDescription

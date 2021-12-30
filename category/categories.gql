@@ -37,6 +37,7 @@ query categories(
       banner
       bannerCdn
       level
+      link
       metaTitle
       metaDescription
       metaKeywords
