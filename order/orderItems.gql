@@ -103,6 +103,7 @@ query orderItems(
       userEmail
       invoiceLink
       returnValidTill
+      returnPolicyExpired
       returnReason
       discount
       baseDiscount

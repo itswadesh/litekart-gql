@@ -88,6 +88,7 @@ query orderItem($id: ID!) {
     invoiceLink
     replaceValidTill
     returnValidTill
+    returnPolicyExpired
     returnReason
     discount
     baseDiscount
