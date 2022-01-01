@@ -46,6 +46,10 @@ query orderItem($id: ID!) {
     returnTrackingId
     courierName
     returnCourierName
+    replaceValidTill
+    returnValidTill
+    returnPolicyExpired
+    returnReason
     type
     amountRefunded
     baseAmountRefunded
@@ -86,10 +90,6 @@ query orderItem($id: ID!) {
     userPhone
     userEmail
     invoiceLink
-    replaceValidTill
-    returnValidTill
-    returnPolicyExpired
-    returnReason
     discount
     baseDiscount
     totalDiscount

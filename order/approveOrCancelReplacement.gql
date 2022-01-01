@@ -1,0 +1,78 @@
+mutation approveOrCancelReplacement($id: ID!, $action: String!) {
+  approveOrCancelReplacement(id: $id, action: $action) {
+    id
+    status
+    pid
+    posInvoiceNo
+    itemOrderNo
+    name
+    slug
+    img
+    tracking
+    shippingCharge
+    price
+    qty
+    tax
+    brandName
+    brandImg
+    size
+    color
+    trackingId
+    returnTrackingId
+    courierName
+    returnCourierName
+    #order level info
+    orderNo
+    otp
+    createdAt
+    paySuccess
+    paymentMode
+    paymentStatus
+    paymentCurrency
+    paymentReferenceId
+    paymentOrderId
+    paymentReceipt
+    invoiceId
+    paymentGateway
+    codPaid
+    amountPaid
+    amountDue
+    paymentMsg
+    paymentTime
+    paid
+    userFirstName
+    userLastName
+    userPhone
+    invoiceLink
+    replaceValidTill
+    returnValidTill
+    address {
+      firstName
+      lastName
+      town
+      city
+      state
+      zip
+      address
+      lat
+      lng
+    }
+    orderHistory {
+      id
+      status
+      title
+      body
+      icon
+      public
+      index
+      time
+    }
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "id": "61d0ae9341284c2a1ceb9fee",
+#   "action": "approve" or "cancel"
+# }

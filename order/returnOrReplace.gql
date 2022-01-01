@@ -2,11 +2,15 @@ mutation returnOrReplace(
   $orderItemId: ID!
   $reason: String!
   $requestType: String!
+  $address: ID
+  $comment: String
 ) {
   returnOrReplace(
     orderItemId: $orderItemId
     reason: $reason
     requestType: $requestType
+    address: $address
+    comment: $comment
   ) {
     id
     orderId
@@ -169,7 +173,7 @@ mutation returnOrReplace(
 }
 
 # {
-#   "orderItemId": "61a271d01a6f7e4f081c5263",
-#   "requestType": "return", replace
+#   "orderItemId": "61d05e08abbdf23808e36d3e",
+#   "requestType": "replace",
 #   "reason": "damaged"
 # }
