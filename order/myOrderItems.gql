@@ -24,6 +24,7 @@ query myOrderItems(
     data {
       id
       status
+      isReplacement
       pid
       usedOptions {
         name
