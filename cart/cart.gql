@@ -61,5 +61,37 @@ query cart($store: ID) {
       subtotal
       total
     }
+    unavailableItems {
+      status
+      msg
+      pid
+      barcode
+      tax
+      name
+      type
+      slug
+      qty
+      price
+      mrp
+      shippingCharge
+      img
+      imgCdn
+      tracking
+      brandName
+      vendor
+      vendorSlug
+      vendorBusinessName
+      deliveryDetails
+      foodType
+      usedOptions {
+        name
+        val
+        dates
+      }
+      options {
+        option
+        values
+      }
+    }
   }
 }
