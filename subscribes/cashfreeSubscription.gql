@@ -1,0 +1,17 @@
+mutation cashfreeSubscription($subscription: ID!, $intervalType: String) {
+  cashfreeSubscription(
+    subscription: $subscription
+    intervalType: $intervalType
+  ) {
+    id
+    paymentReferenceId
+    authLink
+  }
+}
+
+# intervalType: year or month(default)
+
+# {
+#   "subscription": "61b078664332fe348055032d",
+#   "intervalType": "month"
+# }
