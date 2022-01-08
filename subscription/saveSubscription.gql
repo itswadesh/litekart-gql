@@ -25,6 +25,8 @@ mutation saveSubscription(
   $unlimitedProducts: Boolean
   $unlimitedValidity: Boolean
   $maxAdminAllowed: Int
+  $cashfreePlanId: String
+  $stripePlanId: String
 ) {
   saveSubscription(
     id: $id
@@ -53,6 +55,8 @@ mutation saveSubscription(
     unlimitedProducts: $unlimitedProducts
     unlimitedValidity: $unlimitedValidity
     maxAdminAllowed: $maxAdminAllowed
+    cashfreePlanId: $cashfreePlanId
+    stripePlanId: $stripePlanId
   ) {
     id
     name
@@ -81,6 +85,8 @@ mutation saveSubscription(
     unlimitedProducts
     unlimitedValidity
     maxAdminAllowed
+    cashfreePlanId
+    stripePlanId
     createdAt
     updatedAt
   }

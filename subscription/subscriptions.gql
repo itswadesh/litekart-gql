@@ -42,6 +42,8 @@ query subscriptions(
       unlimitedProducts
       unlimitedValidity
       maxAdminAllowed
+      cashfreePlanId
+      stripePlanId
       createdAt
       updatedAt
     }

@@ -1,41 +1,13 @@
-mutation stripeSubscription(
-  $subscription: ID!
-  $intervalType: String
-  $paymentMethodId: String
-) {
-  stripeSubscription(
-    subscription: $subscription
-    intervalType: $intervalType
-    paymentMethodId: $paymentMethodId
-  ) {
+mutation stripeSubscription($subscription: ID!, $intervalType: String) {
+  stripeSubscription(subscription: $subscription, intervalType: $intervalType) {
     id
-    subscribe
-    paymentMode
-    paymentGateway
-    referenceId
-    txMsg
-    txTime
-    invoiceId
-    receipt
-    paid
-    amountPaid
-    amountDue
-    amountRefunded
-    currency
-    captured
-    status
-    orderId
-    notes
-    refundStatus
-    description
-    email
-    contact
-    fee
-    tax
-    errorCode
-    errorDescription
-    token
-    clientSecret
-    approvalUrl
+    paymentReferenceId
   }
 }
+
+# intervalType: year or month(default)
+
+# {
+#   "subscription": "61b078664332fe348055032d",
+#   "intervalType": "month"
+# }

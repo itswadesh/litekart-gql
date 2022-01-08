@@ -27,6 +27,8 @@ query subscription($id: ID!) {
     unlimitedProducts
     unlimitedValidity
     maxAdminAllowed
+    cashfreePlanId
+    stripePlanId
     createdAt
     updatedAt
   }
