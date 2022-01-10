@@ -1,0 +1,32 @@
+query influencers(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $product: ID!
+) {
+  influencers(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    product: $product
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      videos
+      user {
+        id
+        name
+        fullName
+        firstName
+        lastName
+        email
+        phone
+      }
+    }
+  }
+}

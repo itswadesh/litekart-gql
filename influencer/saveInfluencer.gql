@@ -1,0 +1,12 @@
+mutation saveInfluencer($id: String!, $videos: [String], $product: ID) {
+  saveInfluencer(id: $id, videos: $videos, product: $product) {
+    id
+    videos
+  }
+}
+
+# {
+#   "id": "new",
+#   "videos": ["ii","ppaa"],
+#   "product": "61b07a024332fe34805505f7"
+# }

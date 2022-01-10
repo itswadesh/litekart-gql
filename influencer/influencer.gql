@@ -1,0 +1,10 @@
+query influencer($id: ID!) {
+  influencer(id: $id) {
+    id
+    videos
+    product {
+      id
+      name
+    }
+  }
+}
