@@ -61,6 +61,13 @@ query settings {
       name
       symbol
     }
+    lang
+    langDetails {
+      id
+      name
+      nativeName
+      code
+    }
     logo
     logoMobile
     logoDark

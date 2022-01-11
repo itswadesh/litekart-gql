@@ -1,0 +1,3 @@
+mutation removeStoreLanguage($id: ID!) {
+  removeStoreLanguage(id: $id)
+}

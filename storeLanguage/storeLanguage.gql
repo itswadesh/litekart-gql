@@ -1,0 +1,24 @@
+query storeLanguage($id: ID!) {
+  storeLanguage(id: $id) {
+    id
+    default
+    active
+    lang {
+      id
+      name
+      nativeName
+      code
+      phpLocaleCode
+      rtl
+      sort
+      active
+      createdAt
+      updatedAt
+    }
+    user {
+      id
+      firstName
+      lastName
+    }
+  }
+}

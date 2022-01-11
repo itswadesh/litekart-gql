@@ -13,6 +13,7 @@ mutation saveSettings(
   $keywords: String
   $description: String
   $currency: ID
+  $lang: ID
   $currencyCode: String
   $currencySymbol: String
   $currencyDecimals: Int
@@ -81,6 +82,7 @@ mutation saveSettings(
     keywords: $keywords
     description: $description
     currency: $currency
+    lang: $lang
     currencyCode: $currencyCode
     currencySymbol: $currencySymbol
     currencyDecimals: $currencyDecimals

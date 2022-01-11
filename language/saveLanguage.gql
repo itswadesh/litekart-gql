@@ -2,6 +2,7 @@ mutation saveLanguage(
   $id: String
   $code: String
   $name: String
+  $nativeName: String
   $active: Boolean
   $phpLocaleCode: String
   $rtl: Boolean
@@ -13,17 +14,18 @@ mutation saveLanguage(
     phpLocaleCode: $phpLocaleCode
     rtl: $rtl
     name: $name
+    nativeName: $nativeName
     sort: $sort
     active: $active
   ) {
     id
     name
+    nativeName
     code
     phpLocaleCode
     rtl
     sort
     active
-    store
     createdAt
     updatedAt
   }

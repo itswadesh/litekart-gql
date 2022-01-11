@@ -2,6 +2,7 @@ query language($id: ID!) {
   language(id: $id) {
     id
     name
+    nativeName
     code
     phpLocaleCode
     rtl

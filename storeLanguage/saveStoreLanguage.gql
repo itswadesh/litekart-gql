@@ -1,0 +1,15 @@
+mutation saveStoreLanguage(
+  $id: String!
+  $lang: ID
+  $default: Boolean
+  $active: Boolean
+) {
+  saveStoreLanguage(id: $id, lang: $lang, default: $default, active: $active) {
+    id
+    default
+    active
+    lang
+    user
+    store
+  }
+}
