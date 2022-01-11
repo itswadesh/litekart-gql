@@ -1,0 +1,7 @@
+mutation clearCache($name: String!) {
+  clearCache(name: $name)
+}
+
+# {
+#   "name": "litekart-admin-ka-store1.localhost"
+# }
