@@ -19,6 +19,8 @@ query storeCurrencies(
       id
       default
       active
+      conversionMode
+      conversionRate
       currency {
         id
         name

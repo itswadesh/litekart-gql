@@ -3,16 +3,22 @@ mutation saveStoreCurrency(
   $currency: ID
   $default: Boolean
   $active: Boolean
+  $conversionMode: String
+  $conversionRate: Float
 ) {
   saveStoreCurrency(
     id: $id
     currency: $currency
     default: $default
     active: $active
+    conversionMode: $conversionMode
+    conversionRate: $conversionRate
   ) {
     id
     default
     active
+    conversionMode
+    conversionRate
     currency
     user
     store

@@ -3,6 +3,8 @@ query storeCurrency($id: ID!) {
     id
     default
     active
+    conversionMode
+    conversionRate
     currency {
       id
       name
