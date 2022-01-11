@@ -1,7 +1,7 @@
 query cart($store: ID) {
   cart(store: $store) {
     id
-    currency
+    storeCurrency
     currencyCode
     currencyName
     currencySymbol
