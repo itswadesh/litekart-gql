@@ -1,0 +1,16 @@
+query event($id: String!) {
+  event(id: $id) {
+    id
+    active
+    createdAt
+    updatedAt
+    rules {
+      enable
+      day
+      intervals {
+        from
+        to
+      }
+    }
+  }
+}

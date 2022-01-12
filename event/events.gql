@@ -1,0 +1,21 @@
+query events($page: Int, $search: String, $limit: Int, $sort: String) {
+  events(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      active
+      createdAt
+      updatedAt
+      rules {
+        enable
+        day
+        intervals {
+          from
+          to
+        }
+      }
+    }
+  }
+}
