@@ -12,5 +12,12 @@ query event($id: String!) {
         to
       }
     }
+    user {
+      id
+      name
+      email
+      phone
+      avatar
+    }
   }
 }

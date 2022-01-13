@@ -16,6 +16,13 @@ query events($page: Int, $search: String, $limit: Int, $sort: String) {
           to
         }
       }
+      user {
+        id
+        name
+        email
+        phone
+        avatar
+      }
     }
   }
 }

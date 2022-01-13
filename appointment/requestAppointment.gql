@@ -1,5 +1,5 @@
-mutation requestAppointment($phone: String, $email: String) {
-  requestAppointment(phone: $phone, email: $email) {
+mutation requestAppointment($phone: String, $email: String, $event: ID!) {
+  requestAppointment(phone: $phone, email: $email, event: $event) {
     id
     type
     status
@@ -17,5 +17,6 @@ mutation requestAppointment($phone: String, $email: String) {
 
 # {
 #  "phone": "99991112912",
-#   "email": "pra@gmail.com"
+#   "email": "pra@gmail.com",
+#   "event": "61deef8bdca10814ec3acf59"
 # }

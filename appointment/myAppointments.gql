@@ -1,0 +1,25 @@
+query myAppointments($page: Int, $search: String, $limit: Int, $sort: String) {
+  myAppointments(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      type
+      status
+      from
+      to
+      date
+      phone
+      email
+      createdAt
+      updatedAt
+      event {
+        id
+      }
+      user {
+        id
+      }
+    }
+  }
+}

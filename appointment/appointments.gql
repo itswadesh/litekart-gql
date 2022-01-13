@@ -31,6 +31,9 @@ query appointments(
       }
       uid {
         id
+        name
+        phone
+        email
       }
     }
   }
