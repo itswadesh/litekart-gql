@@ -1,0 +1,21 @@
+mutation updateAppointment($id: ID!, $status: String) {
+  updateAppointment(id: $id, status: $status) {
+    id
+    type
+    status
+    event
+    from
+    to
+    date
+    phone
+    email
+    uid
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "id": "61dfc1622d81d5182cd60c71",
+#   "status": "cancel" or not done
+# }

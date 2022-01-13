@@ -1,0 +1,21 @@
+mutation requestAppointment($phone: String, $email: String) {
+  requestAppointment(phone: $phone, email: $email) {
+    id
+    type
+    status
+    event
+    from
+    to
+    date
+    phone
+    email
+    uid
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#  "phone": "99991112912",
+#   "email": "pra@gmail.com"
+# }

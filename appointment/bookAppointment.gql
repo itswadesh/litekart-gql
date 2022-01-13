@@ -1,0 +1,28 @@
+mutation bookAppointment(
+  $event: ID!
+  $from: String
+  $to: String
+  $date: String
+) {
+  bookAppointment(event: $event, from: $from, to: $to, date: $date) {
+    id
+    type
+    status
+    event
+    from
+    to
+    date
+    phone
+    email
+    uid
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "event": "61deef8bdca10814ec3acf59",
+#   "from": "9:00",
+#   "to": "10:00",
+#   "date": "27-2-21"
+# }

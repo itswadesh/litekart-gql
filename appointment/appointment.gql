@@ -1,0 +1,20 @@
+query appointment($id: String!) {
+  appointment(id: $id) {
+    id
+    type
+    status
+    from
+    to
+    date
+    phone
+    email
+    createdAt
+    updatedAt
+    event {
+      id
+    }
+    uid {
+      id
+    }
+  }
+}

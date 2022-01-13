@@ -1,0 +1,37 @@
+query appointments(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $type: String
+) {
+  appointments(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    type: $type
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      type
+      status
+      from
+      to
+      date
+      phone
+      email
+      createdAt
+      updatedAt
+      event {
+        id
+      }
+      uid {
+        id
+      }
+    }
+  }
+}
