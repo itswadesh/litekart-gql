@@ -60,6 +60,7 @@ query DETAIL($id: ID!) {
     sizechart
     batchNo
     mfgDate
+    expired
     expiryDate
     isSearchable
     isUnlimited
