@@ -1,0 +1,29 @@
+query eventOnDate($id: String!, $date: String!) {
+  eventOnDate(id: $id, date: $date) {
+    id
+    active
+    createdAt
+    updatedAt
+    rules {
+      enable
+      day
+      intervals {
+        from
+        to
+        isBooked
+      }
+    }
+    user {
+      id
+      name
+      email
+      phone
+      avatar
+    }
+  }
+}
+
+# {
+#   "id": "61e124eb4bbaca33b0bc4aaf",
+#   "date": "2022-1-25"
+# }
