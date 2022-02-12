@@ -151,6 +151,11 @@ query store {
     sms {
       AUTO_VERIFICATION_ID
     }
+    shippoToken
+    shipRocketEmail
+    shipRocketPassword
+    shipRocketChannelId
+    pickrrAuthToken
     storeTiming {
       day
       fromTime

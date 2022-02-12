@@ -100,6 +100,11 @@ mutation saveStore(
   $hideDecimalInCurrency: Boolean
   $sms: SmsIp
   $vendorNotifications: VendorNotificationIp
+  $shippoToken: String
+  $shipRocketEmail: String
+  $shipRocketPassword: String
+  $shipRocketChannelId: String
+  $pickrrAuthToken: String
 ) {
   saveStore(
     id: $id
@@ -203,6 +208,11 @@ mutation saveStore(
     hideDecimalInCurrency: $hideDecimalInCurrency
     sms: $sms
     vendorNotifications: $vendorNotifications
+    shippoToken: $shippoToken
+    shipRocketEmail: $shipRocketEmail
+    shipRocketPassword: $shipRocketPassword
+    shipRocketChannelId: $shipRocketChannelId
+    pickrrAuthToken: $pickrrAuthToken
   ) {
     id
     active
@@ -334,5 +344,10 @@ mutation saveStore(
     sms {
       AUTO_VERIFICATION_ID
     }
+    shippoToken
+    shipRocketEmail
+    shipRocketPassword
+    shipRocketChannelId
+    pickrrAuthToken
   }
 }

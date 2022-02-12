@@ -153,6 +153,11 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     sms {
       AUTO_VERIFICATION_ID
     }
+    shippoToken
+    shipRocketEmail
+    shipRocketPassword
+    shipRocketChannelId
+    pickrrAuthToken
     user {
       firstName
       lastName
