@@ -153,7 +153,7 @@ query settings {
     isVerifyEmail
     isSaas
     isSearch
-    shippingProvider
+    shippingProviders
     foodTypes {
       name
       val
