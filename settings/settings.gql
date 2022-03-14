@@ -150,10 +150,8 @@ query settings {
     isMultiVendor
     isMultiStore
     isMegamenu
-    isVerifyEmail
     isSaas
     isSearch
-    shippingProviders
     foodTypes {
       name
       val
