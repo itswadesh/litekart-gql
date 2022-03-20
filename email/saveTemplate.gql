@@ -1,4 +1,4 @@
-mutation saveEmailTemplate(
+mutation saveTemplate(
   $id: String!
   $name: String
   $title: String
@@ -9,7 +9,7 @@ mutation saveEmailTemplate(
   $variables: [String]
   $store: ID
 ) {
-  saveEmailTemplate(
+  saveTemplate(
     id: $id
     name: $name
     title: $title

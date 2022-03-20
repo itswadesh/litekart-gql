@@ -1,11 +1,11 @@
-query emailTemplates(
+query templates(
   $page: Int
   $search: String
   $limit: Int
   $sort: String
   $store: ID
 ) {
-  emailTemplates(
+  templates(
     page: $page
     search: $search
     limit: $limit
@@ -45,6 +45,6 @@ query emailTemplates(
   }
 }
 
-# query emailTemplates($folder: String, $name: String) {
-#   emailTemplates(folder: $folder, name: $name)
+# query templates($folder: String, $name: String) {
+#   templates(folder: $folder, name: $name)
 # }

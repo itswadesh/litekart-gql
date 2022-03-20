@@ -1,5 +1,5 @@
-query emailTemplate($id: ID!) {
-  emailTemplate(id: $id) {
+query template($id: ID!) {
+  template(id: $id) {
     id
     name
     fileName
