@@ -42,5 +42,6 @@ query vendor1($id: ID) {
       store
       storePhotos
     }
+    categories
   }
 }

@@ -20,6 +20,7 @@ mutation saveVendor(
   $githubUrl: String
   $googleUrl: String
   $twitterUrl: String
+  $categories: [ID]
 ) {
   saveVendor(
     id: $id
@@ -43,6 +44,7 @@ mutation saveVendor(
     githubUrl: $githubUrl
     googleUrl: $googleUrl
     twitterUrl: $twitterUrl
+    categories: $categories
   ) {
     id
     slug
@@ -73,6 +75,7 @@ mutation saveVendor(
     user
     store
     address
+    categories
     createdAt
     updatedAt
   }

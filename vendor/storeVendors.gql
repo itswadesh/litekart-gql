@@ -50,6 +50,10 @@ query storeVendors($store: ID!) {
       address {
         id
       }
+      categories {
+        id
+        name
+      }
       store {
         id
         name

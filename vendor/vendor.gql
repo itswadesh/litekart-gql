@@ -57,6 +57,10 @@ query vendor($id: ID) {
       lat
       lng
     }
+    categories {
+      id
+      name
+    }
     store {
       id
       name
