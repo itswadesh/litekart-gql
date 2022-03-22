@@ -1,3 +1,5 @@
 mutation deleteCategory($id: ID!) {
-  deleteCategory(id: $id)
+  deleteCategory(id: $id) {
+    id
+  }
 }
