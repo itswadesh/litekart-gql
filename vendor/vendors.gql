@@ -1,0 +1,87 @@
+query vendors(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+  $store: ID
+  $categories: [ID]
+) {
+  vendors(
+    page: $page
+    skip: $skip
+    limit: $limit
+    search: $search
+    sort: $sort
+    store: $store
+    categories: $categories
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      slug
+      businessName
+      verified
+      bankAccountNo
+      bankName
+      bankIfsc
+      bankAccountHolderName
+      bankSwiftCode
+      banner
+      bannerCdn
+      commissionType
+      commissionValue
+      zips
+      freeShippingOn
+      meta
+      metaDescription
+      metaKeywords
+      metaTitle
+      productSold
+      ratings
+      reviews
+      shippingCharges
+      storeName
+      facebookUrl
+      githubUrl
+      googleUrl
+      twitterUrl
+      info {
+        public
+        store
+        storePhotos
+      }
+      country {
+        id
+        name
+      }
+      user {
+        id
+        avatar
+        firstName
+        lastName
+      }
+      address {
+        id
+      }
+      categories {
+        id
+        name
+      }
+      store {
+        id
+        name
+        email
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
+
+# {
+# 	"categories": "61ee35aea1ce762634d2b6a8",
+#   "store": "61b078f74332fe3480550395"
+# }
