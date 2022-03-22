@@ -3,6 +3,9 @@ query vendor($id: ID) {
     id
     slug
     businessName
+    categories {
+      id
+    }
     verified
     bankAccountNo
     bankName
