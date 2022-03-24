@@ -1,4 +1,4 @@
-query getLocationFromZipIndia($zip: Int!) {
+query getLocationFromZipIndia($zip: String!) {
   getLocationFromZipIndia(zip: $zip) {
     zip
     state

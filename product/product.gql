@@ -1,4 +1,4 @@
-query product($id: ID!, $zip: Float, $optionValues: [ID]) {
+query product($id: ID!, $zip: String, $optionValues: [ID]) {
   product(id: $id, zip: $zip, optionValues: $optionValues) {
     id
     slug

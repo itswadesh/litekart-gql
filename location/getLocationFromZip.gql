@@ -1,4 +1,4 @@
-query getLocationFromZip($zip: Int!, $country: String!) {
+query getLocationFromZip($zip: String!, $country: String!) {
   getLocationFromZip(zip: $zip, country: $country) {
     city
     district

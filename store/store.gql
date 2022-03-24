@@ -13,29 +13,6 @@ query store {
     city
     closed
     closedMessage
-    country
-    countryDetails {
-      id
-      name
-      value
-      dialCode
-      code
-      img
-      imgCdn
-      flag
-      lang
-      active
-    }
-    currency
-    currencyDetails {
-      id
-      isoCode
-      name
-      symbol
-    }
-    currencyCode
-    currencyDecimals
-    currencySymbol
     customerOrderNotifications {
       downloadEGoods
       giftCardPurchased
@@ -68,7 +45,6 @@ query store {
     homeMeta2
     homeMeta3
     homeMeta4
-    hideDecimalInCurrency
     img
     imgCdn
     images

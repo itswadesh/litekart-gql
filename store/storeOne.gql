@@ -16,27 +16,6 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     isWishlist
     isCart
     closedMessage
-    country {
-      id
-      name
-      value
-      dialCode
-      code
-      img
-      imgCdn
-      flag
-      lang
-      active
-    }
-    currency {
-      id
-      isoCode
-      name
-      symbol
-    }
-    currencyCode
-    currencyDecimals
-    currencySymbol
     customerOrderNotifications {
       downloadEGoods
       giftCardPurchased
@@ -146,8 +125,6 @@ query storeOne($id: ID, $slug: String, $domain: String) {
     zip
     timeDisplayFormat
     priceDisplayFormat
-    currencySuffix
-    hideDecimalInCurrency
     createdAt
     updatedAt
     sms {

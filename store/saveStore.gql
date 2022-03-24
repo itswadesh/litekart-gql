@@ -10,11 +10,6 @@ mutation saveStore(
   $city: String
   $closed: Boolean
   $closedMessage: String
-  $country: ID
-  $currency: ID
-  $currencyCode: String
-  $currencyDecimals: Float
-  $currencySymbol: String
   $customerOrderNotifications: UserNotificationIp
   $description: String
   $metaDescription: String
@@ -93,11 +88,8 @@ mutation saveStore(
   $weightUnit: String
   $youtubeUrl: String
   $webmail: String
-  $zip: Float
   $timeDisplayFormat: String
   $priceDisplayFormat: String
-  $currencySuffix: String
-  $hideDecimalInCurrency: Boolean
   $sms: SmsIp
   $vendorNotifications: VendorNotificationIp
   $shippoToken: String
@@ -118,11 +110,6 @@ mutation saveStore(
     city: $city
     closed: $closed
     closedMessage: $closedMessage
-    country: $country
-    currency: $currency
-    currencyCode: $currencyCode
-    currencyDecimals: $currencyDecimals
-    currencySymbol: $currencySymbol
     customerOrderNotifications: $customerOrderNotifications
     description: $description
     metaDescription: $metaDescription
@@ -201,11 +188,8 @@ mutation saveStore(
     weightUnit: $weightUnit
     youtubeUrl: $youtubeUrl
     webmail: $webmail
-    zip: $zip
     timeDisplayFormat: $timeDisplayFormat
     priceDisplayFormat: $priceDisplayFormat
-    currencySuffix: $currencySuffix
-    hideDecimalInCurrency: $hideDecimalInCurrency
     sms: $sms
     vendorNotifications: $vendorNotifications
     shippoToken: $shippoToken
@@ -228,11 +212,6 @@ mutation saveStore(
     city
     closed
     closedMessage
-    country
-    currency
-    currencyCode
-    currencyDecimals
-    currencySymbol
     customerOrderNotifications {
       downloadEGoods
       giftCardPurchased
@@ -333,11 +312,8 @@ mutation saveStore(
     weightUnit
     youtubeUrl
     webmail
-    zip
     timeDisplayFormat
     priceDisplayFormat
-    currencySuffix
-    hideDecimalInCurrency
     createdAt
     updatedAt
     user

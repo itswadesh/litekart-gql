@@ -1,4 +1,4 @@
-query bestSellers($zip: Float) {
+query bestSellers($zip: String) {
   bestSellers(zip: $zip) {
     t {
       count

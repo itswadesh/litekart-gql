@@ -18,27 +18,6 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       city
       closed
       closedMessage
-      country {
-        id
-        name
-        value
-        dialCode
-        code
-        img
-        imgCdn
-        flag
-        lang
-        active
-      }
-      currency {
-        id
-        isoCode
-        symbol
-        name
-      }
-      currencyCode
-      currencyDecimals
-      currencySymbol
       customerOrderNotifications {
         downloadEGoods
         giftCardPurchased
@@ -137,8 +116,6 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       zip
       timeDisplayFormat
       priceDisplayFormat
-      currencySuffix
-      hideDecimalInCurrency
       createdAt
       updatedAt
       user {

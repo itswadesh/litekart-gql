@@ -1,4 +1,4 @@
-query getCoordinatesFromZip($zip: Int!) {
+query getCoordinatesFromZip($zip: String!) {
   getCoordinatesFromZip(zip: $zip) {
     lat
     lng

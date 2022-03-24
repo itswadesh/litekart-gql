@@ -14,7 +14,7 @@ mutation razorpay($address: ID, $slot: ID) {
 #   $country: String
 #   $state: String
 #   $coords: Geo
-#   $zip: Int
+#   $zip: String
 #   $phone: String
 # ) {
 #   razorpay(
