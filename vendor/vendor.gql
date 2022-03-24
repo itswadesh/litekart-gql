@@ -69,6 +69,7 @@ query vendor($id: ID) {
       name
       email
     }
+    verified
     createdAt
     updatedAt
   }
