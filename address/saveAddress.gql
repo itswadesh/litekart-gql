@@ -10,7 +10,7 @@ mutation saveAddress(
   $city: String
   $country: String
   $state: String
-  $zip: Int
+  $zip: String
   $phone: String
   $email: String
   $lat: Float
