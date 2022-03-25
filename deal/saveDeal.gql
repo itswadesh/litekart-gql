@@ -1,6 +1,7 @@
 mutation saveDeal(
   $id: ID
   $name: String
+  $description: String
   $img: String
   $startTime: String
   $endTime: String
@@ -15,6 +16,7 @@ mutation saveDeal(
   saveDeal(
     id: $id
     name: $name
+    description: $description
     img: $img
     startTime: $startTime
     endTime: $endTime
@@ -28,6 +30,7 @@ mutation saveDeal(
   ) {
     id
     name
+    description
     img
     imgCdn
     startTime
@@ -41,3 +44,13 @@ mutation saveDeal(
     store
   }
 }
+
+# {
+#   "id": "new",
+# "endTime": "2022-03-23T05:42:37.316Z",
+# "img": "https://misiki.s3.ap-south-1.amazonaws.com/stores/613ecab0f4444b321ee30346/deals/pj_logo-yxrk2djdknnp.jpg",
+# "name": "test ",
+# "onGoing": false,
+# "startTime": "2022-03-25T05:42:37.316Z",
+#   "dealStatus": true
+# }
