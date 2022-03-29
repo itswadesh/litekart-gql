@@ -10,7 +10,7 @@ mutation {
     city: "San Francisco"
     country: "US"
     state: "CA"
-    zip: 94117
+    zip: "94117"
     phone: "8003423344"
     lat: 27.2046
     lng: 77.4977

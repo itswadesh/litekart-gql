@@ -78,7 +78,7 @@ mutation saveProduct(
   $isSearchable: Boolean
   $preOrder: Boolean
   $isUnlimited: Boolean
-  $zips: [Float]
+  $zips: [String]
   $foodType: String
   $deliveryDetails: String
   $slots: [ID]

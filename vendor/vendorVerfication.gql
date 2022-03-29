@@ -2,7 +2,7 @@ mutation vendorVerification(
   $id: ID!
   $country: ID
   $store: ID
-  $zips: [Float]
+  $zips: [String]
   $zip: String
   $verified: Boolean
 ) {
