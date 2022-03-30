@@ -75,10 +75,6 @@ query product($id: ID!, $zip: String, $optionValues: [ID]) {
       name
       value
     }
-    location {
-      id
-      name
-    }
     country {
       id
       name

@@ -96,7 +96,6 @@ query product1($id: ID!) {
     zips
     foodType
     slots
-    location
     country
     formattedMrp
     formattedPrice
