@@ -135,6 +135,7 @@ query settings {
     }
     ADMIN_PANEL_LINK
     DOCS_LINK
+    IS_IMAGE_UPLOAD_REST
     storageProvider
     googleMapsApi
     facebook
