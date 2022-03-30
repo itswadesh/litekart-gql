@@ -4,7 +4,8 @@ mutation saveProduct(
   $slug: String
   $description: String
   $type: String
-  $location: ID
+  $lat: Float
+  $lng: Float
   $country: ID
   $price: Float
   $mrp: Float
@@ -90,7 +91,8 @@ mutation saveProduct(
     slug: $slug
     description: $description
     type: $type
-    location: $location
+    lat: $lat
+    lng: $lng
     country: $country
     price: $price
     mrp: $mrp
@@ -183,6 +185,8 @@ mutation saveProduct(
     imgCdn
     images
     imagesCdn
+    lat
+    lng
     time
     active
     popularity
@@ -263,7 +267,6 @@ mutation saveProduct(
     isUnlimited
     zips
     foodType
-    location
     country
     slots
     formattedMrp

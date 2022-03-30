@@ -2,7 +2,6 @@ mutation createProduct(
   $name: String
   $description: String
   $type: String
-  $location: ID
   $price: Float
   $stock: Int
   $category: ID
@@ -12,7 +11,6 @@ mutation createProduct(
   createProduct(
     name: $name
     description: $description
-    location: $location
     type: $type
     price: $price
     stock: $stock
