@@ -10,7 +10,6 @@ mutation attachUserToStore($storeId: ID!, $userId: ID!) {
     avatarCdn
     verified
     gender
-    city
     phone
     active
     shippingCharges

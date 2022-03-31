@@ -25,7 +25,6 @@ query allUsers(
       name
       avatar
       avatarCdn
-      city
       phone
       role
       verified
