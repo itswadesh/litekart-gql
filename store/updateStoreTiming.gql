@@ -25,7 +25,6 @@ mutation updateStoreTiming(
     alert
     analyticsTrackingId
     banners
-    city
     closed
     closedMessage
     currencyCode

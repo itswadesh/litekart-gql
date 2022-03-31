@@ -7,7 +7,6 @@ mutation saveStore(
   $alert: String
   $analyticsTrackingId: String
   $banners: [String]
-  $city: String
   $closed: Boolean
   $closedMessage: String
   $customerOrderNotifications: UserNotificationIp
@@ -107,7 +106,6 @@ mutation saveStore(
     alert: $alert
     analyticsTrackingId: $analyticsTrackingId
     banners: $banners
-    city: $city
     closed: $closed
     closedMessage: $closedMessage
     customerOrderNotifications: $customerOrderNotifications
@@ -209,7 +207,6 @@ mutation saveStore(
     alert
     analyticsTrackingId
     banners
-    city
     closed
     closedMessage
     customerOrderNotifications {

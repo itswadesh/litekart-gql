@@ -6,7 +6,6 @@ mutation saveUser(
   $role: String
   $verified: Boolean
   $gender: String
-  $city: String
   $phone: String
   $email: String
   $shippingCharges: Int
@@ -23,7 +22,6 @@ mutation saveUser(
     role: $role
     verified: $verified
     gender: $gender
-    city: $city
     phone: $phone
     email: $email
     shippingCharges: $shippingCharges
@@ -42,7 +40,6 @@ mutation saveUser(
     avatarCdn
     verified
     gender
-    city
     phone
     active
     verified

@@ -15,7 +15,6 @@ query stores($page: Int, $search: String, $limit: Int, $sort: String) {
       alert
       analyticsTrackingId
       banners
-      city
       closed
       closedMessage
       customerOrderNotifications {
