@@ -19,6 +19,8 @@ query storeCountries(
       id
       default
       active
+      name
+      code
       country {
         id
         name

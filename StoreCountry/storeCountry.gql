@@ -3,6 +3,8 @@ query storeCountry($id: ID!) {
     id
     default
     active
+    name
+    code
     country {
       id
       name

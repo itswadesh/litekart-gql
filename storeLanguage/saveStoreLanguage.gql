@@ -8,6 +8,8 @@ mutation saveStoreLanguage(
     id
     default
     active
+    name
+    code
     lang
     user
     store

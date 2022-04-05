@@ -140,5 +140,64 @@ query storeOne($id: ID, $slug: String, $domain: String) {
       email
       phone
     }
+    storeCountry {
+      id
+      default
+      active
+      name
+      code
+      country {
+        id
+        name
+        value
+        dialCode
+        code
+        img
+        imgCdn
+        flag
+        lang
+      }
+    }
+    storeCurrency {
+      id
+      default
+      active
+      isoCode
+      name
+      currency {
+        id
+        name
+        sort
+        isoCode
+        isoNumericCode
+        thousandsSeparator
+        decimalMark
+        symbolFirst
+        active
+        symbol
+        disambiguateSymbol
+        htmlEntity
+        subUnit
+        smallestDenomination
+        subunitToUnit
+      }
+    }
+    storeLanguage {
+      id
+      default
+      active
+      name
+      code
+      lang {
+        id
+        name
+        nativeName
+        code
+        phpLocaleCode
+        rtl
+        sort
+        active
+      }
+    }
   }
 }

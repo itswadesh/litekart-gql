@@ -3,6 +3,8 @@ query storeLanguage($id: ID!) {
     id
     default
     active
+    name
+    code
     lang {
       id
       name

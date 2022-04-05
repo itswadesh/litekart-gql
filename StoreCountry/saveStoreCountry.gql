@@ -14,6 +14,8 @@ mutation saveStoreCountry(
     default
     active
     country
+    name
+    code
     user
     store
   }

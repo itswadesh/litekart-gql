@@ -21,6 +21,8 @@ query storeCurrencies(
       active
       conversionMode
       conversionRate
+      isoCode
+      name
       currency {
         id
         name

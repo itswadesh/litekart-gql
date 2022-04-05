@@ -19,6 +19,8 @@ query storeLanguages(
       id
       default
       active
+      name
+      code
       lang {
         id
         name

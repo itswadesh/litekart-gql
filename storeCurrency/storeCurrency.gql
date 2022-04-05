@@ -5,6 +5,8 @@ query storeCurrency($id: ID!) {
     active
     conversionMode
     conversionRate
+    isoCode
+    name
     currency {
       id
       name
