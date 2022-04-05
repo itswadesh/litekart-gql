@@ -21,6 +21,7 @@ mutation saveStoreCurrency(
     conversionRate
     isoCode
     name
+    symbol
     currency
     user
     store

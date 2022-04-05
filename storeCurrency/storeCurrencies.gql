@@ -23,6 +23,7 @@ query storeCurrencies(
       conversionRate
       isoCode
       name
+      symbol
       currency {
         id
         name

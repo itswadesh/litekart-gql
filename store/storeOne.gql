@@ -164,6 +164,7 @@ query storeOne($id: ID, $slug: String, $domain: String) {
       active
       isoCode
       name
+      symbol
       currency {
         id
         name
