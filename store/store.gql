@@ -12,6 +12,9 @@ query store {
     banners
     closed
     closedMessage
+    currencyCode
+    currencySymbol
+    currencyDecimals
     customerOrderNotifications {
       downloadEGoods
       giftCardPurchased
