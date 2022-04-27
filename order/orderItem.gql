@@ -123,6 +123,17 @@ query orderItem($id: ID!) {
       lat
       lng
     }
+    billingAddress {
+      firstName
+      lastName
+      town
+      city
+      state
+      zip
+      address
+      lat
+      lng
+    }
     store {
       id
       name
