@@ -8,6 +8,8 @@ query me {
     gender
     role
     verified
+    verifiedAt
+    phoneVerified
     active
     provider
     avatar
