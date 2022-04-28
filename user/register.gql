@@ -4,7 +4,7 @@ mutation register(
   $passwordConfirmation: String!
   $firstName: String
   $lastName: String
-  $referrer: String
+  $referralCode: String
   $role: String
   $phone: String
   $store: ID
@@ -15,7 +15,7 @@ mutation register(
     passwordConfirmation: $passwordConfirmation
     firstName: $firstName
     lastName: $lastName
-    referrer: $referrer
+    referralCode: $referralCode
     role: $role
     phone: $phone
     store: $store
@@ -36,3 +36,13 @@ mutation register(
     updatedAt
   }
 }
+
+# {
+#   "email": "rojikaj967@viemery.com",
+#   "password": "vacimod673",
+#   "passwordConfirmation": "vacimod673",
+#   "firstName": "vacimod",
+#   "lastName": "673",
+#   "referralCode": "rvvfe",
+#   "role": "admin"
+# }
