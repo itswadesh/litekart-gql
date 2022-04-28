@@ -42,7 +42,6 @@ query allUsers(
         store
         public
       }
-      store
     }
   }
 }

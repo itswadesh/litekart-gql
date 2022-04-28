@@ -48,5 +48,7 @@ mutation saveUser(
     storeName
     banner
     roles
+    storeCommissionType
+    storeCommissionValue
   }
 }
