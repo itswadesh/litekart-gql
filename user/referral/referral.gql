@@ -1,0 +1,18 @@
+query referral($id: ID!) {
+  referral(id: $id) {
+    id
+    storeCreated
+    subscriptionBought
+    subscribe {
+      id
+    }
+    referredFrom {
+      id
+      email
+    }
+    referredTo {
+      id
+      email
+    }
+  }
+}

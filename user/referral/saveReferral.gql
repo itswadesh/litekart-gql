@@ -1,0 +1,30 @@
+mutation saveReferral(
+  $id: String!
+  $storeCreated: Boolean
+  $subscriptionBought: Boolean
+  $subscribe: ID
+  $referredFrom: ID
+  $referredTo: ID
+) {
+  saveReferral(
+    id: $id
+    storeCreated: $storeCreated
+    subscriptionBought: $subscriptionBought
+    subscribe: $subscribe
+    referredFrom: $referredFrom
+    referredTo: $referredTo
+  ) {
+    id
+    storeCreated
+    subscriptionBought
+    subscribe
+    referredFrom
+    referredTo
+  }
+}
+
+# {
+#   "id": "new",
+#   "referredFrom": "609233e040fcda1cebaa62f1",
+#   "referredTo": "6263e50c824c3132e0f2084b"
+# }

@@ -1,0 +1,23 @@
+query referrals($page: Int, $search: String, $limit: Int, $sort: String) {
+  referrals(page: $page, search: $search, limit: $limit, sort: $sort) {
+    count
+    page
+    pageSize
+    data {
+      id
+      storeCreated
+      subscriptionBought
+      subscribe {
+        id
+      }
+      referredFrom {
+        id
+        email
+      }
+      referredTo {
+        id
+        email
+      }
+    }
+  }
+}

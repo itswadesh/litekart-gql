@@ -1,0 +1,10 @@
+mutation deleteReferral($id: ID!) {
+  deleteReferral(id: $id) {
+    id
+    storeCreated
+    subscriptionBought
+    subscribe
+    referredFrom
+    referredTo
+  }
+}
