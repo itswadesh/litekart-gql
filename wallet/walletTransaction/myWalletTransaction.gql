@@ -1,32 +1,34 @@
-query allTransactions(
+query myWalletTransactions(
   $page: Int
   $skip: Int
   $limit: Int
   $search: String
   $sort: String
-  $q: String
-  $store: ID
 ) {
-  allTransactions(
+  myWalletTransactions(
     page: $page
     skip: $skip
     search: $search
     limit: $limit
     sort: $sort
-    q: $q
-    store: $store
   ) {
     count
     page
     pageSize
     data {
       id
+      trnxType
+      purpose
+      reference
       amount
-      remark
-      direction
+      balanceBefore
+      balanceAfter
+      summary
+      trnxSummary
+      referenceTable
+      referenceId
       user
-      balance
-      referedUser
+      wallet
       createdAt
       updatedAt
     }

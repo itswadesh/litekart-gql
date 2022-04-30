@@ -1,0 +1,13 @@
+query wallet($id: ID!) {
+  wallet(id: $id) {
+    id
+    balance
+    user {
+      id
+      email
+      phone
+    }
+    createdAt
+    updatedAt
+  }
+}

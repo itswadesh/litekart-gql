@@ -1,0 +1,25 @@
+query walletTransaction($id: ID!) {
+  walletTransaction(id: $id) {
+    id
+    trnxType
+    purpose
+    reference
+    amount
+    balanceBefore
+    balanceAfter
+    summary
+    trnxSummary
+    referenceTable
+    referenceId
+    user {
+      id
+      email
+    }
+    wallet {
+      id
+      balance
+    }
+    createdAt
+    updatedAt
+  }
+}

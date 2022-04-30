@@ -1,0 +1,36 @@
+query walletTransactions(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+) {
+  walletTransactions(
+    page: $page
+    skip: $skip
+    search: $search
+    limit: $limit
+    sort: $sort
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      trnxType
+      purpose
+      reference
+      amount
+      balanceBefore
+      balanceAfter
+      summary
+      trnxSummary
+      referenceTable
+      referenceId
+      user
+      wallet
+      createdAt
+      updatedAt
+    }
+  }
+}
