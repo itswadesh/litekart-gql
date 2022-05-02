@@ -6,3 +6,10 @@ mutation verifyEmail(
 ) {
   verifyEmail(id: $id, token: $token, expires: $expires, signature: $signature)
 }
+
+# {
+#   "id": "609233e040fcda1cebaa62f1",
+#   "token": "7fcc1d5f6e8b246517e48f80aaad2327871b688c",
+#   "signature": "0eab11664284c54990062eb579943477a3e14a539eff1463411cc6d8d1360186",
+#   "expires": "1648784687367"
+# }
