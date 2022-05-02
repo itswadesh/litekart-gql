@@ -8,7 +8,10 @@ query product($id: ID!, $zip: String, $optionValues: [ID]) {
     price
     mrp
     discount
+    hasStock
+    isUnlimited
     stock
+    totalSold
     trackInventory
     tax
     img
@@ -64,8 +67,6 @@ query product($id: ID!, $zip: String, $optionValues: [ID]) {
     expired
     expiryDate
     isSearchable
-    isUnlimited
-    totalSold
     preOrder
     zips
     foodType

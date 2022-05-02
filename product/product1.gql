@@ -8,7 +8,10 @@ query product1($id: ID!) {
     price
     mrp
     discount
+    hasStock
+    isUnlimited
     stock
+    totalSold
     trackInventory
     tax
     img
@@ -90,8 +93,6 @@ query product1($id: ID!) {
     unit
     dimensionUnit
     isSearchable
-    isUnlimited
-    totalSold
     preOrder
     zips
     foodType
