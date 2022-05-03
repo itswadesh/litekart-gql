@@ -65,6 +65,7 @@ mutation saveSettings(
   $isVerifyEmail: Boolean
   $isSearch: Boolean
   $isSaas: Boolean
+  $walletThreshold: Float
 ) {
   saveSettings(
     id: $id
@@ -133,6 +134,7 @@ mutation saveSettings(
     isVerifyEmail: $isVerifyEmail
     isSearch: $isSearch
     isSaas: $isSaas
+    walletThreshold: $walletThreshold
   ) {
     websiteName
     websiteLegalName
@@ -245,5 +247,6 @@ mutation saveSettings(
     isMegamenu
     isVerifyEmail
     isSearch
+    walletThreshold
   }
 }

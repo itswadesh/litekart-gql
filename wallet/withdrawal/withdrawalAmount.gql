@@ -1,0 +1,11 @@
+mutation withdrawalAmount($amount: Float!) {
+  withdrawalAmount(amount: $amount) {
+    id
+    status
+    amount
+    wallet
+    user
+    createdAt
+    updatedAt
+  }
+}

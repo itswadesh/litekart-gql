@@ -1,0 +1,11 @@
+mutation updateWithdrawal($id: ID!, $status: String) {
+  updateWithdrawal(id: $id, status: $status) {
+    id
+    status
+    amount
+    wallet
+    user
+    createdAt
+    updatedAt
+  }
+}

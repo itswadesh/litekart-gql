@@ -1,0 +1,17 @@
+query withdrawal($id: ID!) {
+  withdrawal(id: $id) {
+    id
+    status
+    amount
+    wallet {
+      id
+    }
+    user {
+      id
+      email
+      phone
+    }
+    createdAt
+    updatedAt
+  }
+}

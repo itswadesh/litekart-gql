@@ -152,6 +152,7 @@ query settings {
     isMultiStore
     isMegamenu
     isSaas
+    walletThreshold
     isSearch
     foodTypes {
       name

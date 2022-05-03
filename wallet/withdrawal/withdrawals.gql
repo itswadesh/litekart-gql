@@ -1,0 +1,34 @@
+query withdrawals(
+  $page: Int
+  $skip: Int
+  $limit: Int
+  $search: String
+  $sort: String
+) {
+  withdrawals(
+    page: $page
+    skip: $skip
+    search: $search
+    limit: $limit
+    sort: $sort
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      status
+      amount
+      wallet {
+        id
+      }
+      user {
+        id
+        email
+        phone
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}
