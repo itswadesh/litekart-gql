@@ -4,6 +4,7 @@ mutation saveUser(
   $lastName: String
   $avatar: String
   $role: String
+  $active: Boolean
   $verified: Boolean
   $gender: String
   $phone: String
@@ -20,6 +21,7 @@ mutation saveUser(
     lastName: $lastName
     avatar: $avatar
     role: $role
+    active: $active
     verified: $verified
     gender: $gender
     phone: $phone
@@ -38,7 +40,6 @@ mutation saveUser(
     slug
     avatar
     avatarCdn
-    verified
     gender
     phone
     active
@@ -48,7 +49,14 @@ mutation saveUser(
     storeName
     banner
     roles
-    storeCommissionType
-    storeCommissionValue
   }
 }
+
+# {
+#    "id": "626f967d2fa18405a0c05b2d",
+#     "email": "xecesa6896@svcache.com",
+#     "firstName": "xecesa6896",
+#     "lastName": "xecesa6896",
+#     "active": false,
+#     "verified": false
+# }
