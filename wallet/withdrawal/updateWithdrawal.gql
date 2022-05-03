@@ -1,8 +1,9 @@
-mutation updateWithdrawal($id: ID!, $status: String) {
-  updateWithdrawal(id: $id, status: $status) {
+mutation updateWithdrawal($id: ID!, $status: String, $remark: String) {
+  updateWithdrawal(id: $id, status: $status, remark: $remark) {
     id
     status
     amount
+    remark
     wallet
     user
     createdAt

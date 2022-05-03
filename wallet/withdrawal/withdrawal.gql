@@ -3,6 +3,7 @@ query withdrawal($id: ID!) {
     id
     status
     amount
+    remark
     wallet {
       id
     }

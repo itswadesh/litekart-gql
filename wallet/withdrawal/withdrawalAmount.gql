@@ -3,6 +3,7 @@ mutation withdrawalAmount($amount: Float!) {
     id
     status
     amount
+    remark
     wallet
     user
     createdAt
