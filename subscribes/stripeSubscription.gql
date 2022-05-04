@@ -1,5 +1,13 @@
-mutation stripeSubscription($subscription: ID!, $intervalType: String) {
-  stripeSubscription(subscription: $subscription, intervalType: $intervalType) {
+mutation stripeSubscription(
+  $subscription: ID!
+  $intervalType: String
+  $paymentMethodId: String
+) {
+  stripeSubscription(
+    subscription: $subscription
+    intervalType: $intervalType
+    paymentMethodId: $paymentMethodId
+  ) {
     id
     paymentReferenceId
   }
@@ -11,3 +19,8 @@ mutation stripeSubscription($subscription: ID!, $intervalType: String) {
 #   "subscription": "61b078664332fe348055032d",
 #   "intervalType": "month"
 # }
+
+# intervalType: "month"
+# paymentMethodId: "pm_1Kva42SEaRwuFSJKMI0QTx9R"
+# store: "62347567367d4bd1e090c208"
+# subscription: "61ed006a2debacb4318ad9e6"
