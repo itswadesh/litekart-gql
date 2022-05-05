@@ -1,0 +1,43 @@
+mutation deleteCoupon($id: ID!) {
+  deleteCoupon(id: $id) {
+    id
+    isMultiple
+    code
+    name
+    used
+    info
+    description
+    codes {
+      uniqueCode
+      used
+    }
+    discount {
+      type
+      isPercent
+      value
+      currency
+      excludeCategories
+      shippingMethod
+      product
+      minProductQty
+      maxProductQty
+      category
+      minProductPrice
+      minOrderTotal
+    }
+    msg
+    text
+    terms
+    color
+    maxAmount
+    maxUselimit
+    oneUsePerCustomer
+    oneUsePerUniqueCode
+    validFrom
+    validTo
+    active
+    store
+    createdAt
+    updatedAt
+  }
+}
