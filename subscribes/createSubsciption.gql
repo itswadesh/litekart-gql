@@ -1,0 +1,37 @@
+mutation createSubsciption(
+  $subscription: ID!
+  $intervalType: String!
+  $user: ID!
+) {
+  createSubsciption(
+    subscription: $subscription
+    intervalType: $intervalType
+    user: $user
+  ) {
+    id
+    amount
+    daysLeft
+    EndTime
+    EndTimeISO
+    img
+    onGoing
+    StartTime
+    StartTimeISO
+    unlimitedValidity
+    createdAt
+    updatedAt
+    subscription {
+      id
+      active
+      name
+    }
+  }
+}
+
+# intervalType: year or month
+
+# {
+#   "subscription": "61b078664332fe348055032c",
+#   "intervalType": "month",
+#   "user": "5ed14b669e8b394b6f8967ce"
+# }

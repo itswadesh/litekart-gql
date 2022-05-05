@@ -1,4 +1,4 @@
-mutation cashfreeSubscription($subscription: ID!, $intervalType: String) {
+mutation cashfreeSubscription($subscription: ID!, $intervalType: String!) {
   cashfreeSubscription(
     subscription: $subscription
     intervalType: $intervalType
@@ -9,7 +9,7 @@ mutation cashfreeSubscription($subscription: ID!, $intervalType: String) {
   }
 }
 
-# intervalType: year or month(default)
+# intervalType: year or month
 
 # {
 #   "subscription": "61b078664332fe348055032d",

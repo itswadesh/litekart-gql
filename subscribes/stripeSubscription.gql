@@ -1,6 +1,6 @@
 mutation stripeSubscription(
   $subscription: ID!
-  $intervalType: String
+  $intervalType: String!
   $paymentMethodId: String
 ) {
   stripeSubscription(
@@ -13,7 +13,7 @@ mutation stripeSubscription(
   }
 }
 
-# intervalType: year or month(default)
+# intervalType: year or month
 
 # {
 #   "subscription": "61b078664332fe348055032d",
