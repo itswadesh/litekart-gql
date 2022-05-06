@@ -26,6 +26,8 @@ query paymentMethods(
       color
       key
       text
+      qrcode
+      type
       instructions
       position
       active

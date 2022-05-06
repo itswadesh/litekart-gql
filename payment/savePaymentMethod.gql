@@ -6,6 +6,7 @@ mutation savePaymentMethod(
   $color: String
   $img: String
   $qrcode: String
+  $type: String
   $text: String
   $instructions: String
   $position: Int
@@ -19,6 +20,7 @@ mutation savePaymentMethod(
     color: $color
     img: $img
     qrcode: $qrcode
+    type: $type
     text: $text
     instructions: $instructions
     position: $position
@@ -30,6 +32,7 @@ mutation savePaymentMethod(
     color
     img
     qrcode
+    type
     imgCdn
     text
     instructions

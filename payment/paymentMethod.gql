@@ -8,6 +8,8 @@ query paymentMethod($id: ID!) {
     color
     key
     text
+    qrcode
+    type
     instructions
     position
     active
