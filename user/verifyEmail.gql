@@ -3,8 +3,15 @@ mutation verifyEmail(
   $token: String!
   $expires: String!
   $signature: String!
+  $store: ID
 ) {
-  verifyEmail(id: $id, token: $token, expires: $expires, signature: $signature)
+  verifyEmail(
+    id: $id
+    token: $token
+    expires: $expires
+    signature: $signature
+    store: $store
+  )
 }
 
 # {
