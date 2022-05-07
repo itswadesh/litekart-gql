@@ -10,10 +10,14 @@ query recommended($store: ID) {
     type
     price
     mrp
+    hasStock
+    isUnlimited
     stock
     tax
     img
+    imgCdn
     images
+    imagesCdn
     time
     active
     popularity

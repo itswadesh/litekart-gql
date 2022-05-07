@@ -107,6 +107,11 @@ query HOME($store: ID, $zip: String) {
     foodType
     price
     mrp
+    formattedPrice
+    formattedMrp
+    discount
+    hasStock
+    isUnlimited
     stock
     tax
     img
@@ -141,6 +146,9 @@ query HOME($store: ID, $zip: String) {
     description
     keyFeatures
     expiryDate
+    brand {
+      name
+    }
     vendor {
       businessName
     }
@@ -167,6 +175,11 @@ query HOME($store: ID, $zip: String) {
     foodType
     price
     mrp
+    formattedPrice
+    formattedMrp
+    discount
+    hasStock
+    isUnlimited
     stock
     tax
     img
@@ -201,6 +214,9 @@ query HOME($store: ID, $zip: String) {
     description
     keyFeatures
     expiryDate
+    brand {
+      name
+    }
     vendor {
       businessName
     }
@@ -223,7 +239,12 @@ query HOME($store: ID, $zip: String) {
       type
       price
       mrp
+      formattedPrice
+      formattedMrp
       discount
+      hasStock
+      isUnlimited
+
       stock
       img
       imgCdn
@@ -235,12 +256,11 @@ query HOME($store: ID, $zip: String) {
       zips
       foodType
       expiryDate
+      brand {
+        name
+      }
       vendor {
-        id
-        slug
         businessName
-        banner
-        bannerCdn
       }
     }
     count

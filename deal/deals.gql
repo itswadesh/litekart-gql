@@ -29,11 +29,54 @@ query deals(
       active
       products {
         id
-        name
+        sku
+        barcode
+        productMasterId
         slug
+        name
+        description
+        type
+        price
+        mrp
+        hasStock
+        isUnlimited
+        stock
+        tax
         img
         imgCdn
-        price
+        images
+        imagesCdn
+        time
+        active
+        popularity
+        position
+        trending
+        featured
+        hot
+        new
+        sale
+        recommended
+        title
+        metaDescription
+        keywords
+        ratings
+        reviews
+        itemId
+        warranty
+        # discountPercent
+        ageMin
+        ageMax
+        ageUnit
+        cgst
+        sgst
+        igst
+        returnInfo
+        returnAllowed
+        replaceAllowed
+        returnValidityInDays
+        isSearchable
+        formattedMrp
+        formattedPrice
       }
       store {
         id

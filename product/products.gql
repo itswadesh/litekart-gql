@@ -57,6 +57,9 @@ query products(
       type
       price
       mrp
+      discount
+      hasStock
+      isUnlimited
       stock
       trackInventory
       tax

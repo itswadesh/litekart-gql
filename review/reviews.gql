@@ -23,6 +23,7 @@ query reviews(
       createdAt
       updatedAt
       pid {
+        id
         name
         slug
         img
