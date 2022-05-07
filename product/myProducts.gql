@@ -55,6 +55,8 @@ query myProducts(
       type
       price
       mrp
+      hasStock
+      isUnlimited
       stock
       tax
       img

@@ -122,6 +122,7 @@ query orderItem($id: ID!) {
       address
       lat
       lng
+      phone
     }
     billingAddress {
       firstName
@@ -133,6 +134,7 @@ query orderItem($id: ID!) {
       address
       lat
       lng
+      phone
     }
     store {
       id
@@ -167,6 +169,7 @@ query orderItem($id: ID!) {
       address
       lat
       lng
+      phone
     }
     formattedSubtotal
     formattedShippingCharge
