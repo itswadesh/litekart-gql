@@ -17,7 +17,6 @@ mutation createSubsciption(
     onGoing
     StartTime
     StartTimeISO
-    unlimitedValidity
     createdAt
     updatedAt
     subscription {
@@ -31,7 +30,7 @@ mutation createSubsciption(
 # intervalType: year or month
 
 # {
-#   "subscription": "61b078664332fe348055032c",
+#   "subscription": "61b078664332fe348055032d",
 #   "intervalType": "month",
-#   "user": "5ed14b669e8b394b6f8967ce"
+#   "user": "62723f847a5ea93754febd76"
 # }

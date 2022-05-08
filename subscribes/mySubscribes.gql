@@ -12,7 +12,6 @@ query mySubscribes($page: Int, $limit: Int, $search: String, $sort: String) {
       onGoing
       StartTime
       StartTimeISO
-      unlimitedValidity
       createdAt
       updatedAt
       subscription {

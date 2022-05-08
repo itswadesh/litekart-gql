@@ -1,4 +1,4 @@
-mutation cashfreeSubscription($subscription: ID!, $intervalType: String!) {
+mutation cashfreeSubscription($subscription: ID!, $intervalType: String) {
   cashfreeSubscription(
     subscription: $subscription
     intervalType: $intervalType

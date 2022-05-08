@@ -1,0 +1,24 @@
+mutation confirmStripeSubscription($subscribe: ID!) {
+  confirmStripeSubscription(subscribe: $subscribe) {
+    id
+    amount
+    amountDue
+    amountPaid
+    daysLeft
+    EndTime
+    EndTimeISO
+    img
+    onGoing
+    paid
+    paymentReferenceId
+    authLink
+    StartTime
+    StartTimeISO
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "subscribe": "61b078664332fe348055032d"
+# }

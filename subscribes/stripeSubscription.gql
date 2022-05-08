@@ -1,6 +1,6 @@
 mutation stripeSubscription(
   $subscription: ID!
-  $intervalType: String!
+  $intervalType: String
   $paymentMethodId: String
 ) {
   stripeSubscription(
