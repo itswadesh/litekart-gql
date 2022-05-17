@@ -46,6 +46,7 @@ query subscriptions(
       stripePlanId
       createdAt
       updatedAt
+      features
     }
   }
 }
