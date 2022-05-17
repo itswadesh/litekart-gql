@@ -11,6 +11,7 @@ mutation stripeSubscription(
     id
     paymentReferenceId
     clientSecret
+    paid
   }
 }
 

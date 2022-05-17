@@ -1,5 +1,11 @@
-mutation confirmStripeSubscription($subscribe: ID!) {
-  confirmStripeSubscription(subscribe: $subscribe) {
+mutation confirmStripeSubscription(
+  $subscribeId: ID
+  $paymentReferenceId: String
+) {
+  confirmStripeSubscription(
+    subscribeId: $subscribeId
+    paymentReferenceId: $paymentReferenceId
+  ) {
     id
     amount
     amountDue
