@@ -10,6 +10,7 @@ mutation stripeSubscription(
   ) {
     id
     paymentReferenceId
+    clientSecret
   }
 }
 
