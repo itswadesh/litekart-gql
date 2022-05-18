@@ -1,0 +1,38 @@
+query myTags(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  myTags(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      name
+      slug
+      color
+      user {
+        firstName
+        lastName
+        avatar
+      }
+      store {
+        id
+        name
+        email
+        phone
+      }
+      createdAt
+      updatedAt
+    }
+  }
+}

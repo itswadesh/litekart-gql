@@ -1,0 +1,21 @@
+query tag($id: ID!) {
+  tag(id: $id) {
+    id
+    name
+    slug
+    color
+    createdAt
+    updatedAt
+    user {
+      firstName
+      lastName
+      avatar
+    }
+    store {
+      id
+      name
+      email
+      phone
+    }
+  }
+}

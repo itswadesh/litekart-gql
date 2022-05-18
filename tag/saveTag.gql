@@ -1,0 +1,10 @@
+mutation saveTag($id: String!, $name: String, $slug: String, $color: String) {
+  saveTag(id: $id, name: $name, slug: $slug, color: $color) {
+    id
+    name
+    slug
+    color
+    user
+    store
+  }
+}
