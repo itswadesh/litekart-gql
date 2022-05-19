@@ -84,6 +84,7 @@ mutation saveProduct(
   $deliveryDetails: String
   $slots: [ID]
   $trackInventory: Boolean
+  $tags: [ID]
 ) {
   saveProduct(
     id: $id
@@ -171,6 +172,7 @@ mutation saveProduct(
     deliveryDetails: $deliveryDetails
     slots: $slots
     trackInventory: $trackInventory
+    tags: $tags
   ) {
     id
     name
@@ -272,6 +274,7 @@ mutation saveProduct(
     formattedMrp
     formattedPrice
     deliveryDetails
+    tags
     vendor
     store
   }
