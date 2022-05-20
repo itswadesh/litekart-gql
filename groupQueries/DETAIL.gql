@@ -69,8 +69,11 @@ query DETAIL($id: ID!) {
     zips
     foodType
     deliveryDetails
-    expiryDate
     hasStock
+    tags {
+      name
+      colorCode
+    }
     slots {
       id
       name
