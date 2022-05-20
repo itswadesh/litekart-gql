@@ -203,8 +203,23 @@ query DETAIL($id: ID!) {
       name
       slug
       img
+      images
+      imgCdn
+      imagesCdn
+      price
+      mrp
+      discount
+      formattedPrice
+      formattedMrp
       expiryDate
       foodType
+      hasStock
+      vendor {
+        id
+        slug
+        businessName
+      }
+      active
     }
     returnInfo
     returnAllowed
