@@ -3,7 +3,7 @@ query tag($id: ID!) {
     id
     name
     slug
-    color
+    colorCode
     createdAt
     updatedAt
     user {

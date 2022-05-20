@@ -19,7 +19,7 @@ query myTags(
       id
       name
       slug
-      color
+      colorCode
       user {
         firstName
         lastName

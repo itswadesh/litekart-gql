@@ -3,7 +3,7 @@ mutation deleteTag($id: ID!) {
     id
     name
     slug
-    color
+    colorCode
     user
     store
   }

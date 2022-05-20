@@ -1,9 +1,14 @@
-mutation saveTag($id: String!, $name: String, $slug: String, $color: String) {
-  saveTag(id: $id, name: $name, slug: $slug, color: $color) {
+mutation saveTag(
+  $id: String!
+  $name: String
+  $slug: String
+  $colorCode: String
+) {
+  saveTag(id: $id, name: $name, slug: $slug, colorCode: $colorCode) {
     id
     name
     slug
-    color
+    colorCode
     user
     store
   }
