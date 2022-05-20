@@ -3,12 +3,20 @@ mutation saveTag(
   $name: String
   $slug: String
   $colorCode: String
+  $active: Boolean
 ) {
-  saveTag(id: $id, name: $name, slug: $slug, colorCode: $colorCode) {
+  saveTag(
+    id: $id
+    name: $name
+    slug: $slug
+    colorCode: $colorCode
+    active: $active
+  ) {
     id
     name
     slug
     colorCode
+    active
     user
     store
   }

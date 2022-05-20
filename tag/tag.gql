@@ -4,6 +4,7 @@ query tag($id: ID!) {
     name
     slug
     colorCode
+    active
     createdAt
     updatedAt
     user {

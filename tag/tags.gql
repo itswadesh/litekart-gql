@@ -20,6 +20,7 @@ query tags(
       name
       slug
       colorCode
+      active
       user {
         firstName
         lastName
