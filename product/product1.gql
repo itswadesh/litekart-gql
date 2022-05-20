@@ -101,7 +101,10 @@ query product1($id: ID!) {
     formattedMrp
     formattedPrice
     deliveryDetails
-    tags
+    # tags {
+    #   name
+    #   colorCode
+    # }
     productDetails {
       name
       value

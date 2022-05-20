@@ -109,6 +109,10 @@ query products(
       deliveryDetails
       formattedMrp
       formattedPrice
+      tags {
+        name
+        colorCode
+      }
       slots {
         id
         name

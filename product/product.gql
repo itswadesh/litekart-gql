@@ -71,6 +71,10 @@ query product($id: ID!, $zip: String, $optionValues: [ID]) {
     zips
     foodType
     deliveryDetails
+    tags {
+      name
+      colorCode
+    }
     slots {
       id
       name

@@ -146,6 +146,10 @@ query HOME($store: ID, $zip: String) {
     description
     keyFeatures
     expiryDate
+    tags {
+      name
+      colorCode
+    }
     brand {
       name
     }
@@ -214,6 +218,10 @@ query HOME($store: ID, $zip: String) {
     description
     keyFeatures
     expiryDate
+    tags {
+      name
+      colorCode
+    }
     brand {
       name
     }
@@ -244,7 +252,12 @@ query HOME($store: ID, $zip: String) {
       discount
       hasStock
       isUnlimited
-
+      tags {
+        id
+        name
+        slug
+        colorCode
+      }
       stock
       img
       imgCdn
