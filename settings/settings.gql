@@ -29,6 +29,7 @@ query settings {
     currencySymbol
     currencyDecimals
     openGraphImage
+    shippingProviders
     shipping {
       deliveryDays
       charge
