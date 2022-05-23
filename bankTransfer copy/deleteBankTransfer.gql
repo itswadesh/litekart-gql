@@ -1,0 +1,17 @@
+mutation deleteBankTransfer($id: ID!) {
+  deleteBankTransfer(id: $id) {
+    id
+    type
+    amount
+    reference
+    remark
+    paymentMethodId
+    verified
+    verifiedAt
+    verifiedBy
+    store
+    user
+    createdAt
+    updatedAt
+  }
+}

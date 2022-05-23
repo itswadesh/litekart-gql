@@ -1,0 +1,40 @@
+mutation createBankTransfer(
+  $type: String!
+  $amount: Float
+  $reference: String
+  $remark: String
+  $paymentMethodId: String
+  $store: ID!
+) {
+  createBankTransfer(
+    type: $type
+    amount: $amount
+    reference: $reference
+    remark: $remark
+    paymentMethodId: $paymentMethodId
+    store: $store
+  ) {
+    id
+    type
+    amount
+    reference
+    remark
+    paymentMethodId
+    verified
+    verifiedAt
+    verifiedBy
+    store
+    user
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "type": "order",
+#   "store": "623ed26713ca6f3f805a14ac",
+#   "amount": 111,
+#   "reference": "121",
+#   "remark": "ava",
+#   "paymentMethodId": "dasf"
+# }

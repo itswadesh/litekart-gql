@@ -1,0 +1,46 @@
+mutation saveBankTransfer(
+  $id: String!
+  $type: String
+  $amount: Float
+  $reference: String
+  $remark: String
+  $paymentMethodId: String
+  $verified: Boolean
+  $user: ID
+) {
+  saveBankTransfer(
+    id: $id
+    type: $type
+    amount: $amount
+    reference: $reference
+    remark: $remark
+    paymentMethodId: $paymentMethodId
+    verified: $verified
+    user: $user
+  ) {
+    id
+    type
+    amount
+    reference
+    remark
+    paymentMethodId
+    verified
+    verifiedAt
+    verifiedBy
+    store
+    user
+    createdAt
+    updatedAt
+  }
+}
+
+# {
+#   "id": "new",
+#   "type": "order",
+#   "amount": 199,
+#   "reference": "cusss",
+#   "remark": "abc",
+#   "paymentMethodId": "232432",
+#   "verified": true,
+#   "user": "609233e040fcda1cebaa62f1"
+# }

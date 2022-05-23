@@ -1,0 +1,30 @@
+query bankTransfer($id: ID!) {
+  bankTransfer(id: $id) {
+    id
+    type
+    amount
+    reference
+    remark
+    paymentMethodId
+    verified
+    verifiedAt
+    verifiedBy {
+      id
+      firstName
+      lastName
+      email
+      phone
+    }
+    user {
+      id
+      firstName
+      lastName
+      email
+      phone
+    }
+    store {
+      id
+      name
+    }
+  }
+}

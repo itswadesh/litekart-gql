@@ -1,0 +1,47 @@
+query bankTransfers(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $store: ID
+) {
+  bankTransfers(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      type
+      amount
+      reference
+      remark
+      paymentMethodId
+      verified
+      verifiedAt
+      verifiedBy {
+        id
+        firstName
+        lastName
+        email
+        phone
+      }
+      user {
+        id
+        firstName
+        lastName
+        email
+        phone
+      }
+      store {
+        id
+        name
+      }
+    }
+  }
+}
