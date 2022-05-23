@@ -8,6 +8,7 @@ mutation saveState(
   $lang: String
   $sort: Int
   $active: Boolean
+  $country: ID
 ) {
   saveState(
     id: $id
@@ -19,6 +20,7 @@ mutation saveState(
     lang: $lang
     sort: $sort
     active: $active
+    country: $country
   ) {
     id
     name
