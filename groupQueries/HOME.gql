@@ -253,9 +253,7 @@ query HOME($store: ID, $zip: String) {
       hasStock
       isUnlimited
       tags {
-        id
         name
-        slug
         colorCode
       }
       stock
