@@ -75,6 +75,7 @@ mutation saveStore(
   $slug: String
   $snapChatPixel: String
   $state: String
+  $zip: String
   $storeId: String
   $timeZone: String
   $timing: String
@@ -151,6 +152,7 @@ mutation saveStore(
     linkedin: $linkedin
     lng: $lng
     locality: $locality
+    zip: $zip
     logo: $logo
     logoDark: $logoDark
     logoMobile: $logoMobile
@@ -261,6 +263,7 @@ mutation saveStore(
     linkedin
     lng
     locality
+    zip
     logo
     logoDark
     logoMobile
