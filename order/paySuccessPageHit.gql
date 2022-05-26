@@ -1,7 +1,16 @@
-mutation paySuccessPageHit($orderId: ID, $paymentReferenceId: String) {
+mutation paySuccessPageHit(
+  
+ 
+  
+
+  $orderId: ID
+  $paymentReferenceId: String
+  $paymentMode: String
+) {
   paySuccessPageHit(
     orderId: $orderId
     paymentReferenceId: $paymentReferenceId
+    paymentMode: $paymentMode
   ) {
     id
     orderNo

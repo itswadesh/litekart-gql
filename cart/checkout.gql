@@ -1,6 +1,4 @@
-# , $options:String
 mutation checkout($address: ID, $slot: ID, $paymentMethod: String) {
-  # , options:$options
   checkout(address: $address, slot: $slot, paymentMethod: $paymentMethod) {
     id
     orderNo
