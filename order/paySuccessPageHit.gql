@@ -1,8 +1,4 @@
 mutation paySuccessPageHit(
-  
- 
-  
-
   $orderId: ID
   $paymentReferenceId: String
   $paymentMode: String
