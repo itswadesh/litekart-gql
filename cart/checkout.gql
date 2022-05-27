@@ -1,5 +1,5 @@
-mutation checkout($address: ID, $slot: ID, $paymentMethod: String) {
-  checkout(address: $address, slot: $slot, paymentMethod: $paymentMethod) {
+mutation checkout($address: ID, $slot: ID) {
+  checkout(address: $address, slot: $slot) {
     id
     orderNo
     otp
