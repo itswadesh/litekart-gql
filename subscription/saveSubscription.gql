@@ -2,7 +2,7 @@ mutation saveSubscription(
   $id: String!
   $abandonnedCartRecovery: Boolean
   $active: Boolean
-  $annualMonthlyPrice: Float
+  $annualPrice: Float
   $chatSupport: Boolean
   $customDomain: Boolean
   $description: String
@@ -32,7 +32,7 @@ mutation saveSubscription(
     id: $id
     abandonnedCartRecovery: $abandonnedCartRecovery
     active: $active
-    annualMonthlyPrice: $annualMonthlyPrice
+    annualPrice: $annualPrice
     chatSupport: $chatSupport
     customDomain: $customDomain
     description: $description
@@ -62,7 +62,7 @@ mutation saveSubscription(
     name
     abandonnedCartRecovery
     active
-    annualMonthlyPrice
+    annualPrice
     chatSupport
     customDomain
     description

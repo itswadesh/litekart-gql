@@ -19,7 +19,7 @@ query subscriptions(
       name
       abandonnedCartRecovery
       active
-      annualMonthlyPrice
+      annualPrice
       chatSupport
       customDomain
       description

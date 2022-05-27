@@ -4,7 +4,7 @@ query subscription($id: ID!) {
     name
     abandonnedCartRecovery
     active
-    annualMonthlyPrice
+    annualPrice
     chatSupport
     customDomain
     description
