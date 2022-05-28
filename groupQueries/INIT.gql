@@ -153,6 +153,7 @@ query INIT($domain: String) {
   storeOne(domain: $domain) {
     id
     active
+    featured
     adminNotifications {
       lowStockNotification
       newOrderPlaced
@@ -165,19 +166,28 @@ query INIT($domain: String) {
     closedMessage
     isWishlist
     isCart
-    country {
+    storeCountry {
+      id
+      default
+      active
       name
       code
     }
-    currency {
+    storeCurrency {
       id
+      default
+      active
       isoCode
       name
       symbol
     }
-    currencyCode
-    currencyDecimals
-    currencySymbol
+    storeLanguage {
+      id
+      default
+      active
+      name
+      code
+    }
     customerOrderNotifications {
       downloadEGoods
       giftCardPurchased
@@ -185,6 +195,10 @@ query INIT($domain: String) {
       orderIsReadyForPickup
       orderShipped
       orderStatusChanged
+      orderConfirmationSms
+    }
+    vendorNotifications {
+      orderConfirmationSms
     }
     description
     metaDescription
@@ -222,6 +236,8 @@ query INIT($domain: String) {
     isSearch
     isHyperlocal
     isFnb
+    isWishlist
+    isCart
     keywords
     lastName
     lat
@@ -279,8 +295,18 @@ query INIT($domain: String) {
     youtubeUrl
     webmail
     zip
+    timeDisplayFormat
+    priceDisplayFormat
     createdAt
     updatedAt
+    sms {
+      AUTO_VERIFICATION_ID
+    }
+    shippoToken
+    shipRocketEmail
+    shipRocketPassword
+    shipRocketChannelId
+    pickrrAuthToken
     user {
       firstName
       lastName
