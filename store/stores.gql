@@ -1,5 +1,17 @@
-query stores($page: Int, $search: String, $limit: Int, $sort: String) {
-  stores(page: $page, search: $search, limit: $limit, sort: $sort) {
+query stores(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $active: Boolean
+) {
+  stores(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    active: $active
+  ) {
     count
     page
     pageSize
