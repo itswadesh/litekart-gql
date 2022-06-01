@@ -44,9 +44,13 @@ query subscriptions(
       maxAdminAllowed
       cashfreePlanId
       stripePlanId
+      photosAllowed
+      callMeLimit
+      homepageAdvertise
+      expertConsultation
+      features
       createdAt
       updatedAt
-      features
     }
   }
 }

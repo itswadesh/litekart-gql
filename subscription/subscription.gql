@@ -29,6 +29,10 @@ query subscription($id: ID!) {
     maxAdminAllowed
     cashfreePlanId
     stripePlanId
+    photosAllowed
+    callMeLimit
+    homepageAdvertise
+    expertConsultation
     createdAt
     updatedAt
   }
