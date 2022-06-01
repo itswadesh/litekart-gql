@@ -129,6 +129,14 @@ query stores(
       priceDisplayFormat
       createdAt
       updatedAt
+      totalProducts
+      lastAddedProduct {
+        id
+        name
+        stock
+        img
+        imgCdn
+      }
       user {
         firstName
         lastName
