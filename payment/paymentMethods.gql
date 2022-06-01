@@ -5,6 +5,7 @@ query paymentMethods(
   $sort: String
   $store: ID
   $active: Boolean
+  $type: String
 ) {
   paymentMethods(
     page: $page
@@ -13,6 +14,7 @@ query paymentMethods(
     sort: $sort
     active: $active
     store: $store
+    type: $type
   ) {
     count
     page
