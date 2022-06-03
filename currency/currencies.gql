@@ -19,6 +19,7 @@ query currencies($page: Int, $search: String, $limit: Int, $sort: String) {
       subUnit
       smallestDenomination
       subunitToUnit
+      decimalDigits
       createdAt
       updatedAt
     }

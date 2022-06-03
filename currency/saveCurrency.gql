@@ -13,6 +13,7 @@ mutation saveCurrency(
   $symbol: String
   $symbolFirst: Boolean
   $thousandsSeparator: String
+  $decimalDigits: Int
   $active: Boolean
 ) {
   saveCurrency(
@@ -30,6 +31,7 @@ mutation saveCurrency(
     symbol: $symbol
     symbolFirst: $symbolFirst
     thousandsSeparator: $thousandsSeparator
+    decimalDigits: $decimalDigits
     active: $active
   ) {
     id
@@ -47,6 +49,7 @@ mutation saveCurrency(
     subUnit
     smallestDenomination
     subunitToUnit
+    decimalDigits
     createdAt
     updatedAt
   }
