@@ -1,0 +1,27 @@
+query myCurrentSubscriptionDetail {
+  myCurrentSubscriptionDetail {
+    id
+    amount
+    daysLeft
+    EndTime
+    EndTimeISO
+    img
+    onGoing
+    StartTime
+    StartTimeISO
+    subscription {
+      id
+      name
+    }
+    createdAt
+    updatedAt
+    payment {
+      id
+      amountDue
+      amountPaid
+      refundStatus
+      paymentMode
+      paymentGateway
+    }
+  }
+}
