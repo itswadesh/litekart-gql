@@ -31,6 +31,10 @@ mutation saveSubscription(
   $callMeLimit: Int
   $homepageAdvertise: String
   $expertConsultation: String
+  $pickup: Boolean
+  $delivery: Boolean
+  $tableBooking: Boolean
+  $appointments: Boolean
 ) {
   saveSubscription(
     id: $id
@@ -65,6 +69,10 @@ mutation saveSubscription(
     callMeLimit: $callMeLimit
     homepageAdvertise: $homepageAdvertise
     expertConsultation: $expertConsultation
+    pickup: $pickup
+    delivery: $delivery
+    tableBooking: $tableBooking
+    appointments: $appointments
   ) {
     id
     name
@@ -99,6 +107,10 @@ mutation saveSubscription(
     callMeLimit
     homepageAdvertise
     expertConsultation
+    pickup
+    delivery
+    tableBooking
+    appointments
     createdAt
     updatedAt
   }

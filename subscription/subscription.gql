@@ -33,6 +33,10 @@ query subscription($id: ID!) {
     callMeLimit
     homepageAdvertise
     expertConsultation
+    pickup
+    delivery
+    tableBooking
+    appointments
     createdAt
     updatedAt
   }
