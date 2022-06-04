@@ -24,6 +24,7 @@ query storeCurrencies(
       isoCode
       name
       symbol
+      decimalDigits
       currency {
         id
         name

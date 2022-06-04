@@ -8,6 +8,7 @@ query storeCurrency($id: ID!) {
     isoCode
     name
     symbol
+    decimalDigits
     currency {
       id
       name
