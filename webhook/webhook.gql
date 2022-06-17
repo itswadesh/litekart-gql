@@ -1,5 +1,5 @@
-query faq($id: String!) {
-  faq(id: $id) {
+query webhook($id: String!) {
+  webhook(id: $id) {
     id
     url
     name
@@ -16,3 +16,7 @@ query faq($id: String!) {
     }
   }
 }
+
+# {
+#   "id":"62ac0f6592dd6e4828190e9a"
+# }

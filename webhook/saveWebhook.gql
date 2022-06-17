@@ -32,8 +32,14 @@ mutation saveWebhook(
 }
 
 # {
-#   "id": "new",
-#   "name": "Subscription Created",
-#   "events": ['subscription.created','order.created'],
+#   "id": "62ac109abca1822c6474a6a7",
+#   "url": "some",
+#   "name":"Some name",
+#   "description": "",
+#   "active": true,
+#   "events": [
+#     "order.created",
+#     "subscription.created"
+#   ],
 #   "store": "60fb92e49f73050d30287cae"
 # }

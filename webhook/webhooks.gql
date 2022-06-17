@@ -1,16 +1,18 @@
-query faqs(
+query webhooks(
   $page: Int
   $search: String
   $limit: Int
   $sort: String
+  $active: Boolean
   $store: ID
 ) {
-  faqs(
+  webhooks(
     page: $page
     search: $search
     limit: $limit
     sort: $sort
     store: $store
+    active: $active
   ) {
     count
     page
@@ -33,3 +35,8 @@ query faqs(
     }
   }
 }
+
+# {
+#   "store": "62347567367d4bd1e090c208",
+#   "active": true
+# }

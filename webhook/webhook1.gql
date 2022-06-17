@@ -1,5 +1,5 @@
-query faq1($id: ID!) {
-  faq1(id: $id) {
+query webhook1($id: ID!) {
+  webhook1(id: $id) {
     id
     url
     name
@@ -12,3 +12,7 @@ query faq1($id: ID!) {
     updatedAt
   }
 }
+
+# {
+#   "id":"62ac0f6592dd6e4828190e9a"
+# }
