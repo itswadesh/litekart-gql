@@ -1,0 +1,14 @@
+mutation deleteWebhook($id: ID!) {
+  deleteWebhook(id: $id) {
+    id
+    url
+    name
+    description
+    events
+    sort
+    active
+    store
+    createdAt
+    updatedAt
+  }
+}

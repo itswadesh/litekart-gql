@@ -1,0 +1,14 @@
+query faq1($id: ID!) {
+  faq1(id: $id) {
+    id
+    url
+    name
+    description
+    events
+    sort
+    active
+    store
+    createdAt
+    updatedAt
+  }
+}
