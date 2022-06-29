@@ -6,6 +6,7 @@ mutation saveTemplate(
   $content: String
   $icon: String
   $active: Boolean
+  $type: String
   $variables: [String]
   $store: ID
 ) {
@@ -17,6 +18,7 @@ mutation saveTemplate(
     icon: $icon
     content: $content
     active: $active
+    type: $type
     variables: $variables
     store: $store
   ) {
@@ -31,6 +33,7 @@ mutation saveTemplate(
     iconCdn
     content
     active
+    type
     variables
     store
     createdAt

@@ -11,6 +11,7 @@ query template($id: ID!) {
     content
     folder
     active
+    type
     variables
     createdAt
     updatedAt
