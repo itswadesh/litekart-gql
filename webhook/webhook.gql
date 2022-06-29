@@ -1,0 +1,22 @@
+query webhook($id: String!) {
+  webhook(id: $id) {
+    id
+    url
+    name
+    description
+    events
+    sort
+    active
+    createdAt
+    updatedAt
+    store {
+      id
+      name
+      email
+    }
+  }
+}
+
+# {
+#   "id":"62ac0f6592dd6e4828190e9a"
+# }

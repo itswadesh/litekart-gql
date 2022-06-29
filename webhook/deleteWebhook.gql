@@ -1,0 +1,7 @@
+mutation deleteWebhook($id: ID!) {
+  deleteWebhook(id: $id)
+}
+
+# {
+#   "id":"62ac0f6592dd6e4828190e9a"
+# }
