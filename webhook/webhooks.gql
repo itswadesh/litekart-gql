@@ -1,0 +1,42 @@
+query webhooks(
+  $page: Int
+  $search: String
+  $limit: Int
+  $sort: String
+  $active: Boolean
+  $store: ID
+) {
+  webhooks(
+    page: $page
+    search: $search
+    limit: $limit
+    sort: $sort
+    store: $store
+    active: $active
+  ) {
+    count
+    page
+    pageSize
+    data {
+      id
+      url
+      name
+      description
+      events
+      sort
+      active
+      createdAt
+      updatedAt
+      store {
+        id
+        name
+        email
+      }
+    }
+  }
+}
+
+# {
+#   "store": "62347567367d4bd1e090c208",
+#   "active": true
+# }
